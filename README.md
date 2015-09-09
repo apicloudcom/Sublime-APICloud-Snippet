@@ -1,0 +1,2 @@
+# Sublime-APICloud-Snippet
+APICloud提供的标准Sublime扩展插件，在Sublime中集成APICloud扩展模块的代码提示

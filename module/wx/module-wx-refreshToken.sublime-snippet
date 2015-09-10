@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+wx.refreshToken({
+    apiKey: '${1:apikey}',
+    dynamicToken: '${2:dynamic}',
+}, function(ret, err){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(err.code);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wx-refreshToken</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>调用 getUserInfo 接口错误码返回1时，代表 accessToken 过期，调用此接口刷新 accessToken</description>
+</snippet>

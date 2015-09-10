@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+fs.createFile({
+    path: '${1:file_path}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'创建文件成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-createFile</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>创建文件</description>
+</snippet>

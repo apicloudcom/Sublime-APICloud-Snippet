@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+db.transaction({
+    name: '${1:database_name}',
+    operation: '${2:operation_type}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'事务操作成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>db-transaction</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>执行事务操作语句</description>
+</snippet>

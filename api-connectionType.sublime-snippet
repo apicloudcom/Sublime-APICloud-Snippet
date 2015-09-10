@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+api.connectionType
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-connectionType</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>当前网络连接类型，如2g、3g、4g、wifi</description>
+</snippet>

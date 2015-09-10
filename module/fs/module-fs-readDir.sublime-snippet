@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+fs.readDir({
+    path: '${1:dir_path}'
+},function(ret,err){
+    var status = ret.status;
+    if (status) {
+        var data = ret.data;
+        if (data) {
+            var jsonStr = JSON.stringify(data);
+            api.alert({msg:jsonStr});
+        } else{
+            api.alert({msg:'此目录下为空'});
+        }
+    }else{
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-readDir</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+   <description>列出目录</description>
+</snippet>

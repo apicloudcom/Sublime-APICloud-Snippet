@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+uimediascanner.scan({
+    type: '${1:type}',
+    count: ${2:10},
+    sort: {
+        key: '${3:time}',
+        order: '${4:desc}'
+    }
+}, function(ret){
+    if(ret){
+        alert(JSON.stringify(ret.list));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uimediascanner-scan</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>扫描系统多媒体资源，可以通过 Web 代码自定义多选界面</description>
+</snippet>

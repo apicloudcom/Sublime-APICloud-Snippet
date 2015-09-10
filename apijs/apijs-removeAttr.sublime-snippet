@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+\$api.removeAttr(${1:el}, ${2:name});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>apijs-removeAttr</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

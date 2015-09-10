@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+api.sendEvent({
+    name: '${1:event}',
+    extra:{${2:key}:'${3: value}'}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-sendEvent</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>将任意一个自定义事件广播出去，该事件可在任意页面通过addEventListener监听收到</description>
+</snippet>

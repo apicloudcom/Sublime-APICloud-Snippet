@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+api.setScreenSecure({
+    secure: ${1:true}	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-setScreenSecure</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置是否禁止截屏，只支持Android</description>
+</snippet>

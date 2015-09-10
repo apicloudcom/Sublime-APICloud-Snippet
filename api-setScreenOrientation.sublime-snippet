@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+api.setScreenOrientation({
+    orientation:'${1:landscape_left}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-setScreenOrientation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置屏幕旋转方向</description>
+</snippet>

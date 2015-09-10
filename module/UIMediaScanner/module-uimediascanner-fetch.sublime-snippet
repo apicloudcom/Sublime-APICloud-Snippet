@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+uimediascanner.fetch(function(ret){
+    alert(JSON.stringify(ret.list));
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uimediascanner-fetch</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>获取指定数量的多媒体资源，没有更多资源则返回空数组</description>
+</snippet>

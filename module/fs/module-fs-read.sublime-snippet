@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+fs.read({
+    fd: ${1:fd},
+    offset: ${2:0},
+    length: ${1:0}
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:ret.data});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-read</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>读取文件</description>
+</snippet>

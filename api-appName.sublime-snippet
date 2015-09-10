@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+api.appName
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-appName</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>应用在桌面显示名称</description>
+</snippet>

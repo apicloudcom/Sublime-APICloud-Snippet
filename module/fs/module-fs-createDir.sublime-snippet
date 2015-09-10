@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+fs.createDir({
+    path: '${1:dir_path}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'创建目录成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-createDir</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>创建目录</description>
+</snippet>

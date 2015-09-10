@@ -1,0 +1,63 @@
+<snippet>
+    <content><![CDATA[
+uilistview.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:320},
+        h: ${4:480}
+    },
+    data: [{
+        uid: '${5:uid}',    //开发者自定义的唯一标识
+        imgPath: '${6:image_path}',
+        title: '${7:title}',
+        subTitle: '${8:subtitle}',
+        remark: '${9:remark_note}',
+        icon: '${10:icon_path}'
+    },{
+        imgPath: '${11:image_path}',
+        title: '${12:title}',
+        subTitle: '${13:subtitle}',
+        remark: '${14:remark_note}',
+        icon: '${15:icon_path}'
+    }],
+    rightBtns: [{
+        bgColor: '${16:bg_color}',
+        activeBgColor: '${17:active_bg_color}',
+        width: ${18:70},
+        title: '${19:title}',
+        titleSize: ${20:12},
+        titleColor: '${21:title_color}',
+        icon: '${22:icon_path}',
+        iconWidth: ${23:20}
+    }],
+    styles: {
+        borderColor: '${24:border_color}',
+        item: {
+            bgColor: '${25:bg_color}',
+            activeBgColor: '${26:active_color}',
+            height: ${27:55.0},
+            imgWidth: ${28:40},
+            imgHeight: ${29:40},
+            placeholderImg: '${30:place_holder_path}',
+            titleSize: ${31:12.0},
+            titleColor: '${32:title_color}',
+            subTitleSize: ${33:12.0},
+            subTitleColor: '${34:sub_title_color}', 
+            remarkColor: '${35:remark_color}',
+            remarkSize: ${36:16},
+            remarkIconWidth: ${37:30}
+        }
+    }
+}, function(ret, err){
+    if(ret){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 UIListView 模块</description>
+</snippet>

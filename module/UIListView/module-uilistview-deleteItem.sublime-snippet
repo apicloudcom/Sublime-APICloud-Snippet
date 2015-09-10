@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+uilistview.deleteItem({
+    index: ${1:0}
+}, function(ret, err){
+    if(ret.status){
+        alert('删除成功');
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-deleteItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据索引删除某一条列表的数据</description>
+</snippet>

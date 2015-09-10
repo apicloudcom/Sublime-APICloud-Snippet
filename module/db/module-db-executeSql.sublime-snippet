@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+db.executeSql({
+    name: '${1:database_name}',
+    sql: '${2:sql_string}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'执行SQL成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>db-executeSql</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>执行sql</description>
+</snippet>

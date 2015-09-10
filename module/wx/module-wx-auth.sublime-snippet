@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+wx.auth({
+    apiKey: '${1:apikey}'
+}, function(ret, err){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(err.code);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wx-auth</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>登录授权（用于实现第三方登录）</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+api.setFrameAttr({
+    name: '${1:frame_name}',
+    rect:{
+        x:${2:0},
+        y:${3:0},
+        w:${4:320},
+        h:${5:480}
+    },
+    bounces: ${6:true},
+    opaque: ${7:true},
+    bgColor: '${8:#fff}',
+    vScrollBarEnabled:${9:true},
+    hScrollBarEnabled:${10:true}
+});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>api-setFrameAttr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+        <description>设置frame属性</description>
+</snippet>

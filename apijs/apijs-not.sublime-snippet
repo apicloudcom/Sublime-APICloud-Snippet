@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+\$api.not(${1:el}, ${2:selector});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>apijs-not</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

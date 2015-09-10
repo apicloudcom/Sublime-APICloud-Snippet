@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+contacts.query({
+    ids: [${1:1}, ${2:2}]
+}, function(ret, err){
+    if(ret.status){
+        alert(JSON.stringify(ret.contacts));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contacts-query</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据联系人 id 查找联系人</description>
+</snippet>

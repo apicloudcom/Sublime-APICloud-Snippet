@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+api.fsDir
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-fsDir</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>fs://协议对应地真实目录</description>
+</snippet>

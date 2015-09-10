@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+uimediascanner.transPath({
+   path: '${1:path}'
+}, function(ret){
+   alert(ret.path);
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uimediascanner-transPath</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>将相册图片地址转换为可以直接使用的本地路径地址</description>
+</snippet>

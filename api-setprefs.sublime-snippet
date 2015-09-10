@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+api.setPrefs({
+    key: '${1:key}',
+    value: '${2:value}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-setPrefs</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置偏好数据</description>
+</snippet>

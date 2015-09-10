@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+api.stopSensor({
+    type: '${1:sensor_type}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-stopSensor</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>停止传感器</description>
+</snippet>

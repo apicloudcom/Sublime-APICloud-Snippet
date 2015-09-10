@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+api.bringFrameToFront({
+    from:'${1:from_frame_name}',
+    to:'${2:to_frame_name}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-bringFrameToFront</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>调整frame到前面</description>
+</snippet>

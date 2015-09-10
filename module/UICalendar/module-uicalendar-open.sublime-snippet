@@ -1,0 +1,47 @@
+<snippet>
+    <content><![CDATA[
+uicalendar.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:320},
+        h: ${4:480}
+    },
+    styles: {
+        bg: '${5:bg_color}',
+        week: {
+            weekdayColor: '${6:color}',
+            weekendColor: '${7:color}',
+            size: ${8:12}
+	},
+        date: {
+            color: '${9:color}',
+            selectedColor: '${10:color}',
+            selectedBg: '${11:color}',
+            size: ${12:12}
+        },
+        today: {
+            color: '${13:color}',
+            bg: '${14:color}'
+        },
+        specialDate: {
+            color: '${15:color}',
+            bg: '${16:bg}'
+        }
+    },
+    specialDate: [{
+        date: '${17:2015-06-01}'
+    }],
+    switchMode: '${18:mode_type}'
+}, function(ret, err){
+    if(ret){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uicalendar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开日历</description>
+</snippet>

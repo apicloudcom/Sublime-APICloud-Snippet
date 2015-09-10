@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+\$api.get('${1:url}', ${2:funSuc}, ${3:dataType});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>apijs-get</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

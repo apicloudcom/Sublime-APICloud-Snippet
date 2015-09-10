@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+contacts.update(
+    id: ${1:1},
+    lastName: '${2:lastname}',
+    firstName: '${3:firstname}',
+    phones: [{
+        '${4:title}': '${5:number}'
+    }],
+    email: '${6:email}',
+    company: '${7:company}',
+    title: '${8:job_title}',
+    address: {
+        Country: '${9:contry}',
+        State: '${10:state}',
+        City: '${11:city}',
+        Street: '${12:street}',
+        ZIP: '${13:zip_code}'
+    },
+    note: '${14:note_content}'
+}, function(ret){
+    if(ret.status){
+       api.alert({msg:'修改成功'});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contacts-update</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据 id 更新通讯录的联系人信息</description>
+</snippet>

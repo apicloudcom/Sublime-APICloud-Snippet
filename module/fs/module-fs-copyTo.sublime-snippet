@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+fs.copyTo({
+    oldPath: '${1:old_path}',
+    newPath: '${2:new_path}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'拷贝文件成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-copyTo</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>拷贝文件</description>
+</snippet>

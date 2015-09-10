@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+api.notification({
+    notify: {
+        content: '${1:闹铃}'
+    },
+    alarm: {
+        hour: ${2:6},
+        minutes: ${3:30},
+        daysOfWeek: ${4:[2,3,4,5,6]}
+    }
+}, function(ret, err){
+    if(ret && ret.id){
+        
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-notification</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>向用户发出震动、声音提示、灯光闪烁、状态栏消息等通知，以及闹钟功能</description>
+</snippet>

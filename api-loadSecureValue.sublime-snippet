@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+api.loadSecureValue({
+    key:'${1:key_name}'
+}, function(ret, err) {
+    var ${2:value} = ret.value;
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-loadSecureValue</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>从加密的key.xml文件中读取指定数据</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+api.stopRecord(
+    function(ret,err){
+        if (ret) {
+            api.alert({msg:('文件路径--'+ret.path+';录音时长:'+ret.duration+'s')});
+        };
+    }
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-stopRecord</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>停止录音</description>
+</snippet>

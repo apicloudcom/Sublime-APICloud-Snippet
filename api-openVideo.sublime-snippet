@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+api.openVideo({
+    url: '${1:video_path}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-openVideo</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开系统视频播放器</description>
+</snippet>

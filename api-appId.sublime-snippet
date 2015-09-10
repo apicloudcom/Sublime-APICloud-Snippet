@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+api.appId
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-appId</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>应用的ID，可以在网站控制台概览里面查看</description>
+</snippet>

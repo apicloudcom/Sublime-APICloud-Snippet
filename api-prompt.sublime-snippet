@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+api.prompt({
+    buttons:['${1:确定}', '${2:取消}'],
+    title: '${3:title}',
+    msg: '${4:msg_content}',
+    text: '${5:text}'
+},function(ret,err){
+    if(ret.buttonIndex == 1){
+        api.alert({msg:ret.text});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-prompt</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>带两个或三个按钮和输入框的对话框</description>
+</snippet>

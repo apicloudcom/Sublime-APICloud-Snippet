@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+wx.isInstalled(function(ret, err){
+    if(ret.installed){
+        alert("当前设备已安装微信客户端");
+    }else{
+        alert('当前设备未安装微信客户端');
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wx-isInstalled</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>判断当前设备是否安装微信客户端</description>
+</snippet>

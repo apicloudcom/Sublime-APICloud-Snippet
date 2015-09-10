@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+api.historyBack(function(ret, err){
+    if(ret.status) {
+    	alert('历史回退');
+    } else {
+        api.closeWidget();
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-historyBack</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>历史记录后退一页</description>
+</snippet>

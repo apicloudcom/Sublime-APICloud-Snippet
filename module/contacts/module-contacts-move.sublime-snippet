@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+contacts.move({
+    id: ${1:1},
+    groupId: ${2:20}
+}, function(ret, err){
+    if(ret.status){
+        alert('移动分组成功');
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contacts-move</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据 id 移动联系人至指定分组</description>
+</snippet>

@@ -1,0 +1,46 @@
+<snippet>
+    <content><![CDATA[
+uimediascanner.open({
+    column: ${1:4},
+    classify:${2:true},
+    max: ${3:4},
+    sort: {
+        key: '${4:time}',
+        order: '${5:desc}'
+    },
+    texts: {
+        stateText: '${6:已选择*项}',
+        cancelText: '${7:取消}',
+        finishText: '${8:完成}'
+    },
+    styles: {
+        bg: '${9:bg}',
+        mark: {
+            icon: '${10:path}',
+            position: '${11:positon}',
+            size: ${12:20}
+        },
+        nav: {
+            bg: '${13:bg}',
+            stateColor: '${14:stateColor}',
+            stateSize: ${15:18},
+            cancleBg: '${16:cancleBg}',
+            cancelColor: '${17:cancelColor}',
+            cancelSize: ${18:18},
+            finishBg: '${19:finishBg}',
+            finishColor: '${20:finishColor}',
+            finishSize: ${21:18}
+        }
+    }
+}, function(ret){
+    if(ret){
+        alert(JSON.stringify(ret.list));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uimediascanner-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开多媒体资源选择器，打开后会全屏显示</description>
+</snippet>

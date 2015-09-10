@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+fs.readUp({
+    fd: ${1:fd},
+    offset: ${2:0},
+    length: ${3:0}
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:ret.data});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-readUp</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>从当前文件句柄当前位置向上读取一页(页的大小如length)数据</description>
+</snippet>

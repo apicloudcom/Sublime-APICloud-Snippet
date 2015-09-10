@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+batterylow
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ae-batterylow</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设备电池电量低</description>
+</snippet>

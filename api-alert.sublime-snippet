@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+api.alert({
+    title: '${1:title}', 
+    msg: '${2:msg_content}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-alert</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>带一个按钮的对话框</description>
+</snippet>

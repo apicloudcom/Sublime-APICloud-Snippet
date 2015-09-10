@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+api.openWin({
+    name: '${1:winname}',
+    url: './${2:winurl}.html',
+    bounces: false,
+    pageParam: {${3:key} : '${4:value}'}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-openWin</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开window</description>
+</snippet>

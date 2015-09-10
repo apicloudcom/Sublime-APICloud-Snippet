@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+\$api.contains(${1:parent}, ${2:el});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>apijs-contains</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

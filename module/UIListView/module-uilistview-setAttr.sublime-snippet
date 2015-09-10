@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+uilistview.setAttr({
+    y: ${1:40},
+    h: ${2:200}
+}, function(ret, err){
+    alert('设置成功');
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-setAttr</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置列表的纵坐标和高度</description>
+</snippet>

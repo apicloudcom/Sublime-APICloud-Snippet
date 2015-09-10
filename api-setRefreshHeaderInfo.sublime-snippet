@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+api.setRefreshHeaderInfo({
+    visible: ${1:true},
+    loadingImg: '${2:widget://image/refresh.png}',
+    bgColor: '${3:#ccc}',
+    textColor: '${4:#fff}',
+    textDown: '${5:下拉刷新...}',
+    textUp: '${6:松开刷新...}',
+    showTime: ${7:true},
+}, function(ret, err){
+    //从服务器加载数据，完成后调用api.refreshHeaderLoadDone()方法恢复组件到默认状态
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-setRefreshHeaderInfo</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示顶部下拉刷新，此时当前页面会被设为弹动</description>
+</snippet>

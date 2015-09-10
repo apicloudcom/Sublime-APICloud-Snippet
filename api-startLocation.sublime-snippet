@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+api.startLocation({
+    accuracy: '${1:100m}',
+    filter:${2:1},
+    autoStop: ${3:true} 
+},function(ret, err){
+    if(ret.status){
+        var lat = ret.latitude;
+        var lon = ret.longitude;
+        var time = ret.timestamp;
+        var str = '经度：'+ lon +'\n';
+        str += '纬度：'+ lat +'\n';
+        str += '更新时间：'+ time;
+        api.alert({msg:str});
+    } else{
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-startLocation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>开始定位</description>
+</snippet>

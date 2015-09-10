@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+api.setWinAttr({
+    bounces: ${1:true},
+    opaque: ${2:true},
+    bgColor: '${3:#fff}',
+    vScrollBarEnabled:${4:true},
+    hScrollBarEnabled:${5:true},
+    scaleEnabled:${6:true},
+    slidBackEnabled:${7:true}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>api-setWinAttr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>设置window属性</description>
+</snippet>

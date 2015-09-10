@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+fs.moveTo({
+    oldPath: '${1:old_path}',
+    newPath: '${2:new_path}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'移动文件成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-moveTo</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>移动文件</description>
+</snippet>

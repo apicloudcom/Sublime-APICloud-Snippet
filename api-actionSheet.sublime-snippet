@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+api.actionSheet({
+    title: '${1:title}',
+    cancelTitle: '${2:cancelTitle}',
+    destructiveTitle: '${3:destructivetitle}',
+    buttons: ['1', '2', '3']
+},function(ret,err){
+    api.alert({
+        msg: '你刚点击了'+ret.buttonIndex
+    });
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-actionSheet</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>底部弹出框</description>
+</snippet>

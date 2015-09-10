@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+fnscanner.encodeImg({
+    type: '${1:type}',
+    content: '${2:content}',
+    saveToAlbum: ${3:false},
+    saveImg: {
+        path: '${4:image_path}',
+	w: ${5:200},
+	h: ${6:200}
+    }
+}, function(ret, err){
+    if(ret){
+	alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fnscanner-encodeImg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>将字符串生成二维码/条形码图片</description>
+</snippet>

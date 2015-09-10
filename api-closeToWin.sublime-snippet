@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+api.closeToWin({
+    name: '${1:window_name}',
+    animation: {
+        type: 'flip',
+        subType: 'from_bottom',
+        duration: 500
+    }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>api-closeToWin</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>关闭到指定window</description>
+</snippet>

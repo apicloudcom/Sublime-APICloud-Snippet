@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+uilistview.reloadData({
+    data:[{
+        imgPath: '${1:image_path}',
+        title: '${2:title}',
+        subTitle: '${3:sub_title}',
+        remark: '${4:remark_note}',
+        icon: '${5:icon_path}'
+    }]
+}, function(ret, err){
+    if(ret.status){
+        alert('刷新数据成功');
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>刷新列表数据</description>
+</snippet>

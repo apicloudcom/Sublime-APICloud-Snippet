@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+fnscanner.decodeImg({
+    sound: '${1:sound_path}',
+    path: '${2:image_path}'
+}, function(ret, err){
+    if(ret.status){
+	alert(ret.content);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fnscanner-decodeImg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>二维码/条形码图片解码</description>
+</snippet>

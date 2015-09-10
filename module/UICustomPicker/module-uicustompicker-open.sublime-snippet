@@ -1,0 +1,39 @@
+<snippet>
+    <content><![CDATA[
+uicustompicker.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:320},
+        h: ${4:480}
+    },
+    styles: {
+        bg: '${5:bg}',
+        normalColor: '${6:normalColor}',
+        selectedColor: '${7:selectedColor}',
+        selectedSize: ${8:selectedSize},
+        tagColor: '${9:tagColor}',
+        tagSize: ${10:12}
+    },
+    data: [{
+        tag: '${11:tag}',
+        scope: '${12:0-23}'
+    }, {
+        tag: '${13:tag}',
+        scope: '${14:0-59}'
+    }],
+    rows: ${15:rows},
+    fixedOn: '${16:FrameName}',
+    fixed: ${17:true}
+}, function(ret, err){
+    if(ret){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uicustompicker-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开自定义选择器</description>
+</snippet>

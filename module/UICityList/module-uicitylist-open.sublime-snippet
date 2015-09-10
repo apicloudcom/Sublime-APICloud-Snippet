@@ -1,0 +1,52 @@
+<snippet>
+    <content><![CDATA[
+uicitylist.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:320},
+        h: ${4:480}
+    },
+    resource: '${5:resource}',
+    styles: {
+        searchBar: {
+            bgColor: '${6:bgColor}',
+            cancelColor: '${7:cancelColor}'
+        },
+        location: {
+            color: '${8:color}',
+            size: ${9:12}
+        },
+        sectionTitle: {
+            bgColor: '${10:bgColor}', 
+            color: '${11:color}',
+            size: ${12:12}
+        },
+        item: {
+            bgColor: '${13:bgColor}',
+            activeBgColor: '${14:activeBgColor}',
+            color: '${15:color}',
+            size: ${16:12},
+            height: ${17:25}
+        },
+        indicator: {
+            bgColor: '${18:bgColor}',
+            color: '${19:color}'
+        }
+    },
+    currentCity: '${20:currentCity}',
+    locationWay: '${21:locationWay}',
+    hotTitle: '${22:hotTitle}',
+    placeholder: '${23:placeholder}'
+}, function(ret, err) {
+    if(ret.eventType == 'selected'){
+        alert(JSON.stringify(ret.cityInfo));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uicitylist-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开城市列表模块</description>
+</snippet>

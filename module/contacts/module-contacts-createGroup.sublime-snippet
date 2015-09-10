@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+contacts.createGroup({
+    groupName: '${1:group_name}'
+}, function(ret, err){
+    if(ret.status){
+        alert('分组id为：'+ ret.groupId);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contacts-createGroup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>创建分组</description>
+</snippet>

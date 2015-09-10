@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+api.pageDown(function(ret,err){
+    if (!ret.scrolled){
+        api.alert({
+            msg:'已经滚动到底部了'
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-pageDown</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>页面向下滚动一页</description>
+</snippet>

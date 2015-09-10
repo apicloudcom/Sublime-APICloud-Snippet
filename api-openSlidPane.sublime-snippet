@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+api.openSlidPane({
+    type: '${1:left}'
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>api-openSlidPane</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+        <description>向左或右进行侧滑</description>
+</snippet>

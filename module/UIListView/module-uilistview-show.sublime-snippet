@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+uilistview.show();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示 UIListView 模块</description>
+</snippet>

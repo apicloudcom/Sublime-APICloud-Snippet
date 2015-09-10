@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+api.openPicker({
+    type: '${1:date_time}',
+    date: '${2:2015-04-24 15:45}',
+    title:'${3:title}'
+},function(ret,err){
+    var year   = ret.year;
+    var month  = ret.month;
+    var day    = ret.day;
+    var hour   = ret.hour;
+    var minute = ret.minute;
+    if (type == 'date') {
+        var value = year+'年'+month+'月'+day+'日';
+    } else if (type == 'time') {
+        var value = hour+'时'+minute+'分';
+    } else if (type == 'date_time') {
+        var value = year+'年'+month+'月'+day+'日'+hour+'时'+minute+'分';
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-openPicker</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开时间选择器</description>
+</snippet>

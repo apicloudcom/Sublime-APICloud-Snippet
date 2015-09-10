@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+fs.write({
+    fd: ${1:fd},
+    offset: ${2:0},
+    data: '${3:data_string}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'write操作成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-write</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>写入文件</description>
+</snippet>

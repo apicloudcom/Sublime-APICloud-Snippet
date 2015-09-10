@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+db.openDatabase({
+    name: '${1:database_name}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'数据库打开成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>db-openDatabase</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开数据库，若数据库不存在则创建数据库</description>
+</snippet>

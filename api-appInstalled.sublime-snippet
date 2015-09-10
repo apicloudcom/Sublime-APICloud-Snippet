@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+var appBundle = '';
+if (api.systemType == 'ios'){
+    appBundle = '${1:ios_scheme}';
+} else {
+    appBundle = '${2:android_scheme}';
+}
+api.appInstalled({
+    appBundle: appBundle
+},function(ret,err){
+    if (ret.installed) {
+    } else {
+
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-appInstalled</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>判断设备上面是否已安装指定应用</description>
+</snippet>

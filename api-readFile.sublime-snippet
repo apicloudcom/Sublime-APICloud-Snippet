@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+api.readFile({
+    path: '${1:file_path}'
+}, function(ret, err){
+   if( ret.status ) {
+       api.alert({msg:ret.data});
+   } else {
+       api.alert({
+           msg: '错误码: '+err.code+'错误信息'+err.msg
+       });
+   }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-readFile</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>读取文本文件内容</description>
+</snippet>

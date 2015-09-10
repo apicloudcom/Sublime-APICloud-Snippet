@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+api.openWidget({
+    id: '${1:widgetid}',
+    animation: {
+        type: '${2:flip}',
+        subType: '${3:from_bottom}',
+        duration: ${4:500}
+    }
+}, function(ret, err){
+    if(ret){
+        ${5:// TODO}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-openWidget</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开Widget，若此widget已经被打开，则会把其调整到最前面显示</description>
+</snippet>

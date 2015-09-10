@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+api.deviceToken
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-deviceToken</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>iOS中用于推送的Token，若未从系统获取到则返回空字符串</description>
+</snippet>

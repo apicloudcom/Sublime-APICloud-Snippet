@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+contacts.deleteGroup({
+    groupId: ${1:1} 
+}, function(ret, err){
+    if(ret.status){
+        api.alert({msg: '删除分组成功'});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contacts-deleteGroup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>删除分组，只删除分组，不删除其中的联系人</description>
+</snippet>

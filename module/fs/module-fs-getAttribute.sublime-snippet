@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+fs.getAttribute({
+    path: '${1:file_path}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'获取属性成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-getAttribute</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>获取指定路径下文件的属性</description>
+</snippet>

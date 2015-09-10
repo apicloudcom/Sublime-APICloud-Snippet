@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+api.openContacts(
+    function(ret,err){
+        if(ret.status){
+            var msg = '姓名:'+ret.name+'--电话:'+ret.phone;
+            api.alert({msg:msg});
+        }else{
+            api.alert({msg:err.msg});
+        };            
+    }
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-openContacts</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>在应用内打开系统通讯录界面选择联系人</description>
+</snippet>

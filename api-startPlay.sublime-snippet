@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+api.startPlay({
+    path: '${1:music_path}'
+},function(){
+    api.alert({msg: '${2:finish play}'});
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-startPlay</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>开始播放音频</description>
+</snippet>

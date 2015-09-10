@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+contacts.delete({
+    ids: [${1:1}, ${2:2}]
+}, function(ret, err){
+    if(ret.status) {
+        api.alert({msg:'删除成功'});
+    }else{
+        api.alert({msg:'删除失败'});
+    } 
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contacts-delete</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>从通讯录删除一个或多个联系人</description>
+</snippet>

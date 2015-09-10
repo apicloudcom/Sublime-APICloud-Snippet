@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+online
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ae-online</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>监听设备连接到网络的事件</description>
+</snippet>

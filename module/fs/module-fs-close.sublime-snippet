@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+fs.close({
+    fd: ${1:fd}
+},function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'close操作成功'});
+    }else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭文件</description>
+</snippet>

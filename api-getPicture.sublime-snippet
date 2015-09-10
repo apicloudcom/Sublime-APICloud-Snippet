@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+api.getPicture({
+    sourceType: '${1:source_type}',
+    encodingType: '${2:encoding_type}',
+    mediaValue: '${3:media_type}',
+    destinationType: '${4:destination_type}',
+    allowEdit: ${5:true},
+    quality: ${6:50},
+    targetWidth: ${7:100},
+    targetHeight: ${8:100},
+    saveToPhotoAlbum: ${9:false}
+}, function(ret, err){ 
+    if (ret) {
+        api.alert({msg:ret.data});
+    } else{
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-getPicture</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>通过系统相册或拍照获取图片和视频</description>
+</snippet>

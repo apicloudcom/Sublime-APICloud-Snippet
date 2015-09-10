@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+api.ajax({
+    url: '${1:ajax_url}',
+    method: '${2:post}',
+    timeout: ${3:30},
+    dataType: '${4:json}',
+    returnAll:${5:false},
+    data:{
+        values: {'${6:key}': '${7:value}'},
+        files: {file: '${8:file_url}'}
+    }
+},function(ret,err){
+    if (ret) {
+        ${9:// TODO }
+    }else {
+        api.alert({
+            msg:('错误码：'+err.code+'；错误信息：'+err.msg+'网络状态码：'+err.statusCode)
+        });
+    };
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-ajax</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>跨域异步请求，支持文件上传</description>
+</snippet>

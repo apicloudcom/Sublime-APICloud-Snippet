@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+api.openFrame({
+    name: '${1:framebody}',
+    url: './${1:framebody}.html',
+    bounces: false,
+    rect: {
+    	x: ${2:0},
+    	y: ${3:0},
+    	w: '${4:auto}',
+    	h: '${5:auto}'
+    }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>api-openFrame</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>打开frame</description>
+</snippet>

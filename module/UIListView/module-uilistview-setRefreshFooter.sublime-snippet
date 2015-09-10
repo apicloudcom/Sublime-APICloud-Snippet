@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+uilistview.setRefreshFooter({
+    loadingImg: '${1:loading_image_path}',
+    bgColor: '${2:bg_color}',
+    textColor: '${3:text_color}',
+    textDown: '${4:text_down}',
+    textUp: '${5:text_up}',
+    showTime: ${6:true}
+}, function(ret, err){
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-setRefreshFooter</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置上拉加载</description>
+</snippet>

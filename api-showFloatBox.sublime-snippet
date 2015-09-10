@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+api.showFloatBox({
+    iconPath: '${1:icon_path}',
+    duration: ${2:3000}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-showFloatBox</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>展示一个悬浮框，浮动在屏幕上，点击时关闭当前widget</description>
+</snippet>

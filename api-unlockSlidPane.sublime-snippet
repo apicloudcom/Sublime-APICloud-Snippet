@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+api.unlockSlidPane();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-unlockSlidPane</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>解锁SlidPane，使其能跟随手指滑动而移动</description>
+</snippet>

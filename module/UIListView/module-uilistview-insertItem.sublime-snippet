@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+uilistview.insertItem({
+    index: ${1:2},
+    data:{
+        imgPath: '${2:image_path}',
+        title: '${3:title}',
+        subTitle: '${4:sub_title}',
+        remark: '${5:remark_note}'
+    }
+}, function(ret, err){
+    if(ret.status){
+        alert('插入数据成功');
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-insertItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据索引向某一条列表插入数据</description>
+</snippet>

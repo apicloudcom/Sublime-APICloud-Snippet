@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+uilistview.setSwipeBtns({
+    index: ${1:0},
+    btns: [{
+        bgColor: '${2:bg_color}',
+        activeBgColor: '${3:active_color}',
+        width: ${4:70},
+        title: '${5:title}',
+        titleSize: ${6:12},
+        titleColor: '${7:title_color}',
+        icon: '${8:icon_path}',
+        iconWidth: ${9:20}
+    }]
+}, function(ret, err){
+    alert(JSON.stringify(ret));
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uilistview-setSwipeBtns</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置侧滑显示出来的按钮</description>
+</snippet>

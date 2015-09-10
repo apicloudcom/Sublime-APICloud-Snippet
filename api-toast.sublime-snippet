@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+api.toast({
+    msg: '${1:msg}',
+    duration: ${2:2000},
+    location: '${3:bottom}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-toast</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出一个定时自动关闭的提示框</description>
+</snippet>

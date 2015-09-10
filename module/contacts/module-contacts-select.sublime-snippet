@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+contacts.select(function(ret, err){
+    if(ret.status){
+	alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contacts-select</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开系统通讯录界面，选择单个联系人，返回已选的联系人信息</description>
+</snippet>

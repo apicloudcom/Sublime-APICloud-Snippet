@@ -1,0 +1,36 @@
+<snippet>
+    <content><![CDATA[
+api.animation({
+    name: '${1:frame_name}',
+    delay: ${2:1000},
+    duration: ${3:3000},
+    curve: '${4:ease_in}',
+    repeatCount: ${5:2},
+    autoreverse: ${6:true},
+    alpha: ${7:0.6},
+    translation:{
+        x: ${8:0},
+        y: ${9:100},
+        z: ${10:0}
+    }, 
+    scale:{
+        x: ${11:1.2},
+        y: ${12:1},
+        z: ${13:1}
+    },
+    rotation:{
+        degree:${14:45},
+        x: ${15:0},
+        y: ${16:0},
+        z: ${17:1}
+    }
+}, function() {
+    api.alert({msg: '动画结束'});
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-animation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>frame动画，支持平移，缩放，旋转和透明度变化</description>
+</snippet>

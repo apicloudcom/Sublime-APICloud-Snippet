@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+api.operator
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-operator</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>运营商名称，若未获取到则返回none</description>
+</snippet>

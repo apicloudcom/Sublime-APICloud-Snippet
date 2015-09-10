@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+api.call({
+    type: '${1:call_type}',
+    number: '${2:number}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-call</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>拨打电话或进行faceTime</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+api.startSensor({
+    type: '${1:sensor_type}'
+}, function(ret, err){
+    if(ret.status){
+    } else{
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-startSensor</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>开启传感器</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+uiscrollpicture.addEventListener({
+    name: 'scroll'
+}, function(ret, err){
+    //滑动图片时的回调
+    if(ret.status){
+        alert(${1:ret.index});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uiscrollpicture-addEventListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>事件监听</description>
+</snippet>

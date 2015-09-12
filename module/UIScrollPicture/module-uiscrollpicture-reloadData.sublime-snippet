@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+uiscrollpicture.reloadData({
+    data: {
+        paths: ['${1:image_path1}', '${2:image_path2}', '${3:image_path3}'],
+        captions: ['${4:title1}', '${5:title2}', '${6:title3}']
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uiscrollpicture-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>更新模块数据</description>
+</snippet>

@@ -1,0 +1,55 @@
+<snippet>
+    <content><![CDATA[
+uisearchbar.open({
+    placeholder: '${1:请输入搜索关键字}',
+    historyCount: ${2:10},
+    showRecordBtn: ${3:true},
+    texts: {
+        cancelText: '${4:取消}',
+        clearText: '${5:清除搜索记录}'
+    },
+    styles: {
+        navBar: {
+            bgColor: '${6:bg_color}',
+            borderColor: '${7:border_color}'
+        },
+        searchBox: {
+            bgImg: '${8:bg_image_path}',
+            color: '${9:color}',
+            height: ${10:44}
+        },
+        cancel: {
+            bg: '${11:bg}',
+            color: '${12:color}',
+            size: ${13:16} 
+        },
+        list: {
+            color: '${14:color}',
+            bgColor: '${15:bg_color}',
+            borderColor: '${16:border_color}',
+            size: ${17:16}
+        },
+        clear: {
+            color: '${18:color}',
+            borderColor: '${19:border_color}',
+            size: ${17:16}
+        }
+    }
+}, function(ret){
+    if(ret.eventType == 'record'){
+        api.alert({msg: '点击了录音按钮'});
+    } else if(ret.eventType == 'search') {
+        api.alert({msg: '点击了搜索按钮'});
+    } else if(ret.eventType == 'history') {
+        api.alert({msg: '点击了历史记录'});
+    } else {
+        alert(ret.text);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uisearchbar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开搜索页面</description>
+</snippet>

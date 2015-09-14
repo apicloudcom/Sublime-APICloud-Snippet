@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+uichatbox.insertValue({
+    index: ${1:10},
+    msg: '${2:msg}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uichatbox-insertValue</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>向聊天输入框的指定位置插入内容</description>
+</snippet>

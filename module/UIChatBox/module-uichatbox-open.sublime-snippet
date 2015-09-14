@@ -1,0 +1,71 @@
+<snippet>
+    <content><![CDATA[
+uichatbox.open({
+    placeholder: '${1:placeholder}',
+    maxRows: ${2:4},
+    emotionPath: '${3:emotion_path}',
+    texts: {
+        recordBtn: {
+            normalTitle: '${4:normal_title}',
+            activeTitle: '${5:active_title}'
+        }
+    },
+    styles: {
+        inputBar: {
+            borderColor: '${6:border_color}',
+            bgColor: '${7:bg_color}'
+        },
+        inputBox: {
+            borderColor: '${8:border_color}',
+            bgColor: '${9:bg_color}'
+        },
+        emotionBtn: {
+            normalImg: '${10:emotion_button_path}'
+        },
+        extrasBtn: {
+            normalImg: '${11:extras_button_path}'
+        },
+        keyboardBtn: {
+            normalImg: '${12:keyboard_button_path}'
+        },
+        speechBtn: {
+            normalImg: '${13:speech_button_path}'
+        },
+        recordBtn: {
+            normalBg: '${14:normal_bg}',
+            activeBg: '${15:active_bg}',
+            color: '${16:color}',
+            size: ${17:14}
+        },
+        indicator: {
+            target: '${18:target}',
+            color: '${19:color}',
+            activeColor: '${20:active_color}'
+        }
+    },
+    extras: {
+        titleSize: ${21:10},
+        titleColor: '${22:title_color}',
+        btns: [{
+            title: '${23:title}',
+            normalImg: '${24:normal_image_path}',
+            activeImg: '${25:active_image_path}'
+        }]
+    }
+}, function(ret){
+    //点击附加功能面板
+    if(ret.eventType == 'clickExtras'){
+        alert("用户点击了第"+ ret.index +"个按钮");
+    }
+    //点击发送按钮
+    if(ret.eventType == 'send'){
+        alert('输入的内容是：'+ ret.msg);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uichatbox-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开聊天输入框</description>
+</snippet>

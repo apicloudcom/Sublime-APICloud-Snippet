@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+uisearchbar.setText({
+    text: '${1:设置语音识别的文本}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uisearchbar-setText</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置搜索框的文字</description>
+</snippet>

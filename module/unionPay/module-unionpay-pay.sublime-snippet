@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+api.ajax({
+    url: '${1:http://202.101.25.178:8080/sim/gettn}',//从银联测试服务器上获取tn号
+    method: '${2:post}',
+    dataType: '${3:text}',
+    returnAll: ${4:false},
+    data:{
+        values: {OrderID: '${5:20150811000001}'}//提交商户后台生成的订单ID 
+    }
+},function(ret,err){
+    if (ret) {
+        unPay.pay({
+            tn: ret,
+            mode: ${6:true}
+        }, function(ret, err){
+           api.alert({msg:JSON.stringify(ret)});
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>unpay-pay</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>按交易流水号支付订单</description>
+</snippet>

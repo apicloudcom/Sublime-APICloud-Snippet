@@ -1,0 +1,30 @@
+<snippet>
+    <content><![CDATA[
+wxPay.pay({
+     description: '${1:description}',
+     totalFee: '${2:total_fee}',
+     tradeNo: '${3:trade_number}',
+     spbillCreateIP: '${4:spbill_create_ip}',
+     deviceInfo: '${5:device_info}',
+     detail: '${6:detail}',
+     attach: '${7:attach}',
+     feeType: '${8:fee_type}',
+     timeStart: '${9:time_start}',
+     timeExpire: '${10:time_expire}',
+     goodsTag: '${11:goods_tag}',
+     productId: '${12:product_id}',
+     openId: '${13:openid}'
+},function(ret, err){
+     if(ret.status){
+         alert(ret.result);
+     }else{
+         alert(err.code);
+     }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wxpay-pay</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>支付订单</description>
+</snippet>

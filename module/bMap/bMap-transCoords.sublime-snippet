@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+bMap.transCoords({
+    type: '${1:common}',//gps/common
+    lon: ${2:116.351},
+    lat: ${3:39.283},
+    mcode: '${4:0B:13:25:D7:85:46:0A:67:12:F3:29:88:64:56:63:10:7A:9C:C4:59;com.apicloud.A6985734480360}'//安全码（数字签名+;+包名）
+}, function(ret, err){
+    alert(JSON.stringify(ret));
+});
+]]></content>
+    <tabTrigger>bmap-transCoords</tabTrigger>
+    <scope>source.js</scope>
+    <description>将其它类型的地理坐标转换为百度坐标。无需调用open接口即可使用</description>
+</snippet>

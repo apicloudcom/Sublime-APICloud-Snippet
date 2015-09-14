@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+bMap.addBillboard({
+    id: ${1:4},
+    coords: {
+        lon: ${2:116.233},
+        lat: ${3:39.134}
+    },
+    bgImg: '${4:widget://image/bMapTest.png}',
+    content: {
+        title: '${5:大标题大标题大标题大标题}',
+        subTitle: '${6:概述内容概述内容概述内容}',
+        illus: '${7:http://ico.ooopic.com/ajax/iconpng/?id=145044.png}'
+    },
+    styles: {
+        titleColor: '${8:#000}',
+        titleSize: ${9:16},
+        subTitleColor: '${10:#999}',
+        subTitleSize: ${11:12},
+        illusAlign: '${12:left}'//left/right
+    }
+}, function(ret){
+    if(ret){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-addBillboard</tabTrigger>
+    <scope>source.js</scope>
+    <description>在地图上添加布告牌</description>
+</snippet>

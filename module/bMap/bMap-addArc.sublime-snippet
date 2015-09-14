@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+bMap.addArc({
+    id: ${1:3},
+    styles: {
+        borderColor: '${2:#FF0000}',
+        borderWidth: ${3:3}
+    },
+    points: [{
+        lon: ${4:116.39432327},
+        lat: ${5:39.98963192}
+    },{
+        lon: ${6:116.49432328},
+        lat: ${7:39.98963192}
+    },{
+        lon: ${8:116.39432327},
+        lat: ${9:39.88933191}
+    }]
+});
+]]></content>
+    <tabTrigger>bmap-addArc</tabTrigger>
+    <scope>source.js</scope>
+    <description>在地图上添加弧形</description>
+</snippet>

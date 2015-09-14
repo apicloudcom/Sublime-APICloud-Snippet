@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+bMap.addImg({
+    id: ${1:5},
+    imgPath: '${2:widget://res/over_img.png}',
+    lbLon: ${3:116.39432327},
+    lbLat: ${4:39.88933191},
+    rtLon: ${5:116.49432328},
+    rtLat: ${6:39.98963192},
+    opacity: ${7:0.8}//0~1
+});
+]]></content>
+    <tabTrigger>bmap-addImg</tabTrigger>
+    <scope>source.js</scope>
+    <description>在地图上添加图片</description>
+</snippet>

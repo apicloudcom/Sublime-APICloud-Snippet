@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+bMap.searchInCity({
+    city: '${1:北京}',
+    keyword: '${2:学校}',
+    pageIndex: ${3:0},
+    pageCapacity: ${4:20}//1~50
+}, function(ret){
+    if(ret.status){
+       alert(JSON.stringify(ret)); 
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-searchInCity</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据单个关键字搜索兴趣点，无需调用open接口即可搜索</description>
+</snippet>

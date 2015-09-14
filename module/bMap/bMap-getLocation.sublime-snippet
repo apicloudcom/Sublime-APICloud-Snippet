@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+bMap.getLocation({
+    accuracy: '${1:10m}',//10m/100m/1km/3km
+    autoStop: ${2:true},
+    filter: ${3:1}
+}, function(ret, err){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(err.code);
+    }
+});
+]]></content>
+    <tabTrigger>bmap-getLocation</tabTrigger>
+    <scope>source.js</scope>
+    <description>开始定位，无需调用open接口即可定位</description>
+</snippet>

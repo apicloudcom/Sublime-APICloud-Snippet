@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+bMap.setAnnotationCoords({
+    id: ${1:2},
+    lon: ${2:116.39},
+    lat: ${3:40.209}
+});
+]]></content>
+    <tabTrigger>bmap-setAnnotationCoords</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置某个已添加标注的经纬度</description>
+</snippet>

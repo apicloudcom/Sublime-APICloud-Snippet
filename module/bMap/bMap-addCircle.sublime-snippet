@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+bMap.addCircle({
+    id: ${1:4},
+    center: {
+        lon: ${2:116.39432327},
+        lat: ${3:39.98963192}
+    },
+    radius: ${4:500},
+    styles: {
+        borderColor: '${5:#FF0000}',
+        borderWidth: ${6:3},
+        fillColor:'${7:#0000ff}'
+    }
+});
+]]></content>
+    <tabTrigger>bmap-addCircle</tabTrigger>
+    <scope>source.js</scope>
+    <description>在地图上添加圆形</description>
+</snippet>

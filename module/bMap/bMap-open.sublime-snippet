@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+bMap.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:320},
+        h: ${4:300}
+    },
+    center: {
+        lon: ${5:116.4021310000},
+        lat: ${6:39.9994480000}
+    },
+    zoomLevel: ${7:10},//3~18
+    showUserLocation: ${8:true},
+    fixedOn: '${9:}',//winName/frameName
+    fixed: ${10:true}
+}, function(ret){
+    if(ret.status){
+        alert('地图打开成功');
+    }
+});
+]]></content>
+    <tabTrigger>bmap-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开百度地图</description>
+</snippet>

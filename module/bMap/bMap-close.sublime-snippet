@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bMap.close();
+]]></content>
+    <tabTrigger>bmap-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭百度地图</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+bMap.showUserLocation({
+    isShow: ${1:true},
+    trackingMode: '${2:none}'//none/follow/compass
+});
+]]></content>
+    <tabTrigger>bmap-showUserLocation</tabTrigger>
+    <scope>source.js</scope>
+    <description>是否在地图上显示用户位置，会自动移动地图可视区域中心点到用户当前坐标位置，自带地图移动动画效果</description>
+</snippet>

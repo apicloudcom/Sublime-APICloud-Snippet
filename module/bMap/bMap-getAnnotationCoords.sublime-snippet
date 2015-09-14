@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+bMap.getAnnotationCoords({
+    id: ${1:2}
+}, function(ret){
+    if(ret){
+        api.alert({msg:JSON.stringify(ret)});
+    }
+});
+]]></content>
+    <tabTrigger>bmap-getAnnotationCoords</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取指定标注的经纬度</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+bMap.setBubble({
+    id: ${1:2},
+    bgImg: '${2:widget://res/bubble_bg.png}',
+    content: {
+        title: '${3:大标题}',
+        subTitle: '${4:概述内容}',
+        illus: '${5:http://ico.ooopic.com/ajax/iconpng/?id=145044.png}'
+    },
+    styles: {
+        titleColor: '${6:#000}',
+        titleSize: ${7:16},
+        subTitleColor: '${8:#999}',
+        subTitleSize: ${9:12},
+        illusAlign: '${10:left}'//left/right
+    }
+}, function(ret){
+    if(ret){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-setBubble</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置点击标注时弹出的气泡信息</description>
+</snippet>

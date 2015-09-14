@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.setOverlook({
+    degree: ${1:-30}//-45~0
+});
+]]></content>
+    <tabTrigger>bmap-setOverlook</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置百度地图俯视角度，此接口自带动画效果</description>
+</snippet>

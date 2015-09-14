@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+bMap.getDistance({
+    start: {
+        lon: ${1:106.486654},
+        lat: ${2:29.490295}
+    },
+    end: {
+        lon: ${3:106.581515},
+        lat: ${4:29.615467}
+    }
+},function(ret){
+    if(ret.status){
+        alert(ret.distance);
+    }
+});
+]]></content>
+    <tabTrigger>bmap-getDistance</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取地图两点之间的距离，无需调用open接口即可使用</description>
+</snippet>

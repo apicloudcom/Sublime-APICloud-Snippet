@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+bMap.getNameFromCoords({
+    lon: ${1:116.384767},
+    lat: ${2:39.989539}
+},function(ret,err){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-getNameFromCoords</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据经纬度查找地址信息，无需调用open接口即可使用</description>
+</snippet>

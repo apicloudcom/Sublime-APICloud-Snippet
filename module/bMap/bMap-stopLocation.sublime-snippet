@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bMap.stopLocation();
+]]></content>
+    <tabTrigger>bmap-stopLocation</tabTrigger>
+    <scope>source.js</scope>
+    <description>停止定位</description>
+</snippet>

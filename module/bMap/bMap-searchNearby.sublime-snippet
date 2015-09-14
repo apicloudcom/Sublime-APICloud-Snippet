@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+bMap.searchNearby({
+    keyword: '${1:KTV}',
+    lon: ${2:116.384767},
+    lat: ${3:39.989539},
+    radius: ${4:2000},
+    pageIndex: ${5:0},
+    pageCapacity: ${6:10}//1~50
+}, function(ret,err){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+}); 
+]]></content>
+    <tabTrigger>bmap-searchNearby</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据单个关键字在圆形区域内搜索兴趣点，无需调用open接口即可搜索</description>
+</snippet>

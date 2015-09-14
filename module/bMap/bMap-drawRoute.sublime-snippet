@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+bMap.drawRoute({
+    id: ${1:1},
+    index: ${2:0},
+    styles: {
+        start: {
+            icon: '${3:widget://image/bmap_start.png}'
+        },
+        end: {
+            icon: '${4:widget://image/bmap_end.png}'
+        }
+    }
+}, function(ret){
+   api.alert({msg:JSON.stringify(ret)});
+});
+]]></content>
+    <tabTrigger>bmap-drawRoute</tabTrigger>
+    <scope>source.js</scope>
+    <description>在地图上显示指定路线，调用本接口前，必须保证已经调用过接口open和searchRoute</description>
+</snippet>

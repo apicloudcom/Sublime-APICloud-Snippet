@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.setRotation({
+    degree: ${1:30}//-180~180
+});
+]]></content>
+    <tabTrigger>bmap-setRotation</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置百度地图旋转角度，此接口自带动画效果</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+bMap.searchRoute({
+    id: ${1:1},
+    type: '${2:drive}',//transit/drive/walk
+    policy: '${3:ecar_fee_first}',//ecar_fee_first/ecar_dis_first/ecar_time_first/ecar_avoid_jam/ebus_no_subway/ebus_time_first/ebus_transfer_first/ebus_walk_first
+    start: {
+        lon: ${4:116.403838},
+        lat: ${5:39.914437}
+    },
+    end: {
+        lon: ${6:116.384852},
+        lat: ${7:39.989576}
+    }
+}, function(ret, err){
+    if(ret.status){
+        api.alert({msg:JSON.stringify(ret)});
+    }
+});
+]]></content>
+    <tabTrigger>bmap-searchRoute</tabTrigger>
+    <scope>source.js</scope>
+    <description>搜索路线方案，无需调用open接口即可使用</description>
+</snippet>

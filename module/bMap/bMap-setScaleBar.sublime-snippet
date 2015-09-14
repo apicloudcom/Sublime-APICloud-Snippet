@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+bMap.setScaleBar({
+    show: ${1:true},
+    position: {
+      x: ${2:100},
+      y: ${3:100}
+    }
+});
+]]></content>
+    <tabTrigger>bmap-setScaleBar</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置百度地图比例尺</description>
+</snippet>

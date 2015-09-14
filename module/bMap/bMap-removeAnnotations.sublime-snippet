@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.removeAnnotations({
+    ids: [${1:1,3,5,7}]
+});
+]]></content>
+    <tabTrigger>bmap-removeAnnotations</tabTrigger>
+    <scope>source.js</scope>
+    <description>移除指定id的标注或布告牌</description>
+</snippet>

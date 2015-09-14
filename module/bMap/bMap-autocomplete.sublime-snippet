@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+bMap.autocomplete({
+    keyword: '${1:北京西站}',
+    city: '${2:北京}'
+}, function(ret){
+    if(ret.status){
+        alert(JSON.stringify(ret.results)); 
+    }else{
+        alert(JSON.stringify(err));
+    }
+}); 
+]]></content>
+    <tabTrigger>bmap-autocomplete</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据关键字返回建议搜索关键字，无需调用open接口即可搜索</description>
+</snippet>

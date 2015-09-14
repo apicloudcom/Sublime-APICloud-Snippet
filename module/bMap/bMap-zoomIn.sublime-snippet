@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bMap.zoomIn();
+]]></content>
+    <tabTrigger>bmap-zoomIn</tabTrigger>
+    <scope>source.js</scope>
+    <description>缩小地图，放大视角，放大一级比例尺，此接口自带动画效果</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.removeRoute({
+    ids: [${1:1, 2, 3}]
+});
+]]></content>
+    <tabTrigger>bmap-removeRoute</tabTrigger>
+    <scope>source.js</scope>
+    <description>移除指定id的路线</description>
+</snippet>

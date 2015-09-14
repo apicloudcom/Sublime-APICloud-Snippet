@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+bMap.addEventListener({
+    name: '${1:longPress}'//longPress/viewChange/click/dbclick
+},function(ret){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-addEventListener</tabTrigger>
+    <scope>source.js</scope>
+    <description>监听地图相关事件</description>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+bMap.searchInBounds({
+    keyword: '${1:图书馆}',
+    lbLon: ${2:112.47723797622677},
+    lbLat: ${3:34.556480000000015},
+    rtLon: ${4:109.77539000000002},
+    rtLat: ${5:33.43144},
+    pageIndex: ${5:0},
+    pageCapacity: ${6:10}//1~50
+},function(ret,err){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+}); 
+]]></content>
+    <tabTrigger>bmap-searchInBounds</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据单个关键字在方形区域内搜索兴趣点，无需调用open接口即可搜索</description>
+</snippet>

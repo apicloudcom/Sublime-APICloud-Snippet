@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+bMap.getCoordsFromName({
+    city: '${1:北京}',
+    address: '${2:天安门}'
+},function(ret,err){
+    if(ret.status){
+       alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-getCoordsFromName</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据地址查找经纬度，无需调用open接口即可使用</description>
+</snippet>

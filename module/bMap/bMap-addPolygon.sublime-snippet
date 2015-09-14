@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+bMap.addPolygon({
+    id: ${1:2},
+    styles: {
+        borderColor: '${2:#FF0000}',
+        borderWidth: ${3:3},
+        fillColor: '${4:#0000ff}'
+    },
+    points: [{
+        lon: ${5:116.39432327},
+        lat: ${6:39.98963192}
+    },{
+        lon: ${7:116.49432328},
+        lat: ${8:39.98963192}
+    },{
+        lon: ${9:116.39432327},
+        lat: ${10:39.88933191}
+    }]
+});
+]]></content>
+    <tabTrigger>bmap-addPolygon</tabTrigger>
+    <scope>source.js</scope>
+    <description>在地图上添加多边形</description>
+</snippet>

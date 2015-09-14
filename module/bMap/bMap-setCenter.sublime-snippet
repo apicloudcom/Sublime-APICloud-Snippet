@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+bMap.setCenter({
+    coords: {
+        lon: ${1:116.404},
+        lat: ${2:39.915}
+    },
+    animation: ${3:false}
+});
+]]></content>
+    <tabTrigger>bmap-setCenter</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据经纬度设置百度地图中心点，此接口可带动画效果</description>
+</snippet>

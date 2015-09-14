@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.removeBusRoute({
+    ids:[${1:1}]
+});
+]]></content>
+    <tabTrigger>bmap-removeBusRoute</tabTrigger>
+    <scope>source.js</scope>
+    <description>移除地图上显示的公交、地铁线路</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+bMap.setRegion({
+    lbLon: ${1:116.027143},
+    lbLat: ${2:39.772348},
+    rtLon: ${3:116.832025},
+    rtLat: ${4:40.126349},
+    animation: ${5:true}
+});
+]]></content>
+    <tabTrigger>bmap-setRegion</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置地图显示范围（矩形区域），此接口可带动画效果</description>
+</snippet>

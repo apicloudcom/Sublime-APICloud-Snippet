@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+bMap.getRegion(function(ret){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-getRegion</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取地图显示范围（矩形区域）</description>
+</snippet>

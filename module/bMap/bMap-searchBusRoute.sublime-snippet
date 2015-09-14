@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+bMap.searchBusRoute({
+    city: '${1:北京}',
+    line: '${2:110}'
+}, function(ret, err){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <tabTrigger>bmap-searchBusRoute</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据关键字搜索公交、地铁线路，无需调用open接口即可搜索</description>
+</snippet>

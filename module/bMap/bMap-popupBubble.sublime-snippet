@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.popupBubble({
+    id: ${1:2}
+});
+]]></content>
+    <tabTrigger>bmap-popupBubble</tabTrigger>
+    <scope>source.js</scope>
+    <description>弹出指定标注的气泡</description>
+</snippet>

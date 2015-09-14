@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+bMap.drawBusRoute({
+    id: ${1:1},
+    city: '${2:city}',
+    uid: '${3:uid}',
+    nodeShow: ${4:false}
+},function(ret){
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});     
+]]></content>
+    <tabTrigger>bmap-drawBusRoute</tabTrigger>
+    <scope>source.js</scope>
+    <description>根据searchBusRoute搜索返回的uid查询线路详情并绘制在地图上</description>
+</snippet>

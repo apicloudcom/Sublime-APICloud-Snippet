@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.setZoomLevel({
+    level: ${1:10}//3~18
+});
+]]></content>
+    <tabTrigger>bmap-setZoomLevel</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置百度地图缩放等级，此接口自带动画效果</description>
+</snippet>

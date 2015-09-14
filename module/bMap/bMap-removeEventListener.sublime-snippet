@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bMap.removeEventListener({
+    name: '${1:longPress}'//longPress/viewChange/click/dbclick
+});
+]]></content>
+    <tabTrigger>bmap-removeEventListener</tabTrigger>
+    <scope>source.js</scope>
+    <description>停止监听地图相关事件</description>
+</snippet>

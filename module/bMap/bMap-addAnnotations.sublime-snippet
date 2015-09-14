@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+bMap.addAnnotations({
+    annotations: [{
+        id: ${1:1}, lon: ${2:116.297}, lat: ${3:40.109}
+    },
+    {
+        id: ${4:2}, lon: ${5:116.29}, lat: ${6:40.109}
+    },
+    {
+        id: ${7:3}, lon: ${8:116.298}, lat: ${9:40.11}
+    }],
+    icon: '${10:widget://}',
+    draggable: ${11:true}
+}, function(ret){
+    if(ret){
+        alert(ret.id);
+    }
+});
+]]></content>
+    <tabTrigger>bmap-addAnnotations</tabTrigger>
+    <scope>source.js</scope>
+    <description>在地图上添加标注信息</description>
+</snippet>

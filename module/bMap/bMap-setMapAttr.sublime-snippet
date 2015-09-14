@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+bMap.setMapAttr({
+    type: '${1:standard}',//standard/satellite/trafficOn/trafAndsate
+    zoomEnable: ${2:true},
+    scrollEnable: ${3:true},
+});
+]]></content>
+    <tabTrigger>bmap-setMapAttr</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置百度地图相关属性</description>
+</snippet>

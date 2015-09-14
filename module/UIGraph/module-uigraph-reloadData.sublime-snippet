@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+uigraph.reloadData({
+    id: ${1:1},
+    type:'${2:prepend}',
+    data: [{
+        xAxis:'${3:五月}',
+        yAxis:${4:45}
+    },{
+        xAxis:'${5:六月}',
+        yAxis:${6:70}
+    },{
+        xAxis:'${7:七月}',
+        yAxis:${8:20}
+    },{
+        xAxis:'${9:八月}',
+        yAxis:${10:85}
+    }]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uigraph-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>更新曲线图的数据</description>
+</snippet>

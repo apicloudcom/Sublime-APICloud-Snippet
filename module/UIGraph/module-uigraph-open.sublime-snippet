@@ -1,0 +1,56 @@
+<snippet>
+    <content><![CDATA[
+uigraph.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:320},
+        h: ${4:220}
+    },
+    yAxis: {
+        max: ${5:80},
+        min: ${6:0},
+        step: ${7:20},
+        unit: '${8:%}'
+    },
+    data: [{
+        xAxis: '${9:一月}',
+        yAxis: ${10:15}
+    },{
+        xAxis: '${11:二月}',
+        yAxis: ${12:65}
+    },{
+        xAxis: '${13:三月}',
+        yAxis: ${14:55}
+    },{
+        xAxis: '${15:四月}',
+        yAxis: ${16:0}
+    }],
+    styles: {
+        bg: '${17:#fff}',
+        axisColor: '${18:#A9A9A9}',
+        nodeColor: '${19:#000}',
+        lineColor: '${20:#1E90FF}',
+        lineWidth: ${21:1},
+        markColor: '${22:#000}',
+        markSize:  ${23:16},
+        bubble: {
+            bgImg: '${24:}',
+            size:  ${25:14}
+        }
+    },
+    showNode: ${26:true},
+    fixedOn: '${27:}',
+    fixed: ${28:true}
+}, function(ret, err){
+    if(ret){
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uigraph-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开贝塞尔曲线模块</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+uiinput.value({
+    msg: '${1:设置输入框的值}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uiinput-value</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置输入框的内容</description>
+</snippet>

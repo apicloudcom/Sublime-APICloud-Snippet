@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+        uiinput.open({
+             rect: {
+                x: ${1:0},
+                y: ${2:0},
+                w: ${3:320},
+                h: ${4:40}
+            },
+            styles: {
+                bgColor:'${5:#fff}',
+                size: ${6:14},
+                color:'${7:#000}'
+                placeholder: {
+                    color:'${8:#ccc}'
+                }
+            },
+            maxRows: ${9:4},
+            placeholder:'${10:这是一个输入框}',
+            keyboardType:'${11:number}',
+            fixedOn: '${12:}'
+        }, function(ret){
+            if(ret.status){
+                alert(ret.eventType);
+            }
+        });
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uiinput-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开输入框，注意：调用 open 接口的元素，不能加 tapmode 属性</description>
+</snippet>

@@ -1,24 +1,22 @@
 <snippet>
     <content><![CDATA[
-shakeview.open({
+shakeView.open({
     x: ${1:0},
     y: ${2:0},
     w: ${3:320},
     h: ${4:480},
-    type:'${5:up_down}',
-    anim:{
-        time:${6:3},
-        isShake:"${7:true}"
+    type: '${5:up_down}',
+    img: {
+        leftUp: '${6:left_up_image_path}',
+        rightDown: '${7:right_down_image_path}',
+        bg: '${8:bg_image_path}'
     },
-    img:{
-        leftUp:"${8:left_up_image_path}",
-        rightDown:"${9:right_down_image_path}",
-        bg:"${10:bg_image_path}"
-    }
+    fixed: ${9:true},
+    fixedOn: '${10:fixedOn}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>shakeview-open</tabTrigger>
+    <tabTrigger>shakeView-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开摇一摇视图</description>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.remove({
+    ids: ${1:array}
+},function(ret,err){
+});
+]]></content>
+    <tabTrigger>downloadManager-remove</tabTrigger>
+    <scope>source.js</scope>
+    <description>删除下载</description>
+</snippet>

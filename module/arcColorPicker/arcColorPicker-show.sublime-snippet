@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcColorPicker.show();
+]]></content>
+    <tabTrigger>arcColorPicker-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示已隐藏的取色器模块视图</description>
+</snippet>

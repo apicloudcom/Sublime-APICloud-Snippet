@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+fileBrowser.close();
+]]></content>
+    <tabTrigger>fileBrowser-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭文件浏览器</description>
+</snippet>

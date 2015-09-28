@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.openManagerView({
+    title: '${1:title}'
+},function(ret){
+});
+]]></content>
+    <tabTrigger>downloadManager-openManagerView</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开下载管理界面</description>
+</snippet>

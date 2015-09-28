@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+docReader.open({
+    path:'${1:path}'
+});
+]]></content>
+    <tabTrigger>docReader-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开一个文档，文档类型可以是excel，doc，pdf等格式</description>
+</snippet>

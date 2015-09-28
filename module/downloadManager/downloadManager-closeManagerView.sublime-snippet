@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.closeManagerView();
+]]></content>
+    <tabTrigger>downloadManager-closeManagerView</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭下载管理界面</description>
+</snippet>

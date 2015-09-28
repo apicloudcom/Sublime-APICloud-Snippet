@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+audio.setProgress({
+    progress:${1:50}
+});
+]]></content>
+    <tabTrigger>audio-setProgress</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置播放位置</description>
+</snippet>

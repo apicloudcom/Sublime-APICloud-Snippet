@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+imageFilter.filter({
+    id:${1:id},
+    type:"${2:type}"
+}, function(ret, err){
+});
+]]></content>
+    <tabTrigger>imageFilter-filter</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置图片滤镜效果</description>
+</snippet>

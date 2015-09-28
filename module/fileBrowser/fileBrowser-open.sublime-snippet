@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+fileBrowser.open( 
+    function(ret,err) {
+    }
+);
+]]></content>
+    <tabTrigger>fileBrowser-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开文件浏览器</description>
+</snippet>

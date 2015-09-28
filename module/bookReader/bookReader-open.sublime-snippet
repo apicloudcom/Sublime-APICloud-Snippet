@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+bookReader.open({
+   bg:'${1:#fff}',
+   animType : '${2:curl}',
+   progress : ${3:progress},
+   textStyle : {
+        size : ${4:size},
+        color : '${5:#424242}'
+   },
+   filePath : '${6:path}'
+},function(ret, err){
+});
+]]></content>
+    <tabTrigger>bookReader-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开阅读器</description>
+</snippet>

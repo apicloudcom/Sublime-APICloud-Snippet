@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+imageClip.close();
+]]></content>
+    <tabTrigger>imageClip-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭截图</description>
+</snippet>

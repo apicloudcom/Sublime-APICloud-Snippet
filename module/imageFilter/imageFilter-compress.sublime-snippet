@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+imageFilter.compress({
+    img: "${1:Path}",
+    quality:${2:0.5},
+    scale: ${3:1},
+    save: {
+        album: ${4:true},
+        imgPath: "${5:imgPath}",
+        imgName: "${6:imgName}"
+    }
+}, function(ret, err){
+});
+]]></content>
+    <tabTrigger>imageFilter-compress</tabTrigger>
+    <scope>source.js</scope>
+    <description>图片压缩处理</description>
+</snippet>

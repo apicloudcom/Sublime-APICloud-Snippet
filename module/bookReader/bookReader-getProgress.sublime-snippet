@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bookReader.getProgress({
+     filePath:'${1:path}'
+});
+]]></content>
+    <tabTrigger>bookReader-getProgress</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取指定文件的阅读进度</description>
+</snippet>

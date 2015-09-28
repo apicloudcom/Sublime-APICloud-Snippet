@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+cardReader.open(function(ret,err){
+    if(ret.status){
+        alert(ret.cardNum+ret.expiryMonth+ret.expiryYear+ret.cvv);
+    } else{
+        alert(err.msg);
+    }
+});
+]]></content>
+    <tabTrigger>cardReader-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开信用卡识别器</description>
+</snippet>

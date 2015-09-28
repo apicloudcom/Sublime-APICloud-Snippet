@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcColorPicker.setColor({color:'${1:#675732}'});
+]]></content>
+    <tabTrigger>arcColorPicker-setColor</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置取色器的色值</description>
+</snippet>

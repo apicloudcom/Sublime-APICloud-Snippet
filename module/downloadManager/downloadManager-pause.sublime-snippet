@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.pause({
+    id: '${1:id}'
+},function(ret,err){
+});
+]]></content>
+    <tabTrigger>downloadManager-pause</tabTrigger>
+    <scope>source.js</scope>
+    <description>暂停下载</description>
+</snippet>

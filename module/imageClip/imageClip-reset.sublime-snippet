@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+imageClip.reset();
+]]></content>
+    <tabTrigger>imageClip-reset</tabTrigger>
+    <scope>source.js</scope>
+    <description>重置裁剪区域，恢复到初始打开时的状态</description>
+</snippet>

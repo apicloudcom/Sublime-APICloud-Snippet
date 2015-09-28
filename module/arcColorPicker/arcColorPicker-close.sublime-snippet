@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcColorPicker.close();
+]]></content>
+    <tabTrigger>arcColorPicker-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭取色器</description>
+</snippet>

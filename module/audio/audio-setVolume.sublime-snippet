@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+audio.setVolume({
+    volume:${1:0.5}
+});
+]]></content>
+    <tabTrigger>audio-play</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置音量</description>
+</snippet>

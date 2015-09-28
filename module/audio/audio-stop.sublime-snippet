@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+audio.stop();
+]]></content>
+    <tabTrigger>audio-stop</tabTrigger>
+    <scope>source.js</scope>
+    <description>停止播放</description>
+</snippet>

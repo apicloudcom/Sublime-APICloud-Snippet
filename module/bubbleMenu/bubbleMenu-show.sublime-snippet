@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bubbleMenu.show();
+]]></content>
+    <tabTrigger>bubblemenu-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示菜单</description>
+</snippet>

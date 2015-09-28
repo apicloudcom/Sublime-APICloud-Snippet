@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcMenu.hide({id: ${1:1}});
+]]></content>
+    <tabTrigger>arcmenu-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏已打开并显示的菜单</description>
+</snippet>

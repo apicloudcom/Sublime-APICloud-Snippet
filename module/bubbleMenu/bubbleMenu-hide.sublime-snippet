@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bubbleMenu.hide();
+]]></content>
+    <tabTrigger>bubblemenu-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏菜单</description>
+</snippet>

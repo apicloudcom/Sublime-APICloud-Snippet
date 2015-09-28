@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+netAudio.setVolume({
+    volume: ${1:0.6}//0~1
+});
+]]></content>
+    <tabTrigger>netaudio-setVolume</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置音量</description>
+</snippet>

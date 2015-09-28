@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+actionButton.open({
+    bg: '${1:}',
+    size: ${2:80},
+    items: [{bgColor: '${3:#00CED1}', title: '${4:子标题}', image: '${5:widget://res/actionSheet_icon1.png}'}],
+    pageControl: {activeColor: '${6:#778899}', inactiveColor:'${7:#DDA0DD}'},
+    matrix: {
+        row: ${8:2},
+        column: ${9:3},
+        bottomMargin: ${10:40}//0~100
+    }
+}, function(ret, err){
+    api.alert({msg:ret.index});
+});
+]]></content>
+    <tabTrigger>actionbutton-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开弹动按钮菜单</description>
+</snippet>

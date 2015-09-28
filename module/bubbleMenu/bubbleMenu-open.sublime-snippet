@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+bubbleMenu.open({
+    style: {
+        bgColor: '${1:#000000}',
+        lightColor: '${2:#009ACD}',
+        borderColor: '${3:#000000}',
+        cutLineColor: '${4:#636363}',
+        titleColor: '${5:#FFFFFF}'
+    },
+    centerX: ${6:120},
+    centerY: ${7:120},
+    btnArray: [{title: '${8:按钮一}', length: ${9:65}}]
+}, function(ret,err){
+    api.alert({msg:'点击了菜单的第'+ret.index+'个按钮'});
+});
+]]></content>
+    <tabTrigger>bubblemenu-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开菜单</description>
+</snippet>

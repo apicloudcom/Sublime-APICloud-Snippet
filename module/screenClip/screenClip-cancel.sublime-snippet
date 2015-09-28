@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+screenClip.cancel();
+]]></content>
+    <tabTrigger>screenclip-cancel</tabTrigger>
+    <scope>source.js</scope>
+    <description>取消截图</description>
+</snippet>

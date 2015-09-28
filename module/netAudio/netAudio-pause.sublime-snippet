@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+netAudio.pause();
+]]></content>
+    <tabTrigger>netaudio-pause</tabTrigger>
+    <scope>source.js</scope>
+    <description>暂停播放</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+circularMenu.hide();
+]]></content>
+    <tabTrigger>circularmenu-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏环形菜单</description>
+</snippet>

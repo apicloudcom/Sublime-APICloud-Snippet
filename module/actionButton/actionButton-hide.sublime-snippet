@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+actionButton.hide();
+]]></content>
+    <tabTrigger>actionbutton-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏菜单</description>
+</snippet>

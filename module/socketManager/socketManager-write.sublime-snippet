@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+socketManager.write({
+    sid: '${1:1}',
+    data: '${2:你好}',
+    base64: ${3:false},
+}, function(ret, err){
+    if (ret.status) {
+        api.alert({msg:'发送成功'});
+    } else{
+        api.alert({msg:'error'});
+    }
+});
+]]></content>
+    <tabTrigger>socketmanager-write</tabTrigger>
+    <scope>source.js</scope>
+    <description>往某个socket写入数据</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+circularMenu.close();
+]]></content>
+    <tabTrigger>circularmenu-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭环形菜单</description>
+</snippet>

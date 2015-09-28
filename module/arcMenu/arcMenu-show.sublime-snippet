@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcMenu.show({id: ${1:1}});
+]]></content>
+    <tabTrigger>arcmenu-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示已打开但被隐藏的菜单</description>
+</snippet>

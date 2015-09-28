@@ -1,0 +1,42 @@
+<snippet>
+    <content><![CDATA[
+socketManager.createSocket({
+    type: '${1:tcp}',//tcp/udp
+    host: '${2:192.168.1.100}',
+    port: ${3:8282},
+    timeout: ${4:5},
+    bufferSize: ${5:16},
+    charset: '${6:utf-8}',
+    returnBase64: ${7:false}
+}, function(ret, err){
+    if (ret) {
+        var state = ret.state;
+        var sid = ret.sid;
+        var data = ret.data;
+        var stateStr = '';
+        if (101 === state) {
+            stateStr = '创建成功';
+        } else if(102 === state){
+            stateStr = '连接成功';
+        } else if(103 === state){
+            stateStr = '收到消息';
+        } else if(201 === state){
+            stateStr = '创建失败';
+        } else if(202 === state){
+            stateStr = '连接失败';
+        } else if(203 === state){
+            stateStr = '异常断开';
+        } else if(204 === state){
+            stateStr = '正常断开';
+        } else if(205 === state){
+            stateStr = '发生未知错误';
+        }
+        var msg = 'sid: '+sid+'\nstate: '+stateStr+'\ndata: '+(data?data:'');
+        api.alert({msg:msg});
+    }
+});
+]]></content>
+    <tabTrigger>socketmanager-createSocket</tabTrigger>
+    <scope>source.js</scope>
+    <description>创建socket并进行连接，连接状态以及接收到数据都通过回调返回</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcMenu.close({id: ${1:1}});
+]]></content>
+    <tabTrigger>arcmenu-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭菜单</description>
+</snippet>

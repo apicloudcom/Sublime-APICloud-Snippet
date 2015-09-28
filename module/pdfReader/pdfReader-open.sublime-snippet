@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+pdfReader.open({
+    path: '${1:}'//文件路径
+});
+]]></content>
+    <tabTrigger>pdfreader-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开一个pdf格式的文档</description>
+</snippet>

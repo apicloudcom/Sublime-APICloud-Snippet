@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+arcMenu.open({
+    type: '${1:arc}',//arc/straight
+    mainMenu:{
+        x: ${2:140},
+        y: ${3:360},
+        w: ${4:50},
+        h: ${5:50},
+        img: '${6:widget://res/arcMenue_centerImg.png}',
+        imgLight: '${7:widget://res/arcMenue_centerImgLight.png}'
+    },
+    items:[{ w: ${8:40}, h: ${9:40}, img: '${10:widget://res/item1.png}', imgLight: '${11: widget://res/item1Light.png'}}],
+    startAngle: ${12:0},
+    wholeAngle: ${13:180},
+    radius: ${14:100},
+    fixed: ${15:true},
+    shieldClick: ${16:true}
+}, function(ret,err){
+    api.alert({msg:ret.id+'*'+ret.index});
+});
+]]></content>
+    <tabTrigger>arcmenu-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开弹动菜单</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+timeSelector.show();
+]]></content>
+    <tabTrigger>timeSelector-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示时间选择器</description>
+</snippet>

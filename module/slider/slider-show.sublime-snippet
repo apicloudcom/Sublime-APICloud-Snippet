@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+slider.show({
+    id: ${1:1}
+});
+]]></content>
+    <tabTrigger>slider-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示slider</description>
+</snippet>

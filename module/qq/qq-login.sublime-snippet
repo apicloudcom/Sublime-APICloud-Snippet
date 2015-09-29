@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+qq.login(function(ret, err) {
+  api.alert({
+    title: 'id和token',
+    msg: ret.openId + ret.accessToken
+  });
+});
+]]></content>
+    <tabTrigger>qq-login</tabTrigger>
+    <scope>source.js</scope>
+    <description>登陆qq</description>
+</snippet>

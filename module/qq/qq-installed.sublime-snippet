@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+qq.installed(function(ret,err){
+    if(ret.status){
+       api.alert({msg: "安装"});
+    }else{
+        api.alert({msg: "没有安装"});
+    } 
+});
+]]></content>
+    <tabTrigger>qq-installed</tabTrigger>
+    <scope>source.js</scope>
+    <description>判断当前设备是否安装了QQ客户端</description>
+</snippet>

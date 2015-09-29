@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+personalCenter.hide();
+]]></content>
+    <tabTrigger>personalCenter-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏个人中心</description>
+</snippet>

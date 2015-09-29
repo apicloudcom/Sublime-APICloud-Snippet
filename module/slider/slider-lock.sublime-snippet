@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+slider.lock({
+    id: ${1:1},
+    lock: ${2:true}
+});
+]]></content>
+    <tabTrigger>slider-lock</tabTrigger>
+    <scope>source.js</scope>
+    <description>锁定slider的值</description>
+</snippet>

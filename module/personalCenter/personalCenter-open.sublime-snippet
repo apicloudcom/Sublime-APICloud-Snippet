@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+personalCenter.open({
+    imgPath: '${1:imgPath}',
+    placeholderImg: '${2:placeholderImg}',
+    btnArray: [{
+        bgImg: '${3:bgImg}',
+        selectedImg: '${4:selectedImg}'
+    }, {
+        bgImg: '${5:bgImg}',
+        selectedImg: '${6:selectedImg}'
+    }, {
+        bgImg: '${7:bgImg}',
+        selectedImg: '${8:selectedImg}'
+    }]
+}, function(ret, err) {
+    api.alert({
+        msg: ret.click
+    });
+});
+]]></content>
+    <tabTrigger>personalCenter-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开个人中心</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+timeSelector.open({
+    x: ${1:0},
+    y: ${2:64},
+    width: ${3:320},
+    height: ${4:250}
+}, function(ret, err) {
+    var hour = ret.hour;
+    var minit = ret.minit;
+});
+]]></content>
+    <tabTrigger>timeSelector-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开时间选择器</description>
+</snippet>

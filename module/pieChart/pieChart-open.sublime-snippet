@@ -1,0 +1,40 @@
+<snippet>
+    <content><![CDATA[
+var array = new Array();
+array[0] = {
+    value: 15,
+    color: '#FF6600'
+};
+array[1] = {
+    value: 15,
+    color: '#660099'
+};
+array[2] = {
+    value: 15,
+    color: '#FF33FF'
+};
+array[3] = {
+    value: 15,
+    color: '#66CCFF'
+};
+array[4] = {
+    value: 15,
+    color: '#00CCFF'
+};
+pieChart.open({
+    x: ${1:200},
+    y: ${2:250},
+    radius: ${3:100},
+    title: '${4:标题}',
+    subTitle: '${5:子标题}',
+    elements: array
+}, function(ret, err) {
+    api.alert({
+        msg: ret.index + ret.percent
+    });
+});
+]]></content>
+    <tabTrigger>pieChart-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开饼图</description>
+</snippet>

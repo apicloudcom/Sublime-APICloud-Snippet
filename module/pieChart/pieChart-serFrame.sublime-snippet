@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+pieChart.setFrame({
+    x: ${1:10},
+    w: ${2:300}
+});
+]]></content>
+    <tabTrigger>pieChart-serFrame</tabTrigger>
+    <scope>source.js</scope>
+    <description>重设饼图的位置大小</description>
+</snippet>

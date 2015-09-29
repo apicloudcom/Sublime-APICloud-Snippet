@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+pieChart.reloadData({
+    parts: [{
+        value: '${1:2}',
+        color: '${2:#FF6600}'
+    }, {
+        value: '${3:2}',
+        color: '${4:#660099}'
+    }, {
+        value: '${5:2}',
+        color: '${6:#FF33FF}'
+    }, {
+        value: '${7:2}',
+        color: '${8:#66CCFF}'
+    }, {
+        value: '${9:2}',
+        color: '${10:#00CCFF}'
+    }]
+}, function(ret, err) {
+    api.alert({
+        msg: ret.index + ret.id
+    });
+});
+]]></content>
+    <tabTrigger>pieChart-reloadData</tabTrigger>
+    <scope>source.js</scope>
+    <description>刷新饼图数据</description>
+</snippet>

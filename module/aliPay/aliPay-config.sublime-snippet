@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+var subject = '订单名';
+var body = '订单描述';
+var amount = '10.99';
+var tradeNO = '467467655635';
+var notifyURL = 'http://www.apicloud.com';
+aliPay.config({
+  partner: '${1:12345678901234}',
+  seller: '${2:123456789024354}',
+  rsaPriKey: '${3:testKEY}',
+  rsaPubKey: '${4:testKEY}',
+  notifyURL: notifyURL
+}, function(ret, err) {
+  api.alert({
+    title: '支付结果',
+    msg: ret.msg,
+    buttons: ['确定']
+  });
+});
+]]></content>
+    <tabTrigger>aliPay-config</tabTrigger>
+    <scope>source.js</scope>
+    <description>配置支付宝信息</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+socketManager.closeSocket({
+    sid: '${1:1}'
+}, function(ret, err){
+    if (ret.status) {
+        api.alert({msg:'关闭成功'});
+    } else{
+        api.alert({msg:'error'});
+    }
+});
+]]></content>
+    <tabTrigger>socketmanager-closeSocket</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭socket连接</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+circularMenu.show();
+]]></content>
+    <tabTrigger>circularmenu-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示已隐藏的环形菜单</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+netAudio.play({
+    path: '${1:}'//网络音频资源地址
+}, function(ret,err){
+    var duration = ret.duration;
+    var current = ret.current;
+});
+]]></content>
+    <tabTrigger>netaudio-play</tabTrigger>
+    <scope>source.js</scope>
+    <description>播放网络音频</description>
+</snippet>

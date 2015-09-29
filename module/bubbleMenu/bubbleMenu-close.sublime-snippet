@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bubbleMenu.close();
+]]></content>
+    <tabTrigger>bubblemenu-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭菜单</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+actionButton.show();
+]]></content>
+    <tabTrigger>actionbutton-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示已隐藏的菜单</description>
+</snippet>

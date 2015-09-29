@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+trans.parse({
+    path:'${1:fs://1.xml}'
+}, function(ret,err){
+    if (ret) {
+        api.alert({msg:'解析成功'});
+    } else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <tabTrigger>trans-parse</tabTrigger>
+    <scope>source.js</scope>
+    <description>将xml文件或数据解析成JSON对象</description>
+</snippet>

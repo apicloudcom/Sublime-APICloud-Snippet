@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+netAudio.setProgress({
+    progress: ${1:50}//0~100
+});
+]]></content>
+    <tabTrigger>netaudio-setProgress</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置播放位置</description>
+</snippet>

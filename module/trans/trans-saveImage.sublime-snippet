@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+trans.saveImage({
+    base64Str: '${1:testStr}',
+    album: ${2:false},
+    imgPath: '${3:apicloud.png}',
+    imgName: '${4:apicloud.png}'
+}, function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'解析成功'});
+    } else {
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <tabTrigger>trans-saveImage</tabTrigger>
+    <scope>source.js</scope>
+    <description>将base64字符串保存为图片</description>
+</snippet>

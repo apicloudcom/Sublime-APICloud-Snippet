@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+actionButton.close();
+]]></content>
+    <tabTrigger>actionbutton-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭菜单</description>
+</snippet>

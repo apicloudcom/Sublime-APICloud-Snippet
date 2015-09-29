@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+zip.unarchive({
+    file: '${1:widget://res/zipTest.zip}',
+    password: '${2:123}',
+    toPath: '${3:}'
+}, function(ret,err){
+    if (ret.status) {
+        api.alert({msg:'解压成功'});
+    } else{
+        api.alert(err.msg);
+    }
+});
+]]></content>
+    <tabTrigger>zip-unarchive</tabTrigger>
+    <scope>source.js</scope>
+    <description>解压文件</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+trans.decodeImgToBase64({
+    imgPath: '${1:fs://1.png}'
+}, function(ret, err){
+    if (ret.status) {
+        api.alert({msg:ret.base64Str});
+    } else{
+        api.alert({msg:err.msg});
+    }
+});
+]]></content>
+    <tabTrigger>trans-decodeImgToBase64</tabTrigger>
+    <scope>source.js</scope>
+    <description>将图片转换为base64字符串</description>
+</snippet>

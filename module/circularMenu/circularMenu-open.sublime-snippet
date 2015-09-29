@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+circularMenu.open({
+    radius: ${1:150},
+    centerBtnRadius: ${2:50},
+    indicatorPosition: '${3:left}',//left/right/up/down
+    items: [{
+        normal: '${4:widget://res/circularMenu2.png}',
+        highlight: '${5:widget://res/circularMenu2light.png}',
+        title: '${6:按钮二}',
+        titleColor: '${7:#FF0000}'
+    }]
+}, function(ret, err){
+    var index = ret.index;
+    var pointerIndex = ret.pointerIndex;
+});
+]]></content>
+    <tabTrigger>circularmenu-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开转盘菜单</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+screenClip.open({
+    bg: '${1:#FFFFFF}',
+    cutFrame: {
+        x: ${2:10},
+        y: ${3:128},
+        w: ${4:300},
+        h: ${5:300},
+        borderColor: '${6:#696969}',
+        borderWidth: ${7:2},
+        tipsSize: ${8:12},
+        tipsPosition: '${9:center}',//center/right_up/right_down/left_up/left_down/center_up/center_down/right_center/left_center
+        tipsColor: '${10:#696969}'
+    },
+}, function(ret, err){
+    if (ret.status) {
+        api.alert({msg:'截图完成'});
+    } else{
+        api.alert({msg:err.code});
+    }
+});
+]]></content>
+    <tabTrigger>screenclip-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开一个pdf格式的文档</description>
+</snippet>

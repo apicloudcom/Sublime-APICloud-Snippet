@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[inputField.close(function(ret,err){
+    <content><![CDATA[inputField.becomeFirstResponder(function(ret,err){
     alert( JSON.stringify( ret ))
 });
 ]]></content>

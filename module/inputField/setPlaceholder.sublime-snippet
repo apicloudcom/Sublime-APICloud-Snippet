@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[inputField. setPlaceholder({
+    <content><![CDATA[inputField.setPlaceholder({
    placeholder:${1:'我是占位提示文字'}
 });
 ]]></content>

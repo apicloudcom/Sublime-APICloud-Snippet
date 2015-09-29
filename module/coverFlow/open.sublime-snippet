@@ -7,7 +7,8 @@
     bgColor:${5:'#ADD8E6',}
     paths:${6:['widget://res/a1.png','widget://res/a2.png','widget://res/a10.png']}
 },function(ret,err) {
-    });
+	alert( JSON.stringify( ret ))
+});
 ]]></content>
     <tabTrigger>coverFlow-open</tabTrigger>
     <scope>source.js</scope>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcColorPicker.hide();
+]]></content>
+    <tabTrigger>arcColorPicker-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏取色器模块视图</description>
+</snippet>

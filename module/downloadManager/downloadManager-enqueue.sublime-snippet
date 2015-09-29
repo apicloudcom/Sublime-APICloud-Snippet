@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.enqueue({
+    url:'${1:url}',
+    savePath:'${2:path}',
+    cache:${3:true},
+    allowResume: ${4:true},
+    title:'${5:title}',
+    networkTypes:'${6:all}'
+},function(ret,err){
+});
+]]></content>
+    <tabTrigger>downloadManager-enqueue</tabTrigger>
+    <scope>source.js</scope>
+    <description>开始一个下载</description>
+</snippet>

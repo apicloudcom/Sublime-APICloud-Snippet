@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+arcColorPicker.getColor(function(ret, err){
+    alert(ret.value);
+});
+]]></content>
+    <tabTrigger>arcColorPicker-getColor</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取取色器当前的值</description>
+</snippet>

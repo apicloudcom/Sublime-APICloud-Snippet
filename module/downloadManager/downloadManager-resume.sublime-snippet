@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.resume({
+    id: '${1:id}'
+},function(ret,err){
+});
+]]></content>
+    <tabTrigger>downloadManager-resume</tabTrigger>
+    <scope>source.js</scope>
+    <description>继续下载</description>
+</snippet>

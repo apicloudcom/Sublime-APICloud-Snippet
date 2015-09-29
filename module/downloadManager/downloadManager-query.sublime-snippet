@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.query({
+    ids: ${1:array},
+    status:${2:status}
+},function(ret,err){
+});
+]]></content>
+    <tabTrigger>downloadManager-query</tabTrigger>
+    <scope>source.js</scope>
+    <description>查询下载状态</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+downloadManager.openDownloadedFile({
+    id: '${1:id}'
+},function(ret,err){
+});
+]]></content>
+    <tabTrigger>downloadManager-openDownloadedFile</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开下载文件</description>
+</snippet>

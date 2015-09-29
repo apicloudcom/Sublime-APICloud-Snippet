@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+imageFilter.save (function(ret, err){
+});
+]]></content>
+    <tabTrigger>imageFilter-save</tabTrigger>
+    <scope>source.js</scope>
+    <description>保存最终处理结果</description>
+</snippet>

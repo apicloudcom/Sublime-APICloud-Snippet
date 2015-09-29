@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+imageClip.save(function(ret, err){
+});
+]]></content>
+    <tabTrigger>imageClip-save</tabTrigger>
+    <scope>source.js</scope>
+    <description>保存截图到指定位置</description>
+</snippet>

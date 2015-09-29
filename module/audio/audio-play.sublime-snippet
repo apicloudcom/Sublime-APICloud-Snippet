@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+audio.play({
+    path:'${1:path}'
+},function(ret,err){
+});
+]]></content>
+    <tabTrigger>audio-play</tabTrigger>
+    <scope>source.js</scope>
+    <description>播放网络音频</description>
+</snippet>

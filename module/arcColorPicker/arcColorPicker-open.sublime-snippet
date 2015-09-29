@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+arcColorPicker.open();
+]]></content>
+    <tabTrigger>arcColorPicker-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开环形取值器</description>
+</snippet>

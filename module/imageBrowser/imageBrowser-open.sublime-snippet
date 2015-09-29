@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+imageBrowser.openImages({
+    imageUrls: ${1:urlPath},
+    showList:${2:true},
+    activeIndex:${3:index}
+});
+]]></content>
+    <tabTrigger>imageBrowser-openImages</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开文件浏览器</description>
+</snippet>

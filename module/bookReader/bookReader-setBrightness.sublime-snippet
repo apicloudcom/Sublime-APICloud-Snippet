@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+bookReader.setBrightness(
+    brightness:${1:80}
+);
+]]></content>
+    <tabTrigger>bookReader-setBrightness</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置屏幕亮度</description>
+</snippet>

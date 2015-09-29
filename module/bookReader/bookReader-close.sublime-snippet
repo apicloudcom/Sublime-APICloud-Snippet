@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bookReader.close();
+]]></content>
+    <tabTrigger>bookReader-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭阅读器</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bookReader.show();
+]]></content>
+    <tabTrigger>bookReader-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示阅读器</description>
+</snippet>

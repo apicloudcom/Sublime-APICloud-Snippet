@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+imageFilter.open ({
+    imgPath: '${1:path}'
+}, function(ret, err){
+});
+]]></content>
+    <tabTrigger>imageFilter-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开图片过滤器</description>
+</snippet>

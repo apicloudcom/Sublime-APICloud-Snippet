@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bookReader.getBrightness();
+]]></content>
+    <tabTrigger>bookReader-getBrightness</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取屏幕亮度</description>
+</snippet>

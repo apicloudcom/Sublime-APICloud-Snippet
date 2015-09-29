@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+bookReader.setValue({
+    bg:'${1:#000}',
+    textStyle:{
+        color:'${2:#fff}',
+        size:${3:size}
+    },
+    animType : '${4:curl}',
+    progress : ${5:progress}
+});
+]]></content>
+    <tabTrigger>bookReader-setValue</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开阅读器</description>
+</snippet>

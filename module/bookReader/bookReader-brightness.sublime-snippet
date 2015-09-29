@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+bookReader.brightness({
+    brightness : ${1:brightness}
+},function(ret,err){
+    if(ret.status){
+        alert(ret.brightness);
+    }
+});
+]]></content>
+    <tabTrigger>bookReader-brightness</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取、设置屏幕亮度</description>
+</snippet>

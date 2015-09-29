@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+imageFilter.getAttr({
+    path: "${1:path}"
+}, function(ret, err){
+});
+]]></content>
+    <tabTrigger>imageFilter-getAttr</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取指定路径下的图片信息</description>
+</snippet>

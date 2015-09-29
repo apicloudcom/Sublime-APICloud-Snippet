@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+qq.shareImage({
+  title: '${1:test}',
+  description: '${2:testd}',
+  imgPath: '${3:}'
+});
+]]></content>
+    <tabTrigger>qq-shareImage</tabTrigger>
+    <scope>source.js</scope>
+    <description>分享图片（本地）到好友</description>
+</snippet>

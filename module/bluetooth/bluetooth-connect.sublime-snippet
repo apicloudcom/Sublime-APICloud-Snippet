@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+bluetooth.connect(function(ret, err) {
+    var progress = ret.progress;
+    var message = ret.message;
+});
+]]></content>
+    <tabTrigger>bluetooth-connect</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开蓝牙连接</description>
+</snippet>

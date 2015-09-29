@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+timeSelector.close();
+]]></content>
+    <tabTrigger>timeSelector-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭时间选择器</description>
+</snippet>

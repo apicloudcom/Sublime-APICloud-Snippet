@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+qq.getUserInfo(function(ret, err) {
+  if (ret.status) {
+    api.alert({
+      msg: '获取成功'
+    });
+  } else {
+    api.alert({
+      msg: err.msg
+    });
+  }
+});
+]]></content>
+    <tabTrigger>qq-getUserInfo</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取用户信息</description>
+</snippet>

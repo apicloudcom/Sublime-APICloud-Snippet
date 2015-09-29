@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+pieChart.show({
+    id: ${1:1}
+});
+]]></content>
+    <tabTrigger>pieChart-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示饼图</description>
+</snippet>

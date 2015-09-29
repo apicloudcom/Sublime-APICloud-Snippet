@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+slider.open({
+    x: ${1:30},
+    y: ${2:104},
+    width: ${3:260},
+    height: ${4:6},
+    bgImg: "${5:}",
+    selectedBgImg: "${6:}",
+    barW: ${7:30},
+    barH: ${8:20},
+    barImg: "${9:}",
+    bubbleW: ${10:60},
+    bubbleH: ${11:40},
+    bubbleImg: "${12:}",
+    minValue: ${13:0},
+    maxValue: ${14:100},
+    defValue: ${15:30}
+}, function(ret, err) {
+    if (ret.touchCancel) {
+        api.alert({
+            msg: ret.value
+        });
+    } else {
+        ret.value;
+    }
+});
+]]></content>
+    <tabTrigger>slider-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开slider</description>
+</snippet>

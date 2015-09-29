@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+clipBoard.set({
+    value: '${1:}'
+}, function(ret, err) {
+    if (ret.status) {
+        api.alert({
+            msg: '复制到剪切板成功'
+        });
+    } else {
+        api.alert({
+            msg: err.msg
+        });
+    }
+});
+]]></content>
+    <tabTrigger>clipBoard-set</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置剪切板内容</description>
+</snippet>

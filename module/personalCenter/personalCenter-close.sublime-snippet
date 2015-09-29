@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+personalCenter.close();
+]]></content>
+    <tabTrigger>personalCenter-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭个人中心</description>
+</snippet>

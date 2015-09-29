@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+clipBoard.get(function(ret, err){
+    api.alert({msg:ret.value+"*"+ret.type});
+});
+]]></content>
+    <tabTrigger>clipBoard-get</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取剪切板中的数据</description>
+</snippet>

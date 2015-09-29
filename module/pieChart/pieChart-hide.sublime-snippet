@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+pieChart.hide({
+    id: ${1:1}
+});
+]]></content>
+    <tabTrigger>pieChart-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏饼图</description>
+</snippet>

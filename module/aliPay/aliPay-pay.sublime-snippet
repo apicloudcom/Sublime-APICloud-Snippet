@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+var subject = '订单名';
+var body = '订单描述';
+var amount = '10.99';
+var tradeNO = '4563548735674';
+var notifyURL = 'http://www.apicloud.com';
+aliPay.pay({
+  subject: subject,
+  body: body,
+  amount: amount,
+  tradeNO: tradeNO
+}, function(ret, err) {
+  api.alert({
+    title: '支付结果',
+    msg: ret.msg,
+    buttons: ['确定']
+  });
+});
+]]></content>
+    <tabTrigger>aliPay-pay</tabTrigger>
+    <scope>source.js</scope>
+    <description>调用支付宝客户端支付</description>
+</snippet>

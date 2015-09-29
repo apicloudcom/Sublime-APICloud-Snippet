@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+slider.setValue({
+    id: ${1:1},
+    value: ${2:51}
+});
+]]></content>
+    <tabTrigger>slider-setValue</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置slider的值</description>
+</snippet>

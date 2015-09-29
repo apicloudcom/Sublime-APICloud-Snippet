@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+slider.close({
+    id: ${1:1}
+});
+]]></content>
+    <tabTrigger>slider-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭slider</description>
+</snippet>

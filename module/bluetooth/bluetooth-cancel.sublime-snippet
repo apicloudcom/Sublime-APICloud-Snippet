@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+bluetooth.cancel();
+]]></content>
+    <tabTrigger>bluetooth-cancel</tabTrigger>
+    <scope>source.js</scope>
+    <description>取消蓝牙连接</description>
+</snippet>

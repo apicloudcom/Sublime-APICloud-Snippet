@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+qq.logout(function(ret, err) {
+  if (ret.status) {
+    api.alert({
+      msg: '登出成功'
+    });
+  } else {
+    api.alert({
+      msg: err.msg
+    });
+  }
+});
+]]></content>
+    <tabTrigger>qq-logout</tabTrigger>
+    <scope>source.js</scope>
+    <description>登出qq</description>
+</snippet>

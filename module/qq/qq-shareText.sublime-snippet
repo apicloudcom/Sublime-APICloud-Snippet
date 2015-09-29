@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+qq.shareText({
+  text: '${1:testtext}'
+});
+]]></content>
+    <tabTrigger>qq-shareText</tabTrigger>
+    <scope>source.js</scope>
+    <description>分享纯文本到好友</description>
+</snippet>

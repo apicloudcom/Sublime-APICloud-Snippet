@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+personalCenter.setSelect({
+    index: ${1:1}
+});
+]]></content>
+    <tabTrigger>personalCenter-setSelect</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置选中按钮</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+qq.shareNews({
+  url: '${1:}',
+  title: '${2:新闻分享}',
+  description: '${3:新闻描述}',
+  imgUrl: '${4:}'
+});
+]]></content>
+    <tabTrigger>qq-shareNews</tabTrigger>
+    <scope>source.js</scope>
+    <description>分享新闻到空间/好友</description>
+</snippet>

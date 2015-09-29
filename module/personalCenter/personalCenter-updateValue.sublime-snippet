@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+personalCenter.updateValue({
+    imgPath: '${1:}',
+    userName: '${2:}',
+    subTile: '${3:}',
+    btnArray: [{
+        count: '${4:}'
+    }, {
+        count: '${5:}'
+    }, {
+        count: '${6:}'
+    }]
+});
+]]></content>
+    <tabTrigger>personalCenter-updateValue</tabTrigger>
+    <scope>source.js</scope>
+    <description>刷新个人中心显示数据</description>
+</snippet>

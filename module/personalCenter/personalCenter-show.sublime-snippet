@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+personalCenter.show();
+]]></content>
+    <tabTrigger>personalCenter-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示个人中心</description>
+</snippet>

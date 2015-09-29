@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+qq.shareVideo({
+  url: '${1:}',
+  title: '${2:视频}',
+  description: '${3:王力宏}',
+  imgUrl: '${4:}'
+});
+]]></content>
+    <tabTrigger>qq-shareVideo</tabTrigger>
+    <scope>source.js</scope>
+    <description>分享视频到空间/好友</description>
+</snippet>

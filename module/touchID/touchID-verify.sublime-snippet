@@ -1,0 +1,36 @@
+<snippet>
+    <content><![CDATA[
+touchID.verify(function(ret, err) {
+    if (ret.status) {
+        api.alert({
+            msg: "验证通过"
+        });
+    } else {
+        if (ret.index == 0) {
+            api.alert({
+                msg: "用户选择手动输入"
+            });
+        } else if (ret.index == 1) {
+            api.alert({
+                msg: "用户取消验证"
+            });
+        } else if (ret.index == 2) {
+            api.alert({
+                msg: "验证三次失败"
+            });
+        } else if (ret.index == 3) {
+            api.alert({
+                msg: "多长验证失败请锁定手机"
+            });
+        } else {
+            api.alert({
+                msg: "验证失败，未知错误"
+            });
+        }
+    }
+});
+]]></content>
+    <tabTrigger>touchID-verify</tabTrigger>
+    <scope>source.js</scope>
+    <description>弹出验证界面，验证用户指纹</description>
+</snippet>

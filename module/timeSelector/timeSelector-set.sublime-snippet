@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+timeSelector.set({
+    hour: ${1:20},
+    minute: ${2:25}
+});
+]]></content>
+    <tabTrigger>timeSelector-set</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置时间选择器时间</description>
+</snippet>

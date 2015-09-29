@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+clipBoard.removeListener();
+]]></content>
+    <tabTrigger>clipBoard-removeListener</tabTrigger>
+    <scope>source.js</scope>
+    <description>移除剪切板监听</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+qq.shareMusic({
+  url: '${1:}',
+  title: '${2:桔子香水}',
+  description: '${3:任贤齐}',
+  imgUrl: '${4:}'
+});
+]]></content>
+    <tabTrigger>qq-shareMusic</tabTrigger>
+    <scope>source.js</scope>
+    <description>分享音乐到空间/好友</description>
+</snippet>

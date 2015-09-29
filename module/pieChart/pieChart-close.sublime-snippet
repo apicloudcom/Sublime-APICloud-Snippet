@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+pieChart.close({
+    id: ${1:1}
+});
+]]></content>
+    <tabTrigger>pieChart-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭饼图</description>
+</snippet>

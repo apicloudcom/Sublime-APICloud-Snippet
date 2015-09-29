@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+clipBoard.setListener(function(ret, err){
+    api.alert({msg:ret.value+"*"+ret.type});
+});
+]]></content>
+    <tabTrigger>clipBoard-setListener</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置剪切板监听</description>
+</snippet>

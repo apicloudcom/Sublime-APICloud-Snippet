@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[barChart.close({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>barChart-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭柱状图</description>
+</snippet>

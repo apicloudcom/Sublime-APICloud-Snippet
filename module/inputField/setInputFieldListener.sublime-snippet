@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[inputField.setInputFieldListener(function(ret,err){
+    alert(JSON.stringify(ret) + JSON.stringify(err));
+});
+]]></content>
+    <tabTrigger>inputField-setInputFieldListener</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置输入框监听</description>
+</snippet>

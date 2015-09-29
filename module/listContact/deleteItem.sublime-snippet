@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[listContact.deleteItem({
+    index:${1:2,}
+    key:${2:A}
+});
+]]></content>
+    <tabTrigger>listContact-deleteItem</tabTrigger>
+    <scope>source.js</scope>
+    <description>删除指定索引的数据</description>
+</snippet>

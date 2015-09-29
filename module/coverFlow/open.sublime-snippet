@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[coverFlow.open({
+    x:${1:0,}
+    y:${2:64,}
+    w:${3:320,}
+    h:${4:300,}
+    bgColor:${5:'#ADD8E6',}
+    paths:${6:['widget://res/a1.png','widget://res/a2.png','widget://res/a10.png']}
+},function(ret,err) {
+    });
+]]></content>
+    <tabTrigger>coverFlow-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开coverFlow</description>
+</snippet>

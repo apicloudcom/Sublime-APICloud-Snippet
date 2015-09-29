@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[multiSelector.close();
+]]></content>
+    <tabTrigger>multiSelector-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭选择器</description>
+</snippet>

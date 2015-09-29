@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[barChart.hide({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>barChart-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏柱状图视图</description>
+</snippet>

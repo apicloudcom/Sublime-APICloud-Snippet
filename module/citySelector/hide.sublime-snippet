@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[citySelector.hide();
+]]></content>
+    <tabTrigger>citySelector-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏选择器</description>
+</snippet>

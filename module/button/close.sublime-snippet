@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[button.close({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>button-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭按钮视图</description>
+</snippet>

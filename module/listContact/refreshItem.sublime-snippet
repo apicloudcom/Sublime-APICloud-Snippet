@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[listContact.refreshItem({
+    index:${1:2},
+    data: {
+		title:${2:'刷新指定下标的标题'}, 
+		subTitle:${3:'刷新指定下标的子标题'}
+	}
+});
+]]></content>
+    <tabTrigger>listContact-refreshItem</tabTrigger>
+    <scope>source.js</scope>
+    <description>刷新指定index条目的数据</description>
+</snippet>

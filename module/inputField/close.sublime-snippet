@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[inputField.close(function(ret,err){
+    alert( JSON.stringify( ret ))
+});
+]]></content>
+    <tabTrigger>inputField-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭输入框</description>
+</snippet>

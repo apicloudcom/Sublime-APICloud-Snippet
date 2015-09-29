@@ -1,0 +1,56 @@
+<snippet>
+    <content><![CDATA[listContact.open({
+    h:${1: 300,}
+    rightBtn:${2: [{}
+        color:${3: '#8B0000',}
+        title:${4: '备注'}
+    }],
+    data: {
+        common: [{
+            placeholderImg: 'widget://res/listContact.png',
+            img: 'http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg',
+            title: '标题'
+        }],
+        A: [{
+            placeholderImg: 'widget://res/listContact.png',
+            img: 'http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }, {
+            placeholderImg: 'widget://res/listContact.png',
+            title: '标题'
+        }]
+    }
+}, function(ret, err) {
+    api.alert({
+        msg: ret.section + "*" + ret.index
+    });
+});
+]]></content>
+    <tabTrigger>listContact-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开</description>
+</snippet>

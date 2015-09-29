@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[listContact.show();
+]]></content>
+    <tabTrigger>listContact-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示列表视图</description>
+</snippet>

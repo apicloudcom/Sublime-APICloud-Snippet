@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[multiSelector.hidden();
+]]></content>
+    <tabTrigger>multiSelector-hidden</tabTrigger>
+    <scope>source.js</scope>
+    <description><del>隐藏选择器</del></description>
+</snippet>

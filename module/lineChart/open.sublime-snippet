@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[lineChart.open({
+    x:${1:0,}
+    y:${2:64,}
+    w:${3:320,}
+    h:${4:300,}
+    yAxis:{"max":1000,"step":200},
+    xAxis:{
+		"indexs":['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月','一月'],
+		"screenXcount":7
+	},
+    lines:[
+		{'color': ' #800080', 'datas':[ 200,400,-300,500,-400,600,400,0,500,-100,800,100],id:1},
+		{'color': '#7FFFAA', 'datas':[ -200,-400,300,-500,400,-600,-400,0,-500,100,-800,-100],id:2}
+	],
+    bgColor:'#F0FFFF',
+    coorLineColor:'#C0C0C0',
+    markColor:'#051353'
+},function(ret, err) {
+    api.alert({msg:ret.status});
+});
+]]></content>
+    <tabTrigger>lineChart-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开K线图视图</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[lineChart.close({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>lineChart-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭K线图</description>
+</snippet>

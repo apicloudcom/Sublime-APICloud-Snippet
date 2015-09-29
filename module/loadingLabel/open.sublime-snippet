@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[loadingLabel.open(function(ret,err){
+   api.alert({msg:ret.id});
+});
+]]></content>
+    <tabTrigger>loadingLabel-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开加载标签</description>
+</snippet>

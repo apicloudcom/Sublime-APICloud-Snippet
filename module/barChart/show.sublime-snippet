@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[barChart.show({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>barChart-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示柱状图</description>
+</snippet>

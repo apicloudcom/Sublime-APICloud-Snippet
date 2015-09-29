@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[multiSelector.open({
+     content:${1:['第一条','第二条']}
+},function(ret,err){
+	alert( JSON.stringify( ret ) )
+});
+]]></content>
+    <tabTrigger>multiSelector-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开选择器</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[multiSelector.setSelect({
+  index:${1:[-1]}
+});
+]]></content>
+    <tabTrigger>multiSelector-setSelect</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置/取消选中条目</description>
+</snippet>

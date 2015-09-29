@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[loadingLabel.hide({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>loadingLabel-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏加载标签</description>
+</snippet>

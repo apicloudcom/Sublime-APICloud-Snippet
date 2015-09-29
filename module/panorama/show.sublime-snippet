@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[panorama.show({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>panorama-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示全景展示视图</description>
+</snippet>

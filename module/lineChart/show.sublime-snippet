@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[lineChart.show();
+]]></content>
+    <tabTrigger>lineChart-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示K线图视图</description>
+</snippet>

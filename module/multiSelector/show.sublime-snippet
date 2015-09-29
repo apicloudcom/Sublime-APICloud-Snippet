@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[multiSelector.show();
+]]></content>
+    <tabTrigger>multiSelector-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示选择器</description>
+</snippet>

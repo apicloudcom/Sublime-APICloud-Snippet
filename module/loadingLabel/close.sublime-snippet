@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[loadingLabel.close({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>loadingLabel-close</tabTrigger>
+    <scope>source.js</scope>
+    <description>关闭加载标签</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[button.setTitle({
+   id:${1:1,}
+   title:{normalTitle:"按钮"}
+},function(ret,err){
+   api.alert({msg:ret.index+ret.id});
+});
+]]></content>
+    <tabTrigger>button-setTitle</tabTrigger>
+    <scope>source.js</scope>
+    <description>重设按钮标题</description>
+</snippet>

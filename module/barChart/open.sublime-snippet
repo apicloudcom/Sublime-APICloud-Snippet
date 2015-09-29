@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[barChart.open({
+    x:${1:0,}
+    y:${2:64,}
+    width:${3:320,}
+    height:${4:300,}
+    yAxisMax:${5:50,}
+    yAxisStep:${6:10,}
+    xAxisMarks:${7:[1,2,3,4,5,6,7,8,9],}
+    datas:${8:[10,30,40,5,3,49,55,23],}
+    id:${9:1}
+},function(ret,err){
+    api.alert({msg:ret.index+ret.id});
+});
+]]></content>
+    <tabTrigger>barChart-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开柱状图视图</description>
+</snippet>

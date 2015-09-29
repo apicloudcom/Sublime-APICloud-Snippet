@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[loadingLabel.show({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>loadingLabel-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示加载标签</description>
+</snippet>

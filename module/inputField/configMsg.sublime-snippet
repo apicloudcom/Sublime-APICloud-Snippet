@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[inputField.configMsg(function(ret,err){
+    if(ret.status){
+      api.alert({msg:ret.msg });
+    }
+});
+]]></content>
+    <tabTrigger>inputField-configMsg</tabTrigger>
+    <scope>source.js</scope>
+    <description>配置当前输入框内的文字</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[button.open({
+  bg:{ normal:"#ff0000" }
+},function(ret,err){
+   api.alert({msg:ret.id});
+});
+]]></content>
+    <tabTrigger>button-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开一个按钮视图</description>
+</snippet>

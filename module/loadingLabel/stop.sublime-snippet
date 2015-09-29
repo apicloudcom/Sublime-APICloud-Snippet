@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[loadingLabel.stop({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>loadingLabel-stop</tabTrigger>
+    <scope>source.js</scope>
+    <description>停止加载</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[inputField.hide(function(ret,err){
+    alert( JSON.stringify( ret ))
+});
+]]></content>
+    <tabTrigger>inputField-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏输入框，并没有从内存里清除</description>
+</snippet>

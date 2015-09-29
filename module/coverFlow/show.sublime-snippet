@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[coverFlow.show();
+]]></content>
+    <tabTrigger>coverFlow-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示已隐藏的coverFlow视图</description>
+</snippet>

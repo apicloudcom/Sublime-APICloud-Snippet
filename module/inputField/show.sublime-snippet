@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[inputField.show(function(ret,err){
+    alert( JSON.stringify( ret ))
+});
+]]></content>
+    <tabTrigger>inputField-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示输入框</description>
+</snippet>

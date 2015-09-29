@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[panorama.hide({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>panorama-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏全景展示视图</description>
+</snippet>

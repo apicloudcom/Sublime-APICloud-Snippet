@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[coverFlow.hide();
+]]></content>
+    <tabTrigger>coverFlow-hide</tabTrigger>
+    <scope>source.js</scope>
+    <description>隐藏显示的coverFlow视图</description>
+</snippet>

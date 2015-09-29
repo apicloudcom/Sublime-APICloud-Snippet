@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[button.show({
+    id:${1:1}
+});
+]]></content>
+    <tabTrigger>button-show</tabTrigger>
+    <scope>source.js</scope>
+    <description>显示按钮视图</description>
+</snippet>

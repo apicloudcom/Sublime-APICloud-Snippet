@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[inputField.getMsg(function(ret,err){
+		api.alert({msg:ret.msg });
+});
+]]></content>
+    <tabTrigger>inputField-getMsg</tabTrigger>
+    <scope>source.js</scope>
+    <description>获取当前输入框内的文字</description>
+</snippet>

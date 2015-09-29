@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[panorama.open({
+    x:${1:0,}
+    y:${2:64,}
+    w:${3:320,}
+    h:${4:300,}
+    imgPath:${5:'widget://res/360viewtest.jpg'}
+},function(ret,err){
+    if(ret.status){
+        api.alert({msg:'视图的id是'+ret.id});
+    }else{
+        api.alert({msg:ret.msg});
+    }
+});
+]]></content>
+    <tabTrigger>panorama-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开全景展示视图</description>
+</snippet>

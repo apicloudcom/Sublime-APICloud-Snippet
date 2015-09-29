@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[inputField.insertMsg({
+   msg:${1:'这里是插入的字符串'}
+});
+]]></content>
+    <tabTrigger>inputField-insertMsg</tabTrigger>
+    <scope>source.js</scope>
+    <description>向当前输入框内指定位置插入字符串</description>
+</snippet>

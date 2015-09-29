@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[citySelector.open(function(ret,err){
+    api.alert({msg:'选了'+ret.city+ret.province+ret.county});
+});
+]]></content>
+    <tabTrigger>citySelector-open</tabTrigger>
+    <scope>source.js</scope>
+    <description>打开城市选择器</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+tuberBar.close();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tuberBar-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭底部导航条模块</description>
+</snippet>

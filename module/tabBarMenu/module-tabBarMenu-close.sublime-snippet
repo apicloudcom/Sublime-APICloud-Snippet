@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+tabBarMenu.close();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBarMenu-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭底部导航菜单</description>
+</snippet>

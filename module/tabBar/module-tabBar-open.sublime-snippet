@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+tabBar.open({
+    h:${1:40},    
+	bgImg:'${2:widget://res/tabBar_bg.png}',
+    selectImg:'${3:widget://res/selecte_tabBar.png}',
+    perScreenBtn: ${4:5},
+    selecteIndex:${5:1},
+    items:[
+        {
+            title:'${6:item1}',
+            highlight:'${7:imagePath}',
+            selected:'${8:imagePath}',
+            color:'${9:#ffffff}',
+            selectedTitleColor:'${10:#000000}',
+            img:'${11:widget://res/tabBar_item1.png}',
+            badge:'${12:3}'
+        }
+    ],
+    fixedOn:'${14:api.winName}',
+    clickHide:${15:true}
+}, function(ret, err){
+   	api.alert({msg:ret.index});
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开底部导航条</description>
+</snippet>

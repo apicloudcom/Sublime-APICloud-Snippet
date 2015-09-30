@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+navigationMenu.open({     
+    btnInfo:[
+        {
+            normal:'${1:widget://res/navigationMenu_normal.png}',
+	        highlight:'${2:widget://res/ navigationMenu_highlight.png}',
+	        selected:'${3:widget://res/navigationMenu_selected.png}',
+	        title:'${4:收藏0}'
+        },
+        {
+            normal:'${5:widget://res/navigationMenu_normal.png}',
+	        highlight:'${6:widget://res/ navigationMenu_highlight.png}',
+	        selected:'${7:widget://res/navigationMenu_selected.png}',
+	        title:'${8:收藏1}'
+        }
+    ]
+}, function(ret, err){
+    api.alert({msg:ret.index});
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>navigationMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开导航菜单模块</description>
+</snippet>

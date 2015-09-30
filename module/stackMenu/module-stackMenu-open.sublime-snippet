@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+stackMenu.open({    
+	startX: ${1:120},
+    startY: ${2:api.winHeight-70},
+    itemSize:${3:50},
+    direction:'${4:right_up}',
+    titleColor:'${5:#8b3e2f}',
+    items:[
+        {
+            icon:'${6:标题一}',
+            bgImg:'${7:imagePath}'
+        }
+    ]
+}, function(ret, err){
+   	ret.index;
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>stackMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开dock管理器</description>
+</snippet>

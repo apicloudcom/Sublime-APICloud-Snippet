@@ -1,0 +1,64 @@
+<snippet>
+    <content><![CDATA[
+tabBarMenu.open({
+    defaultBarSelect:${1:0},    
+	autoLayout:${2:true},
+    barConfig:[
+        {
+            bgImg:'${3:widget://image/tabBarMenu/tabbar_bg.png}'
+        }
+    ],
+    barItems:[
+        {
+            title:'${4:动态}',
+            bgImg:'${5:widget://image/tabBarMenu/tabbar_icon_auth.png}',
+            bgImgClick:'${6:widget://image/tabBarMenu/tabbar_icon_auth_click.png}'
+        }
+    ],
+    barItemConfig:[
+        {
+            titleColor:'${7:#ffffff}',
+            titleSelectColor:'${8:#ffffff}',
+            fontSize:${9:11},
+            textMarginTop:${10:41},
+            primaryItem:${11:2}
+        }
+    ],
+    menuItems:[
+        {
+            title:'${12:说说}',
+            bgImg:'${13:widget://image/tabBarMenu/tabbar_btn_popup_talk.png}',
+            bgImgClick:'${14:widget://image/tabBarMenu/tabbar_btn_popup_talk_click.png}'
+        }
+    ],
+    menuItemConfig:[
+        {
+            titleColor:'${15:#ffffff}',
+            titleSelectColor:'${16:#ffffff}',
+            fontSize:${17:11},
+            textMarginTop:${18:90}
+        }
+    ],
+    menuConfig:[
+        {
+            coverBgColor:'${19:#000000}',
+            coverAlpha:${20:0.8},
+            rows:${21:4}
+        }
+    ]
+}, function(ret, err){
+   	if(ret){
+        var item = ret.item;
+        if("menu " == item.type){
+            tabBarMenu.hideMenu();
+        }
+        api.alert({title: "提示", msg: "您点击了 " + item.type + " 上,第 " + item.index + " 个按钮!", buttons: ["确定"]});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBarMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开应用底部导航菜单模块</description>
+</snippet>

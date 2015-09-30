@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+navigationBar.config({
+    key:'${1:bgImg}',
+    value:'${2:widget://imgage/navigationBar/bg2.png}'
+},function(ret, err){
+    if(ret){
+        var msg = "属性名称: " + ret["key"] + "\n旧值: " + ret["oldValue"] + "\n新值: " + ret["newValue"];
+        api.alert({"title": "提示", "msg": msg});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>navigationBar-config</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置或获取模块配置的值</description>
+</snippet>

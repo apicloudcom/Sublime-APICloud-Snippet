@@ -1,0 +1,52 @@
+<snippet>
+    <content><![CDATA[
+navigationBar.open({
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:320},
+        h: ${4:220},
+        style:'${5:left_to_right}',
+        itemSize:{
+            w: ${6:100},
+            h: ${7:100}
+        },
+        items: [
+            {
+                title:'${8:title0}',
+                titleSelected:'${9:titleSelected0}',
+                bg:'${10:ffff00}',
+                alpha: ${11:0.8},
+                bgSelected:'${12:ff00000}'
+            }
+        ],
+        selectedIndex:${13:2},
+        font: {
+            size:${14:11},
+            sizeSelected:${15:14},
+            color:'${16:ff00000}',
+            colorSelected:'${17:ffff00}'
+        },
+        bg: '${18:00ff00}',
+        alpha: ${19:1.0},
+        popItem: {
+            position: '${20:tail}',
+            title:'${21:打开}',
+            titleSelected: '${22:关闭}',
+            bg:'${23:ffff00}',
+            bgSelected:'${24:ff00000}'
+        }
+    };
+}, function(ret, err){
+    if(err){
+        api.alert({title: "出错了", msg: err["msg"]});
+    }else{
+        api.alert({title: "提示", msg: "您点击了 pop 导航项!"});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>navigationBar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开导航条模块</description>
+</snippet>

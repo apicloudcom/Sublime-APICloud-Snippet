@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+pullMenu.setSelected({    
+	index:${1:2},
+	selected:${2:true}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>pullMenu-setSelected</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置按钮选中/取消状态</description>
+</snippet>

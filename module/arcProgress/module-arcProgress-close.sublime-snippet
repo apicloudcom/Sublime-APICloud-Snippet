@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+arcProgress.close({
+    id:${1:1}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>arcProgress-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭圆形进度视图</description>
+</snippet>

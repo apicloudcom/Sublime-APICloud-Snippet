@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+scrollRotation.show();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scrollRotation-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示图片旋转联播器</description>
+</snippet>

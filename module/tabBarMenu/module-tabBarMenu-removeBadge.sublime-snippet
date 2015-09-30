@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+tabBarMenu.removeBadge({
+	type:'${1:bar}',
+	index:${2:3}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBarMenu-removeBadge</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置徽章</description>
+</snippet>

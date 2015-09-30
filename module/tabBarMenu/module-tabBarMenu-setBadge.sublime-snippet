@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+tabBarMenu.setBadge({
+	item:[
+		type:'${1:bar}',
+		index:${2:0}
+	],
+	title:'${3:NEW}',
+	type:'${4:right}',
+	bgColor:'${5:#ff0000}',
+	titleColor:'${6:#ffffff}',
+	fontSize:${7:11},
+	marginTop:${8:17}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBarMenu-setBadge</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置徽章</description>
+</snippet>

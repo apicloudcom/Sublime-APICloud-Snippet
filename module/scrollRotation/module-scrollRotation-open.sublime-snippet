@@ -1,0 +1,36 @@
+<snippet>
+    <content><![CDATA[
+scrollRotation.open({    
+	x: ${1:0},
+    y: ${2:0},
+    w: ${3:320},
+    h: ${4:220},
+    items:[
+        {
+            imgPath:'${5:widget://res/scrollRotation.png}',
+	        title:'${6:标题}',
+            fontColor:'${7:#ffffff}',
+            fontSize:${8:13}
+        }
+    ],
+    cornerRadius:${9:0},
+    intervalTime:${10:1},
+    pageControl:{
+        normalColor:'${11:#ffffff}',
+        selectedColor:'${12:#DA70D6}',
+        heightPercent:${13:50}
+    },
+    fixedOn:'${14:api.winName}',
+    fixed:${15:true}
+}, function(ret, err){
+   	if(ret.click){
+        api.alert({msg:ret.index});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scrollRotation-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开图片旋转联播器模块</description>
+</snippet>

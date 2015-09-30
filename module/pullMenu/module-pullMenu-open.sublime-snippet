@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+pullMenu.open({    
+	type:'${1:up}',
+	h:${2:2*api.winHeight/3},
+	btnWidth:${3:60},
+	alpha:${4:0.8},
+	bgColor:'${5:#FFFFFF}',
+    btnArray:[
+        {
+            normal:'${6:widget://res/pullMenu_btn1.png}',
+	        highlight:'${7:widget://res/pullMenu_btn1light.png}'
+        },
+        {
+            normal:'${8:widget://res/navigationMenu_normal.png}',
+	        highlight:'${9:widget://res/ navigationMenu_highlight.png}'
+        }
+    ]
+}, function(ret, err){
+   	api.alert({msg:ret.index});
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>pullMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开拖拉菜单模块</description>
+</snippet>

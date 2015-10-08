@@ -4,17 +4,17 @@ api.openSlidLayout({
     type:'left',
     fixedPane:{
         name: '${1:fixed_frame_name}',
-        bgColor : '${2:#000}',
+        bgColor: '${2:#000}',
         url: '${3:fixed_frame_url}'
     },
     slidPane:{
         name: '${4:slide_frame_name}',
-        reload : '${5:#0fc}',
+        bgColor: '${5:#0fc}',
         url: '${6:slide_frame_url}'
     },
     leftEdge: ${7:60}
 }, function(ret) {
-    /* 暂时不需要做任何事. */
+
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

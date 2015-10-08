@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.text(${1:el}, ${2:text});
+\$api.text(${1:el}, '${2:text}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-text</tabTrigger>

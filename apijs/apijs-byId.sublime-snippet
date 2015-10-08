@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.byId(${1:id});
+\$api.byId('${1:id}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-byId</tabTrigger>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.val(${1:el}, ${2:val});
+\$api.val(${1:el}, '${2:val}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-val</tabTrigger>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.removeAttr(${1:el}, ${2:name});
+\$api.removeAttr(${1:el}, '${2:name}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-removeAttr</tabTrigger>

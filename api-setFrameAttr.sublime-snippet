@@ -2,11 +2,11 @@
 	<content><![CDATA[
 api.setFrameAttr({
     name: '${1:frame_name}',
-    rect:{
-        x:${2:0},
-        y:${3:0},
-        w:${4:320},
-        h:${5:480}
+    rect: {
+        x: ${2:0},
+        y: ${3:0},
+        w: ${4:320},
+        h: ${5:480}
     },
     bounces: ${6:true},
     opaque: ${7:true},

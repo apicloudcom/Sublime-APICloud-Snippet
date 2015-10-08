@@ -2,7 +2,7 @@
 	<content><![CDATA[
 api.setFrameGroupAttr({
     name: '${1:group_name}',
-    hidden:${2:true}
+    hidden: ${2:true}
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

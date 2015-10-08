@@ -20,7 +20,6 @@ api.openFrameGroup({
 }, function(ret, err){
    var name  = ret.name;
    var index = ret.index;
-
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

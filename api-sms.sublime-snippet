@@ -6,7 +6,6 @@ api.sms({
 },function(ret,err){
     if (ret.status) {
        api.alert({msg: '发送成功'});
-       
     }else {
         api.alert({msg: '发送失败'});
     };

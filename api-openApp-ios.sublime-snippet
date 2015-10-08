@@ -1,8 +1,6 @@
 <snippet>
     <content><![CDATA[
 api.openApp({
-    // 调用系统浏览器Safari打开百度，其中http为Safari的URL Scheme；
-    // 同理，微信的URL Scheme为weixin，因此可以通过传weixin://来打开微信
     iosUrl: '${1:http://www.baidu.com}',
     appParam: {appParam: '${2:param}'}
 },function(ret,err){

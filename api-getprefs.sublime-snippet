@@ -6,8 +6,7 @@ api.getPrefs({
     var v = ret.value;
     if ( v === '' ) {
         // 不存在该变量
-    }
-    else {
+    } else {
     }
 });
 ]]></content>

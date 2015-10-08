@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.append(${1:el}, ${2:html});
+\$api.append(${1:el}, '${2:html}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-append</tabTrigger>

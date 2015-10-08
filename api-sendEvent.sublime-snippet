@@ -2,7 +2,7 @@
     <content><![CDATA[
 api.sendEvent({
     name: '${1:event}',
-    extra:{${2:key}:'${3: value}'}
+    extra: {${2:key}:'${3: value}'}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

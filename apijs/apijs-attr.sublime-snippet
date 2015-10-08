@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.attr(${1:el}, ${2:name}, ${3:value});
+\$api.attr(${1:el}, '${2:name}', '${3:value}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-attr</tabTrigger>

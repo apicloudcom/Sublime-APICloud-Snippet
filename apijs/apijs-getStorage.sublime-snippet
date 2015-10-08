@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.getStorage(${1:key});
+\$api.getStorage('${1:key}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-getStorage</tabTrigger>

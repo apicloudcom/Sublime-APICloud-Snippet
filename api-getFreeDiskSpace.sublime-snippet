@@ -1,10 +1,8 @@
 <snippet>
     <content><![CDATA[
-api.getFreeDiskSpace(
-    function(ret, err){
-    	var size = ret.size;
-    }
-);
+api.getFreeDiskSpace(function(ret, err){
+    var size = ret.size;
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-getFreeDiskSpace</tabTrigger>

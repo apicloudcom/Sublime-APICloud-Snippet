@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.strToJson(${1:str});
+\$api.strToJson('${1:str}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-strToJson</tabTrigger>

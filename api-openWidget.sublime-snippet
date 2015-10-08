@@ -9,7 +9,6 @@ api.openWidget({
     }
 }, function(ret, err){
     if(ret){
-        ${5:// TODO}
     }
 });
 ]]></content>

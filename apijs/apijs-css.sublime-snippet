@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-\$api.css(${1:el}, ${2:css});
+\$api.css(${1:el}, '${2:css}');
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>apijs-css</tabTrigger>

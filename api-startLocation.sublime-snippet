@@ -2,7 +2,7 @@
     <content><![CDATA[
 api.startLocation({
     accuracy: '${1:100m}',
-    filter:${2:1},
+    filter: ${2:1},
     autoStop: ${3:true} 
 },function(ret, err){
     if(ret.status){

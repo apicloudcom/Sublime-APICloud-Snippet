@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 api.prompt({
-    buttons:['${1:确定}', '${2:取消}'],
+    buttons: ['${1:确定}', '${2:取消}'],
     title: '${3:title}',
     msg: '${4:msg_content}',
     text: '${5:text}'

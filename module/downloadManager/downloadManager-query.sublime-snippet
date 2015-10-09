@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
 downloadManager.query({
-    ids: ${1:array},
-    status:${2:status}
+    ids: ${1:[]},
+    status: '${2:status}'
 },function(ret,err){
 });
 ]]></content>

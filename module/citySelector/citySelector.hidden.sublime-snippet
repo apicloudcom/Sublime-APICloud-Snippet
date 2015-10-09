@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[citySelector.hidden();
+    <content><![CDATA[
+citySelector.hidden();
 ]]></content>
     <tabTrigger>citySelector-hidden</tabTrigger>
     <scope>source.js</scope>

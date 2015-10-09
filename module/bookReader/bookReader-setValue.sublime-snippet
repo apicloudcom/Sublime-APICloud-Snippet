@@ -7,7 +7,7 @@ bookReader.setValue({
         size:${3:size}
     },
     animType : '${4:curl}',
-    progress : ${5:progress}
+    progress : ${5:100}
 });
 ]]></content>
     <tabTrigger>bookReader-setValue</tabTrigger>

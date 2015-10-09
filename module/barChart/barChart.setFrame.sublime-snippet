@@ -1,6 +1,7 @@
 <snippet>
-    <content><![CDATA[barChart.setFrame({
-    x:${1:10,}
+    <content><![CDATA[
+barChart.setFrame({
+    x:${1:10},
     w:${2:300}
 });
 ]]></content>

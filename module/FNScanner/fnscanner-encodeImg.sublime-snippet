@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
-fnscanner.openScanner({
-    sound: '${1:sound_path}',
-    autoLight: ${2:true},
+fnscanner.encodeImg({
+    type: '${1:type}',
+    content: '${2:content}',
     saveToAlbum: ${3:false},
     saveImg: {
         path: '${4:image_path}',
-	w: ${5:200},
-	h: ${6:200}
+    	w: ${5:200},
+    	h: ${6:200}
     }
 }, function(ret, err){
     if(ret){
@@ -16,8 +16,8 @@ fnscanner.openScanner({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>fnscanner-openScanner</tabTrigger>
+    <tabTrigger>fnscanner-encodeImg</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>打开二维码/条码扫描器</description>
+    <description>将字符串生成二维码/条形码图片</description>
 </snippet>

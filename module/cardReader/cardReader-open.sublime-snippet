@@ -2,7 +2,7 @@
     <content><![CDATA[
 cardReader.open(function(ret,err){
     if(ret.status){
-        alert(ret.cardNum+ret.expiryMonth+ret.expiryYear+ret.cvv);
+        alert(ret.cardNum + ret.expiryMonth + ret.expiryYear + ret.cvv);
     } else{
         alert(err.msg);
     }

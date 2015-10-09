@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 downloadManager.remove({
-    ids: ${1:array}
+    ids: ${1:[]}
 },function(ret,err){
 });
 ]]></content>

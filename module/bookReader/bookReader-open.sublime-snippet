@@ -1,11 +1,11 @@
 <snippet>
     <content><![CDATA[
 bookReader.open({
-   bg:'${1:#fff}',
+   bg : '${1:#fff}',
    animType : '${2:curl}',
-   progress : ${3:progress},
+   progress : ${3:80},
    textStyle : {
-        size : ${4:size},
+        size : ${4:12},
         color : '${5:#424242}'
    },
    filePath : '${6:path}'

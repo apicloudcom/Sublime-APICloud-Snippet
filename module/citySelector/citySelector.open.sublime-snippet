@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[citySelector.open(function(ret,err){
+    <content><![CDATA[
+citySelector.open(function(ret,err){
     api.alert({msg:'选了'+ret.city+ret.province+ret.county});
 });
 ]]></content>

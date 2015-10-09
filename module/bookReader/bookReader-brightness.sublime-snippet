@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 bookReader.brightness({
-    brightness : ${1:brightness}
+    brightness: ${1:80}
 },function(ret,err){
     if(ret.status){
         alert(ret.brightness);

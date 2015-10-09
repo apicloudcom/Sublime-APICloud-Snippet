@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[coverFlow.close();
+    <content><![CDATA[
+coverFlow.close();
 ]]></content>
     <tabTrigger>coverFlow-close</tabTrigger>
     <scope>source.js</scope>

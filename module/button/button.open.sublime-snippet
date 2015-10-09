@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[button.open({
+    <content><![CDATA[
+button.open({
   bg:{ normal:"#ff0000" }
 },function(ret,err){
    api.alert({msg:ret.id});

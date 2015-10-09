@@ -1,6 +1,7 @@
 <snippet>
-    <content><![CDATA[button.setFrame({
-    x:${1:80,}
+    <content><![CDATA[
+button.setFrame({
+    x:${1:80},
     w:${2:45}
 });
 ]]></content>

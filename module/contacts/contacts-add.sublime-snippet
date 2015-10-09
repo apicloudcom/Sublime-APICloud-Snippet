@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 contacts.add({
-    groupId: ${1:groupid},
+    groupId: ${1:1},
     lastName: '${2:lastname}',
     firstName: '${3:firstname}',
     phones: [{

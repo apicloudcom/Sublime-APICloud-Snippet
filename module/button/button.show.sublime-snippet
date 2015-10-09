@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[button.show({
+    <content><![CDATA[
+button.show({
     id:${1:1}
 });
 ]]></content>

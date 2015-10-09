@@ -1,9 +1,7 @@
 <snippet>
     <content><![CDATA[
-fileBrowser.open( 
-    function(ret,err) {
-    }
-);
+fileBrowser.open(function(ret,err) {
+});
 ]]></content>
     <tabTrigger>fileBrowser-open</tabTrigger>
     <scope>source.js</scope>

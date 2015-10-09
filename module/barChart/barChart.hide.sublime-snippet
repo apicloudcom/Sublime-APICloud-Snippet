@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[barChart.hide({
+    <content><![CDATA[
+barChart.hide({
     id:${1:1}
 });
 ]]></content>

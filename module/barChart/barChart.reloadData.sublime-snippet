@@ -1,6 +1,7 @@
 <snippet>
-    <content><![CDATA[barChart.reloadData({
-   xAxisMarks:${1:[1,2,3,4,5,6,7,8,9],}
+    <content><![CDATA[
+barChart.reloadData({
+   xAxisMarks:${1:[1,2,3,4,5,6,7,8,9]},
    datas:${2:[15,30,40,5,3,49,55,23]}
 },function(ret,err){
    api.alert({msg:ret.index+ret.id});

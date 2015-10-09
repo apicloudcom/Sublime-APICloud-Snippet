@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[citySelector.close();
+    <content><![CDATA[
+citySelector.close();
 ]]></content>
     <tabTrigger>citySelector-close</tabTrigger>
     <scope>source.js</scope>

@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
 arcMenu.open({
-    type: '${1:arc}',//arc/straight
-    mainMenu:{
+    type: '${1:arc}',
+    mainMenu: {
         x: ${2:140},
         y: ${3:360},
         w: ${4:50},

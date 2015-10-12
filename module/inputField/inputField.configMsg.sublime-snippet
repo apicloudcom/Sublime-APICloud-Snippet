@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[inputField.configMsg(function(ret,err){
+    <content><![CDATA[
+inputField.configMsg(function(ret,err){
     if(ret.status){
       api.alert({msg:ret.msg });
     }

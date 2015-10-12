@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+listContact.setRefreshHeader({
+    loadingImg :${1: 'widget://res/listContact_arrow.png'},
+    bgColor:${2:'#F5F5F5'},
+    textColor:${3:'#8E8E8E'},
+    textDown:${4:'下拉可以刷新...'},
+    textUp:${5:'松开开始刷新...'},
+    showTime:${6: true}
+},function(ret,err){
+    //触发加载事件
+});
+]]></content>
+    <tabTrigger>listContact-setRefreshHeader</tabTrigger>
+    <scope>source.js</scope>
+    <description>设置下拉刷新样式</description>
+</snippet>

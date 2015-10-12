@@ -1,10 +1,11 @@
 <snippet>
-    <content><![CDATA[inputField.open({
-    bgColor:${1:'#708090',}
-    lineColor:${2:'#C71585',}
-    fileBgColor:${3:'#90EE90',}
-    borderColor:${4:'#FFB6C1',}
-    sendImg:${5:'widget://res/sendImg.png'}
+    <content><![CDATA[
+inputField.open({
+    bgColor:'${1:#708090}',
+    lineColor:'${2:#C71585}',
+    fileBgColor:'${3:#90EE90}',
+    borderColor:'${4:#FFB6C1}',
+    sendImg:'${5:widget://res/sendImg.png}'
 },function(ret,err) {
     api.alert({title: '输入的内容', msg: ret.msg});
 });

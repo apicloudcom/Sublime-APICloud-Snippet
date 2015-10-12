@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[listContact.hide();
+    <content><![CDATA[
+listContact.hide();
 ]]></content>
     <tabTrigger>listContact-hide</tabTrigger>
     <scope>source.js</scope>

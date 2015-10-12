@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[loadingLabel.stop({
+    <content><![CDATA[
+loadingLabel.stop({
     id:${1:1}
 });
 ]]></content>

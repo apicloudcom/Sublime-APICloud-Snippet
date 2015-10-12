@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[multiSelector.hidden();
+    <content><![CDATA[
+multiSelector.hidden();
 ]]></content>
     <tabTrigger>multiSelector-hidden</tabTrigger>
     <scope>source.js</scope>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-imageFilter.save (function(ret, err){
+imageFilter.save(function(ret, err){
 });
 ]]></content>
     <tabTrigger>imageFilter-save</tabTrigger>

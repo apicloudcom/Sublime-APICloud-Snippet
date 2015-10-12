@@ -1,6 +1,7 @@
 <snippet>
-    <content><![CDATA[inputField.setMsg({
-	msg:${1:"设置的文字"}
+    <content><![CDATA[
+inputField.setMsg({
+	msg:"${1:设置的文字}"
 },function(ret,err){
 	if(ret.status){
 		api.alert({msg:"设置成功"});

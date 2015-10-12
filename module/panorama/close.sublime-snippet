@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[panorama.close({
+    <content><![CDATA[
+panorama.close({
     id:${1:1}
 });
 ]]></content>

@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[listContact.show();
+    <content><![CDATA[
+listContact.show();
 ]]></content>
     <tabTrigger>listContact-show</tabTrigger>
     <scope>source.js</scope>

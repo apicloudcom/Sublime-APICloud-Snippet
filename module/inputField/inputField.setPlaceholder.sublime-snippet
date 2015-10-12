@@ -1,6 +1,7 @@
 <snippet>
-    <content><![CDATA[inputField.setPlaceholder({
-   placeholder:${1:'我是占位提示文字'}
+    <content><![CDATA[
+inputField.setPlaceholder({
+   placeholder:'${1:我是占位提示文字}'
 });
 ]]></content>
     <tabTrigger>inputField-setPlaceholder</tabTrigger>

@@ -6,7 +6,7 @@ fs.open({
 },function(ret,err){
     if (ret.status) {
         api.alert({msg:'open操作成功'});
-	var fd = ret.fd;
+	    var fd = ret.fd;
     }else {
         api.alert({msg:err.msg});
     }

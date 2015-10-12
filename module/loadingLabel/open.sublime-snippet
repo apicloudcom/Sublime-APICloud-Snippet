@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[loadingLabel.open(function(ret,err){
+    <content><![CDATA[
+loadingLabel.open(function(ret,err){
    api.alert({msg:ret.id});
 });
 ]]></content>

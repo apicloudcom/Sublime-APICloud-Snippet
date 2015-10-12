@@ -1,8 +1,9 @@
 <snippet>
-    <content><![CDATA[listContact.open({
-    h:${1: 300,}
-    rightBtn:${2: [{}
-        color:${3: '#8B0000',}
+    <content><![CDATA[
+listContact.open({
+    h:${1: 300},
+    rightBtn:[{
+        color:${3: '#8B0000'},
         title:${4: '备注'}
     }],
     data: {

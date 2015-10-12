@@ -1,15 +1,16 @@
 <snippet>
-    <content><![CDATA[listContact.reloadData({
-    data:${1:{}
-        common:${2:[{}
-            placeholderImg:${3:'widget://res/listContact.png',}
-            img:${4:'http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg',}
-               title:${5:'标题'}
+    <content><![CDATA[
+listContact.reloadData({
+    data:{
+        common:[{
+            placeholderImg:${3:'widget://res/listContact.png'},
+            img:${4:'http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg'},
+            title:${5:'标题'}
           }],
         A:[{
             placeholderImg:'widget://res/listContact.png',
             img:'http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg',
-               title:'标题'
+            title:'标题'
          },{
             placeholderImg: 'widget://res/listContact.png',title:'标题'
          },{
@@ -30,7 +31,7 @@
             placeholderImg:'widget://res/listContact.png' ,title:'标题'
          }]}
 },function(ret,err){
-                api.alert({msg:ret.section+"*"+ret.index});
+    api.alert({msg:ret.section+"*"+ret.index});
 });
 ]]></content>
     <tabTrigger>listContact-reloadData</tabTrigger>

@@ -12,7 +12,7 @@ screenClip.open({
         tipsSize: ${8:12},
         tipsPosition: '${9:center}',//center/right_up/right_down/left_up/left_down/center_up/center_down/right_center/left_center
         tipsColor: '${10:#696969}'
-    },
+    }
 }, function(ret, err){
     if (ret.status) {
         api.alert({msg:'截图完成'});

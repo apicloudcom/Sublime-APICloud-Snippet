@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[multiSelector.open({
+    <content><![CDATA[
+multiSelector.open({
      content:${1:['第一条','第二条']}
 },function(ret,err){
 	alert( JSON.stringify( ret ) )

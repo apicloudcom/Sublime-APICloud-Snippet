@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[lineChart.show();
+    <content><![CDATA[
+lineChart.show();
 ]]></content>
     <tabTrigger>lineChart-show</tabTrigger>
     <scope>source.js</scope>

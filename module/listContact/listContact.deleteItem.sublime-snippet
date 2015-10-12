@@ -1,7 +1,8 @@
 <snippet>
-    <content><![CDATA[listContact.deleteItem({
-    index:${1:2,}
-    key:${2:A}
+    <content><![CDATA[
+listContact.deleteItem({
+    index:${1:2},
+    key:'${2:A}'
 });
 ]]></content>
     <tabTrigger>listContact-deleteItem</tabTrigger>

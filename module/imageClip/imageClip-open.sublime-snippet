@@ -1,19 +1,19 @@
 <snippet>
     <content><![CDATA[
 imageClip.open({
-        path:"${1:path}",
-        x:${2:x},
-        y:${3:y},
-        h:${4:height},
-        w:${5:width},
-        clipRect:{
-	        x:${6:clipX},
-	        y:${7:clipY},
-	        w:${8:clipW},
-	        h:${9:clipH},
-	        fixation:${5:true}
-	    }
-    },function(ret, err){
+    path:"${1:path}",
+    x:${2:0},
+    y:${3:0},
+    w:${4:320},
+    h:${5:480},
+    clipRect:{
+        x:${6:0},
+        y:${7:0},
+        w:${8:100},
+        h:${9:200},
+        fixation:${10:true}
+    }
+},function(ret, err){
 });
 ]]></content>
     <tabTrigger>imageClip-open</tabTrigger>

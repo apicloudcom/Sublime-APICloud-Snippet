@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
 sideMenu.open({    
-	type: ${1:0},
-    startPosition: ${2:20},
-    btnHeight: ${3:60},
+	type:${1:0},
+    startPosition:${2:20},
+    btnHeight:${3:60},
     trajectoryColor:${4:10},
     btnArray:[
         {

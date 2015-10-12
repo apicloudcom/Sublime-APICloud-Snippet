@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[multiSelector.show();
+    <content><![CDATA[
+multiSelector.show();
 ]]></content>
     <tabTrigger>multiSelector-show</tabTrigger>
     <scope>source.js</scope>

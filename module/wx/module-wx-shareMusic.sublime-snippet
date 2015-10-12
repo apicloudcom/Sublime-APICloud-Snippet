@@ -7,7 +7,6 @@ wx.shareMusic({
     description: '${4:分享内容的描述}',
     thumb: '${5:image_path}',
     contentUrl: '${6:content_url}'
-    
 }, function(ret, err){
     if(ret.status){
         alert("分享成功");

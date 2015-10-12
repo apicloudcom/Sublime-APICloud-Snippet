@@ -2,7 +2,7 @@
     <content><![CDATA[
 imageFilter.compress({
     img: "${1:Path}",
-    quality:${2:0.5},
+    quality: ${2:0.5},
     scale: ${3:1},
     save: {
         album: ${4:true},

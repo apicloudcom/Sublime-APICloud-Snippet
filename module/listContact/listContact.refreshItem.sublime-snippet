@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[listContact.refreshItem({
+    <content><![CDATA[
+listContact.refreshItem({
     index:${1:2},
     data: {
 		title:${2:'刷新指定下标的标题'}, 

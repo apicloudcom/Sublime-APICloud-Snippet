@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[listContact.close();
+    <content><![CDATA[
+listContact.close();
 ]]></content>
     <tabTrigger>listContact-close</tabTrigger>
     <scope>source.js</scope>

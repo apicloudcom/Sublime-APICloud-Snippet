@@ -10,7 +10,7 @@ api.ajax({
     }
 },function(ret,err){
     if (ret) {
-        unPay.pay({
+        unionPay.pay({
             tn: ret,
             mode: ${6:true}
         }, function(ret, err){
@@ -20,7 +20,7 @@ api.ajax({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>unpay-pay</tabTrigger>
+    <tabTrigger>unionPay-pay</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>按交易流水号支付订单</description>

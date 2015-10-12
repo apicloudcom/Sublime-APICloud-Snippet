@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[inputField.resignFirstResponder();
+    <content><![CDATA[
+inputField.resignFirstResponder();
 ]]></content>
     <tabTrigger>inputField-resignFirstResponder</tabTrigger>
     <scope>source.js</scope>

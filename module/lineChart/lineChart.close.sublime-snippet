@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[lineChart.close({
+    <content><![CDATA[
+lineChart.close({
     id:${1:1}
 });
 ]]></content>

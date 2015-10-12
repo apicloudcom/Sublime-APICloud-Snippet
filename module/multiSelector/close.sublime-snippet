@@ -1,5 +1,6 @@
 <snippet>
-    <content><![CDATA[multiSelector.close();
+    <content><![CDATA[
+multiSelector.close();
 ]]></content>
     <tabTrigger>multiSelector-close</tabTrigger>
     <scope>source.js</scope>

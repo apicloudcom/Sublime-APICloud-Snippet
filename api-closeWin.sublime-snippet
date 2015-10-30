@@ -1,12 +1,7 @@
 <snippet>
     <content><![CDATA[
 api.closeWin({
-    name: '${1:win_name}',
-    animation: {
-        type: '${2:flip}',
-        subType: '${3:from_bottom}',
-        duration: ${4:500}
-    }
+    name: '${1:win_name}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

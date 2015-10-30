@@ -1,11 +1,9 @@
 <snippet>
     <content><![CDATA[
 api.showProgress({
-    style: '${1:style_type}',
-    animationType: '${2:animation_type}',
-    title: '${3:title}',
-    text: '${4:text}',
-    modal: ${5:true}
+    title: '${1: title}',
+    text: '${2: text}',
+    modal: ${3: true}
 });
 
 ]]></content>

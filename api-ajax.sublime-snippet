@@ -5,15 +5,11 @@ api.ajax({
     method: '${2:post}',
     timeout: ${3:30},
     dataType: '${4:json}',
-    returnAll:${5:false},
-    data:{
-        values: {'${6:key}': '${7:value}'},
-        files: {file: '${8:file_url}'}
-    }
+    returnAll:${5:false}
 },function(ret,err){
     if (ret) {
-        ${9:// TODO }
-    }else {
+        ${6:// TODO }
+    } else {
         api.alert({
             msg:('错误码：'+err.code+'；错误信息：'+err.msg+'网络状态码：'+err.statusCode)
         });

@@ -2,7 +2,7 @@
 	<content><![CDATA[
 api.openWin({
     name: '${1:winname}',
-    url: './${2:winurl}.html',
+    url: '${2:winurl}',
     bounces: false,
     pageParam: {${3:key} : '${4:value}'}
 });

@@ -1,14 +1,14 @@
 <snippet>
 	<content><![CDATA[
 api.openFrame({
-    name: '${1:framebody}',
-    url: './${1:framebody}.html',
-    bounces: false,
+    name: '${1:framename}',
+    url: '${2:frameurl}',
+    bounces: ${3:true},
     rect: {
-    	x: ${2:0},
-    	y: ${3:0},
-    	w: '${4:auto}',
-    	h: '${5:auto}'
+    	x: ${4:0},
+    	y: ${5:0},
+    	w: '${6:auto}',
+    	h: '${7:auto}'
     }
 });
 ]]></content>

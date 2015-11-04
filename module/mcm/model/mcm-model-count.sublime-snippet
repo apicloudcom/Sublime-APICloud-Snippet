@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+model.count({
+    class: '${1:class}',
+    qid: '${2:qid}'
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>model-count</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据条件返回对象下满足该条件的总记录数</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+mam.checkUpdate(function(ret, err){
+    
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mam-checkUpdate</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>检测当前版本是否有更新或者被强制关闭</description>
+</snippet>

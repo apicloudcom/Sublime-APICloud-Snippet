@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+push.setPreference({
+	notify:${1:true},
+	updateCurrent:${2:false}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>push-setPreference</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>推送偏好设置</description>
+</snippet>

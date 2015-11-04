@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+model.insert({
+    class: '${1:class}',
+    value: ${2:valueJson}
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>model-insert</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>向对象插入一条数据</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+push.leaveGroup({
+	groupName:'${1:groupName}'
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>push-leaveGroup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>退出群组绑定</description>
+</snippet>

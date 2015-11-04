@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+model.downloadFile({
+    id: '${1:id}',
+    savePath: '${2:savePath}',
+    report:${3:report}
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>model-downloadFile</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>下载文件</description>
+</snippet>

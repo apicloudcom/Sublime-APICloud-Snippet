@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+relation.insert({
+	class:'${1:class}',
+	id:'${2:id}',
+	column:'${3:column}',
+	value:${4:valueJson}
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>relation-insert</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>向对象的某关系列下插入一条内容</description>
+</snippet>

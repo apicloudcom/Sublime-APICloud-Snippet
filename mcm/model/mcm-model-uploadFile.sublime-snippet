@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+model.uploadFile({
+    data: {
+        file:{
+             url:'${1:url}',
+             name:'${2:name}'
+        },
+        values:${3:valueJson}
+    },
+    report: ${4:report}
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>model-uploadFile</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>上传文件到云端file表里面</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+model.config({
+    appKey: '${1:appkey}',
+    host: '${2:host}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>model-config</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>全局函数，配置appKey等应用信息</description>
+</snippet>

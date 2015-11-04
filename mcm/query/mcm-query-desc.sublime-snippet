@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+query.desc({
+	qid:${1:qid},
+	column:'${2:column}'
+};
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>query-desc</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置查询返回结果按某列倒序排列</description>
+</snippet>

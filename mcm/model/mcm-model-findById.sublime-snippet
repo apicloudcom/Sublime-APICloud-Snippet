@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+model.findById({
+    class: '${1:class}',
+    id: '${2:id}'
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>model-findById</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据ID查找对象的一条数据</description>
+</snippet>

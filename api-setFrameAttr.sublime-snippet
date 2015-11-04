@@ -8,11 +8,7 @@ api.setFrameAttr({
         w: ${4:320},
         h: ${5:480}
     },
-    bounces: ${6:true},
-    opaque: ${7:true},
-    bgColor: '${8:#fff}',
-    vScrollBarEnabled:${9:true},
-    hScrollBarEnabled:${10:true}
+    hidden: ${6:true}
 });
 
 ]]></content>

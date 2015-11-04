@@ -1,13 +1,7 @@
 <snippet>
 	<content><![CDATA[
 api.setWinAttr({
-    bounces: ${1:true},
-    opaque: ${2:true},
-    bgColor: '${3:#fff}',
-    vScrollBarEnabled: ${4:true},
-    hScrollBarEnabled: ${5:true},
-    scaleEnabled: ${6:true},
-    slidBackEnabled: ${7:true}
+    hidden: ${1:true}
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

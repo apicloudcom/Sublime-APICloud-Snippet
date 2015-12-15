@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.getRegion(function(ret){
+bmap.getRegion(function(ret){
     if(ret.status){
         alert(JSON.stringify(ret));
     }

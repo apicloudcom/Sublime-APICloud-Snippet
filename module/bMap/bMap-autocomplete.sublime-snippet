@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.autocomplete({
+bmap.autocomplete({
     keyword: '${1:北京西站}',
     city: '${2:北京}'
 }, function(ret){

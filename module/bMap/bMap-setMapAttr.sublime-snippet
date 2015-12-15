@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
-bMap.setMapAttr({
+bmap.setMapAttr({
     type: '${1:standard}',//standard/satellite/trafficOn/trafAndsate
     zoomEnable: ${2:true},
-    scrollEnable: ${3:true}
+    scrollEnable: ${3:true},
 });
 ]]></content>
     <tabTrigger>bmap-setMapAttr</tabTrigger>

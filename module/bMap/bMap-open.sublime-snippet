@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.open({
+bmap.open({
     rect: {
         x: ${1:0},
         y: ${2:0},

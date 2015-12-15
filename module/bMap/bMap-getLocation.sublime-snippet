@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.getLocation({
+bmap.getLocation({
     accuracy: '${1:10m}',//10m/100m/1km/3km
     autoStop: ${2:true},
     filter: ${3:1}

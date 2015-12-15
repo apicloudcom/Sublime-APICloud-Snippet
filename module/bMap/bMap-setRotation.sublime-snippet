@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.setRotation({
+bmap.setRotation({
     degree: ${1:30}//-180~180
 });
 ]]></content>

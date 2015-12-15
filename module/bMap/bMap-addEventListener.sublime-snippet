@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.addEventListener({
+bmap.addEventListener({
     name: '${1:longPress}'//longPress/viewChange/click/dbclick
 },function(ret){
     if(ret.status){

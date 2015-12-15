@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.searchRoute({
+bmap.searchRoute({
     id: ${1:1},
     type: '${2:drive}',//transit/drive/walk
     policy: '${3:ecar_fee_first}',//ecar_fee_first/ecar_dis_first/ecar_time_first/ecar_avoid_jam/ebus_no_subway/ebus_time_first/ebus_transfer_first/ebus_walk_first

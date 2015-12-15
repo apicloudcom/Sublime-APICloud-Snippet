@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.addBillboard({
+bmap.addBillboard({
     id: ${1:4},
     coords: {
         lon: ${2:116.233},

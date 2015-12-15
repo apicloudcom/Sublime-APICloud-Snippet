@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.addPolygon({
+bmap.addPolygon({
     id: ${1:2},
     styles: {
         borderColor: '${2:#FF0000}',

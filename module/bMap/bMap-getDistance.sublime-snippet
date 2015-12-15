@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.getDistance({
+bmap.getDistance({
     start: {
         lon: ${1:106.486654},
         lat: ${2:29.490295}

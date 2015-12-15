@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.searchNearby({
+bmap.searchNearby({
     keyword: '${1:KTV}',
     lon: ${2:116.384767},
     lat: ${3:39.989539},

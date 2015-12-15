@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.setBubble({
+bmap.setBubble({
     id: ${1:2},
     bgImg: '${2:widget://res/bubble_bg.png}',
     content: {

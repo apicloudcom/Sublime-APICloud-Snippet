@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.setCenter({
+bmap.setCenter({
     coords: {
         lon: ${1:116.404},
         lat: ${2:39.915}

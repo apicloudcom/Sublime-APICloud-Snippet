@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.popupBubble({
+bmap.popupBubble({
     id: ${1:2}
 });
 ]]></content>

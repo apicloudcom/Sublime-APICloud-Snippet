@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.hide();
+bmap.hide();
 ]]></content>
     <tabTrigger>bmap-hide</tabTrigger>
     <scope>source.js</scope>

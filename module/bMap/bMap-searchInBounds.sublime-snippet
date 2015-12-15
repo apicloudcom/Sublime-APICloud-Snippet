@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.searchInBounds({
+bmap.searchInBounds({
     keyword: '${1:图书馆}',
     lbLon: ${2:112.47723797622677},
     lbLat: ${3:34.556480000000015},

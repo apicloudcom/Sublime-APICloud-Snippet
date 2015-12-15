@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.showUserLocation({
+bmap.showUserLocation({
     isShow: ${1:true},
     trackingMode: '${2:none}'//none/follow/compass
 });

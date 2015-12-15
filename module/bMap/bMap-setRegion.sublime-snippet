@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.setRegion({
+bmap.setRegion({
     lbLon: ${1:116.027143},
     lbLat: ${2:39.772348},
     rtLon: ${3:116.832025},

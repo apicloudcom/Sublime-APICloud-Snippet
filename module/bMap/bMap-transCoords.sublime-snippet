@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.transCoords({
+bmap.transCoords({
     type: '${1:common}',//gps/common
     lon: ${2:116.351},
     lat: ${3:39.283},

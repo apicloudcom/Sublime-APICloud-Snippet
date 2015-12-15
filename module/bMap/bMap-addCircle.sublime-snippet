@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.addCircle({
+bmap.addCircle({
     id: ${1:4},
     center: {
         lon: ${2:116.39432327},

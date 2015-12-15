@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.getCoordsFromName({
+bmap.getCoordsFromName({
     city: '${1:北京}',
     address: '${2:天安门}'
 },function(ret,err){

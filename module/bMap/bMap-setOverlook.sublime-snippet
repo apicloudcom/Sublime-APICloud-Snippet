@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.setOverlook({
+bmap.setOverlook({
     degree: ${1:-30}//-45~0
 });
 ]]></content>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.setZoomLevel({
+bmap.setZoomLevel({
     level: ${1:10}//3~18
 });
 ]]></content>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.zoomOut();
+bmap.zoomOut();
 ]]></content>
     <tabTrigger>bmap-zoomOut</tabTrigger>
     <scope>source.js</scope>

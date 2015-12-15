@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.stopLocation();
+bmap.stopLocation();
 ]]></content>
     <tabTrigger>bmap-stopLocation</tabTrigger>
     <scope>source.js</scope>

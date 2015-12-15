@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.addAnnotations({
+bmap.addAnnotations({
     annotations: [{
         id: ${1:1}, lon: ${2:116.297}, lat: ${3:40.109}
     },

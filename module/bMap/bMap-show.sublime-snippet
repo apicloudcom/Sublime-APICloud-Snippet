@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.show();
+bmap.show();
 ]]></content>
     <tabTrigger>bmap-show</tabTrigger>
     <scope>source.js</scope>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.setScaleBar({
+bmap.setScaleBar({
     show: ${1:true},
     position: {
       x: ${2:100},

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.addImg({
+bmap.addImg({
     id: ${1:5},
     imgPath: '${2:widget://res/over_img.png}',
     lbLon: ${3:116.39432327},

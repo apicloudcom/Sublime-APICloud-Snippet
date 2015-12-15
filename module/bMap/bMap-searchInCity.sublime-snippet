@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.searchInCity({
+bmap.searchInCity({
     city: '${1:北京}',
     keyword: '${2:学校}',
     pageIndex: ${3:0},

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bMap.close();
+bmap.close();
 ]]></content>
     <tabTrigger>bmap-close</tabTrigger>
     <scope>source.js</scope>

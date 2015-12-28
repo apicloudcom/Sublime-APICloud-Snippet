@@ -6,4 +6,5 @@
     <tabTrigger>apijs-rmStorage</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <descripton>清除localStorage中与键名对应的值</descripton>
 </snippet>

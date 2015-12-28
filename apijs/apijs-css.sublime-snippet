@@ -6,4 +6,5 @@
     <tabTrigger>apijs-css</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>设置所传入的DOM元素的样式，可传入多条样式</description>
 </snippet>

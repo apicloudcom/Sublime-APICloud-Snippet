@@ -6,4 +6,5 @@
     <tabTrigger>apijs-closest</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>根据选择器匹配最近的父元素</description>
 </snippet>

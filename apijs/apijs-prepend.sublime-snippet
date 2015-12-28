@@ -6,4 +6,5 @@
     <tabTrigger>apijs-prepend</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>在DOM元素内部，首个子元素前插入HTML字符串</description>
 </snippet>

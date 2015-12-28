@@ -6,4 +6,5 @@
     <tabTrigger>apijs-last</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>选择DOM元素的最后一个子元素</description>
 </snippet>

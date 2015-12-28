@@ -6,4 +6,5 @@
     <tabTrigger>apijs-contains</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>判断某一个元素是否包含目标元素</description>
 </snippet>

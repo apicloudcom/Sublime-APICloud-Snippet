@@ -6,4 +6,5 @@
     <tabTrigger>apijs-fixStatusBar</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <descriptin>适配iOS7+、Android4.4+系统状态栏，为传入的DOM元素增加适当的上内边距，避免header与状态栏重叠</descriptin>
 </snippet>

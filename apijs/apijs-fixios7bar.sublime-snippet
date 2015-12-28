@@ -6,4 +6,5 @@
     <tabTrigger>apijs-fixIos7Bar</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <descriptin>适配iOS7+系统状态栏，为传入的DOM元素增加20px的上内边距</descriptin>
 </snippet>

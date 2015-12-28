@@ -6,4 +6,6 @@
     <tabTrigger>apijs-append</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>在DOM元素内部，最后一个子元素后面插入HTML字符串</description>
+    
 </snippet>

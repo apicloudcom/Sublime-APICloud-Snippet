@@ -6,4 +6,5 @@
     <tabTrigger>apijs-get</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>api.ajax()方法的get方式简写</description>
 </snippet>

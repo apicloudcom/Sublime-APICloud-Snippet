@@ -6,4 +6,5 @@
     <tabTrigger>apijs-clearStorage</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>清除localStorage的所有数据，慎用</description>
 </snippet>

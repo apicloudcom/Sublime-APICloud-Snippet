@@ -6,4 +6,5 @@
     <tabTrigger>apijs-jsonToStr</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>将标准的JSON 对象转换成字符串格式</description>
 </snippet>

@@ -6,4 +6,5 @@
     <tabTrigger>apijs-one</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>为DOM元素绑定事件，事件只执行一次</description>
 </snippet>

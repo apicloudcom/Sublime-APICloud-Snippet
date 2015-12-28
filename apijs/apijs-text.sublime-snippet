@@ -6,4 +6,5 @@
     <tabTrigger>apijs-text</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <descripton>设置或者获取元素的文本内容</descripton>
 </snippet>

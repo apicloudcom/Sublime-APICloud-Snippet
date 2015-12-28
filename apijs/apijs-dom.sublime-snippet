@@ -6,4 +6,5 @@
     <tabTrigger>apijs-dom</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>选择首个匹配的DOM元素</description>
 </snippet>

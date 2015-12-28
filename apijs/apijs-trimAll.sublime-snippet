@@ -6,4 +6,5 @@
     <tabTrigger>apijs-trimAll</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>去掉字符串所有空格</description>
 </snippet>

@@ -6,4 +6,5 @@
     <tabTrigger>apijs-getStorage</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>获取localStorage数据，必须与$api.setStorage()配套使用</description>
 </snippet>

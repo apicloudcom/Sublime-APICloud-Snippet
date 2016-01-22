@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uicustompicker.open({
+UICustomPicker.open({
     rect: {
         x: ${1:0},
         y: ${2:0},
@@ -32,7 +32,7 @@ uicustompicker.open({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uicustompicker-open</tabTrigger>
+    <tabTrigger>UICustomPicker-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开自定义选择器</description>

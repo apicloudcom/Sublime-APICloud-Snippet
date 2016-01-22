@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uimediascanner.open({
+UIMediaScanner.open({
     column: ${1:4},
     classify:${2:true},
     max: ${3:4},
@@ -39,7 +39,7 @@ uimediascanner.open({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uimediascanner-open</tabTrigger>
+    <tabTrigger>UIMediaScanner-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开多媒体资源选择器，打开后会全屏显示</description>

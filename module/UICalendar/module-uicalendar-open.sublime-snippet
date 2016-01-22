@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uicalendar.open({
+UICalendar.open({
     rect: {
         x: ${1:0},
         y: ${2:0},
@@ -40,7 +40,7 @@ uicalendar.open({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uicalendar-open</tabTrigger>
+    <tabTrigger>UICalendar-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开日历</description>

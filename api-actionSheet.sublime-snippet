@@ -1,15 +1,15 @@
 <snippet>
     <content><![CDATA[
-api.actionSheet({
-    title: '${1:title}',
-    cancelTitle: '${2:cancelTitle}',
-    destructiveTitle: '${3:destructivetitle}',
-    buttons: ['1', '2', '3']
-},function(ret,err){
-    api.alert({
-        msg: '你刚点击了'+ret.buttonIndex
-    });
-});
+	api.actionSheet({
+		title : 'title',
+		cancelTitle : 'cancelTitle',
+		destructiveTitle : 'destructivetitle',
+		buttons : ['1', '2', '3']
+	}, function(ret, err) {
+		api.alert({
+			msg : '你刚点击了' + ret.buttonIndex
+		});
+	}); 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-actionSheet</tabTrigger>

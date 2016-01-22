@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-        uiinput.open({
+        UIInput.open({
              rect: {
                 x: ${1:0},
                 y: ${2:0},
@@ -26,7 +26,7 @@
         });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uiinput-open</tabTrigger>
+    <tabTrigger>UIInput-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开输入框，注意：调用 open 接口的元素，不能加 tapmode 属性</description>

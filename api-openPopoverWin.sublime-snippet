@@ -5,7 +5,7 @@ api.openPopoverWin({
 	url: '${2:window_url}',
 	bounces: ${3:false},
 	width: ${4:400},
-	height: ${5: 400}
+	height: ${5:400}
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

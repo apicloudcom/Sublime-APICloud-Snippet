@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uicalendar.setDate({
+UICalendar.setDate({
     date: '${1:2015-8-8}'
 },function(ret){
     if(ret.status){
@@ -9,7 +9,7 @@ uicalendar.setDate({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uicalendar-setDate</tabTrigger>
+    <tabTrigger>UICalendar-setDate</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置指定日期</description>

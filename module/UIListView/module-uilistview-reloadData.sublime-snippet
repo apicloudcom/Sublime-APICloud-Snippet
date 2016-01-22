@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uilistview.reloadData({
+UIListView.reloadData({
     data:[{
         imgPath: '${1:image_path}',
         title: '${2:title}',
@@ -15,7 +15,7 @@ uilistview.reloadData({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uilistview-reloadData</tabTrigger>
+    <tabTrigger>UIListView-reloadData</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>刷新列表数据</description>

@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
-uilistview.getDataByIndex({
+UIListView.getDataByIndex({
     index: ${1:0}
 }, function(ret, err){
     alert(JSON.stringify(ret.data));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uilistview-getDataByIndex</tabTrigger>
+    <tabTrigger>UIListView-getDataByIndex</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>根据列表项的索引获取对应的数据</description>

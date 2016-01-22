@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uiscrollpicture.open({
+UIScrollPicture.open({
     rect: {
         x: ${1:0},
         y: ${2:0},
@@ -41,7 +41,7 @@ uiscrollpicture.open({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uiscrollpicture-open</tabTrigger>
+    <tabTrigger>UIScrollPicture-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开模块</description>

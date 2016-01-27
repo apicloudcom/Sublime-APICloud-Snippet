@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uilistview.setRefreshHeader({
+UIListView.setRefreshHeader({
     loadingImg: '${1:loading_image_path}',
     bgColor: '${2:bg_color}',
     textColor: '${3:text_color}',
@@ -11,7 +11,7 @@ uilistview.setRefreshHeader({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uilistview-setRefreshHeader</tabTrigger>
+    <tabTrigger>UIListView-setRefreshHeader</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置下拉刷新</description>

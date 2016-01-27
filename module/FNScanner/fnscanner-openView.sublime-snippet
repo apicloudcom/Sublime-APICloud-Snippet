@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-fnscanner.openView({
+FNScanner.openView({
     sound: '${1:sound_path}',
     autoLight: ${2:true},
     saveToAlbum: ${3:false},
@@ -22,7 +22,7 @@ fnscanner.openView({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>fnscanner-openView</tabTrigger>
+    <tabTrigger>FNScanner-openView</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开可自定义的二维码/条形码扫描器</description>

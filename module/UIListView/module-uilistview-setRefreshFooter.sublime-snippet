@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uilistview.setRefreshFooter({
+UIListView.setRefreshFooter({
     loadingImg: '${1:loading_image_path}',
     bgColor: '${2:bg_color}',
     textColor: '${3:text_color}',
@@ -11,7 +11,7 @@ uilistview.setRefreshFooter({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uilistview-setRefreshFooter</tabTrigger>
+    <tabTrigger>UIListView-setRefreshFooter</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置上拉加载</description>

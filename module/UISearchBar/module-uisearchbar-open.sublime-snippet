@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uisearchbar.open({
+UISearchBar.open({
     placeholder: '${1:请输入搜索关键字}',
     historyCount: ${2:10},
     showRecordBtn: ${3:true},
@@ -48,7 +48,7 @@ uisearchbar.open({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uisearchbar-open</tabTrigger>
+    <tabTrigger>UISearchBar-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开搜索页面</description>

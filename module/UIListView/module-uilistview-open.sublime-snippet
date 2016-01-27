@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uilistview.open({
+UIListView.open({
     rect: {
         x: ${1:0},
         y: ${2:0},
@@ -56,7 +56,7 @@ uilistview.open({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uilistview-open</tabTrigger>
+    <tabTrigger>UIListView-open</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开 UIListView 模块</description>

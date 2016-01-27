@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uigraph.reloadData({
+UIGraph.reloadData({
     id: ${1:1},
     type:'${2:prepend}',
     data: [{
@@ -19,7 +19,7 @@ uigraph.reloadData({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uigraph-reloadData</tabTrigger>
+    <tabTrigger>UIGraph-reloadData</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>更新曲线图的数据</description>

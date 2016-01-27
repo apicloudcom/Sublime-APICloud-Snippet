@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-uilistview.setSwipeBtns({
+UIListView.setSwipeBtns({
     index: ${1:0},
     btns: [{
         bgColor: '${2:bg_color}',
@@ -17,7 +17,7 @@ uilistview.setSwipeBtns({
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uilistview-setSwipeBtns</tabTrigger>
+    <tabTrigger>UIListView-setSwipeBtns</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置侧滑显示出来的按钮</description>

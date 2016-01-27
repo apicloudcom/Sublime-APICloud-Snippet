@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
-uicalendar.prevYear(function(ret){
+UICalendar.prevYear(function(ret){
     if(ret){
         alert(JSON.stringify(ret));
     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>uicalendar-prevYear</tabTrigger>
+    <tabTrigger>UICalendar-prevYear</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>显示上一年</description>

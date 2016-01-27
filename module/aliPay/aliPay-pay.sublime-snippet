@@ -9,7 +9,7 @@ aliPay.pay({
   subject: subject,
   body: body,
   amount: amount,
-  tradeNO: tradeNO
+  tradeNo: tradeNo
 }, function(ret, err) {
   api.alert({
     title: '支付结果',

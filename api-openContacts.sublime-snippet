@@ -1,12 +1,12 @@
+
 <snippet>
-    <content><![CDATA[
-api.openContacts(function(ret,err){
+    <content><![CDATA[api.openContacts(function(ret, err){
     if(ret.status){
-        var msg = '姓名:'+ret.name+'--电话:'+ret.phone;
-        api.alert({msg:msg});
+         var name = ret.name;
+         var phone = ret.phone;
     }else{
-        api.alert({msg:err.msg});
-    };            
+
+    } 
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

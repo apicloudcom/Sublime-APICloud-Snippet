@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.setBubbleStyle({
+    bubbleBgimg: '${1:widget://res/bubble_bg.png}',
+    imgPath: '${2:widget://res/bubble_head.png}',
+    id: ${3:2}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-setBubbleStyle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置大头针上气泡的类型</description>
+</snippet>

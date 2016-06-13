@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var mnPopups = api.require('MNPopups');
+mnPopups.insertItem({
+    index: ${1:1},
+    data: {
+        title: '${2:创建讨论组}',         
+        icon: '${3:fs://creater.png}'  
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNPopups-insertItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>从菜单列表中的指定位置插入数据</description>
+</snippet>

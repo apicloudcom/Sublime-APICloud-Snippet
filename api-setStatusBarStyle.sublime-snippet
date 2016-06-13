@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.setStatusBarStyle({
+    <content><![CDATA[api.setStatusBarStyle({
     style: '${1:light}'
 });
 ]]></content>
@@ -8,4 +8,5 @@ api.setStatusBarStyle({
     <tabTrigger>api-setStatusBarStyle</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
+    <description>设置状态栏样式为白色（适用于深色背景）或黑色（适用于浅色背景），以及设置状态栏背景颜色</description>
 </snippet>

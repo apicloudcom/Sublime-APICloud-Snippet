@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.pageParam
+    <content><![CDATA[var pageParam = api.pageParam; //比如： {"name" : "tans-con"}
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-pageParam</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>页面参数</description>
+    <description>页面参数，JSON 对象类型</description>
 </snippet>

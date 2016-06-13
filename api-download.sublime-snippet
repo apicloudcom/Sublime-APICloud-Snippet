@@ -1,16 +1,16 @@
+
 <snippet>
-    <content><![CDATA[
-api.download({
-    url: '${1:url}',
-    savePath: 'fs://${2:file_name}',
-    report: ${3:true},
-    cache: ${4:true},
+    <content><![CDATA[api.download({
+    url: ${1:url},
+    savePath: '${2:fs://test.rar}',
+    report: ${3:true,}
+    cache: ${4:true,}
     allowResume: ${5:true}
-},function(ret,err){
-    if (ret) {
-        var value = ('文件大小：'+ret.fileSize+'；下载进度：'+ret.percent+'；下载状态'+ret.state+'存储路径: '+ret.savePath);
-    } else{
-        var value = err.msg;
+},function(ret, err){
+    if(ret.state == 1){
+        //下载成功
+    }else{
+
     }
 });
 ]]></content>

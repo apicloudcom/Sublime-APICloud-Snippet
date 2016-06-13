@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[var weibo = api.require('weibo');
+weibo.cancelAuth(function(ret,err){
+    if(ret.status){
+        api.alert({msg:'${1:登出成功}'});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>weibo-cancelAuth</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>取消授权，退出登录状态</description>
+</snippet>

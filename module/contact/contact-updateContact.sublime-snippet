@@ -1,0 +1,33 @@
+
+<snippet>
+    <content><![CDATA[var contact = api.require('contact');
+contact.updateContact({
+    id:${1:1},
+    firstName:'${2:张}',
+    lastName:'${3:三}',
+    phones:[{${4:label}:'${5:住宅}',${6:phone:}'${7:124}'},{${8:label}:'${9:工作}',${10:phone:}'${11:346}'}],
+    address: {
+         Country:'',
+         State:'',
+         City:'',
+         Street:'',
+         ZIP:''
+    },
+    email:'',
+    company:'',
+    title:'',
+    note:''
+},function(ret,err) {
+    if(ret.status) {
+        api.alert({msg:'${12:修改成功}'});
+    }else{
+        api.alert({msg:${13:err.msg});}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contact-updateContact</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>修改通讯录里的一个联系人</description>
+</snippet>

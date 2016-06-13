@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var button = api.require('UIButton');
+button.setRect({
+    id:${1:1},
+    rect: {
+        x: ${2:80},
+        y: ${3:100},
+        h: ${4:60},
+        w: ${5:90}
+    },
+    anim: ${6:true}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIButton-setRect</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重设指定按钮模块的位置及大小</description>
+</snippet>

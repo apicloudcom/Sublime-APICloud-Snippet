@@ -1,0 +1,95 @@
+
+<snippet>
+    <content><![CDATA[var UILinkedPicker = api.require('UILinkedPicker');
+UILinkedPicker.open({
+    rect:{
+        x: ${1:30},
+        y: ${2:api.frameHeight / 2 - 170},
+        w: ${3:api.frameWidth - 60},
+        h: ${4:340}
+    },
+    styles:{
+        bg: '${5:rgba(0,0,0,0)}',   
+        text:{                  
+           size: ${6:14},             
+           selected: '#${7:fff}',     
+           normal: '#${8:000}'        
+        },
+        item:{                   
+          w: ${9:80},                
+          h: ${10:45},                
+          normal: '#${11:87ceeb}',    
+          selected: '#${12:218868}',  
+          zoomIn: ${13:1}${14:.2        }
+        }
+   },
+   rows: ${15:5},
+   indexs: [${16:1},${17:2},${18:3}],
+   bounce: ${19:false},
+   fixedOn: ${20:api.frameName},
+   fixed: ${21:false},
+   data: [{
+        'value': {
+          'id': ${22:1},
+          'name': '${23:A}'
+        }
+      },{
+        'value': {
+          'id': ${24:2},
+          'name': '${25:B}'
+        }
+      },{
+        'value': {
+          'id': ${26:3},
+          'name': '${27:C}'
+        }
+      },{
+        'value': {
+          'id': ${28:4},
+          'name': '${29:D}'
+        }
+      },{
+        'value': {
+          'id': ${30:5},
+          'name': '${31:E}'
+        }
+      },{
+        'value': {
+          'id': ${32:6},
+          'name': '${33:F}'
+        }
+      },{
+        'value': {
+          'id': ${34:7},
+          'name': '${35:G}'
+        }
+      },{
+        'value': {
+          'id': ${36:8},
+          'name': '${37:H}'
+        }
+      },{
+        'value': {
+          'id': ${38:9},
+          'name': '${39:I}'
+        }
+      },{
+        'value': {
+          'id': ${40:10},
+          'name': '${41:J}'
+        }
+    }]
+}, function( ret, err ) {
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UILinkedPicker-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开选择器</description>
+</snippet>

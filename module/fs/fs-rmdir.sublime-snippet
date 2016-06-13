@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var fs = api.require('fs');
+fs.rmdir({
+    path: '${1:fs://floder}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-rmdir</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>删除文件目录，里面的所有文件将会一起被删除</description>
+</snippet>

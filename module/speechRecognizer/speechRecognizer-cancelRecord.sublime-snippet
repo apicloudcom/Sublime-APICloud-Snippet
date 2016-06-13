@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[ {
+   var speechRecognizer = api.require('speechRecognizer');
+   speechRecognizer.cancelRecord();
+ }
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>speechRecognizer-cancelRecord</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>取消语音识别</description>
+</snippet>

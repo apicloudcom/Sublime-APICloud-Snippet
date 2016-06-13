@@ -1,16 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var trans = api.require('trans');
 trans.decodeImgToBase64({
-    imgPath: '${1:fs://1.png}'
-}, function(ret, err){
-    if (ret.status) {
-        api.alert({msg:ret.base64Str});
-    } else{
-        api.alert({msg:err.msg});
+    imgPath: '${1:widget://res/img/apicloud.png}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>trans-decodeImgToBase64</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>将图片转换为base64字符串</description>
+    <description>将图片转换为 base64 字符串，暂仅支持 png、jpg 格式的图片</description>
 </snippet>

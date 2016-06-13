@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var wx = api.require('wx');
+wx.shareMutableImg({
+    description: '${1:weixin share image test description}',
+    imgs:['${2:widget://res/1.png}','${3:widget://res/12.jpg}','${4:widget://res/123.jpg}']
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wx-shareMutableImg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>分享多张图片到朋友圈，暂仅支持 Android 平台。注意：由于不是使用的官方sdk进行的分享，而是直接调用的微信客户端的分享界面，分享后无法回到原应用，且微信端不会给出是否分享成功的反馈，所以本接口暂无回调</description>
+</snippet>

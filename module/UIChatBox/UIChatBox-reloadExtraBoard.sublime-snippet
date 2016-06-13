@@ -1,0 +1,53 @@
+
+<snippet>
+    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+UIChatBox.reloadExtraBoard({
+    extras: {
+        titleSize: ${1:10},
+        titleColor: '#${2:a3a3a3}',
+        btns: [{
+            title: '${3:图片}',
+            normalImg: '${4:widget://res/img/chatBox_album1.png}',
+            activeImg: '${5:widget://res/img/chatBox_album2.png}'
+        },{
+            title: '${6:拍照}',
+            normalImg: '${7:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${8:widget://res/img/chatBox_cam2.png}'
+        },{
+            title: '${9:拍照}',
+            normalImg: '${10:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${11:widget://res/img/chatBox_cam2.png}'
+        },{
+            title: '${12:拍照}',
+            normalImg: '${13:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${14:widget://res/img/chatBox_cam2.png}'
+        },{
+            title: '${15:拍照}',
+            normalImg: '${16:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${17:widget://res/img/chatBox_cam2.png}'
+        },{
+            title: '${18:拍照}',
+            normalImg: '${19:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${20:widget://res/img/chatBox_cam2.png}'
+        },{
+            title: '${21:拍照}',
+            normalImg: '${22:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${23:widget://res/img/chatBox_cam2.png}'
+        },{
+            title: '${24:拍照}',
+            normalImg: '${25:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${26:widget://res/img/chatBox_cam2.png}'
+        },{
+            title: '${27:拍照}',
+            normalImg: '${28:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${29:widget://res/img/chatBox_cam2.png}'
+        }]
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIChatBox-reloadExtraBoard</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重新加载（刷新）附加功能面板，open时必须添加附加功能按钮及其面板参数</description>
+</snippet>

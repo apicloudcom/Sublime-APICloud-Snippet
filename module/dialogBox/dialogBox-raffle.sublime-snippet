@@ -1,0 +1,69 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.raffle ({
+    texts: {
+        title: '${1:恭喜你}',          
+        mainText: '${2:5枚钱币}',    
+        subText: '${3:这就中了}，${4:还有什么你做不到}',    
+        leftTitle: '${5:收入囊中}',   
+        rightTitle: '${6:告诉好友}'   
+    },
+    styles: {
+        bg: '#${7:fff}',               
+        w: ${8:300},                     
+        title:{                    
+            size: ${9:14},             
+            color: '#${10:000}'         
+        },
+        icon:{         
+            marginT: ${11:20},           
+            w: ${12:40},                 
+            h: ${13:40},               
+            iconPath:'${14:widget://image/raffle.png}'           
+        },
+        main: {                   
+            marginT: ${15:20},          
+            color: '#${16:636363}',      
+            size: ${17:13}            
+        },
+        sub: {                     
+            marginT: ${18:8},      
+            color: '#${19:999999}',
+            size: ${20:12}   
+        },
+        left:{      
+            marginB: ${21:7},
+            marginL: ${22:18},
+            w: ${23:130},
+            h: ${24:35},
+            corner: ${25:2},        
+            bg: '#${26:fff}',     
+            color: '#${27:007FFF}',
+            size: ${28:12}
+        },
+        right: {    
+            marginB: ${29:7},   
+            marginL: ${30:18},
+            w: ${31:130},  
+            h: ${32:35},   
+            corner: ${33:2},  
+            bg: '#${34:fff}',
+            color: '#${35:007FFF}',  
+            size: ${36:12}              
+        }
+    }
+}, function(ret, err){
+    if( ret ){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-raffle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 raffle 样式的对话框</description>
+</snippet>

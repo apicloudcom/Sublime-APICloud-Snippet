@@ -1,11 +1,16 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var pieChart = api.require('pieChart');
 pieChart.setFrame({
-    x: ${1:10},
-    w: ${2:300}
+    id: ${1:1},
+      x: ${2:10},
+      y: ${3:300},
+      anim: ${4:true}
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>pieChart-serFrame</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>重设饼图的位置大小</description>
+    <description>重设模块视图的位置大小</description>
 </snippet>

@@ -1,0 +1,62 @@
+
+<snippet>
+    <content><![CDATA[var UIActionSelector = api.require('UIActionSelector');
+UIActionSelector.open({
+    datas: '${1:widget://res/city.json}',
+    layout: {
+        row: ${2:5}, 
+        col: ${3:3},
+        height: ${4:30}, 
+        size: ${5:12},
+        sizeActive: ${6:14},
+        rowSpacing: ${7:5},
+        colSpacing: ${8:10},
+        maskBg: '${9:rgba(0,0,0,0.2)}',
+        bg: '#${10:fff}',
+        color: '#${11:888}',
+        colorActive: '#${12:f00}', 
+        colorSelected: '#${13:f00}'
+    },
+    animation: ${14:true},
+    cancel: {
+        text: '${15:取消}', 
+        size: ${16:12},
+        w: ${17:90},  
+        h: ${18:35},
+        bg: '#${19:fff}',
+        bgActive: '#${20:ccc}',
+        color: '#${21:888}',
+        colorActive: '#${22:fff}'
+    },
+    ok: {
+        text: '${23:确定}',
+        size: ${24:12},
+        w: ${25:90},
+        h: ${26:35},
+        bg: '#${27:fff}',
+        bgActive: '#${28:ccc}',
+        color: '#${29:888}',
+        colorActive: '#${30:fff}'
+    },
+    title: {
+        text: '${31:请选择}',
+        size: ${32:12},
+        h: ${33:44},
+        bg: '#${34:eee}',
+        color: '#${35:888}'
+    },
+    fixedOn: ${36:api.frameName}
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIActionSelector-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开选择器</description>
+</snippet>

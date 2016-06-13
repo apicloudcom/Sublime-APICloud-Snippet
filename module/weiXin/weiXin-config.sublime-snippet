@@ -1,0 +1,22 @@
+
+<snippet>
+    <content><![CDATA[var weiXin = api.require('weiXin');
+weiXin.config({
+     appId: '',
+     mchId:'',
+     partnerKey:'',
+     notifyUrl:''
+},function(ret,err) {
+     if (ret.status) {
+         ret.result;
+     }else{
+         api.alert({msg:${1:err.msg});}
+     }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>weiXin-config</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>v3版支付账号配置商户支付参数</description>
+</snippet>

@@ -1,11 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var downloadManager = api.require('downloadManager');
 downloadManager.openDownloadedFile({
-    id: '${1:id}'
-},function(ret,err){
+    id: '${1:123456}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>downloadManager-openDownloadedFile</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开下载文件</description>
 </snippet>

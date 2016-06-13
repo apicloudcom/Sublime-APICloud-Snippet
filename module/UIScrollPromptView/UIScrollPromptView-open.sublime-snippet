@@ -1,0 +1,73 @@
+
+<snippet>
+    <content><![CDATA[var UIScrollPromptView = api.require('UIScrollPromptView');
+UIScrollPromptView.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:api.winWidth},
+        h: ${4:api.winHeight / 2}
+    },
+    data: {
+        paths: [
+            'widget://${5:res/img/apicloud.png}', 
+            'widget://${6:res/img/apicloud-gray.png}',
+            'widget://${7:res/img/apicloud.png}', 
+            'widget://${8:res/img/apicloud-gray.png}'
+        ],
+        captions: ['${9:apicloud}', '${10:apicloud}', '${11:apicloud}', '${12:apicloud}'],
+        prompts: [
+            'widget://${13:res/img/apicloud.png}', 
+            'widget://${14:res/img/apicloud-gray.png}',
+            'widget://${15:res/img/apicloud.png}', 
+            'widget://${16:res/img/apicloud-gray.png}'
+        ]
+    },
+    styles: {
+        caption: {
+            height: ${17:35},
+            color: '#${18:E0FFFF}',
+            size: ${19:13},
+            bgColor: '#${20:696969}',
+            position: '${21:bottom}'
+        },
+        indicator: {
+            align: '${22:center}',
+            color: '#${23:FFFFFF}',
+            activeColor: '#${24:DA70D6}'
+        },
+        prompt: {
+           button: {
+              normal: '${25:widget://image/btn_normal.png}',
+              highlight: '${26:widget://image/btn_highlight.png}',
+              x: ${27:0},
+              y: ${28:100},
+              w: ${29:60},
+              h: ${30:40}
+           },
+           x: ${31:0},
+           y: ${32:50},
+           w: ${33:160},
+           h: ${34:90},
+           contentMode: '${35:scaleToFill}',
+           animation: ${36:true}
+        }
+    },
+    placeholderImg: '${37:widget://res/slide1.jpg}',
+    contentMode: '${38:scaleToFill}',
+    interval: ${39:3},
+    fixedOn: ${40:api.frameName},
+    loop: ${41:true},
+    fixed: ${42:false}
+},function( ret ){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIScrollPromptView-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开模块</description>
+</snippet>

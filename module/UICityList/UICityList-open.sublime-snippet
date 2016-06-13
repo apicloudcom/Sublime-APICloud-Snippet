@@ -1,0 +1,56 @@
+
+<snippet>
+    <content><![CDATA[var UICityList = api.require('UICityList');
+UICityList.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:api.frameWidth},
+        h: ${4:api.frameHeight}
+    },
+    resource: '${5:widget://res/cityList.json}',
+    styles: {
+        searchBar: {
+            bgColor: '#${6:696969}',
+            cancelColor: '#${7:E3E3E3}'
+        },
+        location: {
+            color: '#${8:696969}',
+            size: ${9:12}
+        },
+        sectionTitle: {
+            bgColor: '#${10:eee}', 
+            color: '#${11:000}',
+            size: ${12:12}
+        },
+        item: {
+            bgColor: '#${13:fff}',
+            activeBgColor: '#${14:696969}',
+            color: '#${15:000}',
+            size: ${16:14},
+            height: ${17:40}
+        },
+        indicator: {
+            bgColor: '#${18:fff}',
+            color: '#${19:696969}'
+        }
+    },
+    currentCity: '${20:北京}',
+    locationWay: '${21:GPS}',
+    hotTitle: '${22:热门城市}',
+    fixedOn: ${23:api.frameName},
+    placeholder: '${24:输入城市名或首字母查询}'
+}, function( ret, err ) {
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICityList-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开城市列表模块</description>
+</snippet>

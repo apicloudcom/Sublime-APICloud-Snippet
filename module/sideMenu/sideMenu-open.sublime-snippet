@@ -1,0 +1,41 @@
+
+<snippet>
+    <content><![CDATA[var sideMenu = api.require('sideMenu');
+sideMenu.open({
+    trajectoryColor: '#${1:3F9FEA}',
+    btnArray:[{
+        title: '${2:图标1}',
+        'icon': '${3:widget://res/center/0.png}',
+        'bgImg': '${4:widget://res/sideMenu/bg.png}'
+    },{
+        title: '${5:图标2}',
+        'icon': '${6:widget://res/center/1.png}',
+        'bgImg': '${7:widget://res/sideMenu/bg.png}'
+    },{
+        title: '${8:图标3}',
+        'icon': '${9:widget://res/center/2.png}',
+        'bgImg': '${10:widget://res/sideMenu/bg.png}'
+    },{
+        title: '${11:图标4}',
+        'icon': '${12:widget://res/center/3.png}',
+        'bgImg': '${13:widget://res/sideMenu/bg.png}'
+    },{
+        title: '${14:图标5}',
+        'icon': '${15:widget://res/center/4.png}',
+        'bgImg': '${16:widget://res/sideMenu/bg.png}'
+    }],
+    fixedOn: ${17:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sideMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开菜单</description>
+</snippet>

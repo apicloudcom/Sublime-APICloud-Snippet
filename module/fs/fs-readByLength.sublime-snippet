@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[var fs = api.require('fs');
+fs.readByLength({
+    path: '${1:fs://file.txt}',
+    substring:{
+      start: ${2:0},
+      length: ${3:10}
+    }
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-readByLength</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>按照字符串长度读取文件，本接口针对纯文本文件有效。无需 open</description>
+</snippet>

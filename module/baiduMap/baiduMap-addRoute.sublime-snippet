@@ -1,0 +1,32 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.addRoute({
+    id:${1:300},
+    type:'${2:drive}',
+    startPoint:{
+        city:'${3:北京}',
+        name:'${4:史各庄南}',
+        lon:${5:116}${6:.213},
+        lat:${7:39}${8:.213}
+    },
+    endPoint:{
+        city:'${9:北京}',
+        name:'${10:龙翔路}',
+        lon:${11:116}${12:.384},
+        lat:${13:39}${14:.989}
+    }
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-addRoute</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>添加路线</description>
+</snippet>

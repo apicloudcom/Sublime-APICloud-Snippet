@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var wx = api.require('wx');
+wx.shareText({
+    apiKey: '',
+    scene: '${1:timeline}',
+    text: '${2:我分享的文本}'
+}, function(ret, err){
+    if(ret.status){
+        alert('分享成功');
+    }else{
+        alert(err.code);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wx-shareText</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>分享文本内容</description>
+</snippet>

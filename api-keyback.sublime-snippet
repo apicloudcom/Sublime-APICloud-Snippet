@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[api.addEventListener({
+    name:'${1:keyback}'
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-keyback</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设备 back 键被点击事件，仅 Android 平台有效，字符串类型</description>
+</snippet>

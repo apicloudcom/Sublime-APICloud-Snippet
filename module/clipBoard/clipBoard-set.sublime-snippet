@@ -1,20 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var clipBoard = api.require('clipBoard');
 clipBoard.set({
-    value: '${1:}'
-}, function(ret, err) {
-    if (ret.status) {
-        api.alert({
-            msg: '复制到剪切板成功'
-        });
-    } else {
-        api.alert({
-            msg: err.msg
-        });
+    value: '${1:test}'
+}, function(ret, err){
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>clipBoard-set</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置剪切板内容</description>
 </snippet>

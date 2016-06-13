@@ -1,8 +1,8 @@
+
 <snippet>
-    <content><![CDATA[
-api.call({
-    type: '${1:call_type}',
-    number: '${2:number}'
+    <content><![CDATA[api.call({
+    type: '${1:tel_prompt}',
+    number: '${2:10086}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

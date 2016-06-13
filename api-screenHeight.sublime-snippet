@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.screenHeight
+    <content><![CDATA[var screenHeight = api.screenHeight;  // 比如： 960
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-screenHeight</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>屏幕分辨率高</description>
+    <description>屏幕分辨率高，数字类型</description>
 </snippet>

@@ -1,0 +1,49 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.addOfflineListener(function(ret){
+    switch (ret.type)
+    {
+       case 0: {
+           map.getUpdateInfoByID({
+              cityID: ${1:1}
+           },function(ret){
+              api.alert({msg:${2:ret.cityInfo.name+"下载进度："+ret.cityInfo.ratio});}
+           });
+       }
+       break;
+       case 1:  {
+          alert('检测到离线包个数是：'+ret.state);
+       }
+       break;
+       case 2:  {
+          alert('正在解压第state个离线包，导入时会回调此类型');
+       }
+       break;
+       case 3:  {
+          alert('有state个错误包，导入完成后会回调此类型');
+       }
+       break;
+       case 4:  {
+          alert('id为state的state城市有新版本,可调用update接口进行更新');
+       }
+       break;
+       case 5:  {
+          alert('导入成功state个离线包，导入成功后会回调此类型');
+       }
+       break;
+       case 6:  {
+          alert('新增离线包');
+       }
+       break;
+       default:
+       break;
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-addOfflineListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>监听离线地图相关事件</description>
+</snippet>

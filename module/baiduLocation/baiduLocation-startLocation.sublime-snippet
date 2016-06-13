@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var baiduLocation = api.require('baiduLocation');
+baiduLocation.startLocation({
+    accuracy: '${1:100m}',
+    filter: ${2:1},
+    autoStop: ${3:true}
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduLocation-startLocation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>开始定位</description>
+</snippet>

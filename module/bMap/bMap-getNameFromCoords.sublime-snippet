@@ -1,15 +1,18 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.getNameFromCoords({
-    lon: ${1:116.384767},
-    lat: ${2:39.989539}
+    <content><![CDATA[var map = api.require('bMap');
+map.getNameFromCoords({
+    lon: ${1:116}${2:.384767},
+    lat: ${3:39}${4:.989539}
 },function(ret,err){
     if(ret.status){
         alert(JSON.stringify(ret));
     }
 });
 ]]></content>
-    <tabTrigger>bmap-getNameFromCoords</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-getNameFromCoords</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>根据经纬度查找地址信息，无需调用open接口即可使用</description>
+    <description>根据经纬度查找地址信息，无需调用 open 接口即可使用</description>
 </snippet>

@@ -1,10 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var push = api.require('push');
 push.removeListener();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>push-removeListener</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>移除对推送消息的监听</description>
+    <description>移除对推送消息的监听。移除监听后，收到“消息”类型的推送，APICloud引擎将自动弹出通知到手机状态栏</description>
 </snippet>

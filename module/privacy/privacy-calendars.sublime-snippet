@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var privacy = api.require('privacy');
+privacy.calendars(function( ret, err ){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>privacy-calendars</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>判断是否有访问日历权限</description>
+</snippet>

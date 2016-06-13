@@ -1,12 +1,12 @@
+
 <snippet>
-    <content><![CDATA[
-api.setAppIconBadge({
+    <content><![CDATA[api.setAppIconBadge({
     badge: ${1:1}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>api-setAppiconBadge</tabTrigger>
+    <tabTrigger>api-setAppIconBadge</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>设置应用图标右上角数字</description>
+    <description>设置应用图标右上角数字，支持所有 iOS 手机，以及部分 Android 手机，如小米和三星的某些型号，不支持的设备，表现结果为调用该接口无任何效果</description>
 </snippet>

@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var polyVideo = api.require('polyVideo');
+polyVideo.open({
+    rect: {
+      x: ${1:0},
+      y: ${2:0},
+      w: ${3:320},
+      h: ${4:240}
+    },
+    path:'${5:fs://res/video.mp4}',
+    autoPlay: ${6:true},
+    fixedOn: ${7:api.frameName},
+    fixed: ${8:false}
+},function(ret,err){
+    var duration = ret.duration;
+    var current = ret.current;
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>polyVideo-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开一个音/视频播放器</description>
+</snippet>

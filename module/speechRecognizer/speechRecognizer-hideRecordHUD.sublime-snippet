@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[{
+    var speechRecognizer = api.require('speechRecognizer');
+    speechRecognizer.hideRecordHUD();
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>speechRecognizer-hideRecordHUD</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>隐藏录音音量显示器</description>
+</snippet>

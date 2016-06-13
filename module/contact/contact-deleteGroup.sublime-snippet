@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var contact= api.require('contact');
+contact.deleteGroup({
+    id:${1:1}
+},function(ret,err){
+    if(ret.status){
+        api.alert({msg:'${2:分组删除完成}'});
+    }else{
+        api.alert({msg:${3:err.msg});}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contact-deleteGroup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>删除分组</description>
+</snippet>

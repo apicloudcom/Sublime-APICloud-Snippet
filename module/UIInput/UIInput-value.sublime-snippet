@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var UIInput = api.require('UIInput');
+UIInput.value({
+    msg: '${1:设置输入框的值}'
+});
+
+UIInput.value(function( ret, err ){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIInput-value</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>获取或设置输入框的内容</description>
+</snippet>

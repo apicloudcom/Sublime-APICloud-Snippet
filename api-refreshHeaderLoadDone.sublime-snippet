@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.refreshHeaderLoadDone();
+    <content><![CDATA[api.refreshHeaderLoadDone();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-refreshHeaderLoadDone</tabTrigger>

@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var obj = api.require('MNPopups');
+obj.close();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNPopups-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭 MNPopups 列表视图</description>
+</snippet>

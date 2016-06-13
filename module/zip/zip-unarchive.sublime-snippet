@@ -1,18 +1,20 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var zip = api.require('zip');
 zip.unarchive({
-    file: '${1:widget://res/zipTest.zip}',
-    password: '${2:123}',
-    toPath: '${3:}'
-}, function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'解压成功'});
-    } else{
-        api.alert(err.msg);
+    file: '${1:fs://fitest.zip}',
+    password: '${2:123}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>zip-unarchive</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>解压文件</description>
 </snippet>

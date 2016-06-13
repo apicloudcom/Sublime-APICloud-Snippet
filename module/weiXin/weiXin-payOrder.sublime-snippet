@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var weiXin = api.require('weiXin');
+weiXin.payOrder({
+     orderId: '',
+     partnerId:'',
+     nonceStr:'',
+     timeStamp:'',
+     package:'',
+     sign:''
+},function(ret,err) {
+     if (ret.status) {
+
+     }else{
+        api.alert({msg:${1:err.msg});}
+     }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>weiXin-payOrder</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>支付订单</description>
+</snippet>

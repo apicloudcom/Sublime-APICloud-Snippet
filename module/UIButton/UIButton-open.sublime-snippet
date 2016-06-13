@@ -1,0 +1,43 @@
+
+<snippet>
+    <content><![CDATA[var button = api.require('UIButton');
+button.open({
+    rect:{
+       x: ${1:100},
+       y: ${2:100},
+       w: ${3:80},
+       h: ${4:50}
+    },
+    corner: ${5:5},
+    bg: {
+        normal: '#${6:000000}',
+        highlight: '#${7:ff0000}',
+        active: '#${8:adf000}'
+    },
+    title:{
+        size: ${9:14},
+        highlight: '${10:高亮状态标题}',
+        active: '${11:选中后标题}',
+        normal: '${12:常态标题}',
+        highlightColor: '#${13:000000}',
+        activeColor: '#${14:000adf}',
+        normalColor: '#${15:ff0000}',
+        alignment: '${16:center}'
+    },
+    fixedOn: ${17:api.frameName},
+    fixed: ${18:true},
+    move: ${19:true}
+}, function(ret, err){   
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIButton-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开一个按钮模块</description>
+</snippet>

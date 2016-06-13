@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.updateItem({
+    index: ${1:2},
+    data: {
+        imgPath: '${2:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',
+        title: '${3:刷新标题}', 
+        subTitle: '${4:刷新子标题}',
+        remark: '${5:刷新备注}'
+    }
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-updateItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据索引更新某一条列表的数据</description>
+</snippet>

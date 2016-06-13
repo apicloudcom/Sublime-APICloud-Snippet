@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var uislider = api.require('UISlider');
+uislider.lock({
+    id: ${1:id},
+    lock: ${2:true}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UISlider-lock</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置滑动控件是否锁定</description>
+</snippet>

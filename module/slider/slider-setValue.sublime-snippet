@@ -1,11 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var slider = api.require('slider');
 slider.setValue({
     id: ${1:1},
     value: ${2:51}
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>slider-setValue</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置slider的值</description>
 </snippet>

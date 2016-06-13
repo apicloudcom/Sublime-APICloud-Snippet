@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[api.openDrawerLayout({
+    name: '${1:main}',
+    url: '${2:./main.html}',
+    animation:{
+        type:'${3:none}'
+    },
+    leftPane:{
+        name: '${4:leftPane}',
+        url: '${5:leftPane.html}'
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-openDrawerLayout</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开一个抽屉式侧滑 window，可以从当前 window 的左右边缘滑动拉出侧滑 window。</description>
+</snippet>

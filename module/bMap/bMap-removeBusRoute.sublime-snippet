@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.removeBusRoute({
-    ids:[${1:1}]
+    <content><![CDATA[var map = api.require('bMap');
+map.removeBusRoute({
+   ids:[${1:1}]
 });
 ]]></content>
-    <tabTrigger>bmap-removeBusRoute</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-removeBusRoute</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>移除地图上显示的公交、地铁线路</description>
 </snippet>

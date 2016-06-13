@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var UICalendar = api.require('UICalendar');
+UICalendar.cancelSpecialDates({
+    specialDates:['${1:2015}-${2:12}-${3:08}','${4:2015}-${5:12}-${6:07}']
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICalendar-cancelSpecialDates</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>取消已设置的特殊日期状态</description>
+</snippet>

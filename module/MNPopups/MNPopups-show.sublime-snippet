@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var mnPopups = api.require('MNPopups');
+mnPopups.show();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNPopups-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示已隐藏的 MNPopups 列表视图</description>
+</snippet>

@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var stackMenu = api.require('stackMenu');
+stackMenu.open({
+    items:[{
+        title: '${1:标题一}',
+        icon: '${2:widget://res/img/ic/small-bell.png}'
+    },{
+        title: '${3:标题二}',
+        icon: '${4:widget://res/img/ic/clock.png}'
+    }]
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>stackMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开stack菜单</description>
+</snippet>

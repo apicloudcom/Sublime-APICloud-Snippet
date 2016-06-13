@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.pause({
+    cityID: ${1:1}
+}, function(ret){
+    if(ret.status){
+        alert(JSON.stringify(ret)); 
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-pause</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>暂停下载指定城市 id 的离线地图，无需调用 open 接口即可搜索</description>
+</snippet>

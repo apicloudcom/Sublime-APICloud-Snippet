@@ -1,0 +1,22 @@
+
+<snippet>
+    <content><![CDATA[var button = api.require('button');
+button.open({
+    bg: {
+        normal: "#${1:ff0000"}
+    },
+    fixedOn: ${2:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>button-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开一个按钮视图</description>
+</snippet>

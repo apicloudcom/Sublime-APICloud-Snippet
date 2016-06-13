@@ -1,24 +1,27 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.searchRoute({
+    <content><![CDATA[var map = api.require('bMap');
+map.searchRoute({
     id: ${1:1},
-    type: '${2:drive}',//transit/drive/walk
-    policy: '${3:ecar_fee_first}',//ecar_fee_first/ecar_dis_first/ecar_time_first/ecar_avoid_jam/ebus_no_subway/ebus_time_first/ebus_transfer_first/ebus_walk_first
+    type: '${2:drive}',
+    policy: '${3:ecar_fee_first}',
     start: {
-        lon: ${4:116.403838},
-        lat: ${5:39.914437}
+        lon: ${4:116}${5:.403838},
+        lat: ${6:39}${7:.914437}
     },
     end: {
-        lon: ${6:116.384852},
-        lat: ${7:39.989576}
+        lon: ${8:116}${9:.384852},
+        lat: ${10:39}${11:.989576}
     }
 }, function(ret, err){
     if(ret.status){
-        api.alert({msg:JSON.stringify(ret)});
+        api.alert({msg:${12:JSON}${13:.stringify(ret)});}
     }
 });
 ]]></content>
-    <tabTrigger>bmap-searchRoute</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-searchRoute</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>搜索路线方案，无需调用open接口即可使用</description>
+    <description>搜索路线方案，无需调用 open 接口即可使用</description>
 </snippet>

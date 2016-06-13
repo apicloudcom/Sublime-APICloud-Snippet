@@ -1,20 +1,20 @@
+
 <snippet>
-    <content><![CDATA[
-api.getPicture({
-    sourceType: '${1:source_type}',
-    encodingType: '${2:encoding_type}',
-    mediaValue: '${3:media_type}',
-    destinationType: '${4:destination_type}',
-    allowEdit: ${5:true},
+    <content><![CDATA[api.getPicture({
+    sourceType: '${1:camera}',
+    encodingType: '${2:jpg}',
+    mediaValue: '${3:pic}',
+    destinationType: '${4:url}',
+    allowEdit: ${5:true,}
     quality: ${6:50},
     targetWidth: ${7:100},
     targetHeight: ${8:100},
     saveToPhotoAlbum: ${9:false}
 }, function(ret, err){ 
-    if (ret) {
-        api.alert({msg:ret.data});
-    } else{
-        api.alert({msg:err.msg});
+    if(ret){
+         alert(JSON.stringify(ret));
+    }else{
+         alert(JSON.stringify(err));
     }
 });
 ]]></content>

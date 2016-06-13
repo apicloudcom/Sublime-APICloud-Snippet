@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var videoPlayer = api.require('videoPlayer');
+videoPlayer.setPath({
+    path: '${1:http://7o50kb.com2.z0.glb.qiniucdn.com/c1.1.mp4}',
+    coverImg:''
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>videoPlayer-setPath</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置音/视频的文件路径</description>
+</snippet>

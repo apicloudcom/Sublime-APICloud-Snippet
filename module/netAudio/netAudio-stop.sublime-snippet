@@ -1,8 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var netAudio = api.require('netAudio');
 netAudio.stop();
 ]]></content>
-    <tabTrigger>netaudio-stop</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>netAudio-stop</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>停止播放</description>
 </snippet>

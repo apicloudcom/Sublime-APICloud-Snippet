@@ -1,16 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var bookReader = api.require('bookReader');
 bookReader.setValue({
-    bg:'${1:#000}',
-    textStyle:{
-        color:'${2:#fff}',
-        size:${3:size}
-    },
-    animType : '${4:curl}',
-    progress : ${5:100}
+    bg: '#${1:f00}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>bookReader-setValue</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>打开阅读器</description>
+    <description>设置阅读器的参数</description>
 </snippet>

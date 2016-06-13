@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.getIndex({
+    key: '${1:uid}',
+    value: '${2:1001}'
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-getIndex</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据开发者自定义的唯一标识（open 接口的 data 参数中自定义的唯一标识）查找列表项对应的数据</description>
+</snippet>

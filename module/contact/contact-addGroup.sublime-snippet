@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var contact = api.require('contact');
+contact.addGroup({
+    name:'${1:同学}'
+},function(ret,err){
+    if(ret.status){
+        api.alert({msg:'${2:分组创建完成}'+'*'+${3:ret.id});}
+    }else{
+        api.alert({msg:${4:err.msg});}
+    } 
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contact-addGroup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>创建分组</description>
+</snippet>

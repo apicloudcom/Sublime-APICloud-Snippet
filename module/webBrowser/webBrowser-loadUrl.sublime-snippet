@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var browser = api.require('webBrowser');
+browser.loadUrl({
+    url: '${1:http://m.apicloud.com}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>webBrowser-loadUrl</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>加载指定url，只在使用openView时有效</description>
+</snippet>

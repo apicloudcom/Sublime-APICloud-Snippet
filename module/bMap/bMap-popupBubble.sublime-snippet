@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.popupBubble({
+    <content><![CDATA[var map = api.require('bMap');
+map.popupBubble({
     id: ${1:2}
 });
 ]]></content>
-    <tabTrigger>bmap-popupBubble</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-popupBubble</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>弹出指定标注的气泡</description>
 </snippet>

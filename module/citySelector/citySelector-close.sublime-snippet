@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var citySelector = api.require('citySelector');
+citySelector.close();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>citySelector-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭选择器</description>
+</snippet>

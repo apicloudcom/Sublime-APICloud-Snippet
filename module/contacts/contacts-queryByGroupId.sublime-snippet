@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var contacts = api.require('contacts');
 contacts.queryByGroupId({
     groupId: ${1:1}
 },function(ret,err){
-    if(ret.status){
-        alert(JSON.stringify(ret));
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var contact = api.require('contact');
+contact.findContact({
+    id:${1:1}
+},function(ret,err) {
+    if(ret.status) {
+        var array = ret.names;
+        var first = array[0];
+        var arrayPho = first.phones;
+        var firstnum = arrayPho[0];
+        var secondnum = arrayPho[1];
+        var thirdnum = arrayPho[2];
+    } else{
+        api.alert({msg:${2:err.msg});}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contact-queryContactByGroupId</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>查找一个分组内的联系人</description>
+</snippet>

@@ -1,0 +1,22 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.open({
+    x: ${1:0},
+    y: ${2:64},
+    w: ${3:320},
+    h: ${4:400}
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开百度地图</description>
+</snippet>

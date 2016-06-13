@@ -1,0 +1,42 @@
+
+<snippet>
+    <content><![CDATA[//内容类型为music或video时，内容地址应为流媒体地址;
+var weiXin = api.require('weiXin');
+weiXin.sendRequest({
+    scene: '${1:timeline}',
+    contentType:'${2:music}',
+    title:'${3:测试用标题}',
+    description: '${4:测试用内容}',
+    thumbUrl: '${5:fs://a.png}',
+    contentUrl: '${6:http://117.78.5.26/files/shijian.mp3}'
+},function(ret,err){
+    if(ret.status){
+        api.alert({title:'${7:发表微信}',${8:msg}: '${9:发表成功}', ${10:buttons: [}'${11:确定}']});
+    }else{
+        api.alert({title: '${12:发表失败}',${13:msg}: ${14:err.msg, buttons: [}'${15:确定}'] 
+        });
+    }
+});
+//内容类型为web_page时，内容地址为常规网址;
+var weiXin = api.require('weiXin');
+weiXin.sendRequest({
+    scene:'${16:timeline}',
+    contentType:'${17:web_page}',
+    title:'${18:测试用标题}',
+    description:'${19:测试用内容}',
+    thumbUrl:'${20:fs://a.png}',
+    contentUrl: '${21:http://www.baidu.com/}'
+},function(ret,err){
+    if(ret.status){
+        api.alert({title: '${22:发表微信}',${23:msg}: '${24:发表成功}', ${25:buttons: [}'${26:确定}']});
+    } else{
+        api.alert({title: '${27:发表失败}',${28:msg}: ${29:err.msg,buttons: [}'${30:确定}']});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>weiXin-sendRequest</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>发表内容</description>
+</snippet>

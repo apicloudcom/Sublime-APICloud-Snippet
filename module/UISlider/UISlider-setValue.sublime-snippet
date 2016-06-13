@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var uislider = api.require('UISlider');
+uislider.setValue({
+    id: ${1:id},
+    value: {
+        min: ${2:16},
+        max: ${3:32},
+        step: ${4:0}${5:.5},
+        value: ${6:23}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UISlider-setValue</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置 UISlider 的值</description>
+</snippet>

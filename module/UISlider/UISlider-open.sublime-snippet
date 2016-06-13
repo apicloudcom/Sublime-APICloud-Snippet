@@ -1,0 +1,54 @@
+
+<snippet>
+    <content><![CDATA[var uislider = api.require('UISlider');
+uislider.open({
+    animation: ${1:true},
+    orientation: '${2:horizontal}',
+    rect: {
+        x: ${3:0},
+        y: ${4:0},
+        size: ${5:300}
+    },
+    bubble: {
+        direction: '${6:top}',
+        state: '${7:always}',
+        w: ${8:80},
+        h: ${9:30},
+        size: ${10:14},
+        color: '#${11:888}',
+        bg: '${12:widget://res/slider/bubble.png}',
+        prefix: '${13:温度}：',
+        suffix: '${14:摄氏度}'
+    },
+    handler: {
+        w: ${15:10},
+        h: ${16:8},
+        bg: '${17:widget://res/slider/handler.png}'
+    },
+    bar: {
+        h: ${18:4},
+        bg: '${19:widget://res/slider/background.png}',
+        active: '${20:widget://res/slider/bar-active.png}'
+    },
+    value: {
+        min: ${21:16},
+        max: ${22:32},
+        step: ${23:0}${24:.5},
+        init: ${25:26}
+    },
+    fixedOn: ${26:api.frameName},
+    fixed: ${27:false}
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UISlider-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 UISlider</description>
+</snippet>

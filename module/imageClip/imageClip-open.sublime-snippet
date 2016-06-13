@@ -1,22 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var imageClip = api.require('imageClip');
 imageClip.open({
-    path:"${1:path}",
-    x:${2:0},
-    y:${3:0},
-    w:${4:320},
-    h:${5:480},
-    clipRect:{
-        x:${6:0},
-        y:${7:0},
-        w:${8:100},
-        h:${9:200},
-        fixation:${10:true}
+    path: '${1:widget://res/img/apicloud.png}'
+},function(  ret, err ){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
-},function(ret, err){
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>imageClip-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开图片裁剪</description>
 </snippet>

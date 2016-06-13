@@ -1,0 +1,84 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.receipt({
+    rect:{
+         w:${1:300},
+         h:${2:360}
+    },
+    items:[
+        {
+            key   : '${3:起步价}',
+            value : '${4:15}${5:.00}'
+        },
+        {
+            key   : '${6:15公里}',
+            value : '${7:50}${8:.10}'
+        },
+        {
+            key   : '${9:9}${10:.98分钟}',
+            value : '${11:19}'
+        },
+        {
+            key   : '${12:小计}',
+            value : '${13:69}'
+        },
+        {
+            key   : '${14:优惠}',
+            value : '${15:10}'
+        },
+        {
+            key   : '${16:已消费}',
+            value : '${17:69}${18:.0}'
+        }
+    ],
+    texts:{
+         title:'${19:我的打车收据}',        
+         cancel:'${20:取消}'
+    },
+    styles:{
+         bg:'#${21:FFF}',
+         title:{
+             textColor:'#${22:000}',
+             textSize:${23:18},
+             marginT:${24:10}
+         },
+         topBorder:{  
+             borderColor:'#${25:000}',
+             borderWidth: ${26:2},
+             marginT: ${27:10}
+         },
+         listHeight: ${28:260},
+         item:{                                     
+             textColor: '#${29:000}',     
+             textSize: ${30:14},        
+             marginL: ${31:10},            
+             marginT: ${32:5},  
+             marginB: ${33:5},         
+             bgColor: '#${34:FFF}'  
+         },
+         bottomBorder:{
+             borderColor:'#${35:000}',
+             borderWidth: ${36:2},
+         },
+         cancel:{
+            textSize: ${37:18},
+            textColor:'#${38:f00}',
+            marginT: ${39:10},
+            highlight: '#${40:696969}'  
+         }
+    }
+}, function(ret, err){
+    if( ret ){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-receipt</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 receipt 样式的对话框</description>
+</snippet>

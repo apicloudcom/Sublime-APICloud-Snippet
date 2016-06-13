@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var videoPlayer = api.require('videoPlayer');
+videoPlayer.open({
+    path: '${1:http://7o50kb.com2.z0.glb.qiniucdn.com/c1.1.mp4}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>videoPlayer-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开一个视频播放器</description>
+</snippet>

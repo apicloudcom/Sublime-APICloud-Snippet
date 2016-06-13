@@ -1,21 +1,42 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.drawRoute({
-    id: ${1:1},
-    index: ${2:0},
-    styles: {
-        start: {
-            icon: '${3:widget://image/bmap_start.png}'
-        },
-        end: {
-            icon: '${4:widget://image/bmap_end.png}'
-        }
+    <content><![CDATA[var map = api.require('bMap');
+map.searchRoute({
+    type: '${1:drive}',
+    policy: '${2:ecar_fee_first}',
+    start: {
+        lon: ${3:116}${4:.403838},
+        lat: ${5:39}${6:.914437}
+    },
+    end: {
+        lon: ${7:116}${8:.384852},
+        lat: ${9:39}${10:.989576}
     }
-}, function(ret){
-   api.alert({msg:JSON.stringify(ret)});
+}, function(ret, err){
+    if(ret.status){
+        map.drawRoute({
+            id: ${11:1},
+           autoresizing:${12:false},
+            index: ${13:0},
+            styles: {
+                start: {
+                    icon: '${14:widget://image/bmap_start.png}'
+                },
+                end: {
+                    icon: '${15:widget://image/bmap_end.png}'
+                }
+            }
+        }, function(ret){
+           api.alert({msg:${16:JSON}${17:.stringify(ret)});}
+        });
+    } else {
+       api.alert({msg:${18:JSON}${19:.stringify(err)});}
+    }
 });
 ]]></content>
-    <tabTrigger>bmap-drawRoute</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-drawRoute</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>在地图上显示指定路线，调用本接口前，必须保证已经调用过接口open和searchRoute</description>
+    <description>在地图上显示指定路线，调用本接口前，必须保证已经调用过接口 open 和 searchRoute</description>
 </snippet>

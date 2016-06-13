@@ -1,0 +1,105 @@
+
+<snippet>
+    <content><![CDATA[
+var tabBarMenu = api.require('tabBarMenu'),
+    theme = 'simple';
+tabBarMenu.open({
+    defaultBarSelect: ${1:1},
+    autoLayout: ${2:true},
+    barConfig: {
+        bgImg: '${3:widget://image/tabBarMenu/}'+ ${4:theme +}'/${5:tabbar_bg.png}'
+    },
+    barItemConfig: {
+        titleColor: '#${6:fff}',
+        titleSelectColor: '#${7:fff}',
+        fontSize: ${8:11}${9:.0},
+        textMarginTop: ${10:41}${11:.0},
+        primaryItem: ${12:2}
+    },    
+    barItems: [{
+            title: '${13:动态}',
+            bgImg: '${14:widget://image/tabBarMenu/}' + ${15:theme + }'${16:tabbar_icon_auth.png}',
+            bgImgClick: '${17:widget://image/tabBarMenu/}' + ${18:theme + }'/${19:tabbar_icon_auth_click.png}'
+        },{
+            title: '${20:与我有关}',
+            bgImg: '${21:widget://image/tabBarMenu/}' + ${22:theme + }'/${23:tabbar_icon_at.png}',
+            bgImgClick: '${24:widget://image/tabBarMenu/}' + ${25:theme + }'/${26:tabbar_icon_at_click.png}'
+        },{
+            title: '${27:动态}',
+            bgImg: '${28:widget://image/tabBarMenu/}' + ${29:theme + }'/${30:tabbar_btn.png}',        
+            bgImgClick: '${31:widget://image/tabBarMenu/}' + ${32:theme + }'/${33:tabbar_btn_click.png}'     
+        },{
+            title: '${34:玩吧}', 
+            bgImg: '${35:widget://image/tabBarMenu/}' + ${36:theme + }'/${37:tabbar_icon_more.png}', 
+            bgImgClick: '${38:widget://image/tabBarMenu/}' + ${39:theme + }'/${40:tabbar_icon_more_click.png}' 
+        },{
+            title: '${41:空间}',
+            bgImg: '${42:widget://image/tabBarMenu/}' + ${43:theme + }'/${44:tabbar_icon_space.png}', 
+            bgImgClick: '${45:widget://image/tabBarMenu/}' + ${46:theme + }'/${47:tabbar_icon_space_click.png}' 
+    }], 
+    menuConfig: {                    
+        coverBgColor: '#${48:000000}',
+        coverAlpha: ${49:0}${50:.8},
+       rows: ${51:4}
+    },
+    menuItemConfig: {                    
+        titleColor: '#${52:fff}',
+        titleSelectColor:'#${53:fff}',
+        fontSize: ${54:11}${55:.0},
+        textMarginTop: ${56:90}${57:.0}
+    },
+    menuItems: [{
+            title: '${58:说说}',
+            bgImg: '${59:widget://image/tabBarMenu/}' + ${60:theme + }'/${61:tabbar_btn_popup_talk.png}',
+            bgImgClick: '${62:widget://image/tabBarMenu/}' + ${63:theme + }'/${64:tabbar_btn_popup_talk_click.png}' 
+        },{
+            title: '${65:照片}',                       
+            bgImg: '${66:widget://image/tabBarMenu/}' + ${67:theme + }'/${68:tabbar_btn_popup_transferphotos.png}',  
+            bgImgClick: '${69:widget://image/tabBarMenu/}' + ${70:theme + }'/${71:tabbar_btn_popup_transferphotos_click.png}'  
+        },{
+            title: '${72:水印相机}',
+            bgImg: '${73:widget://image/tabBarMenu/}' + ${74:theme + }'/${75:tabbar_btn_popup_watermarkcamera.png}',
+            bgImgClick: '${76:widget://image/tabBarMenu/}' + ${77:theme + }'/${78:tabbar_btn_popup_watermarkcamera_click.png}'
+        },{ 
+            title: '${79:视频}',
+            bgImg: '${80:widget://image/tabBarMenu/}' + ${81:theme + }'/${82:tabbar_btn_popup_video.png}', 
+            bgImgClick: '${83:widget://image/tabBarMenu/}' + ${84:theme + }'/${85:tabbar_btn_popup_video_click.png}' 
+        },{
+            title: '${86:签到}',
+            bgImg: '${87:widget://image/tabBarMenu/}' + ${88:theme + }'/${89:tabbar_btn_popup_registration.png}', 
+            bgImgClick: '${90:widget://image/tabBarMenu/}' + ${91:theme + }'/${92:tabbar_btn_popup_registration_click.png}'  
+        },{ 
+            title: '${93:连拍}',
+            bgImg: '${94:widget://image/tabBarMenu/}' + ${95:theme + }'/${96:tabbar_btn_popup_continuousshooting.png}', 
+            bgImgClick: '${97:widget://image/tabBarMenu/}' + ${98:theme + }'/${99:tabbar_btn_popup_continuousshooting_click.png}' 
+        },{
+            itle: '${100:日志}',                      
+            bgImg: '${101:widget://image/tabBarMenu/}' + ${102:theme + }'/${103:tabbar_btn_popup_journal.png}',
+            bgImgClick: '${104:widget://image/tabBarMenu/}' + ${105:theme + }'/${106:tabbar_btn_popup_journal_click.png}'          
+        },{
+            title: '${107:二维码}',
+            bgImg: '${108:widget://image/tabBarMenu/}' + ${109:theme + }'/${110:tabbar_btn_popup_2dbarcode.png}', 
+            bgImgClick: '${111:widget://image/tabBarMenu/}' + ${112:theme + }'/${113:tabbar_btn_popup_2dbarcode_click.png}'
+        },{
+            title: '${114:语音相机}',
+            bgImg: '${115:widget://image/tabBarMenu/}' + ${116:theme + }'/${117:tabbar_btn_popup_videocamera.png}',
+            bgImgClick: '${118:widget://image/tabBarMenu/}' + ${119:theme + }'/${120:tabbar_btn_popup_videocamera_click.png}'  
+        },{
+            title: '${121:位置}',
+            bgImg: '${122:widget://image/tabBarMenu/}' + ${123:theme + }'/${124:tabbar_btn_popup_place.png}', 
+            bgImgClick: '${125:widget://image/tabBarMenu/}' + ${126:theme + }'/${127:tabbar_btn_popup_place_click.png}'  
+        }]    
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBarMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 open({params}, callback(ret, err))</description>
+</snippet>

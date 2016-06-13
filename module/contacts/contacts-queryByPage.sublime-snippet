@@ -1,12 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var contacts = api.require('contacts');
 contacts.queryByPage({
-    count: ${1:10},
+    count: ${1:20},
     pageIndex: ${2:0}
-}, function(ret){
-    if(ret.status){
-        alert(JSON.stringify(ret.contacts));
-        var pages = ret.pages;
+}, function(ret, err){
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

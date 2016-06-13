@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var listView = api.require('listView');
+listView.insertItem({
+    index: ${1:2},
+    data: {
+        img: '${2:http://d.hiphotos.baidu.com/image/pic/item/4d086e061d950a7b29a788c209d162d9f2d3c922.jpg }',
+        title: '${3:12}:${4:00}',
+        subTitle: '${5:APICloud粉丝互动会}',
+        remark: '${6:完成}'
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listView-insertItemItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>插入指定索引的数据</description>
+</snippet>

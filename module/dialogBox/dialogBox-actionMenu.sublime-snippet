@@ -1,0 +1,56 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.actionMenu ({
+    rect:{
+        h: ${1:150}
+    },
+    texts:{
+         cancel: '${2:取消}'
+    },
+    items:[
+    {
+        text: '${3:微信}',
+        icon: '${4:widget://image/icon/weixin_icon.png}'
+    },
+    {
+        text: '${5:QQ}',
+        icon: '${6:widget://image/icon/qq_icon.png}'
+    },
+    {
+        text: '${7:微博}',
+        icon: '${8:widget://image/icon/weibo_icon.png}'
+    },
+    {
+        text: '${9:短信}',
+        icon: '${10:widget://image/icon/shortmessage_icon.png}'
+    }
+    ],
+    styles:{
+        bg:'#${11:FFF}',
+        column: ${12:3},
+        itemText: {
+            color: '#${13:000}',
+            size: ${14:12},
+            marginT:${15:8}
+        },
+        itemIcon:{
+            size:${16:80}
+        },
+        cancel:{  
+            bg: '${17:fs://icon.png}',   
+            color:'#${18:000}',          
+            h: ${19:44} ,                 
+            size: ${20:14}       
+        }
+    }
+}, function(ret){
+    alert(JSON.stringify(ret));
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-actionMenu</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 actionMenu 样式的对话框</description>
+</snippet>

@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var scrollPicture = api.require('scrollPicture');
+scrollPicture.turnPage({
+    index: ${1:0}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scrollPicture-turnPage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>转到指定页面</description>
+</snippet>

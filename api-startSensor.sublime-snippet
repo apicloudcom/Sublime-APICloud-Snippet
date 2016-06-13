@@ -1,11 +1,12 @@
+
 <snippet>
-    <content><![CDATA[
-api.startSensor({
-    type: '${1:sensor_type}'
+    <content><![CDATA[api.startSensor({
+    type: '${1:accelerometer}'
 }, function(ret, err){
     if(ret.status){
-    } else{
-        api.alert({msg:err.msg});
+
+    }else{
+
     }
 });
 ]]></content>

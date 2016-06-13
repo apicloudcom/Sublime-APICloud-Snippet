@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var UIScrollPicture = api.require('UIScrollPicture');
+UIScrollPicture.addEventListener({
+    name: '${1:scroll}'
+}, function(ret, err){
+    if( ret ){
+          alert( JSON.stringify( ret ) );
+    }else{
+          alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIScrollPicture-addEventListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>事件监听</description>
+</snippet>

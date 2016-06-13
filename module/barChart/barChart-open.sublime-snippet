@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[var barChart = api.require('barChart');
+barChart.open({
+    x:${1:0},
+    y:${2:64},
+    width:${3:320},
+    height:${4:300},
+    yAxisMax:${5:50},
+    yAxisStep:${6:10},
+    xAxisMarks:[${7:1},${8:2},${9:3},${10:4},${11:5},${12:6},${13:7},${14:8},${15:9}],
+    datas:[${16:10},${17:30},${18:40},${19:5},${20:3},${21:49},${22:55},${23:23}],
+    id:${24:1}
+},function(ret,err){
+    api.alert({msg:${25:ret.index+ret.id});}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>barChart-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开柱状图视图</description>
+</snippet>

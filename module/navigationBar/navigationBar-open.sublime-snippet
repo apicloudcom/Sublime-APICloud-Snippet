@@ -1,0 +1,49 @@
+
+<snippet>
+    <content><![CDATA[var navigationBar = api.require('navigationBar');
+navigationBar.open({
+    y: ${1:0},
+    w: ${2:api.frameWidth},
+    h: ${3:42},
+    itemSize : {
+        w : ${4:150}
+    },
+    items: [{
+        title: '${5:标题一}',
+        bg: '#${6:ffff00}',
+        bgSelected: '#${7:ff00000}'
+    },{
+        title: '${8:标题二}',
+        bg: '#${9:ffff00}',
+        bgSelected: '#${10:ff00000}'
+    },{
+        title: '${11:标题三}',
+        bg: '#${12:ffff00}',
+        bgSelected: '#${13:ff00000}'
+    },{
+        title: '${14:标题四}',
+        bg: '#${15:ffff00}',
+        bgSelected: '#${16:ff00000}'
+    },{
+        title: '${17:标题五}',
+        bg: '#${18:ffff00}',
+        bgSelected: '#${19:ff00000}'
+    }],
+    font: {
+        color: '#${20:333}'
+    },
+    fixedOn: ${21:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>navigationBar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开</description>
+</snippet>

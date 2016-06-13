@@ -1,26 +1,34 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var contacts = api.require('contacts');
 contacts.add({
     groupId: ${1:1},
-    lastName: '${2:lastname}',
-    firstName: '${3:firstname}',
+    lastName: '${2:张}',
+    firstName: '${3:三丰}',
+    middleName: '${4:太极}',
+    prefix: '${5:他}',
+    suffix: '${6:牛}',
     phones: [{
-        '${4:title}': '${5:number}'
+        '住宅': '${7:12345678}'
+    },{
+        '工作': '${8:87654321}'
     }],
-    email: '${6:email}',
-    company: '${7:company}',
-    title: '${8:job_title}',
+    email: '${9:zhengcuan}@${10:api.com}',
+    company: '${11:柚子科技}',
+    title: '${12:工程师}',
     address: {
-        Country: '${9:contry}',
-        State: '${10:state}',
-        City: '${11:city}',
-        Street: '${12:street}',
-        ZIP: '${13:zip_code}'
+        Country: '${13:中国}',
+        State: '${14:北京}',
+        City: '${15:北京市}',
+        Street: '${16:鸟巢街}',
+        ZIP: '${17:100000}'
     },
-    note: '${14:note_content}'
-}, function(ret){
-    if(ret.status){
-       api.alert({msg:'添加成功'});
+    note: '${18:无}'
+}, function(ret, err){
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

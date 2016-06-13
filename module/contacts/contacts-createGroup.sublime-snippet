@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var contacts = api.require('contacts');
 contacts.createGroup({
-    groupName: '${1:group_name}'
+    groupName: '${1:同学}'
 }, function(ret, err){
-    if(ret.status){
-        alert('分组id为：'+ ret.groupId);
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

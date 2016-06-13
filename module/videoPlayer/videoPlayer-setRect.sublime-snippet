@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var videoPlayer = api.require('videoPlayer');
+videoPlayer.setRect({
+    rect:{
+        x: ${1:0},
+        y: ${2:0},
+        w: '${3:auto}',
+        h: '${4:auto}'
+    },
+    fullscreen: ${5:true}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>videoPlayer-setRect</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置视频播放器位置、尺寸，以及是否全屏</description>
+</snippet>

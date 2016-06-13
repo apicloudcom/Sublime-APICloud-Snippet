@@ -1,8 +1,8 @@
+
 <snippet>
-    <content><![CDATA[
-api.setPrefs({
-    key: '${1:key}',
-    value: '${2:value}'
+    <content><![CDATA[api.setPrefs({
+    key: '${1:k}',
+    value: '${2:1}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

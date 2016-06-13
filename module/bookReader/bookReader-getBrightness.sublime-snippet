@@ -1,8 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
-bookReader.getBrightness();
+    <content><![CDATA[var bookReader= api.require('bookReader');
+bookReader.getBrightness(function( ret, err ){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>bookReader-getBrightness</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>获取屏幕亮度</description>
+    <description>获取屏幕亮度，IOS 平台上获取的是系统屏幕亮度，Android 平台上获取的是本 APP 内的屏幕亮度</description>
 </snippet>

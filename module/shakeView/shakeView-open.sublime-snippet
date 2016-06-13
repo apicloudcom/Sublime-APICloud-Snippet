@@ -1,0 +1,29 @@
+
+<snippet>
+    <content><![CDATA[var shakeView = api.require('shakeView');
+shakeView.open({
+    x: ${1:0},
+    y: ${2:300},
+    w: ${3:api.winWidth},
+    h: ${4:300},
+    type: '${5:left}_${6:right}',
+    img: {
+        leftUp: '${7:widget://res/1.png}',
+        rightDown: '${8:widget://res/2.png}',
+        bg: '${9:widget://res/3.png}'
+
+    },
+    anim: {
+        time: '${10:2}',
+        sound: '',
+        isShake: ${11:true, }
+        percent: ${12:50}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>shakeView-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开摇一摇视图</description>
+</snippet>

@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.startSearchGPS(
+    function(ret){
+        if(ret.status){
+            alert(ret.satelliteCount);
+        }
+    }
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-startSearchGPS</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>开始搜索GPS信息（卫星个数，以及每个卫星的信噪比数组），本接口仅支持 android 平台</description>
+</snippet>

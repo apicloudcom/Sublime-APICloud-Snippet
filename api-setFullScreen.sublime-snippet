@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.setFullScreen({
-    fullScreen:${1:true}
+    <content><![CDATA[api.setFullScreen({
+    fullScreen: ${1:true}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

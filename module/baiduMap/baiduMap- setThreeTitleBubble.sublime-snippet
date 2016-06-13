@@ -1,0 +1,28 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.setThreeTitleBubble({
+    id:${1:1},
+    image:{
+        bg:'${2:widget://image/baidu_bubble_bg.png}',
+        avatar:'${3:widget://image/baidu_bubble_head.png}',
+        icon:'${4:widget://image/baidu_bubble_icon.png}',
+        arrow:'${5:widget://image/baidu_bubble_arrow.png}'
+    },
+    text:{
+       title:'${6:龙城假日皇冠大酒店}',
+       pre:'/${7:天}',
+       subTitle:'$${8:100}',
+       description:'${9:不支持团购}'
+    },
+    style:{
+       placeholderImg:'${10:widget://image/baidu_bubble_place.png}'
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap- setThreeTitleBubble</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置大头针上的气泡为一个头像加三个标题的类型</description>
+</snippet>

@@ -1,0 +1,22 @@
+
+<snippet>
+    <content><![CDATA[var button = api.require('button');
+button.setTitle({
+   id: ${1:1},
+   title:{
+       normalTitle: "${2:按钮}"
+    }
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>button-setTitle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重设按钮标题</description>
+</snippet>

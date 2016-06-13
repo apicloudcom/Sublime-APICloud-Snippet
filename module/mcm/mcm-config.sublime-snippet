@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var model = api.require('model');
+model.config({
+    appKey: '${1:A991A337}-${2:0212}-${3:A29D}-${4:0C9C}-${5:A518E39FXXXX}',
+    host: '${6:https://d.apicloud.com}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mcm-config</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>全局函数，配置appKey等应用信息。设置一次即生效，直到下一次设置，不设置默认为当前应用的信息</description>
+</snippet>

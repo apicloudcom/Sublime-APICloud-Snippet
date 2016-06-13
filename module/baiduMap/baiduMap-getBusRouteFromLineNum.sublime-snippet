@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.getBusRouteFromLineNum({
+    city:'${1:北京}',
+    line:'${2:345}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-getBusRouteFromLineNum</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据公交线路号查询详情并在地图上显示</description>
+</snippet>

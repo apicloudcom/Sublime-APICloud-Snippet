@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var listContact = api.require('listContact');
+listContact.setRefreshHeader({
+    loadingImg : '${1:widget://res/img/ic/listContact_arrow.png}',
+    bgColor: '#${2:F5F5F5}',
+    textColor: '#${3:8E8E8E}',
+    textDown: '${4:下拉可以刷新}${5:...}',
+    textUp: '${6:松开开始刷新}${7:...}',
+    showTime : ${8:true}
+}, function(ret, err){   
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listContact-setRefreshHeader</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置下拉刷新样式</description>
+</snippet>

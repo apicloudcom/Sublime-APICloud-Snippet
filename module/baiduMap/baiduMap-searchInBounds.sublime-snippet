@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+
+baiduMap.searchInBounds({
+    key: '${1:图书馆}', // ${2:要搜索的关键字}${3:.}
+    lbLon: ${4:112}${5:.47723797622677, // 左下角经度.}
+    lbLat: ${6:34}${7:.556480000000015, // 左下角纬度.}
+    rtLon: ${8:109}${9:.77539000000002, // 右上角经度.}
+    rtLat: ${10:33}${11:.43144 // 右上角纬度.}
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-searchInBounds</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据单个关键字在指定方形区域内搜索兴趣点</description>
+</snippet>

@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var wxPay = api.require('wxPay');
+wxPay.payOrder({
+    apiKey: '',
+    orderId: '',
+    mchId: '',
+    nonceStr: '',
+    timeStamp: '',
+    package: '',
+    sign: ''
+}, function(ret, err){
+     if(ret.status){
+        //支付成功
+     }else{
+    alert(err.code);
+     }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wxPay-payOrder</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>支付订单（适用于支付方案一）</description>
+</snippet>

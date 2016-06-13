@@ -1,0 +1,100 @@
+
+<snippet>
+    <content><![CDATA[ var UIMultiSelector = api.require('UIMultiSelector');
+UIMultiSelector.open({
+    rect : {
+        h : ${1:244}
+    },
+    text : {
+        title : '${2:UIMultiSelector}',
+        leftBtn : '${3:Cancel}',
+        rightBtn : '${4:Finish}',
+        selectAll : '${5:ALL}'
+    },
+    max : ${6:0},
+    singleSelection: ${7:true},
+    styles : {
+        mask : '${8:rgba(0,0,0,0)}',
+        title : {
+            bg : '${9:rgb(0,64,128)}',
+            color : '${10:rgb(184,209,5)}',
+            size : ${11:16},
+            h : ${12:44}
+        },
+        leftButton : {
+            w : ${13:80},
+            h : ${14:35},
+            marginT : ${15:5},
+            marginL : ${16:8},
+            color : '${17:rgb(0,0,0)}',
+            size : ${18:14} 
+        },
+        rightButton : {
+            w : ${19:80},
+            h : ${20:35},
+            marginT : ${21:5},
+            marginR : ${22:8},
+            color : '${23:rgb(0,0,0)}',
+            size : ${24:14}
+        },
+        item : {
+            h : ${25:35},
+            bg : '${26:rgb(121,82,173)}',
+            bgActive : '${27:rgb(43,213,166)}',
+            bgHighlight : '${28:rgb(238,17,150)}',
+            color : '${29:rgb(22,112,233)}',
+            active : '${30:rgb(201,118,126)}',
+            highlight : '${31:rgb(255,255,0)}',
+            size : ${32:14},
+            lineColor : '${33:rgb(78,57,255)}',
+            textAlign : '${34:center}'
+        },
+        icon : {
+            w : ${35:20},
+            h : ${36:20},
+            marginT : ${37:11},
+            marginH : ${38:8},
+            bg : '#${39:fff}',
+            align : '${40:left}'
+        }
+    },
+    animation : ${41:true},
+    items : [{
+        text : '${42:Monday}',
+        status : '${43:normal}'
+    }, {
+        text : '${44:Tuesday}',
+        status : '${45:normal}'
+    }, {
+        text : '${46:Wednesday}',
+        status : '${47:normal}'
+    }, {
+        text : '${48:Thursday}',
+        status : '${49:normal}'
+    }, {
+        text : '${50:Friday}',
+        status : '${51:normal}'
+    }, {
+        text : '${52:Saturday}',
+        status : '${53:normal}'
+    }, {
+        text : '${54:Sunday}',
+        status : '${55:normal}'
+    }, {
+        text : '${56:from Monday to Sunday}',
+        status : '${57:normal}'
+    }]
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIMultiSelector-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开选择器</description>
+</snippet>

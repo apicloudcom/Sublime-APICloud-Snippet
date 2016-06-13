@@ -1,17 +1,12 @@
+
 <snippet>
-	<content><![CDATA[
-api.closeToWin({
-    name: '${1:window_name}',
-    animation: {
-        type: 'flip',
-        subType: 'from_bottom',
-        duration: 500
-    }
+    <content><![CDATA[api.closeToWin({
+    name: '${1:root}'
 });
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>api-closeToWin</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.js</scope>
-	<description>关闭到指定window</description>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-closeToWin</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭到指定 window，最上面显示的 window 到指定 name 的 window 间的所有 window 都会被关闭</description>
 </snippet>

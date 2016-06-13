@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.toLauncher();
+    <content><![CDATA[api.toLauncher();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-toLauncher</tabTrigger>

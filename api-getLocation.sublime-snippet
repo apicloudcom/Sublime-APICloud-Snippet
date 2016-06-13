@@ -1,16 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.getLocation(function(ret, err){
+    <content><![CDATA[api.getLocation(function(ret, err){
     if(ret.status){
-        var lat = ret.latitude;
-        var lon = ret.longitude;
-        var time = ret.timestamp;
-        var str = '经度：'+ lon +'\n';
-        str += '纬度：'+ lat +'\n';
-        str += '更新时间：'+ time;
-        api.alert({msg:str});
-    } else{
-        api.alert({msg:err.msg});
+         //获取位置信息成功
+    }else{
+         alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
@@ -18,5 +12,5 @@ api.getLocation(function(ret, err){
     <tabTrigger>api-getLocation</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>获取位置信息</description>
+    <description>获取位置信息，获取成功后自动停止获取。</description>
 </snippet>

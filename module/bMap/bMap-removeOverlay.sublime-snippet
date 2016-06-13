@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.removeOverlay({
-    ids: [${1:1, 2, 3, 4, 5}]
+    <content><![CDATA[var map = api.require('bMap');
+map.removeOverlay({
+    ids: [${1:1}, ${2:2}, ${3:3}, ${4:4}, ${5:5}]
 });
 ]]></content>
-    <tabTrigger>bmap-removeOverlay</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-removeOverlay</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>移除指定id的覆盖物（addLine、addPolygon、addArc、addCircle、addImg添加的覆盖物）</description>
+    <description>移除指定 id 的覆盖物（addLine、addPolygon、addArc、addCircle、addImg添加的覆盖物）</description>
 </snippet>

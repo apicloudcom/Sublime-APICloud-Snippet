@@ -1,0 +1,16 @@
+
+<snippet>
+    <content><![CDATA[var barChart = api.require('barChart');
+barChart.reloadData({
+   xAxisMarks:[${1:1},${2:2},${3:3},${4:4},${5:5},${6:6},${7:7},${8:8},${9:9}],
+   datas:[${10:15},${11:30},${12:40},${13:5},${14:3},${15:49},${16:55},${17:23}]
+},function(ret,err){
+   api.alert({msg:${18:ret.index+ret.id});}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>barChart-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重新加载数据</description>
+</snippet>

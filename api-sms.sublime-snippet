@@ -1,14 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
-api.sms({
-    number: ['${1:number}'],
-    text: '${2:content}'
-},function(ret,err){
-    if (ret.status) {
-       api.alert({msg: '发送成功'});
-    }else {
-        api.alert({msg: '发送失败'});
-    };
+    <content><![CDATA[api.sms({
+    numbers: ['${1:10086}'],
+    text: '${2:测试短信}'
+},function(ret, err){
+    if(ret.status){
+         //已发送
+    }else{
+        //发送失败
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

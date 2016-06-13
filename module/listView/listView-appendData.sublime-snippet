@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[var listView = api.require('listView');
+listView.appendData({
+     data:[{${1:title:}'${2:标题}',${3:subTitle:}'${4:子标题}，${5:说明文字}'},
+         {title:'${6:标题}',${7:subTitle:}'${8:子标题}'},
+         {title:'${9:标题}',${10:subTitle:}'${11:子标题}，${12:说明文字}'},
+         {title:'${13:标题}',${14:subTitle:}'${15:子标题}，${16:说明文字}。'},
+         {title:'${17:标题}',${18:subTitle:}'${19:子标题}'},
+         {title:'${20:标题}',${21:subTitle:}'${22:子标题}，${23:说明文字}'},
+         {title:'${24:标题}',${25:subTitle:}'${26:子标题}，${27:说明文字}'},
+         {title:'${28:标题}',${29:subTitle:}'${30:子标题}'},
+         {title:'${31:标题}',${32:subTitle:}'${33:子标题}，${34:说明文字}'},
+         {title:'${35:标题}',${36:subTitle:}'${37:子标题}，${38:说明文字}'},
+         {title:'${39:标题}',${40:subTitle:}'${41:子标题}，${42:说明文字}'}]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listView-appendData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>添加列表数据</description>
+</snippet>

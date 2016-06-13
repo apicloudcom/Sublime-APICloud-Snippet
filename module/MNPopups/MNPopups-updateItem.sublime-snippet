@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var mnPopups = api.require('MNPopups');
+mnPopups.updateItem({
+    index: ${1:1},
+    data: {                          
+        title: '${2:付款}',  
+        icon: '${3:fs://MNPopups/pay.png}'
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNPopups-updateItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>更新指定分组中指定位置的数据</description>
+</snippet>

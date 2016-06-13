@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+hintChatBox.setMsg({
+    msg:'${1:设置的文字}'
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>hintChatBox-setMsg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置输入框内的文字</description>
+</snippet>

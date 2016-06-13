@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var wx = api.require('wx');
+wx.getToken({
+    apiKey: '',
+    apiSecret: '',
+    code: "${1:12346857684}"
+},function(ret, err){ 
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(err.code);
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wx-getToken</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>获取授权 accessToken（需要登录授权成功）</description>
+</snippet>

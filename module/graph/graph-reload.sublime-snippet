@@ -1,0 +1,66 @@
+
+<snippet>
+    <content><![CDATA[var array = ;
+var graph = api.require('graph');
+graph.reload({
+    data: [{
+    'time': '${1:12}:${2:05}',
+    'data': '${3:15}',
+    'isonline': '${4:1}'
+  },{
+    'time': '${5:13}:${6:10}',
+    'data': '${7:45}',
+    'isonline': '${8:1}'
+  },{
+    'time': '${9:14}:${10:22}',
+    'data': '${11:55}',
+    'isonline': '${12:1}'
+  },{
+    'time': '${13:15}:${14:08}',
+    'data': '${15:0}',
+    'isonline': '${16:1}'
+  },{
+    'time': '${17:16}:${18:19}',
+    'data': '${19:70}',
+    'isonline': '${20:1}'
+  },{
+    'time': '${21:17}:${22:31}',
+    'data': '${23:45}',
+    'isonline': '${24:0}'
+  },{
+    'time': '${25:12}:${26:05}',
+    'data': '${27:60}',
+    'isonline': '${28:1}'
+  },{
+    'time': '${29:13}:${30:10}',
+    'data': '${31:35}',
+    'isonline': '${32:1}'
+  },{
+    'time': '${33:14}:${34:22}',
+    'data': '${35:85}',
+    'isonline': '${36:1}'
+  },{
+    'time': '${37:15}:${38:08}',
+    'data': '${39:20}',
+    'isonline': '${40:0}'
+  },{
+    'time': '${41:16}:${42:19}',
+    'data': '${43:70}',
+    'isonline': '${44:1}'
+  },{
+    'time': '${45:17}:${46:31}',
+    'data': '${47:47}',
+    'isonline': '${48:1}'
+  },{
+    'time': '${49:17}:${50:31}',
+    'data': '${51:45}',
+    'isonline': '${52:1}'
+  }]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>graph-reload</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>刷新曲线数据</description>
+</snippet>

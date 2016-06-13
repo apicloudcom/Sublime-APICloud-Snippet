@@ -1,11 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var contacts = api.require('contacts');
 contacts.move({
-    id: ${1:1},
+    id: ${1:10},
     groupId: ${2:20}
 }, function(ret, err){
-    if(ret.status){
-        alert('移动分组成功');
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

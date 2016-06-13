@@ -1,8 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.zoomIn();
+    <content><![CDATA[var map = api.require('bMap');
+map.zoomIn();
 ]]></content>
-    <tabTrigger>bmap-zoomIn</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-zoomIn</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>缩小地图，放大视角，放大一级比例尺，此接口自带动画效果</description>
 </snippet>

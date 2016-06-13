@@ -1,0 +1,58 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.alert ({
+    texts: {
+        title: '${1:确认}',          
+        content:'${2:送你一个超级礼包}，${3:内有超值福利}，${4:先到先得}，${5:点击领取} &amp;${6:gt;&gt;}',           
+        leftBtnTitle: '${7:取消}',   
+        rightBtnTitle: '${8:确认}'
+    },
+    styles:{
+        bg: '#${9:fff}',
+        w: ${10:300},
+        title:{   
+            marginT : ${11:20},
+            icon : '${12:widget://res/gou.png}',
+            iconSize : ${13:40},
+            titleSize : ${14:14},
+            titleColor : '#${15:000}'
+        },
+        content:{  
+            color: '#${16:000}',         
+            size: ${17:14}          
+        },
+        left:{            
+            marginB: ${18:7},      
+            marginL: ${19:20},     
+            w: ${20:130},           
+            h: ${21:35},
+            corner: ${22:2},       
+            bg: '#${23:e0e}',   
+            size: ${24:12}    
+        },
+        right:{            
+            marginB: ${25:7},      
+            marginL: ${26:10},      
+            w: ${27:130},           
+            h: ${28:35},
+            corner: ${29:2},       
+            bg: '#${30:e0e}',   
+            size: ${31:12}    
+        }
+    }
+},function(ret){
+    if (ret.eventType == 'left') {
+        var dialogBox = api.require('dialogBox');
+        dialogBox.close ({
+            dialogName: '${32:alert}'
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-alert</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 alert 样式的对话框</description>
+</snippet>

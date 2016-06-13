@@ -1,0 +1,37 @@
+
+<snippet>
+    <content><![CDATA[var activity = api.require('UILoading');
+activity.GIF({
+    rect: {
+        w: ${1:60},                              
+        h: ${2:60},                              
+        x: ${3:130},            
+        y: ${4:210}         
+    },
+    styles: {
+        bg: '${5:rgba(0,0,0,0.5)}',
+        gifImage:{ 
+            w: ${6:45}, 
+            h: ${7:45} 
+        },
+        text:{ 
+            marginT: ${8:5},
+            color: '#${9:000}',
+            size: ${10:12}
+        }
+    },
+    gifImages: [ 
+        'widget://${11:image/UILoading/loading0.png}', 
+        'widget://${12:image/UILoading/loading1.png}',
+        'widget://${13:image/UILoading/loading2.png}', 
+        'widget://${14:image/UILoading/loading3.png}',
+        'widget://${15:image/UILoading/loading4.png}'
+    ]
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIActivityIndicator-keyFrame</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开关键帧样式的加载提示框。该样式的加载提示框以播放一组关键帧图片的形式来突出加载过程，该图片数组可通过 gifImages 参数配置，此过程播放每帧时间间隔为 50 毫秒。</description>
+</snippet>

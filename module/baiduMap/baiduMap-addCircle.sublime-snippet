@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.addCircle({
+    id:${1:101},
+    lon:${2:116}${3:.298},
+    lat:${4:40}${5:.11},
+    radius:${6:500},
+    fillColor:'#${7:FF0000}',
+    strokeColor:'#${8:990033}',
+    lineWidth:${9:3}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-addCircle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>在地图上添加圆圈</description>
+</snippet>

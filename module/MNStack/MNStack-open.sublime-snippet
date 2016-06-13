@@ -1,0 +1,33 @@
+
+<snippet>
+    <content><![CDATA[var MNStack = api.require('MNStack');
+MNStack.open({
+    startCoords: {
+        x: ${1:80}
+    },
+    styles: {
+        bg: '${2:rgba(0,0,0,0.7)}',
+        itemHeight: ${3:50},
+        titleColor: '#${4:333}'
+    },
+    items: [{
+        title: '${5:标题一}',
+        bgColor: '#${6:fff}'
+    },{
+        title: '${7:标题二}',
+        bgColor: '#${8:fff}'
+    }]
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNStack-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 stack 菜单</description>
+</snippet>

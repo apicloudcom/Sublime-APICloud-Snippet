@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var searchBar = api.require('searchBar');
+searchBar.cleanHistory();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>searchBar-cleanHistory</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>清空历史记录</description>
+</snippet>

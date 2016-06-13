@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var speechRecognizer = api.require('speechRecognizer');
+speechRecognizer.read({
+    readStr: '${1:APICloud平台}',
+    speed: ${2:60},
+    volume: ${3:60},
+    voice: ${4:1},
+    rate: ${5:16000},
+    audioPath:'${6:fs://speechRecogniser/read.mp3}'
+},function(ret,err) {
+    if(ret.status) {
+        ret.speakProgress
+    } else {
+        api.alert({msg:${7:err.msg});}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>speechRecognizer-read</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>用语音读取文字信息，最大的字节数为1k</description>
+</snippet>

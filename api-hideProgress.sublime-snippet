@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.hideProgress();
+    <content><![CDATA[api.hideProgress();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-hideProgress</tabTrigger>

@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var mnPopups = api.require('MNPopups');
+mnPopups.reloadData({
+    datas: [{                           
+        title: '${1:添加群}',  
+        icon: '${2:fs://MNPopups/addGroup.png}'
+    },
+    {                           
+        title: '${3:发送到电脑}',  
+        icon: '${4:fs://MNPopups/sendComputer.png}'
+    }]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNPopups-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>刷新 MNPopups 列表数据</description>
+</snippet>

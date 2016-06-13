@@ -1,7 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[//Android用法：
 api.installApp({
-    appUri: '${1:app_url}'
+    appUri: '${1:file://xxx.apk}'
+});
+
+//iOS用法：
+api.installApp({
+    appUri: '${2:https://list.kuaiapp.cn/list/KuaiAppZv7.1.plist}'        //安装包对应plist地址
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

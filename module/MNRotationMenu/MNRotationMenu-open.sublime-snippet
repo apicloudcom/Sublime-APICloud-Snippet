@@ -1,0 +1,54 @@
+
+<snippet>
+    <content><![CDATA[var MNRotationMenu = api.require('MNRotationMenu');
+MNRotationMenu.open({
+        rect: {
+            y:${1:api.winHeight-180},
+            w:${2:api.winWidth},
+            h:${3:180}
+        },
+        items: [{
+            url: '${4:fs://rotation/0.png}'
+        }, {
+            url: '${5:fs://rotation/1.png}'
+        }, {
+            url: '${6:fs://rotation/2.png}'
+        }, {
+            url: '${7:fs://rotation/3.png}'
+        }, {
+            url: '${8:fs://rotation/4.png}'
+        }, {
+            url: '${9:fs://rotation/5.png}'
+        }, {
+            url: '${10:fs://rotation/6.png}'
+        }],
+        styles: {
+            bg: '#${11:fff}',
+            r:${12:190},
+            image: {
+                w: ${13:80},
+                h: ${14:108},
+                corner: ${15:2},
+                placeholder: '${16:widget://placeholder.png}'
+            },
+            indicator: {
+                bg: '#${17:eee}',
+                active: '#${18:f00}'
+            }
+        },
+        index: ${19:1}
+    },
+    function(ret, err) {
+        if (ret) {
+            alert(JSON.stringify(ret));
+        } else {
+            alert(JSON.stringify(err));
+        }
+    });
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNRotationMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开图片旋转轮播控件</description>
+</snippet>

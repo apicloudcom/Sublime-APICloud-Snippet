@@ -1,0 +1,29 @@
+
+<snippet>
+    <content><![CDATA[var navigationMenu = api.require('navigationMenu');
+navigationMenu.open({
+    btnInfo: [{
+        normal: '${1:widget://res/img/ic/small-bell.png}',
+        highlight: '${2:widget://res/img/ic/small-bell.png}',
+        selected: '${3:widget://res/img/ic/small-bell.png}',
+        title: '${4:按钮一}'
+    },{
+        normal: '${5:widget://res/img/ic/small-bell.png}',
+        highlight: '${6:widget://res/img/ic/small-bell.png}',
+        selected: '${7:widget://res/img/ic/small-bell.png}',
+        title: '${8:按钮一}'
+    }]
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>navigationMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开导航菜单</description>
+</snippet>

@@ -1,12 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var fs = api.require('fs');
 fs.getAttribute({
-    path: '${1:file_path}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'获取属性成功'});
-    }else {
-        api.alert({msg:err.msg});
+    path: '${1:fs://file.txt}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

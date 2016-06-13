@@ -1,32 +1,34 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var slider = api.require('slider');
 slider.open({
-    x: ${1:30},
-    y: ${2:104},
-    width: ${3:260},
-    height: ${4:6},
-    bgImg: "${5:}",
-    selectedBgImg: "${6:}",
-    barW: ${7:30},
-    barH: ${8:20},
-    barImg: "${9:}",
-    bubbleW: ${10:60},
-    bubbleH: ${11:40},
-    bubbleImg: "${12:}",
-    minValue: ${13:0},
-    maxValue: ${14:100},
-    defValue: ${15:30}
-}, function(ret, err) {
-    if (ret.touchCancel) {
-        api.alert({
-            msg: ret.value
-        });
-    } else {
-        ret.value;
+     x: ${1:30},
+     y: ${2:api.frameHeight - 60},
+     width: ${3:api.frameWidth - 60},
+     height: ${4:6},
+     bgImg: '${5:widget://res/img/slider_bg.png}',
+     selectedBgImg: '${6:widget://res/img/slider_selected.png}',
+     barW: ${7:30},
+     barH: ${8:20},
+     barImg: '${9:widget://res/img/slider_bar.png}',
+     bubbleW: ${10:60},
+     bubbleH: ${11:40},
+     bubbleImg: '${12:widget://res/img/slider_bubble.png}',
+     minValue: ${13:0},
+     maxValue: ${14:100},
+     defValue: ${15:30},
+     fixedOn: ${16:api.frameName}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>slider-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开slider</description>
 </snippet>

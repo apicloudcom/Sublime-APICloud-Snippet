@@ -1,0 +1,31 @@
+
+<snippet>
+    <content><![CDATA[var loadingImgae = 'widget://${1:res/listView_arrow.png}';     //${2:刷新的小箭头}，${3:不可为空}
+var bgColor = '#F5F5F5';                                  //下拉刷新的背景颜色 ，有默认值，可为空
+var textColor= '#8E8E8E';                                 //提示语颜色，有默认值，可为空
+var textDown= '下拉可以刷新...';                             //尚未触发刷新时间的提示语，有默认值，可为空
+var textUp= '松开开始刷新...';                               //触发刷新事件的提示语，有默认值，可为空
+var showTime= true;                                       //是否显示时间，有默认值，可为空
+
+var listView = api.require('listView');
+listView.setRefreshHeader({
+    loadingImg : ${4:loadingImgae},
+    bgColor:${5:bgColor},
+    textColor:${6:textColor},
+    textDown:${7:textDown},
+    textUp:${8:textUp},
+    showTime : ${9:showTime}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listView-setRefreshHeader</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置下拉刷新</description>
+</snippet>

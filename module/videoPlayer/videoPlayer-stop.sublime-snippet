@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var videoPlayer = api.require('videoPlayer');
+videoPlayer.stop();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>videoPlayer-stop</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>停止播放</description>
+</snippet>

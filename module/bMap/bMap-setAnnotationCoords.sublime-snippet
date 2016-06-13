@@ -1,12 +1,15 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.setAnnotationCoords({
+    <content><![CDATA[var map = api.require('bMap');
+map.setAnnotationCoords({
     id: ${1:2},
-    lon: ${2:116.39},
-    lat: ${3:40.209}
+    lon: ${2:116}${3:.39},
+    lat: ${4:40}${5:.209}
 });
 ]]></content>
-    <tabTrigger>bmap-setAnnotationCoords</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setAnnotationCoords</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置某个已添加标注的经纬度</description>
 </snippet>

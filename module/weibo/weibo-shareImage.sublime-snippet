@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[var weibo = api.require('weibo');
+weibo.shareImage({
+    text: '${1:这里是测试的内容}',
+    imageUrl: '${2:widget://image/xxx.png}'
+},function(ret,err){
+    if (ret.status) {
+          alert('分享图片内容成功');
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>weibo-shareImage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>分享图片内容</description>
+</snippet>

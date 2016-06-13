@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+        map.addMobileAnnotations({
+            annotations: [{
+                id: ${1:10}, ${2:lon}: ${3:116}${4:.297, lat: 40.109, icon:}'${5:widget://image/bMap_car1.png}'
+            },{
+                id: ${6:11}, ${7:lon}: ${8:116}${9:.98, lat: 40.109, icon:}'${10:widget://image/bMap_car2.png}'
+            },{
+                id: ${11:12}, ${12:lon}: ${13:115}${14:.30, lat: 40.109, icon:}'${15:widget://image/bMap_car3.png}'
+            },{
+                id: ${16:13}, ${17:lon}: ${18:116}${19:.297, lat: 39.109, icon:}'${20:widget://image/bMap_car1.png}'
+            },{
+                id: ${21:14}, ${22:lon}: ${23:116}${24:.98, lat: 39.109, icon:}'${25:widget://image/bMap_car2.png}'
+            },{
+                id: ${26:15}, ${27:lon}: ${28:115}${29:.30, lat: 39.109, icon:}'${30:widget://image/bMap_car3.png}'
+            }]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-addMobileAnnotations</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>在地图上添加可移动、旋转的标注图标，注意：本 id 不可与 addAnnotations、addBillboard 接口内的 id 相同</description>
+</snippet>

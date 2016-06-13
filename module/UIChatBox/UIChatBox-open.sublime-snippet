@@ -1,0 +1,82 @@
+
+<snippet>
+    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+UIChatBox.open({
+    placeholder: '',
+    maxRows: ${1:4},
+    emotionPath: '${2:widget://res/img/emotion}',
+    texts: {
+        recordBtn: {
+            normalTitle: '${3:按住说话}',
+            activeTitle: '${4:松开结束}'
+        },
+        sendBtn:{
+            title:'${5:send}'
+        }
+    },
+    styles: {
+        inputBar: {
+            borderColor: '#${6:d9d9d9}',
+            bgColor: '#${7:f2f2f2}'
+        },
+        inputBox: {
+            borderColor: '#${8:B3B3B3}',
+            bgColor: '#${9:FFFFFF}'
+        },
+        emotionBtn: {
+            normalImg: '${10:widget://res/img/chatBox_face1.png}'
+        },
+        extrasBtn: {
+            normalImg: '${11:widget://res/img/chatBox_add1.png}'
+        },
+        keyboardBtn: {
+            normalImg: '${12:widget://res/img/chatBox_key1.png}'
+        },
+        speechBtn: {
+            normalImg: '${13:widget://res/img/chatBox_key1.png}'
+        },
+        recordBtn: {
+            normalBg: '#${14:c4c4c4}',
+            activeBg: '#${15:999999}',
+            color: '#${16:000}',
+            size: ${17:14}
+        },
+        indicator: {
+            target: '${18:both}',
+            color: '#${19:c4c4c4}',
+            activeColor: '#${20:9e9e9e}'
+        },
+        sendBtn: {
+            titleColor: '#${21:4cc518}',
+            bg: '#${22:999999}' ,
+            activeBg: '#${23:46a91e}',
+            titleSize: ${24:14}
+        }
+    },
+    extras: {
+        titleSize: ${25:10},
+        titleColor: '#${26:a3a3a3}',
+        btns: [{
+            title: '${27:图片}',
+            normalImg: '${28:widget://res/img/chatBox_album1.png}',
+            activeImg: '${29:widget://res/img/chatBox_album2.png}'
+        },{
+            title: '${30:拍照}',
+            normalImg: '${31:widget://res/img/chatBox_cam1.png}',
+            activeImg: '${32:widget://res/img/chatBox_cam2.png}'
+        }]
+    }
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIChatBox-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开聊天输入框</description>
+</snippet>

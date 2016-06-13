@@ -1,0 +1,34 @@
+
+<snippet>
+    <content><![CDATA[api.setCustomRefreshHeaderInfo({
+    bgColor: '#${1:C0C0C0}',
+    images: {
+        pull: '${2:widget://image/refresh/pulling.png}', 
+        transform: [
+            '${3:widget://image/refresh/transform0.png}', 
+            '${4:widget://image/refresh/transform1.png}',
+            '${5:widget://image/refresh/transform2.png}',
+            '${6:widget://image/refresh/transform3.png}',
+            '${7:widget://image/refresh/transform4.png}',
+            '${8:widget://image/refresh/transform5.png}',
+            '${9:widget://image/refresh/transform6.png}'
+        ],
+        load: [ 
+            '${10:widget://image/refresh/loading0.png}', 
+            '${11:widget://image/refresh/loading1.png}',
+            '${12:widget://image/refresh/loading2.png}', 
+            '${13:widget://image/refresh/loading3.png}',
+            '${14:widget://image/refresh/loading4.png}',
+        ]
+    }
+}, function(ret, err){
+    //在这里从服务器加载数据，加载完成后调用api.refreshHeaderLoadDone()方法恢复组件到默认状态
+
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-setCustomRefreshHeaderInfo</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示顶部自定义下拉刷新组件，页面必须设置为弹动。</description>
+</snippet>

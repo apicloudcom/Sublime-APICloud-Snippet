@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.fullScreen
+    <content><![CDATA[var fullScreen = api.fullScreen;  // 比如： true
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-fullScreen</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>应用是否全屏，只支持iOS</description>
+    <description>应用是否全屏，布尔类型，只支持iOS</description>
 </snippet>

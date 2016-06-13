@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var UICalendar = api.require('UICalendar');
+UICalendar.nextYear(function(ret, err){      
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICalendar-nextYear</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示下一年</description>
+</snippet>

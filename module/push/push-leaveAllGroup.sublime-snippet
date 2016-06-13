@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var push = api.require('push');
+push.leaveAllGroup(function( ret, err ){
+     if( ret ){
+        alert( JSON.stringify( ret) );
+     }else{
+        alert( JSON.stringify( err) );
+     }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>push-leaveAllGroup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>一次性退出所有通过joinGroup加入的群组。</description>
+</snippet>

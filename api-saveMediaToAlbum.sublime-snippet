@@ -1,8 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-api.saveMediaToAlbum({
-    path: '${1:file_path}'
-},function(ret,err){
+    <content><![CDATA[api.saveMediaToAlbum({
+    path: '${1:fs://1.png}'
+}, function(ret, err){ 
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var tabBarMenu = api.require('tabBarMenu');
+tabBarMenu.setBadge({
+    item: {
+        type: '${1:bar}',
+        index: ${2:0}
+    },
+    title: '${3:标题}',
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBarMenu-setBadge</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置徽章</description>
+</snippet>

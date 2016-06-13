@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var netAudio = api.require('netAudio');
 netAudio.setProgress({
-    progress: ${1:50}//0~100
+    progress: ${1:50}
 });
 ]]></content>
-    <tabTrigger>netaudio-setProgress</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>netAudio-setProgress</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置播放位置</description>
 </snippet>

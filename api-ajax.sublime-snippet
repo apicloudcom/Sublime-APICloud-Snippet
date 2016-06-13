@@ -1,19 +1,22 @@
+
 <snippet>
-    <content><![CDATA[
-api.ajax({
-    url: '${1:ajax_url}',
+    <content><![CDATA[api.ajax({
+    url: '${1:http://192.168.1.101:3101/upLoad}',
     method: '${2:post}',
-    timeout: ${3:30},
-    dataType: '${4:json}',
-    returnAll:${5:false}
-},function(ret,err){
+    data: {
+        values: { 
+            name: '${3:haha}'
+        },
+        files: { 
+            file: '${4:fs://a.gif}'
+        }
+    }
+},function(ret, err){
     if (ret) {
-        ${6:// TODO }
+         api.alert({msg:${5:JSON}${6:.stringify(ret)});}
     } else {
-        api.alert({
-            msg:('错误码：'+err.code+'；错误信息：'+err.msg+'网络状态码：'+err.statusCode)
-        });
-    };
+         api.alert({msg:${7:JSON}${8:.stringify(err)});}
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

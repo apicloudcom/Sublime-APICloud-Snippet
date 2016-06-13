@@ -1,0 +1,63 @@
+
+<snippet>
+    <content><![CDATA[var listContact = api.require('listContact');
+listContact.open({
+    h: ${1:api.frameHeight},
+    rightBtn: [{
+        color: '#${2:8B0000}',
+        title: '${3:备注}'
+    }],
+    data: {
+        common: [{
+            placeholderImg: '${4:widget://res/img/ic/listContact.png}',
+            img: '${5:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',
+            title: '${6:标题}'
+        }],
+        A: [{
+            placeholderImg: '${7:widget://res/img/ic/listContact.png}',
+            img: '${8:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',
+            title: '${9:标题}'
+        }, {
+            placeholderImg: '${10:widget://res/img/ic/listContact.png}',
+            title: '${11:标题}'
+        }, {
+            placeholderImg: '${12:widget://res/img/ic/listContact.png}',
+            title: '${13:标题}'
+        }, {
+            placeholderImg: '${14:widget://res/img/ic/listContact.png}',
+            title: '${15:标题}'
+        }, {
+            placeholderImg: '${16:widget://res/img/ic/listContact.png}',
+            title: '${17:标题}'
+        }, {
+            placeholderImg: '${18:widget://res/img/ic/listContact.png}',
+            title: '${19:标题}'
+        }, {
+            placeholderImg: '${20:widget://res/img/ic/listContact.png}',
+            title: '${21:标题}'
+        }, {
+            placeholderImg: '${22:widget://res/img/ic/listContact.png}',
+            title: '${23:标题}'
+        }, {
+            placeholderImg: '${24:widget://res/img/ic/listContact.png}',
+            title: '${25:标题}'
+        }, {
+            placeholderImg: '${26:widget://res/img/ic/listContact.png}',
+            title: '${27:标题}'
+        }]
+    },
+    fixedOn: ${28:api.frameName}
+}, function(ret, err) {
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listContact-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开</description>
+</snippet>

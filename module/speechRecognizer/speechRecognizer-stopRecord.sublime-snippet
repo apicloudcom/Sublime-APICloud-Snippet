@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[{
+    var speechRecognizer = api.require('speechRecognizer');
+    speechRecognizer.stopRecord();
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>speechRecognizer-stopRecord</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>停止录音</description>
+</snippet>

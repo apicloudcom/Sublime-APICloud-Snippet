@@ -1,10 +1,8 @@
+
 <snippet>
-    <content><![CDATA[
-api.pageDown(function(ret,err){
-    if (!ret.scrolled){
-        api.alert({
-            msg:'已经滚动到底部了'
-        });
+    <content><![CDATA[api.pageDown(function( ret, err ){
+    if(!ret.scrolled){
+        //已经滚动到底部
     }
 });
 ]]></content>

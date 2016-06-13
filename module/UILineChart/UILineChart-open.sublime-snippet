@@ -1,0 +1,58 @@
+
+<snippet>
+    <content><![CDATA[var UILineChart = api.require('UILineChart');
+UILineChart.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:64},
+        w: ${3:320},
+        h: ${4:300}
+    },
+    xAxis: {
+        indexs: ['${5:一月}', '${6:二月}', '${7:三月}', '${8:四月}', '${9:五月}', '${10:六月}', '${11:七月}', '${12:八月}', '${13:九月}', '${14:十月}', '${15:十一月}', '${16:十二月}', '${17:一月}'],
+        screenXcount: ${18:7}
+    },
+    yAxis: {
+        max: ${19:1000},
+        min: -${20:1000},
+        step: ${21:200},
+        base: ${22:0}
+    },
+    datas: [
+        [200,-100,100,0,50],
+        [-200,100,-100,0,-50] 
+    ],
+    styles: {
+        xAxis: {
+            bg: '#${23:b2dfee}',
+            markColor: '#${24:888}',
+            markSize: ${25:12}
+        },
+        yAxis: {
+            bg: '#${26:b2dfee}',
+            markColor: '#${27:888}',
+            markSize: ${28:12}
+        },
+        coordinate: {
+            bg: '#${29:fcfcfc}',
+            color: '#${30:cacaca}',
+            baseColor: '${31:bbb}',
+        },
+        colors: ['#${32:800080}','#${33:7FFFAA}'] 
+    },
+    fixedOn: ${34:api.frameName},
+    fixed: ${35:false}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UILineChart-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开折线图视图</description>
+</snippet>

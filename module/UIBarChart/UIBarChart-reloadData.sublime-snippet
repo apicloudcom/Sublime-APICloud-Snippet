@@ -1,0 +1,33 @@
+
+<snippet>
+    <content><![CDATA[var UIBarChart = api.require('UIBarChart');
+UIBarChart.reloadData({
+    id: ${1:1},
+    type: '${2:prepend}',
+    data: [{
+        xAxis: '${3:五月}',
+        yAxis: ${4:45}
+    },{
+        xAxis: '${5:六月}',
+        yAxis: ${6:70}
+    },{
+        xAxis: '${7:七月}',
+        yAxis: ${8:20}
+    },{
+        xAxis: '${9:八月}',
+        yAxis: ${10:85}
+    }]
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIBarChart-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重新加载数据</description>
+</snippet>

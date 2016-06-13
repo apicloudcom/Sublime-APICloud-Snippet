@@ -1,0 +1,52 @@
+
+<snippet>
+    <content><![CDATA[var videoPlayer = api.require('videoPlayer');
+videoPlayer.play({
+    texts: {
+        head: {
+            title: '${1:顶部文字}'
+        }
+    },
+    styles: {
+        head: { 
+            bg: '${2:rgba(0.5,0.5,0.5,0.7)}', 
+            height: ${3:44},
+            titleSize: ${4:20},
+            titleColor: '#${5:fff}',
+            backSize: ${6:44},
+            backImg: '${7:fs://img/back.png}', 
+            setSize: ${8:44},
+            setImg: '${9:fs://img/set.png}' 
+        },
+        foot: {
+            bg: '${10:rgba(0.5,0.5,0.5,0.7)}',
+            height: ${11:44},
+            playSize: ${12:44},
+            playImg: '${13:fs://img/back.png}',
+            pauseImg: '${14:fs://img/back.png}', 
+            nextSize: ${15:44},
+            nextImg: '${16:fs://img/back.png}', 
+            timeSize: ${17:14},
+            timeColor: '#${18:fff}',
+            sliderImg: '${19:fs://img/slder.png}', 
+            progressColor: '#${20:696969}', 
+            progressSelected: '#${21:76EE00}'
+        }
+    },
+    path: '${22:http://7o50kb.com2.z0.glb.qiniucdn.com/c1.1.mp4}', //（${23:可选项}）${24:字符串类型}；${25:文档的路径}，${26:支持网络和本地}（${27:fs://）路径；默认：未传值时不播放}
+    //在 android 平台上不支持 widget://
+    autoPlay:${28:true //（可选项）布尔类型；打开时是否自动播放；默认：true（自动播放）}
+},function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>videoPlayer-play</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开一个自带界面的视频播放器，本播放器为全屏横屏显示，支持屏幕随设备自动旋转。用户单击播放器时，会弹出 foot 和 head 导航条，再次单击则关闭之。仅 setPath 接口对本接口打开的播放器有效</description>
+</snippet>

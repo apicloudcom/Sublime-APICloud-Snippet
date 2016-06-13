@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.setKeepScreenOn({
+    <content><![CDATA[api.setKeepScreenOn({
     keepOn: ${1:true}
 });
 ]]></content>

@@ -1,16 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var socketManager = api.require('socketManager');
 socketManager.closeSocket({
     sid: '${1:1}'
-}, function(ret, err){
-    if (ret.status) {
-        api.alert({msg:'关闭成功'});
-    } else{
-        api.alert({msg:'error'});
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
-    <tabTrigger>socketmanager-closeSocket</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>socketManager-closeSocket</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>关闭socket连接</description>
+    <description>关闭 socket 连接</description>
 </snippet>

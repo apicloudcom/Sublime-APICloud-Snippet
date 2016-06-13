@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.stopSensor({
-    type: '${1:sensor_type}'
+    <content><![CDATA[api.stopSensor({
+    type: '${1:accelerometer}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

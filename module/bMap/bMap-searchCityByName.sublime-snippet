@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.searchCityByName({
+    name: "${1:北京}"
+}, function(ret){
+    if(ret.status){
+        alert(JSON.stringify(ret)); 
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-searchCityByName</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据城市名搜索该城市离线地图记录，无需调用 open 接口即可搜索</description>
+</snippet>

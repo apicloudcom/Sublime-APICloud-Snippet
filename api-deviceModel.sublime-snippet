@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.deviceModel
+    <content><![CDATA[var deviceModel = api.deviceModel;  // 比如： iPhone 5
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-deviceModel</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>设备型号</description>
+    <description>设备型号，字符串类型</description>
 </snippet>

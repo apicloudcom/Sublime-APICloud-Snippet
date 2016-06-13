@@ -1,11 +1,12 @@
-<snippet>
-    <content><![CDATA[
-api.showProgress({
-    title: '${1: title}',
-    text: '${2: text}',
-    modal: ${3: true}
-});
 
+<snippet>
+    <content><![CDATA[api.showProgress({
+    style: '${1:default}',
+    animationType: '${2:fade}',
+    title: '${3:努力加载中...}',
+    text: '${4:先喝杯茶...}',
+    modal: ${5:false}
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-showProgress</tabTrigger>

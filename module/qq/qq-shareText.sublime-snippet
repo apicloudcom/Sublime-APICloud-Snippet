@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var qq = api.require('qq');
 qq.shareText({
-  text: '${1:testtext}'
+    text:'${1:testtext}'
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>qq-shareText</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>分享纯文本到好友</description>
+    <description>分享纯文本到好友，在 android 平台上此接口不支持回调</description>
 </snippet>

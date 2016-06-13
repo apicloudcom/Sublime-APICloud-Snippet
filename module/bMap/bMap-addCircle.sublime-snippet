@@ -1,20 +1,23 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.addCircle({
+    <content><![CDATA[var map = api.require('bMap');
+map.addCircle({
     id: ${1:4},
     center: {
-        lon: ${2:116.39432327},
-        lat: ${3:39.98963192}
+        lon: ${2:116}${3:.39432327},
+        lat: ${4:39}${5:.98963192}
     },
-    radius: ${4:500},
+    radius: ${6:500},
     styles: {
-        borderColor: '${5:#FF0000}',
-        borderWidth: ${6:3},
-        fillColor:'${7:#0000ff}'
+        borderColor: '#${7:FF0000}',
+        borderWidth: ${8:3},
+        fillColor:'#${9:0000ff}'
     }
 });
 ]]></content>
-    <tabTrigger>bmap-addCircle</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-addCircle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>在地图上添加圆形</description>
 </snippet>

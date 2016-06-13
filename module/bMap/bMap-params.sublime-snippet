@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.addImg({
+    id: ${1:5},
+    imgPath: '${2:widget://res/over_img.png}',
+    lbLon: ${3:116}${4:.39432327},
+    lbLat: ${5:39}${6:.88933191},
+    rtLon: ${7:116}${8:.49432328},
+    rtLat: ${9:39}${10:.98963192},
+    opacity: ${11:0}${12:.8}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-params</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>id：</description>
+</snippet>

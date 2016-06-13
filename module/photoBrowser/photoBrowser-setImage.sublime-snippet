@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var photoBrowser = api.require('photoBrowser');
+photoBrowser.setImage({
+    index: ${1:2},
+    image: '${2:http://docs.apicloud.com/img/docImage/imageBrowser.jpg}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>photoBrowser-setImage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置指定位置的图片，若设置的是网络图片加载成功或失败会给 open 接口回调该加载事件</description>
+</snippet>

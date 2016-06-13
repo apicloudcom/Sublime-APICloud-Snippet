@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.screenWidth
+    <content><![CDATA[var screenWidth = api.screenWidth;  // 比如： 640
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-screenWidth</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>屏幕分辨率宽</description>
+    <description>屏幕分辨率宽，数字类型</description>
 </snippet>

@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var loadingLabel = api.require('loadingLabel');
+loadingLabel.open(function( ret, err ){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>loadingLabel-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开加载标签</description>
+</snippet>

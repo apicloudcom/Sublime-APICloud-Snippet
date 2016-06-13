@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var sideMenu = api.require('sideMenu');
+sideMenu.show({
+    id: ${1:1}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sideMenu-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示菜单</description>
+</snippet>

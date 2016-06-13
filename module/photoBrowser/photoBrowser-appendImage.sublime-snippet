@@ -1,0 +1,16 @@
+
+<snippet>
+    <content><![CDATA[var photoBrowser = api.require('photoBrowser');
+photoBrowser.appendImage({
+  images: [ 
+    'fs://${1:img/image1.png}', 
+    'fs://${2:img/encryption.png}'
+  ]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>photoBrowser-appendImage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>往已打开的图片浏览器里添加图片（拼接在最后）</description>
+</snippet>

@@ -1,12 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var fs = api.require('fs');
 fs.createDir({
-    path: '${1:dir_path}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'创建目录成功'});
-    }else {
-        api.alert({msg:err.msg});
+    path: '${1:fs://floder}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

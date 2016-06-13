@@ -1,0 +1,27 @@
+
+<snippet>
+    <content><![CDATA[api.setFrameClient({
+    frameName:'${1:webpage}'
+}, function(ret, err){
+    switch (ret.state) {
+        case 0:
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        default:
+            break;
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-setFrameClient</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置指定 frame 的页面加载监听，仅在 window 中调用生效，可以对多个 frame 进行监听。</description>
+</snippet>

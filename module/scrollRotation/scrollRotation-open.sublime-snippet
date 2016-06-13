@@ -1,0 +1,44 @@
+
+<snippet>
+    <content><![CDATA[var scrollRotation = api.require('scrollRotation');
+scrollRotation.open({
+    x: ${1:30},
+    y: ${2:api.frameHeight / 2 - 170},
+    w: ${3:api.frameWidth - 60},
+    h: ${4:340},
+    items: [{
+        imgPath : '${5:widget://res/img/apicloud.png}',
+        title: '${6:apicloud}',
+        fontColor: '#${7:ffffff}',
+        fontSize: ${8:16} 
+    },{
+        imgPath : '${9:widget://res/img/apicloud-gray.png}',
+        title: '${10:apicloud}',
+        fontColor: '#${11:ffffff}',
+        fontSize: ${12:16} 
+    },{
+        imgPath : '${13:widget://res/img/apicloud.png}',
+        title: '${14:apicloud}',
+        fontColor: '#${15:ffffff}',
+        fontSize: ${16:16} 
+    },{
+        imgPath : '${17:widget://res/img/apicloud-gray.png}',
+        title: '${18:apicloud}',
+        fontColor: '#${19:ffffff}',
+        fontSize: ${20:16} 
+    }],
+    fixedOn: ${21:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scrollRotation-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开滚动旋转器</description>
+</snippet>

@@ -1,15 +1,20 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var push = api.require('push');
 push.bind({
-	userName:'${1:userName}',
-	userId:'${2:userId}'
-},function(ret,err){
-	
+    userName: '${1:testName}',
+    userId: '${2:testId}'
+}, function(ret, err){
+    if( ret ){
+        alert( JSON.stringify( ret) );
+    }else{
+        alert( JSON.stringify( err) );
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>push-bind</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>将来自业务系统的用户信息绑定至推送服务器</description>
+    <description>将来自第三方业务系统（比如您自己的商城、O2O、OA、CRM系统等）的用户信息绑定至APICloud推送服务器，实现推送给指定用户的功能（即“单推”）。</description>
 </snippet>

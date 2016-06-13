@@ -1,26 +1,61 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var arcMenu = api.require('arcMenu');
 arcMenu.open({
     type: '${1:arc}',
     mainMenu: {
-        x: ${2:140},
-        y: ${3:360},
+        x: ${2:api.frameWidth / 2},
+        y: ${3:api.frameHeight / 2},
         w: ${4:50},
         h: ${5:50},
-        img: '${6:widget://res/arcMenue_centerImg.png}',
-        imgLight: '${7:widget://res/arcMenue_centerImgLight.png}'
+        img: '${6:widget://res/img/ic/color-lump-square.png}',
+        imgLight: '${7:widget://res/img/ic/color-lump-square.png}'
     },
-    items:[{ w: ${8:40}, h: ${9:40}, img: '${10:widget://res/item1.png}', imgLight: '${11: widget://res/item1Light.png'}}],
-    startAngle: ${12:0},
-    wholeAngle: ${13:180},
-    radius: ${14:100},
-    fixed: ${15:true},
-    shieldClick: ${16:true}
-}, function(ret,err){
-    api.alert({msg:ret.id+'*'+ret.index});
+    items: [{ 
+            w: ${8:40},
+            h: ${9:40},
+            img: '${10:widget://res/img/ic/small-bell.png}',
+            imgLight: '${11:widget://res/img/ic/small-bell.png}'
+        },{ 
+            w: ${12:40},
+            h: ${13:40},
+            img: '${14:widget://res/img/ic/count.png}',
+            imgLight: '${15:widget://res/img/ic/count.png}'
+        },{ 
+            w: ${16:40},
+            h: ${17:40},
+            img: '${18:widget://res/img/ic/color-lump-triangle.png}',
+            imgLight: '${19:widget://res/img/ic/color-lump-triangle.png}'
+        },{ 
+            w: ${20:40},
+            h: ${21:40},
+            img: '${22:widget://res/img/ic/compass.png}',
+            imgLight: '${23:widget://res/img/ic/compass.png}'
+        },{ 
+            w: ${24:40},
+            h: ${25:40},
+            img: '${26:widget://res/img/ic/message.png}',
+            imgLight: '${27:widget://res/img/ic/message.png}'
+        },{ 
+            w: ${28:40},
+            h: ${29:40},
+            img: '${30:widget://res/img/ic/clock.png}',
+            imgLight: '${31:widget://res/img/ic/clock.png}'
+        }],
+    wholeAngle: ${32:180},
+    radius: ${33:100},
+    fixedOn: ${34:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
-    <tabTrigger>arcmenu-open</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>arcMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开弹动菜单</description>
 </snippet>

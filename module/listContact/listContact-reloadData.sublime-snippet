@@ -1,0 +1,47 @@
+
+<snippet>
+    <content><![CDATA[var listContact = api.require('listContact');
+listContact.reloadData({
+    data: {
+        common: [{
+            placeholderImg: '${1:widget://res/img/ic/listContact.png}',
+            img:'${2:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',
+               title:'${3:标题}'
+          }],
+        A: [{
+            placeholderImg:'${4:widget://res/img/ic/listContact.png}',
+            img:'${5:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',
+               title:'${6:标题}'
+         },{
+            placeholderImg: '${7:widget://res/img/ic/listContact.png}',${8:title:}'${9:标题}'
+         },{
+            placeholderImg: '${10:widget://res/img/ic/listContact.png}',${11:title:}'${12:标题}' 
+         },{
+            placeholderImg:'${13:widget://res/img/ic/listContact.png}',${14:title:}'${15:标题}'
+         },{
+            placeholderImg:'${16:widget://res/img/ic/listContact.png}',${17:title:}'${18:标题}'
+         },{
+            placeholderImg: '${19:widget://res/img/ic/listContact.png}',${20:title:}'${21:标题}'
+         },{
+            placeholderImg: '${22:widget://res/img/ic/listContact.png}',${23:title:}'${24:标题}' 
+         },{
+            placeholderImg: '${25:widget://res/img/ic/listContact.png}',${26:title:}'${27:标题}'
+         },{
+            placeholderImg: '${28:widget://res/img/ic/listContact.png}',${29:title:}'${30:标题}'
+         },{
+            placeholderImg:'${31:widget://res/img/ic/listContact.png}' ,${32:title:}'${33:标题}'
+         }]}
+},function(ret,err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }        
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listContact-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>刷新列表数据</description>
+</snippet>

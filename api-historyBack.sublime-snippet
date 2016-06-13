@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.historyBack(function(ret, err){
-    if(ret.status) {
-    	alert('历史回退');
-    } else {
-        api.closeWidget();
+    <content><![CDATA[api.historyBack({
+    frameName:'${1:detail}'
+},function(ret,err){
+    if(!ret.status){
+        api.closeWin();
     }
 });
 ]]></content>

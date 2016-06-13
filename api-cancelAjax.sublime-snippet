@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.cancelAjax({
-    tag: '${1:tag_name}'
+    <content><![CDATA[api.cancelAjax({
+    tag: '${1:publish}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

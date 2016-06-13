@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.frameHeight
+    <content><![CDATA[var frameHeight = api.frameHeight;  // 比如： 504
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-frameHeight</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>frame高度</description>
+    <description>frame 高度，数字类型</description>
 </snippet>

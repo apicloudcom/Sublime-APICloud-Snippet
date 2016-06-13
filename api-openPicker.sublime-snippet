@@ -1,21 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
-api.openPicker({
+    <content><![CDATA[api.openPicker({
     type: '${1:date_time}',
-    date: '${2:2015-04-24 15:45}',
-    title:'${3:title}'
-},function(ret,err){
-    var year   = ret.year;
-    var month  = ret.month;
-    var day    = ret.day;
-    var hour   = ret.hour;
-    var minute = ret.minute;
-    if (type == 'date') {
-        var value = year+'年'+month+'月'+day+'日';
-    } else if (type == 'time') {
-        var value = hour+'时'+minute+'分';
-    } else if (type == 'date_time') {
-        var value = year+'年'+month+'月'+day+'日'+hour+'时'+minute+'分';
+    date: '${2:2014}-${3:05}-${4:01} ${5:12}:${6:30}',
+    title: '${7:选择时间}'
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

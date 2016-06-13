@@ -1,13 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var db = api.require('db');
 db.selectSql({
-    name: '${1:database_name}',
-    sql: '${2:sql_string}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'执行SQL成功'});
-    }else {
-        api.alert({msg:err.msg});
+    name: '${1:test}',
+    sql: '${2:SELECT} * ${3:FROM} ${4:Persons}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

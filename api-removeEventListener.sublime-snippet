@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.removeEventListener({
-    name: '${1:listener_name}'
+    <content><![CDATA[api.removeEventListener({
+    name: '${1:online}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

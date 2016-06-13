@@ -1,0 +1,16 @@
+
+<snippet>
+    <content><![CDATA[var FNScanner = api.require('FNScanner');
+FNScanner.setFrame({
+   x: ${1:10},
+   y: ${2:64},
+   w: ${3:300},
+   h: ${4:300}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>FNScanner-setFrame</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重设可自定义的二维码/条形码扫描器的大小和位置</description>
+</snippet>

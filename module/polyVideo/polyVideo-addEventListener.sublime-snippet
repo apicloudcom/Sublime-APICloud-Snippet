@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[var polyVideo = api.require('polyVideo');
+polyVideo.addEventListener({
+    name:'${1:leftUp}'
+},function(ret){
+    alert('leftUp');
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>polyVideo-addEventListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>添加动作监听(当全屏或者fixed为true且页面不能被左右滑动时有效)</description>
+</snippet>

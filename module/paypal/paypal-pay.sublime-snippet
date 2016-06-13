@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[    var paypal = api.require('paypal');
+    paypal.pay({
+        currency: '${1:USD}',
+        price: '${2:36}${3:.06}',
+        description: '${4:APICloud} ${5:短袖T恤}',
+        mode: '${6:noNetwork}'
+    },function(ret){
+        if (ret) {
+           api.alert({msg:${7:JSON}${8:.stringify(ret)});}
+        }
+    });
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>paypal-pay</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>支付</description>
+</snippet>

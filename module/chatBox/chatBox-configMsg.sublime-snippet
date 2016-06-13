@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[var chatBox = api.require('chatBox');
+chatBox.configMsg(function(ret,err){
+    if(ret.status){
+      api.alert({msg:${1:ret.msg });}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>chatBox-configMsg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>配置当前输入框内的文字</description>
+</snippet>

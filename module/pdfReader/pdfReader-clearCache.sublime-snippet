@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var pdfReader = api.require('pdfReader');
+pdfReader.clearCache();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>pdfReader-clearCache</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>清除缓存到本地的文件，本接口只清除本模块缓存的数据，若要清除本app缓存的所有数据这调用api.clearCache</description>
+</snippet>

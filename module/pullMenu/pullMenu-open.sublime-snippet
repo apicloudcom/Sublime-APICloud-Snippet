@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var pullMenu = api.require('pullMenu');
+pullMenu.open({
+    btnArray:[{
+        normal: '${1:widget://res/img/ic/small-bell.png}',
+        highlight: '${2:widget://res/img/ic/small-bell.png}'
+    },{
+        normal: '${3:widget://res/img/ic/small-bell.png}',
+        highlight: '${4:widget://res/img/ic/small-bell.png}'
+    }]
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>pullMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开拖拉菜单</description>
+</snippet>

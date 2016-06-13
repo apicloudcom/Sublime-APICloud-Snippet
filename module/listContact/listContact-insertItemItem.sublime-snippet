@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var listContact = api.require('listContact');
+listContact.insertItem({
+    index:${1:2},
+    data:{
+        img: '${2:widget://res/img/ic/listContact.jpg}',
+        title: '${3:12}:${4:00}',
+        subTitle: '${5:APICloud粉丝互动会}',
+        remark: '${6:完成}'
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listContact-insertItemItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>插入指定索引的数据</description>
+</snippet>

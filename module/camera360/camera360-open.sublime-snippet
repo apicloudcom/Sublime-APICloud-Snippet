@@ -1,0 +1,16 @@
+
+<snippet>
+    <content><![CDATA[var camera360 = api.require('camera360');
+camera360.open({
+    path:'${1:fs://test.jpg}',
+    savePath:'${2:fs://processed_test.jpg}'
+}, function(ret){
+    api.alert({msg:${3:JSON}${4:.stringify(ret)});}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>camera360-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 camera360 开始编辑图片</description>
+</snippet>

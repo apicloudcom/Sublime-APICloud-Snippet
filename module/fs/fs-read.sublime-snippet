@@ -1,14 +1,15 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var fs = api.require('fs');
 fs.read({
-    fd: ${1:fd},
-    offset: ${2:0},
-    length: ${1:0}
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:ret.data});
-    }else {
-        api.alert({msg:err.msg});
+    fd: '${1:open} ${2:方法得到的文件句柄}',
+    offset: ${3:0},
+    length: ${4:0}
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

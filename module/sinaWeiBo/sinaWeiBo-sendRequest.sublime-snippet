@@ -1,0 +1,57 @@
+
+<snippet>
+    <content><![CDATA[//当contentType为music,video或webpage时，内容地址不能为流媒体地址;
+var sinaWeiBo = api.require('sinaWeiBo');
+sinaWeiBo.sendRequest({
+    contentType: '${1:video}',
+    text: '${2:这里是测试的内容}',
+    imageUrl: '${3:fs://a.png}',
+    media: {
+        title: '${4:多媒体标题}',
+        description: '${5:多媒体描述}',
+        thumbUrl: '${6:fs://b.png}',
+        videoUrl: '${7:http://v.ku6.com/show/ZgeIWrUgvfSuDN_fl_qNsQ...html}'
+    }
+},function(ret,err){
+    if (ret.status) {
+        api.alert({
+            title: '${8:发表微博}',
+            msg: '${9:发表成功}',
+            buttons: ['${10:确定}']
+        });
+    }else{
+        api.alert({
+            title: '${11:发表失败}',
+            msg: ${12:err.msg},
+            buttons: ['${13:确定}']
+        });
+    }
+});
+//当contentType为text或image时，多媒体内容可以为空;
+var sinaWeiBo = api.require('sinaWeiBo');
+sinaWeiBo.sendRequest({
+    contentType: '${14:text}',
+    text: '${15:这是测试用的文本}',
+    imageUrl: '${16:fs://a.png}'
+},function(ret,err){
+    if (ret.status) {
+        api.alert({
+            title: '${17:发表微博}',
+            msg: '${18:发表成功}',
+            buttons: ['${19:确定}']
+        });
+    }else{
+        api.alert({
+            title: '${20:发表微博}',
+            msg: '${21:发表失败}',
+            buttons: ['${22:确定}']
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sinaWeiBo-sendRequest</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>发表内容</description>
+</snippet>

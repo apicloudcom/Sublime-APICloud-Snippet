@@ -1,11 +1,12 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.searchInCity({
+    <content><![CDATA[var map = api.require('bMap');
+map.searchInCity({
     city: '${1:北京}',
     keyword: '${2:学校}',
     pageIndex: ${3:0},
-    pageCapacity: ${4:20}//1~50
-}, function(ret){
+    pageCapacity: ${4:20}
+},function(ret){
     if(ret.status){
        alert(JSON.stringify(ret)); 
     }else{
@@ -13,7 +14,9 @@ bmap.searchInCity({
     }
 });
 ]]></content>
-    <tabTrigger>bmap-searchInCity</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-searchInCity</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>根据单个关键字搜索兴趣点，无需调用open接口即可搜索</description>
+    <description>根据单个关键字搜索兴趣点，无需调用 open 接口即可搜索</description>
 </snippet>

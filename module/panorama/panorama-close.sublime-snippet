@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var panorama = api.require('panorama');
+panorama.close({
+    id:${1:1}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>panorama-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭全景展示视图</description>
+</snippet>

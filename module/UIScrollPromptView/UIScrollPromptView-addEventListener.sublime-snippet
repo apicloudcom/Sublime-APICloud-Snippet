@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var UIScrollPromptView = api.require('UIScrollPromptView');
+UIScrollPromptView.addEventListener({
+    name: '${1:scroll}'
+}, function( ret ){
+    if( ret ){
+          alert( JSON.stringify( ret ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIScrollPromptView-addEventListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>事件监听</description>
+</snippet>

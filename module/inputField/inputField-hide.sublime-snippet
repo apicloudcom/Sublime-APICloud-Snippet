@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var inputField = api.require('inputField');
+inputField.hide(function(ret, err){   
+  if( ret ){
+      alert( JSON.stringify( ret ) );
+  }else{
+      alert( JSON.stringify( err ) );
+  }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>inputField-hide</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>隐藏输入框，并没有从内存里清除</description>
+</snippet>

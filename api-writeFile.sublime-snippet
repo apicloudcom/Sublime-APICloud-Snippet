@@ -1,14 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-api.writeFile({
-    path: '${1:file_path}',
-    data: '${2:data_string}'
+    <content><![CDATA[api.writeFile({
+    path: '${1:fs://a.txt}',
+    data: '${2:writeFile测试内容}'
 }, function(ret, err){
-    var status = ret.status;
-    if(status){
-        api.alert({msg:'写入文件成功'});
-    } else{
-        api.alert({msg:err.msg});
+    if(ret.status){
+         //成功
+    }else{
+
     }
 });
 ]]></content>

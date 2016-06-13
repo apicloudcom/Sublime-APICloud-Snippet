@@ -1,0 +1,37 @@
+
+<snippet>
+    <content><![CDATA[var tabBar = api.require('tabBar');
+tabBar.open({
+    bgImg: '${1:widget://res/img/bg.png}',
+    items: [{
+        title: '${2:标题一}',
+        img: '${3:widget://res/img/ic/item.png}',
+        badge: '${4:1}'
+    },{
+        title: '${5:标题二}',
+        img: '${6:widget://res/img/ic/item.png}',
+        badge: '${7:2}'
+    },{
+        title: '${8:标题三}',
+        img: '${9:widget://res/img/ic/item.png}',
+        badge: '${10:1}'
+    },{
+        title: '${11:标题四}',
+        img: '${12:widget://res/img/ic/item.png}',
+        badge: '${13:2}'
+    }],
+    fixedOn: ${14:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tabBar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开</description>
+</snippet>

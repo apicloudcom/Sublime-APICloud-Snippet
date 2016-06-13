@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.addMarks ({
+    marks:[{${1:id:1,lon:116.297,lat:40.109,title:}'${2:第一个}',${3:subTitle:}'${4:子标题}'},
+        {id:${5:2},${6:lon}:${7:116}${8:.298,lat:40.109,title:}'${9:第二个}',${10:subTitle:}'${11:子标题}'},
+        {id:${12:3},${13:lon}:${14:116}${15:.298,lat:40.111,title:}'${16:第三个}',${17:subTitle:}'${18:子标题}'}]
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-addMarks</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>在地图上添加布告牌</description>
+</snippet>

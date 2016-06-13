@@ -1,9 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[//如监听网络连接事件
 api.addEventListener({
-    name: '${1:eventType}'
+    name: '${1:online}'
 }, function(ret, err){
-    api.alert({msg: 'eventType'});
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

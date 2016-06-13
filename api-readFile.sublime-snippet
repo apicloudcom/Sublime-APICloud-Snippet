@@ -1,20 +1,18 @@
+
 <snippet>
-    <content><![CDATA[
-api.readFile({
-    path: '${1:file_path}'
+    <content><![CDATA[api.readFile({
+    path: '${1:fs://a.txt}'
 }, function(ret, err){
-   if( ret.status ) {
-       api.alert({msg:ret.data});
-   } else {
-       api.alert({
-           msg: '错误码: '+err.code+'错误信息'+err.msg
-       });
-   }
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-readFile</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>读取文本文件内容</description>
+    <description>读取文本文件内容，只支持utf-8编码文本类型文件</description>
 </snippet>

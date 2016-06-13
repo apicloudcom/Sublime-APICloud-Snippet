@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var UICalendar = api.require('UICalendar');
+UICalendar.setDate({
+    date: '${1:2015}-${2:08}-${3:08}',
+    ignoreSelected: ${4:false}
+}, function(ret, err){      
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICalendar-setDate</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置选中日期</description>
+</snippet>

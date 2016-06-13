@@ -1,13 +1,16 @@
+
 <snippet>
-    <content><![CDATA[
-qq.login(function(ret, err) {
-  api.alert({
-    title: 'id和token',
-    msg: ret.openId + ret.accessToken
-  });
+    <content><![CDATA[var qq = api.require('qq');
+qq.login(function(ret,err){
+    api.alert({
+        title: '${1:id和token}',
+        msg: ${2:ret.openId + ret.accessToken}
+    });
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>qq-login</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>登陆qq</description>
 </snippet>

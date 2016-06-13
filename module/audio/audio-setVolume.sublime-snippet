@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var audio = api.require('audio');
 audio.setVolume({
-    volume:${1:0.5}
+    volume: ${1:0}${2:.6}
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>audio-setVolume</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置音量</description>
 </snippet>

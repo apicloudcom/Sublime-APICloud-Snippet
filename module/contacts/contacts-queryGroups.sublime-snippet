@@ -1,8 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
-contacts.queryGroups(function(ret, err){
-    if(ret.status){
-        alert(JSON.stringify(ret));
+    <content><![CDATA[var contacts = api.require('contacts');
+contacts.queryGroups(function( ret, err ){
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

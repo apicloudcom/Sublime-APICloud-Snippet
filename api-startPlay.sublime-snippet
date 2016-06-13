@@ -1,9 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-api.startPlay({
-    path: '${1:music_path}'
-},function(){
-    api.alert({msg: '${2:finish play}'});
+    <content><![CDATA[api.startPlay({
+    path: '${1:widget://res/1.mp3}'
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,10 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var docReader = api.require('docReader');
 docReader.open({
-    path:'${1:path}'
+    path: '${1:widget://res/test.docx}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>docReader-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>打开一个文档，文档类型可以是excel，doc，pdf等格式</description>
+    <description>打开一个文档</description>
 </snippet>

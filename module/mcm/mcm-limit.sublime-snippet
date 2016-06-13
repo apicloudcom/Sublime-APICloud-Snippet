@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var query = api.require('query');
+query.limit({
+    qid: ${1:queryId}, 
+    value: ${2:3}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mcm-limit</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置查询返回结果限制为n条，相当于“分页”大小。</description>
+</snippet>

@@ -1,12 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var db = api.require('db');
 db.closeDatabase({
-    name: '${1:database_name}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'数据库关闭成功'});
-    }else {
-        api.alert({msg:err.msg});
+    name: '${1:test}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

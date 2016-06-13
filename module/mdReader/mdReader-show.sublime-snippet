@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var mdReader = api.require('mdReader');
+mdReader.show();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mdReader-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示阅读器</description>
+</snippet>

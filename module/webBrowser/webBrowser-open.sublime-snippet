@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var browser = api.require('webBrowser');
+browser.open({
+    url:'${1:http://m.apicloud.com}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>webBrowser-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>直接打开已定制的带标题栏的浏览器组件，类似微信中的效果</description>
+</snippet>

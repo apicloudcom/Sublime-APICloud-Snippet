@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+hintChatBox.setHintButtonListener(function( ret, err ){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>hintChatBox-setHintButtonListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置提示面板上提示按钮的监听</description>
+</snippet>

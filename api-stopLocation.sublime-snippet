@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.stopLocation();
+    <content><![CDATA[api.stopLocation();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-stopLocation</tabTrigger>

@@ -1,23 +1,24 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.addBillboard({
+    <content><![CDATA[var map = api.require('bMap');
+map.addBillboard({
     id: ${1:4},
     coords: {
-        lon: ${2:116.233},
-        lat: ${3:39.134}
+        lon: ${2:116}${3:.233},
+        lat: ${4:39}${5:.134}
     },
-    bgImg: '${4:widget://image/bMapTest.png}',
+    bgImg: '${6:widget://image/bMapTest.png}',
     content: {
-        title: '${5:大标题大标题大标题大标题}',
-        subTitle: '${6:概述内容概述内容概述内容}',
-        illus: '${7:http://ico.ooopic.com/ajax/iconpng/?id=145044.png}'
+        title: '${7:大标题大标题大标题大标题}',
+        subTitle: '${8:概述内容概述内容概述内容}',
+        illus: '${9:http://ico.ooopic.com/ajax/iconpng/?id=145044.png}'
     },
     styles: {
-        titleColor: '${8:#000}',
-        titleSize: ${9:16},
-        subTitleColor: '${10:#999}',
-        subTitleSize: ${11:12},
-        illusAlign: '${12:left}'//left/right
+        titleColor: '#${10:000}',
+        titleSize: ${11:16},
+        subTitleColor: '#${12:999}',
+        subTitleSize: ${13:12},
+        illusAlign: '${14:left}'
     }
 }, function(ret){
     if(ret){
@@ -25,7 +26,9 @@ bmap.addBillboard({
     }
 });
 ]]></content>
-    <tabTrigger>bmap-addBillboard</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-addBillboard</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>在地图上添加布告牌</description>
 </snippet>

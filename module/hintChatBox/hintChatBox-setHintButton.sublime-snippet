@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+hintChatBox.setHintButton ({
+    index: ${1:2}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>hintChatBox-setHintButton</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置设置指定提示按钮为活跃状态项</description>
+</snippet>

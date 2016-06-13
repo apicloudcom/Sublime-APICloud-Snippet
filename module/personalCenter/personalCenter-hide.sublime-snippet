@@ -1,8 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var personalCenter = api.require('personalCenter');
 personalCenter.hide();
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>personalCenter-hide</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>隐藏个人中心</description>
 </snippet>

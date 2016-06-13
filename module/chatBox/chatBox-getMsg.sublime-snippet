@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var chatBox = api.require('chatBox');
+chatBox.getMsg(function(ret,err){
+    api.alert({msg:${1:ret.msg });}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>chatBox-getMsg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>获取当前输入框内的文字</description>
+</snippet>

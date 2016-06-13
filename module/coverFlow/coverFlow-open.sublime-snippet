@@ -1,0 +1,35 @@
+
+<snippet>
+    <content><![CDATA[var coverFlow = api.require('coverFlow');
+coverFlow.open({
+    x: ${1:0},
+    y: ${2:0},
+    w: ${3:api.winWidth},
+    h: ${4:300},
+    bgColor:'#${5:ADD8E6}',
+    paths:[
+        'widget://${6:res/a1.png}',
+        'widget://${7:res/a1.png}',
+        'widget://${8:res/a1.png}',
+        'widget://${9:res/a1.png}',
+        'widget://${10:res/a1.png}',
+        'widget://${11:res/a1.png}',
+        'widget://${12:res/a1.png}',
+        'widget://${13:res/a1.png}',
+        'widget://${14:res/a1.png}'
+    ],
+    fixedOn: ${15:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>coverFlow-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开coverFlow</description>
+</snippet>

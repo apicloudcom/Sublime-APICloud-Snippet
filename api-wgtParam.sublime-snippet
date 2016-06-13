@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.wgtParam
+    <content><![CDATA[var wgtParam = api.wgtParam;  //比如： {"name": "API Demo"}
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-wgtParam</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>widget参数</description>
+    <description>widget 参数，JSON 对象类型</description>
 </snippet>

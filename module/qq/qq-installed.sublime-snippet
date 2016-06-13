@@ -1,14 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var qq = api.require('qq');
 qq.installed(function(ret,err){
     if(ret.status){
-       api.alert({msg: "安装"});
+       api.alert({msg: "${1:安装}"});
     }else{
-        api.alert({msg: "没有安装"});
+        api.alert({msg: "${2:没有安装}"});
     } 
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>qq-installed</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>判断当前设备是否安装了QQ客户端</description>
+    <description>判断当前设备是否安装了 QQ 客户端</description>
 </snippet>

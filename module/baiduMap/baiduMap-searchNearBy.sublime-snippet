@@ -1,0 +1,22 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.searchNearBy({
+    key:'${1:KTV}',
+    lon:${2:116}${3:.384767},
+    lat:${4:39}${5:.989539},
+    radius:${6:2000}
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-searchNearBy</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据单个关键字在指定圆圈区域内搜索兴趣点</description>
+</snippet>

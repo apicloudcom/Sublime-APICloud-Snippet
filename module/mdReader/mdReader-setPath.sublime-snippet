@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var mdReader = api.require('mdReader');
+mdReader.setPath({
+    path: '${1:widget://md.md}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mdReader-setPath</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置阅读器的文件路径</description>
+</snippet>

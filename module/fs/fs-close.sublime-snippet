@@ -1,12 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var fs = api.require('fs');
 fs.close({
-    fd: ${1:fd}
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'close操作成功'});
-    }else {
-        api.alert({msg:err.msg});
+    fd: '${1:open} ${2:方法得到的文件句柄}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

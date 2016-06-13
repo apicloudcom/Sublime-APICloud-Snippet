@@ -1,12 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var contacts = api.require('contacts');
 contacts.queryByKeyword({
-    keyword: '${1:keyword}'
+    keyword: '${1:孙}'
 }, function(ret, err){
-    if(ret.status){   
-        alert(JSON.stringify(ret.contacts));
+    if( ret ){
+        alert( JSON.stringify( ret ) );
     }else{
-        api.alert({msg: '获取失败'});
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

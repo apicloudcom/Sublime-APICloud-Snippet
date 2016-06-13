@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var listContact = api.require('listContact');
+listContact.scrollToItem({
+    index: ${1:2},    
+    key: '${2:B}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listContact-scrollToItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>滚动到指定 index 条目</description>
+</snippet>

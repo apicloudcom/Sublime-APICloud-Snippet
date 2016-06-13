@@ -1,8 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var circularMenu = api.require('circularMenu');
 circularMenu.close();
 ]]></content>
-    <tabTrigger>circularmenu-close</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>circularMenu-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>关闭环形菜单</description>
 </snippet>

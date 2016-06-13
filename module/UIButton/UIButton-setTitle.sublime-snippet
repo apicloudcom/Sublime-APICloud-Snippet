@@ -1,0 +1,29 @@
+
+<snippet>
+    <content><![CDATA[var button = api.require('UIButton');
+button.setTitle({
+    id: ${1:1},
+    title:{
+        size: ${2:14},
+        highlight: '${3:高亮状态标题}',
+        active: '${4:选中后标题}',
+        normal: '${5:常态标题}',
+        highlightColor: '#${6:oo0000}',
+        activeColor: '#${7:adf000}',
+        normalColor: '#${8:ff0000}',
+        alignment: '${9:center}'
+    }
+}, function(ret, err){   
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIButton-setTitle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重设指定按钮的标题</description>
+</snippet>

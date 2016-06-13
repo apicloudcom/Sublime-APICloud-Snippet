@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.close ({
+    dialogName: '${1:alert}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭弹出的对话框</description>
+</snippet>

@@ -1,0 +1,74 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.taskPlan ({
+    rect: {
+        w: ${1:300}    
+    },
+    texts:{
+        mainTitle: '${2:昨天玩的不够努力哦}',
+        subTitle: '${3:今天没有获得任务次数奖励呢}',       
+        content: [{             
+           text: '${4:今日赚任务总次数}：${5:3次}'     
+        },{
+           text: '${6:3次}（${7:基础}）+ ${8:0次}（${9:奖励}）'     
+        }],
+        btnTitle: '${10:开始做任务}'           
+    },
+    styles:{
+        bg: '#${11:fff}',                
+        main: {                    
+            marginT: ${12:20},           
+            color: '#${13:636363}',      
+            size: ${14:13},             
+            bold: ${15:true,            }
+        },
+        sub: {                     
+            marginT: ${16:8},            
+            color: '#${17:999999}',      
+            size: ${18:12},              
+        },
+        content: [{                
+            bg: '#${19:f00}',
+            marginT: ${20:10},         
+            w: ${21:280},                
+            h: ${22:30},                
+            align: '${23:center}',         
+            color: '#${24:007FFF}',      
+            size: ${25:12}               
+        },
+        {                
+            bg: '#${26:fff}',  
+            marginT: ${27:10},         
+            w: ${28:280},                
+            h: ${29:30},                
+            align: '${30:left}',         
+            color: '#${31:007FFF}',      
+            size: ${32:12}               
+        }],
+        ok: {                 
+            marginB: ${33:10},           
+            marginL: ${34:20},           
+            w: ${35:280},                
+            h: ${36:40},                 
+            bg: '#${37:fff}',            
+            color: '#${38:007FFF}',      
+            size: ${39:12}               
+        }
+    }
+},function(ret) {
+    alert(JSON.stringify(ret));
+    if (ret.eventType == 'ok') {
+        var dialogBox = api.require('dialogBox');
+        dialogBox.close ({
+            dialogName: '${40:taskPlan}'
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-taskPlan</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 taskPlan 样式的对话框</description>
+</snippet>

@@ -1,16 +1,24 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var downloadManager = api.require('downloadManager');
 downloadManager.enqueue({
-    url:'${1:url}',
-    savePath:'${2:path}',
-    cache:${3:true},
-    allowResume:${4:true},
-    title:'${5:title}',
-    networkTypes:'${6:all}'
-},function(ret,err){
+    url: '${1:http://xxx.zip}',
+    savePath: '${2:fs://xxx.zip}',
+    cache: ${3:true},
+    allowResume: ${4:true},
+    title: '${5:教程}',
+    networkTypes: '${6:all}'
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>downloadManager-enqueue</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>开始一个下载</description>
 </snippet>

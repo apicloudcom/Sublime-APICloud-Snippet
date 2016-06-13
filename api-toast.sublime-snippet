@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.toast({
-    msg: '${1:msg}',
+    <content><![CDATA[api.toast({
+    msg: '${1:网络错误}',
     duration: ${2:2000},
     location: '${3:bottom}'
 });

@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var button = api.require('UIButton');
+button.setState({
+    id: ${1:1},
+    state: '${2:active}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIButton-setState</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置指定按钮的状态</description>
+</snippet>

@@ -1,11 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var slider = api.require('slider');
 slider.lock({
     id: ${1:1},
     lock: ${2:true}
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>slider-lock</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>锁定slider的值</description>
 </snippet>

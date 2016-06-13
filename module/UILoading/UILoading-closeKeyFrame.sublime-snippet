@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var uiloading = api.require('UILoading');
+uiloading.closeKeyFrame();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UILoading-closeKeyFrame</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭打开的加载提示框</description>
+</snippet>

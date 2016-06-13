@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.showFloatBox({
-    iconPath: '${1:icon_path}',
+    <content><![CDATA[api.showFloatBox({
+    iconPath: '${1:widget://image/icon.png}',
     duration: ${2:3000}
 });
 ]]></content>

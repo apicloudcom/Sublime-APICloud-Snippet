@@ -1,0 +1,16 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.setCompass({
+    position: {
+      x:${1:100},
+      y:${2:100}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setCompass</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置百度地图指南针位置，只有地图旋转或视角变化时才显示指南针</description>
+</snippet>

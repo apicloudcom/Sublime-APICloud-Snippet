@@ -1,0 +1,29 @@
+
+<snippet>
+    <content><![CDATA[var model = api.require('model');
+model.uploadFile({
+    report: ${1:false},
+    data: {
+        file: {
+            name: '${2:apicloud.png}',
+            url: '${3:widget://res/img/apicloud.png}'
+        },
+        values: {
+            key1: '${4:value1}',
+            key2: '${5:value2}'
+        }
+    }
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );   
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mcm-uploadFile</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>上传文件到云端file表里面</description>
+</snippet>

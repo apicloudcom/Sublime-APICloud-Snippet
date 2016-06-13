@@ -1,0 +1,53 @@
+
+<snippet>
+    <content><![CDATA[var UIScrollPicture = api.require('UIScrollPicture');
+UIScrollPicture.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:api.winWidth},
+        h: ${4:api.winHeight / 2}
+    },
+    data: {
+        paths: [
+        'widget://${5:res/img/apicloud.png}', 
+        'widget://${6:res/img/apicloud-gray.png}',
+        'widget://${7:res/img/apicloud.png}', 
+        'widget://${8:res/img/apicloud-gray.png}'
+        ],
+        captions: ['${9:apicloud}', '${10:apicloud}', '${11:apicloud}', '${12:apicloud}']
+    },
+    styles: {
+        caption: {
+            height: ${13:35},
+            color: '#${14:E0FFFF}',
+            size: ${15:13},
+            bgColor: '#${16:696969}',
+            position: '${17:bottom}'
+        },
+        indicator: {
+            align: '${18:center}',
+            color: '#${19:FFFFFF}',
+            activeColor: '#${20:DA70D6}'
+        }
+    },
+    placeholderImg: '${21:widget://res/slide1.jpg}',
+    contentMode: '${22:scaleToFill}',
+    interval: ${23:3},
+    fixedOn: ${24:api.frameName},
+    loop: ${25:true},
+    fixed: ${26:false}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIScrollPicture-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开模块</description>
+</snippet>

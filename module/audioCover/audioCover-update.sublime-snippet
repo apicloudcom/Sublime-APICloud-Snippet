@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var audioCover = api.require('audioCover');
+audioCover.update({
+    progress : ${1:60}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>audioCover-update</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>更新锁屏播放界面播放进度条</description>
+</snippet>

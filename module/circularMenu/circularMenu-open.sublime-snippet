@@ -1,21 +1,54 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var circularMenu = api.require('circularMenu');
 circularMenu.open({
-    radius: ${1:150},
-    centerBtnRadius: ${2:50},
-    indicatorPosition: '${3:left}',//left/right/up/down
     items: [{
-        normal: '${4:widget://res/circularMenu2.png}',
-        highlight: '${5:widget://res/circularMenu2light.png}',
-        title: '${6:按钮二}',
-        titleColor: '${7:#FF0000}'
-    }]
-}, function(ret, err){
-    var index = ret.index;
-    var pointerIndex = ret.pointerIndex;
+            normal: '${1:widget://res/circularMenu/1.png}',
+            highlight: '${2:widget://res/circularMenu/1light.png}',
+            title: '${3:账户明细}'
+        },
+        {
+            normal: '${4:widget://res/circularMenu/2.png}',
+            highlight: '${5:widget://res/circularMenu/2light.png}',
+            title: '${6:转账汇款}'
+        },
+        {
+            normal: '${7:widget://res/circularMenu/3.png}',
+            highlight: '${8:widget://res/circularMenu/3light.png}',
+            title: '${9:投资理财}'
+        },
+        {
+            normal: '${10:widget://res/circularMenu/4.png}',
+            highlight: '${11:widget://res/circularMenu/4light.png}',
+            title: '${12:特色服务}'
+        },
+        {
+            normal: '${13:widget://res/circularMenu/5.png}',
+            highlight: '${14:widget://res/circularMenu/5light.png}',
+            title: '${15:安全中心}'
+        },
+        {
+            normal: '${16:widget://res/circularMenu/6.png}',
+            highlight: '${17:widget://res/circularMenu/6light.png}',
+            title: '${18:信用卡}'
+        }
+    ],
+    centerX: ${19:api.frameWidth / 2},
+    centerY: ${20:api.frameHeight / 2},
+    bgImg: '${21:widget://res/circularMenu/bg.png}',
+    centerBtnImg: '${22:widget://res/circularMenu/center.png}',
+    fixedOn: ${23:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
-    <tabTrigger>circularmenu-open</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>circularMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开转盘菜单</description>
 </snippet>

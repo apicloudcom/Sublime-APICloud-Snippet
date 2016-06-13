@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.version
+    <content><![CDATA[var version = api.version;  //比如： 1.0.0
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-version</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>引擎版本信息</description>
+    <description>引擎版本信息，字符串类型</description>
 </snippet>

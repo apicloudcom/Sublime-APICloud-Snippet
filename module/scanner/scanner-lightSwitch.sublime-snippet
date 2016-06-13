@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var scanner = api.require('scanner');
+scanner.lightSwitch({
+    turnOn: ${1:false}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scanner-lightSwitch</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>闪光灯开关</description>
+</snippet>

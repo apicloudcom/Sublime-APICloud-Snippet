@@ -1,0 +1,38 @@
+
+<snippet>
+    <content><![CDATA[var FNImageClip = api.require('FNImageClip');
+FNImageClip.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:api.winWidth},
+        h: ${4:api.winHeight}
+    },
+    srcPath: '${5:fs://imageClip/image.png}',
+    style: {
+        mask: '#${6:888}',
+        clip: {
+            w: ${7:100},
+            h: ${8:100},
+            x: ${9:50},
+            y: ${10:50},
+            borderColor: '#${11:0f0}',
+            borderWidth: ${12:1},
+            appearance: '${13:rectangle}'
+        }
+    },
+    fixedOn: ${14:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>FNImageClip-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开图片裁剪</description>
+</snippet>

@@ -1,11 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var audio = api.require('audio');
 audio.play({
-    path:'${1:path}'
-},function(ret,err){
+    path: '${1:http://7xisq1.com1.z0.glb.clouddn.com/apicloud/0d0b81b8bd5ab81bda9ca54267eb9b98.mp3}'
+},function( ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>audio-play</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>播放网络音频</description>
 </snippet>

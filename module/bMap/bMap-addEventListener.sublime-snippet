@@ -1,14 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.addEventListener({
-    name: '${1:longPress}'//longPress/viewChange/click/dbclick
+    <content><![CDATA[var map = api.require('bMap');
+map.addEventListener({
+    name: '${1:longPress}'
 },function(ret){
     if(ret.status){
         alert(JSON.stringify(ret));
     }
 });
 ]]></content>
-    <tabTrigger>bmap-addEventListener</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-addEventListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>监听地图相关事件</description>
 </snippet>

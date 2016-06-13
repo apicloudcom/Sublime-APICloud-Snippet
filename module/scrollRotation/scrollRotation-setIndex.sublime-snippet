@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var scrollRotation = api.require('scrollRotation');
+scrollRotation.setIndex({
+    index: ${1:1},
+    animation: ${2:false}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scrollRotation-setIndex</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>滚动到指定条目</description>
+</snippet>

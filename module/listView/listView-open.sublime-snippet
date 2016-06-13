@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[var listView = api.require('listView');
+listView.open({
+    h:${1:300},
+    leftBtn:[{${2:color}:'#${3:8B0000}',${4:title:}'${5:左按钮1}'},{${6:color}:'#${7:228B22}',${8:title:}'${9:左按钮2}'}],
+    rightBtn:[{${10:color}:'#${11:8B0000}',${12:title:}'${13:右按钮1}'},{${14:color}:'#${15:228B22}',${16:title:}'${17:右按钮2}'}],
+    placeholderImg: '${18:widget://res/listview.png}',
+    data:[{ ${19:img:}'${20:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',${21:title:}'${22:标题}',${23:subTitle:}'${24:子标题}，${25:说明文字}。。。。。。'},{ ${26:title:}'${27:标题}',${28:subTitle:}'${29:子标题}'},{${30:title:}'${31:标题}',${32:subTitle:}'${33:子标题}'},{ ${34:title:}'${35:标题}',${36:subTitle:}'${37:子标题}'},{ ${38:title:}'${39:标题}',${40:subTitle:}'${41:子标题}'},{ ${42:title:}'${43:标题}',${44:subTitle:}'${45:子标题}'},{ ${46:title:}'${47:标题}',${48:subTitle:}'${49:子标题}'},{ ${50:title:}'${51:标题}',${52:subTitle:}'${53:子标题} '},{${54:title:}'${55:标题}',${56:subTitle:}'${57:子标题}'},{ ${58:title:}'${59:标题}',${60:subTitle:}'${61:子标题} '},{ ${62:title:}'${63:标题}',${64:subTitle:}'${65:子标题}'}]
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listView-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开</description>
+</snippet>

@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var photoBrowser = api.require('photoBrowser');
+photoBrowser.deleteImage({
+    index: ${1:2} 
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>photoBrowser-deleteImage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>删除指定位置的图片</description>
+</snippet>

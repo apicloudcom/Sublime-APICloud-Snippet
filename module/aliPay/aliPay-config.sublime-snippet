@@ -1,25 +1,23 @@
+
 <snippet>
-    <content><![CDATA[
-var subject = '订单名';
-var body = '订单描述';
-var amount = '10.99';
-var tradeNO = '467467655635';
-var notifyURL = 'http://www.apicloud.com';
+    <content><![CDATA[var aliPay = api.require('aliPay');
 aliPay.config({
-  partner: '${1:12345678901234}',
-  seller: '${2:123456789024354}',
-  rsaPriKey: '${3:testKEY}',
-  rsaPubKey: '${4:testKEY}',
-  notifyURL: notifyURL
-}, function(ret, err) {
+  partner:'${1:12345678901234}',
+  seller:'${2:123456789024354}',
+  rsaPriKey:'${3:testKEY}',
+  rsaPubKey:'${4:testKEY}',
+  notifyURL:'${5:http://www.apicloud.com}'
+},function(ret,err) {
   api.alert({
-    title: '支付结果',
-    msg: ret.msg,
-    buttons: ['确定']
+      title: '${6:支付结果}',
+      msg: ${7:ret.msg},
+      buttons: ['${8:确定}']
   });
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>aliPay-config</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>配置支付宝信息</description>
+    <description>配置支付宝信息，适用于支付方案二</description>
 </snippet>

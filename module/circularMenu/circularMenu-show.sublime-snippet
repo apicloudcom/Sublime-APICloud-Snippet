@@ -1,8 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var circularMenu = api.require('circularMenu');
 circularMenu.show();
 ]]></content>
-    <tabTrigger>circularmenu-show</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>circularMenu-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>显示已隐藏的环形菜单</description>
 </snippet>

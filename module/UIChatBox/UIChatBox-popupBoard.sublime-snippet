@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+UIChatBox.popupBoard({
+    target: '${1:extras}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIChatBox-popupBoard</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出表情、附加功能面板</description>
+</snippet>

@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var button = api.require('button');
+button.setFrame({
+    x: ${1:80},
+    w: ${2:45}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>button-setFrame</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重设模块视图的位置大小</description>
+</snippet>

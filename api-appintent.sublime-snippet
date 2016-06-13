@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[api.addEventListener({
+    name:'${1:appintent}'
+},function(ret,err){
+    var appParam = ret.appParam;
+    if(api.systemType == 'ios'){
+        var iosUrl = ret.iosUrl;
+    } else {
+        var sourceAppId = ret.sourceAppId;
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-appintent</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>本应用被其他应用调起来时（Android 平台也可以通过 Activity 打开），收到相关数据的回调，字符串类型</description>
+</snippet>

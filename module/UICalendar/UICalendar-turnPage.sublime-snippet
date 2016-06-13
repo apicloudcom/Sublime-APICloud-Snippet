@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var UICalendar = api.require('UICalendar');
+UICalendar.turnPage({
+    date: '${1:2015-08}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICalendar-turnPage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>翻到指定的页</description>
+</snippet>

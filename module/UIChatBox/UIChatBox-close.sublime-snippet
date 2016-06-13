@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+UIChatBox.close();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIChatBox-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭聊天输入框</description>
+</snippet>

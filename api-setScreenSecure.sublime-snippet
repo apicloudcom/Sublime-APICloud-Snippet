@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.setScreenSecure({
-    secure: ${1:true}	
+    <content><![CDATA[api.setScreenSecure({
+    secure: ${1:true}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

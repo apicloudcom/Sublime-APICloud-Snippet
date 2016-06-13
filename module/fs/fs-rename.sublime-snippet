@@ -1,13 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var fs = api.require('fs');
 fs.rename({
-    oldPath: '${1:old_path}',
-    newPath: '${2:new_path}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'重命名成功'});
-    }else {
-        api.alert({msg:err.msg});
+    oldPath: '${1:fs://file.txt}',
+    newPath: '${2:fs://rename.txt}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

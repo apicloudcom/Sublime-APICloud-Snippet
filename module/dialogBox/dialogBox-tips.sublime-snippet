@@ -1,0 +1,79 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.tips({
+    rect:{   
+         w:${1:200}
+    },
+    texts:{
+        title  : '${2:这里是标题文本}',
+        content: '${3:这里是内容}'
+    },
+    buttons:[
+    {
+        normal : '${4:widget://image/weixin.png}',     
+        highlight : '${5:widget://image/weixin.png}',   
+        text :  '${6:微信}'
+    },
+    {
+        normal : '${7:widget://image/circularMenu3.png}',     
+        highlight : '${8:widget://image/circularMenu3light.png}',   
+        text :  '${9:奖杯}'
+    },
+    {
+        normal : '${10:widget://image/circularMenu4.png}',     
+        highlight : '${11:widget://image/circularMenu4light.png}',   
+        text :  '${12:人民币}'
+    }],
+    styles:{
+        bg:'#${13:FFF}',
+        topImage:{
+             path:'${14:widget://image/top_image.png}',
+             w: ${15:200},
+             h: ${16:80}
+        },
+        title:{
+             color: '#${17:000}',
+             size : ${18:14},
+             marginT  : ${19:15}
+        },
+        content:{
+             color:'#${20:000}',
+             size:${21:12},
+             marginT:${22:15}
+        },
+        border:{    
+             color : '#${23:eee}',       
+             width: ${24:2} ,
+             marginT: ${25:10}     
+        },
+        buttons:[
+        {
+             iconSize : ${26:30},
+             textColor: '#${27:000}',
+             textSize : ${28:12},
+             marginT  : ${29:15}
+        },
+        {
+             iconSize : ${30:30},
+             textColor: '#${31:000}',
+             textSize : ${32:12},
+             marginT  : ${33:15}
+        },
+        {
+             iconSize : ${34:30},
+             textColor: '#${35:000}',
+             textSize : ${36:12},
+             marginT  : ${37:15}
+        }]
+    }
+}, function(ret){
+    alert(JSON.stringify(ret));
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-tips</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 tips 样式的对话框</description>
+</snippet>

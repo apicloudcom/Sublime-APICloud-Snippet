@@ -1,12 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
-push.setListener(function(ret,err){
-	
+    <content><![CDATA[var push = api.require('push');
+push.setListener(function( ret, err ){
+     if( ret ){
+        alert( JSON.stringify( ret) );
+     }else{
+        alert( JSON.stringify( err) );
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>push-setListener</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>注册监听推送消息</description>
+    <description>注册监听推送消息。 注册该监听后，在应用启动的状态下，“消息”类型的推送，将直接交给该函数的回调，由开发人员自行处理推送消息，不自动弹出通知到手机状态栏。如果移除监听，则又会自动弹出通知到手机状态栏；在应用退出的状态下，“消息”类型的推送，APICloud引擎也会自动弹出通知到手机状态栏。 “通知”类型的推送则会直接弹出通知到手机状态栏，不会交给监听函数的回调。</description>
 </snippet>

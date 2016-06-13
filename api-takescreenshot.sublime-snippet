@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[api.addEventListener({
+    name:'${1:takescreenshot}'
+}, function(ret, err){        
+   if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-takescreenshot</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>应用在前台运行期间，用户屏幕截图事件（比如同时按下了 home 键和电源键），只支持 iOS。</description>
+</snippet>

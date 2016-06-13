@@ -1,0 +1,29 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.setSwipeBtns({
+    index: ${1:0},
+    btns: [{
+        bgColor: '#${2:388e8e}',
+        activeBgColor: '',
+        width: ${3:70},
+        title: '',
+        titleSize: ${4:12},
+        titleColor: '#${5:fff}',
+        icon: '',
+        iconWidth: ${6:20}
+    }]
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-setSwipeBtns</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置侧滑显示出来的按钮</description>
+</snippet>

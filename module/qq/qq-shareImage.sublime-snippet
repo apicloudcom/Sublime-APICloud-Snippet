@@ -1,12 +1,15 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var qq = api.require('qq');
 qq.shareImage({
-  title: '${1:test}',
-  description: '${2:testd}',
-  imgPath: '${3:}'
+    title:'${1:test}',
+    description:'${2:testd}',
+    imgPath:'${3:widget://res/filterMe.png}'
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>qq-shareImage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>分享图片（本地）到好友</description>
 </snippet>

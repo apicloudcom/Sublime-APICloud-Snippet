@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var fs = api.require('fs');
+fs.writeByLength({
+    path: '${1:fs://file.txt}',
+    content: '${2:test}',
+    place: {
+       start: ${3:0}, 
+       strategy: ${4:0}
+    }
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fs-writeByLength</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>将字符串写入指定位置的文件，无需 open</description>
+</snippet>

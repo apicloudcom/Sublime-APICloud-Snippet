@@ -1,14 +1,16 @@
+
 <snippet>
-    <content><![CDATA[
-api.actionSheet({
-    title: '${1:title}',
-    cancelTitle: '${2:cancelTitle}',
-    destructiveTitle: '${3:destructivetitle}',
-    buttons: ['1', '2', '3']
-},function(ret,err){
-    api.alert({
-        msg: '你刚点击了'+ret.buttonIndex
-    });
+    <content><![CDATA[api.actionSheet({
+    title: '${1:底部弹出框测试}',
+    cancelTitle: '${2:这里是取消按钮}',
+    destructiveTitle: '${3:红色警告按钮}',
+    buttons: ['${4:1}','${5:2}','${6:3}']
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

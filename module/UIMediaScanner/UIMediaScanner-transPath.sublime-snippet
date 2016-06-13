@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var UIMediaScanner = api.require('UIMediaScanner');
+UIMediaScanner.transPath({
+   path: ''
+}, function(ret, err){
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIMediaScanner-transPath</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>将相册图片地址转换为可以直接使用的本地路径地址（临时文件夹的绝对路径），相册图片会被拷贝到临时文件夹，调用 api.clearCache 接口可清除该临时图片文件</description>
+</snippet>

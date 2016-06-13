@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.systemType
+    <content><![CDATA[var systemType = api.systemType;  // 比如： iOS
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-systemType</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>系统类型，如ios、android</description>
+    <description>系统类型，如iOS、Android，取值范围详见系统类型常量，字符串类型</description>
 </snippet>

@@ -1,0 +1,28 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.isPolygonContantsPoint({
+    point: {
+         lon:${1:116}${2:.39432327},
+         lat:${3:39}${4:.98963192}
+     },
+     points: [{
+         lon:${5:116}${6:.39432327},
+         lat:${7:39}${8:.98963192}
+     },{
+         lon: ${9:116}${10:.49432328},
+         lat: ${11:39}${12:.98963192}
+     },{
+         lon: ${13:116}${14:.39432327},
+         lat: ${15:39}${16:.88933191}
+     }]
+},function(ret){
+     alert(ret.status);
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-isPolygonContantsPoint</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>判断已知点是否在指定的多边形区域内</description>
+</snippet>

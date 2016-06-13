@@ -1,11 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var timeSelector = api.require('timeSelector');
 timeSelector.set({
     hour: ${1:20},
     minute: ${2:25}
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>timeSelector-set</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置时间选择器时间</description>
 </snippet>

@@ -1,12 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
-api.closeWidget({
-    id: '${1:widgetid}',
-    retData: {'${2:key}':'${3:value}'},
+    <content><![CDATA[api.closeWidget({
+    id: '${1:A00000001}',
+    retData: {
+        name: '${2:closeWidget}'
+    },
     animation: {
-        type: '${4:flip}',
-        subType: '${5:from_bottom}',
-        duration: ${6:500}
+        type: '${3:flip}',
+        subType: '${4:from_bottom}',
+        duration: ${5:500}
     }
 });
 ]]></content>
@@ -14,5 +16,5 @@ api.closeWidget({
     <tabTrigger>api-closeWidget</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>关闭指定widget</description>
+    <description>关闭指定 widget</description>
 </snippet>

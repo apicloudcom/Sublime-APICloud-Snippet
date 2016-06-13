@@ -1,0 +1,78 @@
+
+<snippet>
+    <content><![CDATA[var MNNavigationMenu = api.require('MNNavigationMenu');
+MNNavigationMenu.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:api.winWidth},
+        h: ${4:44}
+    },
+    index: ${5:0},
+    animation: ${6:true},
+    styles: {
+        column: ${7:4},
+        bg: '#${8:eee}',
+        item: {
+            width: ${9:api.winWidth / 4},
+            bg: '#${10:fff}',
+            active: '#${11:eee}',
+            highlight: '#${12:eee}',
+            title: {
+                marginB: ${13:6},
+                size: ${14:14},
+                height: ${15:14},
+                color: '#${16:888}',
+                active: '#${17:f00}',
+                highlight: '#${18:f00}'
+            },
+            icon: {
+                marginT: ${19:0},
+                width: ${20:30},
+                height: ${21:30},
+                corner: ${22:2}
+            }
+        }
+    },
+    items: [{
+        title: '${23:菜单项0}',
+        icon: '${24:fs://menu/0.png}',
+        active: '${25:fs://menu/0.acitve.png}',
+        highlight: '${26:fs://menu/0.highlight.png}'
+    }, {
+        title: '${27:菜单项1}',
+        icon: '${28:fs://menu/1.png}',
+        active: '${29:fs://menu/1.acitve.png}',
+        highlight: '${30:fs://menu/1.highlight.png}'
+    }, {
+        title: '${31:菜单项2}',
+        icon: '${32:fs://menu/2.png}',
+        active: '${33:fs://menu/2.acitve.png}',
+        highlight: '${34:fs://menu/2.highlight.png}'
+    }, {
+        title: '${35:菜单项3}',
+        icon: '${36:fs://menu/3.png}',
+        active: '${37:fs://menu/3.acitve.png}',
+        highlight: '${38:fs://menu/3.highlight.png}'
+    }, {
+        title: '${39:菜单项4}',
+        icon: '${40:fs://menu/4.png}',
+        active: '${41:fs://menu/4.acitve.png}',
+        highlight: '${42:fs://menu/4.highlight.png}'
+    }],
+    fixedOn: ${43:api.frameName},
+    fixed: ${44:false}
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNNavigationMenu-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开导航菜单</description>
+</snippet>

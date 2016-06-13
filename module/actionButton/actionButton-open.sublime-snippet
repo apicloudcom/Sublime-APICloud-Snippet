@@ -1,20 +1,31 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var actionButton = api.require('actionButton');
 actionButton.open({
-    bg: '${1:}',
-    size: ${2:80},
-    items: [{bgColor: '${3:#00CED1}', title: '${4:子标题}', image: '${5:widget://res/actionSheet_icon1.png}'}],
-    pageControl: {activeColor: '${6:#778899}', inactiveColor: '${7:#DDA0DD}'},
-    matrix: {
-        row: ${8:2},
-        column: ${9:3},
-        bottomMargin: ${10:40}
+    items: [{
+        bgColor: '#${1:00CED1}',
+        title: '${2:标题一}'
+    },{
+        bgColor: '#${3:00CED1}',
+        title: '${4:标题三}'
+    }],
+    topHeight: ${5:20},
+    pageControl: {
+        activeColor: '#${6:778899}',
+        inactiveColor: '#${7:DDA0DD}'
+    },
+    fixedOn: ${8:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
-}, function(ret, err){
-    api.alert({msg:ret.index});
 });
 ]]></content>
-    <tabTrigger>actionbutton-open</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>actionButton-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开弹动按钮菜单</description>
 </snippet>

@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.setRefreshHeader({
+    loadingImg: '${1:widget://res/UIListView_arrow.png}',
+    bgColor: '#${2:F5F5F5}',
+    textColor: '#${3:8E8E8E}',
+    textDown: '${4:下拉可以刷新...}',
+    textUp: '${5:松开开始刷新...}',
+    showTime: ${6:true}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-setRefreshHeader</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置下拉刷新，通过 reloadData 收起下拉刷新组件</description>
+</snippet>

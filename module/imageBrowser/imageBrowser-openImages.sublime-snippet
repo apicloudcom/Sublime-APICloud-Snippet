@@ -1,0 +1,16 @@
+
+<snippet>
+    <content><![CDATA[var imageBrowser = api.require('imageBrowser');
+imageBrowser.openImages({
+    imageUrls: [ 
+        'fs://${1:img/apicloud.png}', 
+        'fs://${2:img/encryption.png}'
+    ]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>imageBrowser-openImages</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开图片浏览器</description>
+</snippet>

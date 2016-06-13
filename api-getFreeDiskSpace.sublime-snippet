@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.getFreeDiskSpace(function(ret, err){
+    <content><![CDATA[api.getFreeDiskSpace(function( ret, err ){
     var size = ret.size;
 });
 ]]></content>

@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var barChart = api.require('barChart');
+barChart.setFrame({x:${1:10},${2:w:300});}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>barChart-setFrame</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重设模块视图的位置大小</description>
+</snippet>

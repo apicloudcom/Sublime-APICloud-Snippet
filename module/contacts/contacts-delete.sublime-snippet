@@ -1,13 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var contacts = api.require('contacts');
 contacts.delete({
     ids: [${1:1}, ${2:2}]
 }, function(ret, err){
-    if(ret.status) {
-        api.alert({msg:'删除成功'});
+    if( ret ){
+        alert( JSON.stringify( ret ) );
     }else{
-        api.alert({msg:'删除失败'});
-    } 
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

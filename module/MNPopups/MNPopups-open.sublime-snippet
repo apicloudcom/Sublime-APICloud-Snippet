@@ -1,0 +1,65 @@
+
+<snippet>
+    <content><![CDATA[var mnPopups = api.require('MNPopups');
+mnPopups.open({
+    rect: {
+        w: ${1:100},
+        h: ${2:180}
+    },
+    position: {       
+        x: ${3:api.winWidth-10},
+        y: ${4:0}                            
+    },
+    styles: {
+        mask: '${5:rgba(0,0,0,0.2)}',
+        bg: '#${6:eee}',                        
+        cell: {                            
+            bg:{
+                normal: '',              
+                highlight: ''            
+            },                   
+            h: ${7:45},                         
+            title: {                      
+                marginL: ${8:45},               
+                color: '#${9:636363}',          
+                size: ${10:12},                 
+            },
+            icon: {                        
+                marginL: ${11:10},               
+                w: ${12:25},                     
+                h: ${13:25},                     
+                corner: ${14:2}                  
+            }
+        },
+        pointer: {
+            size: ${15:7},                     
+            xPercent: ${16:90},                
+            yPercent: ${17:0},                 
+            orientation: '${18:downward}'
+        }
+    },
+    datas: [{                           
+        title: '${19:添加朋友}',  
+        icon: '${20:fs://MNPopups/addFriends.png}'
+    },
+    {                           
+        title: '${21:扫一扫}',  
+        icon: '${22:fs://MNPopups/scan.png}'
+    },
+    {                           
+        title: '${23:面对面快传}',  
+        icon: '${24:fs://MNPopups/send.png}'
+    }],
+    animation: ${25:true}
+}, function(ret) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNPopups-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开</description>
+</snippet>

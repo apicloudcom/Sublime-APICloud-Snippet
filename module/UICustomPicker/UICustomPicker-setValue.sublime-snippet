@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var UICustomPicker = api.require('UICustomPicker');
+UICustomPicker.setValue({
+    id: ${1:0},
+    data: ['${2:12}', '${3:30}']
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICustomPicker-setValue</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置自定义选择器当前选中的内容</description>
+</snippet>

@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var UIScrollPicture = api.require('UIScrollPicture');
+UIScrollPicture.setCurrentIndex({
+    index: ${1:2}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIScrollPicture-setCurrentIndex</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>指定当前项</description>
+</snippet>

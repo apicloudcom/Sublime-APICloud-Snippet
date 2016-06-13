@@ -1,24 +1,23 @@
+
 <snippet>
-    <content><![CDATA[
-var subject = '订单名';
-var body = '订单描述';
-var amount = '10.99';
-var tradeNO = '4563548735674';
-var notifyURL = 'http://www.apicloud.com';
+    <content><![CDATA[var aliPay = api.require('aliPay');
+var notifyURL = 'http://${1:www.apicloud.com}';
 aliPay.pay({
-  subject: subject,
-  body: body,
-  amount: amount,
-  tradeNO: tradeNO
-}, function(ret, err) {
-  api.alert({
-    title: '支付结果',
-    msg: ret.msg,
-    buttons: ['确定']
-  });
+   subject: '${2:订单名}',
+    body: '${3:订单描述}',
+    amount: '${4:0}${5:.01}',
+    tradeNO: '${6:4563548735674}'
+},function(ret,err) {
+    api.alert({
+        title: '${7:支付结果}',
+        msg: ${8:ret.code},
+        buttons: ['${9:确定}']
+    });
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>aliPay-pay</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>调用支付宝客户端支付</description>
+    <description>调用支付宝客户端支付，适用于支付方案二</description>
 </snippet>

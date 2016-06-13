@@ -1,6 +1,6 @@
+
 <snippet>
-    <content><![CDATA[
-api.getCacheSize(function(ret, err) {
+    <content><![CDATA[api.getCacheSize(function(ret){
     var size = ret.size;
 });
 ]]></content>

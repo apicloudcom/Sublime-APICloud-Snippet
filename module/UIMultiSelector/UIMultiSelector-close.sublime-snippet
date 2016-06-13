@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var multiSelector = api.require('UIMultiSelector');
+UIMultiSelector.close();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIMultiSelector-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭选择器（从内存清除）</description>
+</snippet>

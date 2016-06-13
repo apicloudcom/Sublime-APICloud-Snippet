@@ -1,14 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var push = api.require('push');
 push.leaveGroup({
-	groupName:'${1:groupName}'
-},function(ret,err){
-	
+    groupName: '${1:department}'
+}, function(ret, err){
+     if( ret ){
+        alert( JSON.stringify( ret) );
+     }else{
+        alert( JSON.stringify( err) );
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>push-leaveGroup</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>退出群组绑定</description>
+    <description>退出某个群组。退出该群组后，服务器向该群组推送消息时，此用户将不再收到推送。</description>
 </snippet>

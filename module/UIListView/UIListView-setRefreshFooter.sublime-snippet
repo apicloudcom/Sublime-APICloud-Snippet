@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.setRefreshFooter({
+    loadingImg: '${1:widget://res/UIListView_arrow.png}',
+    bgColor: '#${2:F5F5F5}',
+    textColor: '#${3:8E8E8E}',
+    textUp: '${4:上拉加载更多...}',
+    textDown: '${5:松开开始加载...}',
+    showTime: ${6:true}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-setRefreshFooter</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置上拉加载，通过 appendData 收起上拉加载组件</description>
+</snippet>

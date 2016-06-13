@@ -1,8 +1,9 @@
+
 <snippet>
-    <content><![CDATA[
-arcProgress.close({
-    id:${1:1}
-});
+    <content><![CDATA[    var arcProgress = api.require('arcProgress');
+    arcProgress.close({
+        id:${1:1}
+    });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>arcProgress-close</tabTrigger>

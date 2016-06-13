@@ -1,13 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var db = api.require('db');
 db.transaction({
-    name: '${1:database_name}',
-    operation: '${2:operation_type}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'事务操作成功'});
-    }else {
-        api.alert({msg:err.msg});
+    name: '${1:test}',
+    operation: '${2:begin}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

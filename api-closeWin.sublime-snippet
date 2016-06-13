@@ -1,12 +1,16 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[//关闭当前window，使用默认动画
+api.closeWin();
+
+//关闭指定window，若待关闭的window不在最上面，则无动画
 api.closeWin({
-    name: '${1:win_name}'
+    name: '${1:page1}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-closeWin</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>关闭window</description>
+    <description>关闭 window</description>
 </snippet>

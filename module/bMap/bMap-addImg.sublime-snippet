@@ -1,16 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.addImg({
+    <content><![CDATA[var map = api.require('bMap');
+map.addImg({
     id: ${1:5},
     imgPath: '${2:widget://res/over_img.png}',
-    lbLon: ${3:116.39432327},
-    lbLat: ${4:39.88933191},
-    rtLon: ${5:116.49432328},
-    rtLat: ${6:39.98963192},
-    opacity: ${7:0.8}//0~1
+    lbLon: ${3:116}${4:.39432327},
+    lbLat: ${5:39}${6:.88933191},
+    rtLon: ${7:116}${8:.49432328},
+    rtLat: ${9:39}${10:.98963192},
+    opacity: ${11:0}${12:.8}
 });
 ]]></content>
-    <tabTrigger>bmap-addImg</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-addImg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>在地图上添加图片</description>
 </snippet>

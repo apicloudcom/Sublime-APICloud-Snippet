@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var ga= api.require('googleAnalytics');
+ga.onPageStart({pageName:'${1:首页}'});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>googleAnalytics-onPageStart</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>监听进入一个页面</description>
+</snippet>

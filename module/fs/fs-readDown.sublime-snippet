@@ -1,14 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
-fs.readDown({
-    fd: ${1:fd},
-    offset: ${2:0},
-    length: ${3:0}
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:ret.data});
-    }else {
-        api.alert({msg:err.msg});
+    <content><![CDATA[var fs = api.require('fs');
+fs.readDown(function( ret, err ){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
@@ -16,5 +13,5 @@ fs.readDown({
     <tabTrigger>fs-readDown</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>从当前文件句柄当前位置向下读取一页(页的大小如length)数据</description>
+    <description>从当前文件句柄当前位置向下读取一页(页的大小如 length )数据</description>
 </snippet>

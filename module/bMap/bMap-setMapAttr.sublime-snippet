@@ -1,12 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.setMapAttr({
-    type: '${1:standard}',//standard/satellite/trafficOn/trafAndsate
-    zoomEnable: ${2:true},
-    scrollEnable: ${3:true},
+    <content><![CDATA[var map = api.require('bMap');
+map.setMapAttr({
+    type: '${1:standard}'
 });
 ]]></content>
-    <tabTrigger>bmap-setMapAttr</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setMapAttr</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置百度地图相关属性</description>
 </snippet>

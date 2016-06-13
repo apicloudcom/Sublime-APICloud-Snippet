@@ -1,9 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.stopRecord(function(ret,err){
-    if (ret) {
-        api.alert({msg:('文件路径--'+ret.path+';录音时长:'+ret.duration+'s')});
-    };
+    <content><![CDATA[api.stopRecord(function(ret, err){
+    if(ret){
+         var path = ret.path;
+         var duration = ret.duration;
+    }    
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

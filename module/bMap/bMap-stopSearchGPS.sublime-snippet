@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.stopSearchGPS();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-stopSearchGPS</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>停止搜索GPS信息，本接口仅支持 android 平台</description>
+</snippet>

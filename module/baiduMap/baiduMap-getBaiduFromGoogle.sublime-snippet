@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.getBaiduFromGoogle ({
+    lon: ${1:116}${2:.351},
+    lat: ${3:39}${4:.283,    }
+    mcode: '${5:0B}:${6:13}:${7:25}:${8:D7}:${9:85}:${10:46}:${11:0A}:${12:67}:${13:12}:${14:F3}:${15:29}:${16:88}:${17:64}:${18:56}:${19:63}:${20:10}:${21:7A}:${22:9C}:${23:C4}:${24:59};${25:com}${26:.apicloud.A6985734480360}'
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-getBaiduFromGoogle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>将谷歌坐标转换为百度坐标</description>
+</snippet>

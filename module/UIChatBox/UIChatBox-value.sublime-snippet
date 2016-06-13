@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+//设置输入框的值
+UIChatBox.value({
+    msg: '${1:设置输入框的值}'
+});
+
+//获取输入框的值
+UIChatBox.value(function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIChatBox-value</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>获取或设置聊天输入框的内容</description>
+</snippet>

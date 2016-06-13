@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[var activity = api.require('UILoading');
+activity. flower({
+    rect: {
+        w: ${1:60},                              
+        h: ${2:60},                              
+        x: ${3:130},            
+        y: ${4:210}         
+    }
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIActivityIndicator-flower</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 flower 样式的加载提示框。此样式接口封装了一种常见的“旋转菊花”型加载提示框，开发者只需自定义此加载提示框的位置及尺寸即可。同一个页面可打开多个该模块，用 id 区分。</description>
+</snippet>

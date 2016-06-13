@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[var 3DTouch = api.require('3DTouch');
+3DTouch.setListener(
+    function(ret,err){
+        var type = ret.type;
+        if (type == 'com.mycompany.myapp.openfavorites'){
+
+        }
+    }
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>3DTouch-setListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>监听通过快捷菜单打开应用。建议在首页的apiready方法里面进行监听。</description>
+</snippet>

@@ -1,14 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.setCenter({
+    <content><![CDATA[var map = api.require('bMap');
+map.setCenter({
     coords: {
-        lon: ${1:116.404},
-        lat: ${2:39.915}
+        lon: ${1:116}${2:.404},
+        lat: ${3:39}${4:.915}
     },
-    animation: ${3:false}
+    animation:${5:false}
 });
 ]]></content>
-    <tabTrigger>bmap-setCenter</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setCenter</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>根据经纬度设置百度地图中心点，此接口可带动画效果</description>
 </snippet>

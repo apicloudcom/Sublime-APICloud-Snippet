@@ -1,18 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var bookReader = api.require('bookReader');
 bookReader.open({
-   bg : '${1:#fff}',
-   animType : '${2:curl}',
-   progress : ${3:80},
-   textStyle : {
-        size : ${4:12},
-        color : '${5:#424242}'
-   },
-   filePath : '${6:path}'
-},function(ret, err){
+   filePath: '${1:widget://res/test.txt}'
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>bookReader-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开阅读器</description>
 </snippet>

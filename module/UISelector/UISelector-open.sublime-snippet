@@ -1,0 +1,81 @@
+
+<snippet>
+    <content><![CDATA[var UISelector = api.require('UISelector');
+UISelector.open({
+    rect: {
+        x: ${1:30},
+        y: ${2:api.frameHeight / 2 - 170},
+        w: ${3:api.frameWidth - 60},
+        h: ${4:340}
+    },
+    styles:{
+            bg: '${5:rgba(0,0,0,0)}',   
+          text: {                  
+               size: ${6:14},             
+               selected: '#${7:fff}',     
+               normal: '#${8:000}'        
+          },
+          item: {                   
+            w: ${9:80},                
+            h: ${10:45},                
+            normal: '#${11:87ceeb}',    
+            selected: '#${12:218868}',  
+            zoomIn: ${13:1}${14:.2        }
+        }
+    },
+    rows: ${15:5},
+    indexs: [${16:1},${17:2},${18:3}],
+    bounce: ${19:false},
+    fixedOn: ${20:api.frameName},
+    fixed: ${21:false},
+    data: [{
+        title: '${22:A}',
+        contents: [{
+            title: '${23:a}',
+            contents: ['${24:1}', '${25:2}', '${26:3}', '${27:4}', '${28:5}', '${29:6}', '${30:7}', '${31:8}', '${32:9}', '${33:10}']
+        }]
+    }, {
+        title: '${34:B}',
+        contents: ['${35:a}', '${36:b}', '${37:c}', '${38:d}', '${39:e}', '${40:f}', '${41:g}', '${42:h}', '${43:i}', '${44:j}']
+    }, {
+        title: '${45:C}',
+        contents: ['${46:1a}', '${47:2b}', '${48:3c}', '${49:4d}', '${50:5e}', '${51:6f}', '${52:7g}', '${53:8h}', '${54:9i}', '${55:10j}']
+    }, {
+        title: '${56:D}',
+        contents: ['${57:1t}', '${58:2t}', '${59:3t}', '${60:4t}', '${61:5t}', '${62:6t}', '${63:7t}', '${64:8t}', '${65:9t}', '${66:10t}']
+    }, {
+        title: '${67:E}',
+        contents: ['${68:1a}', '${69:2a}', '${70:3a}', '${71:4a}', '${72:5a}', '${73:6a}', '${74:7a}', '${75:8a}', '${76:9a}', '${77:10a}']
+    }, {
+        title: '${78:F}',
+        contents: ['${79:1f}', '${80:2f}', '${81:3f}', '${82:4f}', '${83:5f}', '${84:6f}', '${85:7f}', '${86:8f}', '${87:9f}', '${88:10f}']
+    }, {
+        title: '${89:G}',
+        contents: ['${90:1}!', '${91:2}!', '${92:3}!', '${93:4}!', '${94:5}!', '${95:6}!', '${96:7}!', '${97:8}!', '${98:9}!', '${99:10}!']
+    }, {
+        title: '${100:H}',
+        contents: ['${101:1th}', '${102:2th}', '${103:3th}', '${104:4th}', '${105:5th}', '${106:6th}', '${107:7th}', '${108:8th}', '${109:9th}', '${110:10th}']
+    }, {
+        title: '${111:I}',
+        contents: ['${112:one}', '${113:two}', '${114:three}', '${115:four}', '${116:five}', '${117:six}', '${118:seven}', '${119:eight}', '${120:nine}', '${121:ten}']
+    }, {
+        title: '${122:J}',
+        contents: ['${123:壹}', '${124:貮}', '${125:叁}', '${126:肆}', '${127:伍}', '${128:陆}', '${129:柒}', '${130:捌}', '${131:玖}', '${132:拾}']
+    }, {
+        title: '${133:K}',
+        contents: ['${134:一}', '${135:二}', '${136:三}', '${137:四}', '${138:五}', '${139:六}', '${140:七}', '${141:八}', '${142:九}', '${143:十}']
+    }]
+},function( ret, err){
+    if( ret ){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UISelector-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开选择器</description>
+</snippet>

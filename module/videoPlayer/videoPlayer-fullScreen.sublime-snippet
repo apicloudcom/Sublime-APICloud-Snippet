@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var videoPlayer= api.require('videoPlayer');
+videoPlayer.fullScreen();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>videoPlayer-fullScreen</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>全屏播放（横屏模式）</description>
+</snippet>

@@ -1,14 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var push = api.require('push');
 push.joinGroup({
-	groupName:'${1:groupName}'
-},function(ret,err){
-	
+    groupName: '${1:department}'
+}, function(ret, err){
+     if( ret ){
+        alert( JSON.stringify( ret) );
+     }else{
+        alert( JSON.stringify( err) );
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>push-joinGroup</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>加入（绑定）某个群组</description>
+    <description>加入某个群组。加入该群组后，当服务器向该群组推送消息时，所有在该群组内的用户都会收到推送，非该群组用户不会收到推送。默认所有用户都加入"all"群组。</description>
 </snippet>

@@ -1,0 +1,59 @@
+
+<snippet>
+    <content><![CDATA[var UIGraph = api.require('UIGraph');
+UIGraph.open({
+    rect: {
+        x: ${1:30},
+        y: ${2:api.frameHeight / 2 - 170},
+        w: ${3:api.frameWidth - 60},
+        h: ${4:340}
+    },
+    yAxis: {
+        max: ${5:80},
+        min: ${6:0},
+        step: ${7:20},
+        unit: '%'
+    },
+    data: [{
+        xAxis: '${8:一月}',
+        yAxis: ${9:15}
+    },{
+        xAxis: '${10:二月}',
+        yAxis: ${11:65}
+    },{
+        xAxis: '${12:三月}',
+        yAxis: ${13:55}
+    },{
+        xAxis: '${14:四月}',
+        yAxis: ${15:0}
+    }],
+    styles: {
+        bg: '#${16:fff}',
+        axisColor: '#${17:A9A9A9}',
+        nodeColor: '#${18:000}',
+        lineColor: '#${19:1E90FF}',
+        lineWidth: ${20:1},
+        markColor: '#${21:000}',
+        markSize:  ${22:16},
+        bubble: {
+            bgImg: '',
+            size:  ${23:14}
+        }
+    },
+    showNode: ${24:true},
+    fixedOn: ${25:api.frameName},
+    fixed: ${26:true}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIGraph-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开贝塞尔曲线模块</description>
+</snippet>

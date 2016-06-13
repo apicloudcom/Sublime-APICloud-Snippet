@@ -1,8 +1,11 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.show();
+    <content><![CDATA[var map = api.require('bMap');
+map.show();
 ]]></content>
-    <tabTrigger>bmap-show</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>显示百度地图</description>
 </snippet>

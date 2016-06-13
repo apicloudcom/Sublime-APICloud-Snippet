@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[api.accessNative({
+    name: '${1:showMenu}',
+    extra: {
+        key: '${2:value}'
+    }
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-accessNative</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>使用 SuperWebView 时，js 向原生发送消息。此方法只在使用 SuperWebView 时有效。</description>
+</snippet>

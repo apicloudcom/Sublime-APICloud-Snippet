@@ -1,7 +1,8 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.getLocation({
-    accuracy: '${1:10m}',//10m/100m/1km/3km
+    <content><![CDATA[var bMap = api.require('bMap');
+bMap.getLocation({
+    accuracy: '${1:100m}',
     autoStop: ${2:true},
     filter: ${3:1}
 }, function(ret, err){
@@ -12,7 +13,9 @@ bmap.getLocation({
     }
 });
 ]]></content>
-    <tabTrigger>bmap-getLocation</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-getLocation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>开始定位，无需调用open接口即可定位</description>
+    <description>开始定位，若要支持后台定位需配置 config.xml 文件 location 字段，无需调用 open 接口即可定位</description>
 </snippet>

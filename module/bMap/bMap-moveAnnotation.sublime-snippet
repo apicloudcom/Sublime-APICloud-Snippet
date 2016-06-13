@@ -1,0 +1,22 @@
+
+<snippet>
+    <content><![CDATA[    var map = api.require('bMap');
+    for (var i=0; i&lt;6; i++) {
+      map.moveAnnotation({
+          id: ${1:10}+${2:i},
+          duration: ${3:6},
+          end:{
+              lon:${4:116}${5:.3843839609304},
+              lat:${6:39}${7:.98964439091298}
+          }
+      }, function(ret, err){
+          alert(ret.id + '移动结束')
+      });
+    }
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-moveAnnotation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>移动地图上已添加的可移动、旋转的标注图标，在移动动画开始前，会先做 0.3 秒的旋转动画，使所移动的图标中间轴线顶端对准终点坐标点。由于百度官方 SDK 的 bug 限制，在 Android 平台上，如果标注添加到地图当前可视区域以外的区域，则不可以移动该标注</description>
+</snippet>

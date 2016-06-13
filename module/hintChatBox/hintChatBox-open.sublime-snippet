@@ -1,0 +1,31 @@
+
+<snippet>
+    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+hintChatBox.open({
+     switchButton:{
+       faceNormal:'${1:widget://image/chatBox_face1.png}',
+       addNormal: '${2:widget://image/chatBox_add1.png}',
+       keyboardNormal: '${3:widget://image/chatBox_key1.png}'
+     },
+     sourcePath:'${4:widget://image/emotion}',
+     addButtons: [{
+        normal:'${5:widget://image/chatBox_album1.png}',
+        title:'${6:相册}'
+    }, {
+        normal:'${7:widget://image/chatBox_album1.png}',
+        title:'${8:相册}'
+    }]
+ }, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>hintChatBox-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开输入框</description>
+</snippet>

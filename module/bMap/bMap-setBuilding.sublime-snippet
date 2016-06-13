@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map.setBuilding({
+    building: ${1:true}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setBuilding</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设定地图是否现实 3D 楼块效果，地图放大，才会有 3D 楼快效果，倾斜视角 3D 效果会更明显</description>
+</snippet>

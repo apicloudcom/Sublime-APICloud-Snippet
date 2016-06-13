@@ -1,10 +1,15 @@
+
 <snippet>
-    <content><![CDATA[
-api.removeLaunchView();
+    <content><![CDATA[api.removeLaunchView({
+    animation: {
+        type: '${1:fade}',
+        duration: ${2:500}
+    }
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-removeLaunchView</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>移除启动图</description>
+    <description>移除启动图。若 config.xml 里面配置 autoLaunch 为 false，则启动图不会自动消失，直到调用此方法移除。</description>
 </snippet>

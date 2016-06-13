@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var model = api.require('model');
+model.downloadFile({
+    report: ${1:true},
+    id: '${2:asfdasfasfasfasf}',
+    savePath: ''
+}, function(ret, err) {
+    if( ret ){
+         alert( JSON.stringify( ret ) );   
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mcm-params</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>url：</description>
+</snippet>

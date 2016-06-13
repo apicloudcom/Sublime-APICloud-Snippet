@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var appleUnionPay = api.require('appleUnionPay');
+appleUnionPay.canMakePayments(function( ret, err ){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>appleUnionPay-canMakePayments</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>判断手机是否支持 Apple Pay 功能，以及是否已加载有可用的支付卡片</description>
+</snippet>

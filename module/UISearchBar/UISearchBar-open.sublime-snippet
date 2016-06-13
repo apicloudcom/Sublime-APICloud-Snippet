@@ -1,0 +1,52 @@
+
+<snippet>
+    <content><![CDATA[var UISearchBar = api.require('UISearchBar');
+UISearchBar.open({
+    placeholder: '${1:请输入搜索关键字}',
+    historyCount: ${2:10},
+    showRecordBtn: ${3:true},
+    texts: {
+        cancelText: '${4:取消}',
+        clearText: '${5:清除搜索记录}'
+    },
+    styles: {
+        navBar: {
+            bgColor: '#${6:FFFFFF}',
+            borderColor: '#${7:ccc}'
+        },
+        searchBox: {
+            bgImg: '',
+            color: '#${8:000}',
+            height: ${9:44}
+        },
+        cancel: {
+            bg: '${10:rgba(0,0,0,0)}',
+            color: '#${11:D2691E}',
+            size: ${12:16}
+        },
+        list: {
+            color: '#${13:696969}',
+            bgColor: '#${14:FFFFFF}',
+            borderColor: '#${15:eee}',
+            size: ${16:16}
+        },
+        clear: {
+            color: '#${17:000000}',
+            borderColor: '#${18:ccc}',
+            size: ${19:16}
+        }
+    }
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    } 
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UISearchBar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开搜索页面</description>
+</snippet>

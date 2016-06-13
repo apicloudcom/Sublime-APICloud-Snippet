@@ -1,0 +1,42 @@
+
+<snippet>
+    <content><![CDATA[var lineChart = api.require('lineChart');
+lineChart.open({
+    x: ${1:0},
+    y: ${2:64},
+    w: ${3:320},
+    h: ${4:300},
+    yAxis: {
+        'max': ${5:1000},
+        'step': ${6:200}
+    },
+    xAxis: {
+        'indexs': ['${7:一月}','${8:二月}','${9:三月}','${10:四月}','${11:五月}','${12:六月}','${13:七月}','${14:八月}','${15:九月}','${16:十月}','${17:十一月}','${18:十二月}','${19:一月}'],
+        'screenXcount': ${20:7}
+    },
+    lines: [{
+        'color': '#${21:800080}', 
+        'datas': [ ${22:200},${23:400},-${24:300},${25:500},-${26:400},${27:600},${28:400},${29:0},${30:500},-${31:100},${32:800},${33:100}],
+         id: ${34:1}
+    },{
+        'color': '#${35:7FFFAA}', 
+        'datas': [ -${36:200},-${37:400},${38:300},-${39:500},${40:400},-${41:600},-${42:400},${43:0},-${44:500},${45:100},-${46:800},-${47:100}],
+        id: ${48:2}
+    }],
+    bgColor: '#${49:F0FFFF}',
+    coorLineColor: '#${50:C0C0C0}',
+    markColor: '#${51:051353}'
+},function( ret, err) {
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>lineChart-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开K线图视图</description>
+</snippet>

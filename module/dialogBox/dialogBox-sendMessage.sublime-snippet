@@ -1,0 +1,66 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.sendMessage ({
+    texts:{
+        title: '${1:你的昵称}',
+        hintText: '（${2:点击此处修改昵称}）',          
+        content:'${3:亲}，${4:送你一个80元大礼包}，${5:请查收}！${6:退订请回复TD}',           
+        leftBtnTitle: '${7:取消}',   
+        rightBtnTitle: '${8:发送}'
+    },
+    styles:{
+        bg: '#${9:fff}',
+        w: ${10:300},
+        title:{                     
+            h: ${11:40},                
+            show: {
+                marginL: ${12:6},
+                titleSize: ${13:14},
+                titleColor: '#${14:000}'
+            },
+            input:{                
+                marginL: ${15:6},         
+                textSize: ${16:14},
+                textColor: '#${17:000}'
+            }
+        },
+        content:{  
+            color: '#${18:000}',         
+            size: ${19:12}          
+        },
+        left:{            
+            marginB: ${20:7},      
+            marginL: ${21:10},     
+            w: ${22:130},           
+            h: ${23:35},
+            corner: ${24:2},       
+            bg: '#${25:e0e}',   
+            size: ${26:12}    
+        },
+        right:{            
+            marginB: ${27:7},      
+            marginL: ${28:10},      
+            w: ${29:130},           
+            h: ${30:35},
+            corner: ${31:2},       
+            bg: '#${32:e0e}',   
+            size: ${33:12}    
+        }
+    }
+},function(ret){
+    api.alert({msg:${34:JSON}${35:.stringify(ret)});}
+    if (ret.eventType == 'left') {
+        var dialogBox = api.require('dialogBox');
+        dialogBox.close ({
+            dialogName: '${36:sendMessage}'
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-sendMessage</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 sendMessage 样式的对话框</description>
+</snippet>

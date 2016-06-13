@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.openVideo({
-    url: '${1:video_path}'
+    <content><![CDATA[api.openVideo({
+    url: '${1:widget://res/1.mp4}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

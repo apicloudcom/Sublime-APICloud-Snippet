@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var photoBrowser = api.require('photoBrowser');
+photoBrowser.hide();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>photoBrowser-hide</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>隐藏图片浏览器</description>
+</snippet>

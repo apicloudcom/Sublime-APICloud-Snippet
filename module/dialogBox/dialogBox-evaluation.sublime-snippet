@@ -1,0 +1,62 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.evaluation ({
+    styles: {
+        bg: '#${1:fff}',
+        w: ${2:300},
+        title:{
+            marginT: ${3:20},
+            size: ${4:15},
+            color: '#${5:000}',
+            bold: ${6:true}
+        },
+        content:{               
+            marginT: ${7:20},     
+            color: '#${8:111}',
+            size: ${9:12}
+        },
+        buttons:[{
+            marginB: ${10:0},
+            marginL: ${11:0},
+            w: ${12:300},
+            h: ${13:35},
+            bg: '#${14:fff}',
+            color: '#${15:007FFF}',
+            size: ${16:12}
+        },
+        {
+            marginB: ${17:0},
+            marginL: ${18:0},
+            w: ${19:300},
+            h: ${20:35},
+            bg: '#${21:fff}',
+            color: '#${22:007FFF}',
+            size: ${23:12}
+        }]
+    },
+    texts:    {
+        title: '${24:评价}',          
+        content:'${25:亲}，${26:给个好评吧}',         
+        buttons: [
+        {            
+            text: '${27:下次再说}'
+        },
+        {
+           text: '${28:残忍的拒绝}'
+        }]
+    }
+}, function(ret, err){
+    if( ret ){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-evaluation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 evaluation 样式的对话框</description>
+</snippet>

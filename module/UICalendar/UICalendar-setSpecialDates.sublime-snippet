@@ -1,0 +1,21 @@
+
+<snippet>
+    <content><![CDATA[var UICalendar = api.require('UICalendar');
+UICalendar.setSpecialDates({
+    specialDates:[{
+       date: '${1:2015-12-07}',
+       color: '#${2:abckde}',
+       bg: '#${3:ff0000}'
+    },{
+       date: '${4:2015-12-08}',
+       color: '#${9:abckde}',
+       bg: '#${10:ff0000}'
+    }]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICalendar-setSpecialDates</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置特殊日期</description>
+</snippet>

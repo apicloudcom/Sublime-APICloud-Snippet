@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var listContact = api.require('listContact');
+listContact.refreshItem({
+    index: ${1:2},
+    data: {
+       title: '${2:刷新指定下标的标题}', 
+       subTitle: '${3:刷新指定下标的子标题}'
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listContact-refreshItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>刷新指定index条目的数据</description>
+</snippet>

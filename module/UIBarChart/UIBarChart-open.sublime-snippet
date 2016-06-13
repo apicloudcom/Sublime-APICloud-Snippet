@@ -1,0 +1,91 @@
+
+<snippet>
+    <content><![CDATA[var UIBarChart = api.require('UIBarChart');
+UIBarChart.open({
+    rect: {
+        x: ${1:30},
+        y: ${2:api.frameHeight / 2 - 170},
+        w: ${3:api.frameWidth - 60},
+        h: ${4:340}
+    },
+    yAxis: {
+        max: ${5:50},
+      min: ${6:0},
+      step: ${7:10} 
+    },
+    data: [{
+        xAxis: '${8:一月}',
+      yAxis: ${9:80} 
+    },{
+        xAxis: '${10:二月}',
+      yAxis: ${11:0}
+    },{
+        xAxis: '${12:三月}',
+      yAxis: ${13:16}
+    },{
+        xAxis: '${14:四月}',
+      yAxis: ${15:36}
+    },{
+        xAxis: '${16:五月}',
+      yAxis: ${17:26} 
+    },{
+        xAxis: '${18:六月}',
+      yAxis: ${19:46}
+    },{
+        xAxis: '${20:七月}',
+      yAxis: ${21:66} 
+    },{
+        xAxis: '${22:八月}',
+      yAxis: ${23:11}
+    },{
+        xAxis: '${24:九月}',
+      yAxis: ${25:8} 
+    },{
+        xAxis: '${26:十月}',
+      yAxis: ${27:56} 
+    },{
+        xAxis: '${28:十一月}', 
+      yAxis: ${29:61}
+    },{
+        xAxis: '${30:十二月}',
+      yAxis: ${31:35}
+    }],
+    styles: {
+          yAxis: {
+            width:${32:30},
+            bg: '#${33:B2DFEE}',
+            markColor: '#${34:fff}'
+            markSize: ${35:12}  
+          },   
+          xAxis: {
+            height:${36:30},
+              bg: '#${37:B2DFEE}',
+            markColor: '#${38:fff}',
+            markSize: ${39:12}
+          },   
+          coordinate: {
+              bg: '#${40:FCFCFC}',
+          },    
+          bar: {
+              width:${41:30},
+              bg: '#${42:696969}',
+              tint: '#${43:8DB6CD}',
+              interval: ${44:16}
+          }    
+    },
+    fixedOn: ${45:api.frameName},
+    fixed: ${46:false}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIBarChart-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开柱状图视图</description>
+</snippet>

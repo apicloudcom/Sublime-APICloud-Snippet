@@ -1,30 +1,36 @@
+
 <snippet>
-	<content><![CDATA[
-api.openFrameGroup({
-    name: '${1:group_name}',
-    scrollEnabled: ${2:false},
+    <content><![CDATA[api.openFrameGroup ({
+    name: '${1:group1}',
+    background: '#${2:fff}',
+    scrollEnabled: ${3:false},
     rect: {
-        x:${3:0},
-        y:${4:0},
-        w:${5:'auto'},
-        h:${6:'auto'}
+         x: ${4:0}, 
+         y: ${5:0}, 
+         w: '${6:auto}', 
+         h: '${7:auto}'
     },
-    index: ${7:0},
+    index: ${8:1},
     frames: [{
-        name: '${8:frame1_name}', 
-        url: '${9:frame1_url}'
+        name: '${9:frame1}', 
+        url: '${10:frame1.html}',
+        bgColor: '#${11:fff}'
     },{
-        name: '${10:frame2_name}', 
-        url: '${11:frame2_url}'
+        name: '${12:frame2}', 
+        url: '${13:frame2.html}', 
+        bgColor: '#${14:fff}'
     }]
 }, function(ret, err){
-   var name  = ret.name;
-   var index = ret.index;
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-openFrameGroup</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>打开子窗口组</description>
+    <description>打开 frame 组</description>
 </snippet>

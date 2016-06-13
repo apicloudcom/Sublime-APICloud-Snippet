@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var lineChart = api.require('lineChart');
+lineChart.close({
+    id:${1:1}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>lineChart-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭K线图</description>
+</snippet>

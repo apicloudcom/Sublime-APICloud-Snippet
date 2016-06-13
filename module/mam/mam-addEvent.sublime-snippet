@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var mam = api.require('mam');
+mam.addEvent({
+    name: '${1:shopping}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mam-addEvent</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>添加自定义事件，用于后端统计</description>
+</snippet>

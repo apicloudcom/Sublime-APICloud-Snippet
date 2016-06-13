@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var inputField = api.require('inputField');
+inputField.open({
+    bgColor:'#${1:708090}',
+    lineColor:'#${2:C71585}',
+    fileBgColor:'#${3:90EE90}',
+    borderColor:'#${4:FFB6C1}',
+    sendImg:'${5:widget://res/img/sendImg.png}',
+    fixedOn: ${6:api.frameName}
+}, function(ret, err){   
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>inputField-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开输入框</description>
+</snippet>

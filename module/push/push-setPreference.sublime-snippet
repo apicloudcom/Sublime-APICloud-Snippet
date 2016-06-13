@@ -1,13 +1,21 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var push = api.require('push');
 push.setPreference({
-	notify:${1:true},
-	updateCurrent:${2:false}
+    notify: ${1:true},
+    updateCurrent: ${2:false},
+    silenceTime: {//${3:晚上10点30到第二天上午9点之间静默}
+        startHour: ${4:22},
+        endHour: ${5:9},
+        startMinute: ${6:30},
+        endMinute: ${7:0}
+    },
+    defaults: '${8:all}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>push-setPreference</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>推送偏好设置</description>
+    <description>推送偏好设置，如是否允许弹出通知到手机状态栏，推送静默时间，通知提示类型等。</description>
 </snippet>

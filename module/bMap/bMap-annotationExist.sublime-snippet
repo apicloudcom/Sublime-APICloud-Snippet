@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[var map = api.require('bMap');
+map. annotationExist({
+    id: ${1:2}
+}, function(ret){
+    if(ret.status){
+        api.alert({msg:'${2:存在}'});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-annotationExist</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>判断标注是否存在</description>
+</snippet>

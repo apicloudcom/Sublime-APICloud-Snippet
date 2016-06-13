@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var pieChart = api.require('pieChart');
 pieChart.show({
     id: ${1:1}
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>pieChart-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>显示饼图</description>
+    <description>显示已隐藏的饼形图</description>
 </snippet>

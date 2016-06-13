@@ -1,0 +1,39 @@
+
+<snippet>
+    <content><![CDATA[var addButtonAry = [];
+    for (var i = 0; i&lt; 3; i++) {
+        addButtonAry[i]={
+              normal:"${1:widget://image/chatBox_album1.png"},
+            title:"${2:相册}"
+        };
+    }
+var chatBox = api.require('chatBox');
+chatBox.open({
+    switchButton:{
+        faceNormal : "${3:widget://image/chatBox_face1.png"},
+        faceHighlight : "${4:widget://image/chatBox_face1.png"},
+        addNormal : "${5:widget://image/chatBox_add1.png"},
+        addHighlight : "${6:widget://image/chatBox_add1.png"},
+        keyboardNormal : "${7:widget://image/chatBox_key1.png"},
+        keyboardHighlight : "${8:widget://image/chatBox_key1.png"}
+    },
+    sourcePath:"${9:widget://image/emotion"},
+    addButtons:${10:addButtonAry}
+},function(ret,err){
+if(ret.click){
+    api.alert({msg:"${11:用户点击了第}"+${12:ret.index+"个按钮"});}
+}else{
+    api.alert({
+        title: '${13:输入的内容是}',
+        msg: ${14:ret.msg},
+        buttons: ['${15:确定}']
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>chatBox-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开输入框</description>
+</snippet>

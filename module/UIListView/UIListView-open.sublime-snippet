@@ -1,0 +1,131 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:0},
+        w: ${3:api.winWidth},
+        h: ${4:api.frameHeight}
+    },
+    data: [{
+        uid: '${5:1001}',]
+        imgPath: '${6:widget://res/img/apicloud.png}',
+        title: '${7:标题}',
+        subTitle: '${8:子标题}，${9:说明文字}',
+        remark: '${10:备注}',
+        icon: ''
+    },{
+        uid: '${11:1001}',
+        imgPath: '${12:widget://res/img/apicloud.png}',
+        title: '${13:标题}',
+        subTitle: '${14:子标题}，${15:说明文字}',
+        remark: '${16:备注}',
+        icon: ''
+    },{
+        uid: '${17:1001}',
+        imgPath: '${18:widget://res/img/apicloud.png}',
+        title: '${19:标题}',
+        subTitle: '${20:子标题}，${21:说明文字}',
+        remark: '${22:备注}',
+        icon: ''
+    },{
+        uid: '${23:1001}',
+        imgPath: '${24:widget://res/img/apicloud.png}',
+        title: '${25:标题}',
+        subTitle: '${26:子标题}，${27:说明文字}',
+        remark: '${28:备注}',
+        icon: ''
+    },{
+        uid: '${29:1001}',
+        imgPath: '${30:widget://res/img/apicloud.png}',
+        title: '${31:标题}',
+        subTitle: '${32:子标题}，${33:说明文字}',
+        remark: '${34:备注}',
+        icon: ''
+    },{
+        uid: '${35:1001}',
+        imgPath: '${36:widget://res/img/apicloud.png}',
+        title: '${37:标题}',
+        subTitle: '${38:子标题}，${39:说明文字}',
+        remark: '${40:备注}',
+        icon: ''
+    },{
+        uid: '${41:1001}',
+        imgPath: '${42:widget://res/img/apicloud.png}',
+        title: '${43:标题}',
+        subTitle: '${44:子标题}，${45:说明文字}',
+        remark: '${46:备注}',
+        icon: ''
+    },{
+        uid: '${47:1001}',
+        imgPath: '${48:widget://res/img/apicloud.png}',
+        title: '${49:标题}',
+        subTitle: '${50:子标题}，${51:说明文字}',
+        remark: '${52:备注}',
+        icon: ''
+    },{
+        uid: '${53:1001}',
+        imgPath: '${54:widget://res/img/apicloud.png}',
+        title: '${55:标题}',
+        subTitle: '${56:子标题}，${57:说明文字}',
+        remark: '${58:备注}',
+        icon: ''
+    },{
+        uid: '${59:1001}',
+        imgPath: '${60:widget://res/img/apicloud.png}',
+        title: '${61:标题}',
+        subTitle: '${62:子标题}，${63:说明文字}',
+        remark: '${64:备注}',
+        icon: ''
+    },{
+        imgPath: '${65:widget://res/img/apicloud.png}',
+        title: '${66:标题}',
+        subTitle: '${67:子标题}，${68:说明文字}',
+        remark: '${69:备注}',
+        icon: ''
+    }],
+    rightBtns: [{
+        bgColor: '#${70:388e8e}',
+        activeBgColor: '',
+        width: ${71:70},
+        title: '${72:按钮}',
+        titleSize: ${73:12},
+        titleColor: '#${74:fff}',
+        icon: '',
+        iconWidth: ${75:20}
+    }],
+    styles: {
+        borderColor: '#${76:696969}',
+        item: {
+            bgColor: '#${77:AFEEEE}',
+            activeBgColor: '#${78:F5F5F5}',
+            height: ${79:55}${80:.0},
+            imgWidth: ${81:40},
+            imgHeight: ${82:40},
+            imgCorner: ${83:4},
+            placeholderImg: '',
+            titleSize: ${84:12}${85:.0},
+            titleColor: '#${86:000}',
+            subTitleSize: ${87:12}${88:.0},
+            subTitleColor: '#${89:000}', 
+            remarkColor: '#${90:000}',
+            remarkSize: ${91:16},
+            remarkIconWidth: ${92:30}
+        }
+    },
+    fixedOn: ${93:api.frameName}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 UIListView 模块</description>
+</snippet>

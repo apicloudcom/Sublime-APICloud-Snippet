@@ -1,6 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.setBubble({
+    <content><![CDATA[var map = api.require('bMap');
+map.setBubble({
     id: ${1:2},
     bgImg: '${2:widget://res/bubble_bg.png}',
     content: {
@@ -9,11 +10,11 @@ bmap.setBubble({
         illus: '${5:http://ico.ooopic.com/ajax/iconpng/?id=145044.png}'
     },
     styles: {
-        titleColor: '${6:#000}',
+        titleColor: '#${6:000}',
         titleSize: ${7:16},
-        subTitleColor: '${8:#999}',
+        subTitleColor: '#${8:999}',
         subTitleSize: ${9:12},
-        illusAlign: '${10:left}'//left/right
+        illusAlign: '${10:left}'
     }
 }, function(ret){
     if(ret){
@@ -21,7 +22,9 @@ bmap.setBubble({
     }
 });
 ]]></content>
-    <tabTrigger>bmap-setBubble</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setBubble</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置点击标注时弹出的气泡信息</description>
 </snippet>

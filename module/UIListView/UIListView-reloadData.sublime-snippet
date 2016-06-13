@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.reloadData({
+     data:[{
+        imgPath: '${1:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',
+        title: '${2:新标题}',
+        subTitle: '${3:新子标题}',
+        remark: '${4:新备注}',
+        icon: ''
+    }]
+},function(ret){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>刷新列表数据</description>
+</snippet>

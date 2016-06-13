@@ -1,0 +1,47 @@
+
+<snippet>
+    <content><![CDATA[var UICoverFlow = api.require('UICoverFlow');
+UICoverFlow.open({
+    rect: {
+        x: ${1:0},
+        y: ${2:60},
+        w: ${3:api.winWidth},
+        h: ${4:480}
+    },
+    styles: {
+        bg: '#${5:fff}',
+        image: {
+            activeW: ${6:300},
+            activeH: ${7:400},
+            corner: ${8:2},
+            placeholder: '${9:widget://placeholder.png}'
+        }
+
+    },
+    images: [{
+        url: '${10:widget://res/coverflow/0.png}'
+    }, {
+        url: '${11:widget://res/coverflow/1.png}'
+    }, {
+        url: '${12:widget://res/coverflow/2.png}'
+    }, {
+        url: '${13:widget://res/coverflow/3.png}'
+    }],
+    index: ${14:0},
+    interval: ${15:2000},
+    fixedOn: ${16:api.frameName},
+    fixed: ${17:false}
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICoverFlow-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开 UICoverFlow</description>
+</snippet>

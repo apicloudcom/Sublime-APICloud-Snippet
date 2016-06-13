@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+hintChatBox.setHintView();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>hintChatBox-setHintView</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置刷新提示语面板内容</description>
+</snippet>

@@ -1,7 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-api.closeFrame({
-    name: '${1:frame_name}'
+    <content><![CDATA[api.closeFrame({
+    name: '${1:page2}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

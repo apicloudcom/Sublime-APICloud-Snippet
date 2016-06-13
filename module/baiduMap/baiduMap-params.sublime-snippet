@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[var baiduMap = api.require('baiduMap');
+baiduMap.addOverMark({
+    id:${1:200},
+    lbLon:${2:116}${3:.297},
+    lbLat:${4:40}${5:.109},
+    rtLon:${6:116}${7:.298},
+    rtLat:${8:40}${9:.11},
+    imgPath:'${10:widget://res/over_img.png}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>baiduMap-params</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>id：</description>
+</snippet>

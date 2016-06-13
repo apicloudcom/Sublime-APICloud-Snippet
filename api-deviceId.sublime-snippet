@@ -1,10 +1,10 @@
+
 <snippet>
-    <content><![CDATA[
-api.deviceId
+    <content><![CDATA[var deviceId = api.deviceId;  //比如： FC408F8B-9598-48B6-A740-B9037ADCXXXE
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-deviceId</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>设备唯一标识</description>
+    <description>设备唯一标识，字符串类型</description>
 </snippet>

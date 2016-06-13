@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var contact = api.require('contact');
+contact.updateGroupName({
+    id:${1:1},
+    name:'${2:同学}'
+},function(ret,err){
+    if(ret.status){
+        api.alert({msg:'${3:分组修改完成}'});
+    }else{
+        api.alert({msg:${4:err.msg});}
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>contact-updateGroupName</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>修改分组名</description>
+</snippet>

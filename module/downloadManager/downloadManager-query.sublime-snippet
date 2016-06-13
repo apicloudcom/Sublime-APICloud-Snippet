@@ -1,12 +1,22 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var downloadManager = api.require('downloadManager');
 downloadManager.query({
-    ids: ${1:[]},
-    status: '${2:status}'
-},function(ret,err){
+    ids: [ 
+        '123456', 
+        '1234567' 
+    ]
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>downloadManager-query</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>查询下载状态</description>
 </snippet>

@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.removeRoute({
-    ids: [${1:1, 2, 3}]
+    <content><![CDATA[var map = api.require('bMap');
+map.removeRoute({
+    ids: [${1:1}, ${2:2}, ${3:3}]
 });
 ]]></content>
-    <tabTrigger>bmap-removeRoute</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-removeRoute</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>移除指定id的路线</description>
+    <description>移除指定 id 的路线</description>
 </snippet>

@@ -1,0 +1,76 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.scene ({
+    rect: {                            
+        w: ${1:280},                            
+        h: ${2:400}                             
+    },
+    texts: {
+        title: '${3:情景1}',          
+        content:'${4:火车售票处前的队伍蜿蜒纵横}，${5:旁边一小伙一边张望}，${6:一边将手伸向前面买票人的口袋}，${7:啊}，${8:是小偷}!',         
+        okBtnTitle: '${9:确定}'
+    },
+    styles: {
+        bg:'#${10:fff}',
+        title:{     
+            bg: '#${11:aaa}',     
+            h: ${12:44},            
+            size: ${13:14},        
+            color: '#${14:000}'    
+        },
+        sceneImg: {
+            h: ${15:150},          
+            path: '${16:widget://image/sceneImg.png}'        
+        },
+        content:{
+            color: '#${17:111}',                     
+            size: ${18:12}        
+        },
+        cell: {      
+            bg: '#${19:fff}',                    
+            h: ${20:48},                         
+            text: {                        
+                color: '#${21:636363}',          
+                size: ${22:13}                 
+            },
+            icon: {                       
+                marginL: ${23:15},              
+                marginT: ${24:9},                
+                w: ${25:30},                     
+                h: ${26:30},                     
+                corner: ${27:2}                 
+            }
+        },
+        ok: {
+            bg: '#${28:89a}',                
+            titleColor: '#${29:f00}'    
+        }
+    },
+    optionDatas: [
+        {           
+            icon: '${30:widget://image/scene1.png}',                
+            text: '${31:1}、${32:拿出手机偷拍}'            
+        },
+        {       
+            icon: '${33:widget://image/scene2.png}',
+            text: '${34:2}、${35:见义勇为抓小偷}'            
+        },
+        {       
+            text: '${36:3}、${37:大声提醒买票的人}'            
+        }
+    ]
+}, function(ret, err){
+    if( ret ){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-scene</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 scene 样式的对话框</description>
+</snippet>

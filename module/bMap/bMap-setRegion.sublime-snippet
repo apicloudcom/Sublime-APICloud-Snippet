@@ -1,14 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.setRegion({
-    lbLon: ${1:116.027143},
-    lbLat: ${2:39.772348},
-    rtLon: ${3:116.832025},
-    rtLat: ${4:40.126349},
-    animation: ${5:true}
+    <content><![CDATA[var map = api.require('bMap');
+map.setRegion({
+    lbLon: ${1:116}${2:.027143, }
+    lbLat: ${3:39}${4:.772348, }
+    rtLon: ${5:116}${6:.832025, }
+    rtLat: ${7:40}${8:.126349},
+    animation: ${9:true}
 });
 ]]></content>
-    <tabTrigger>bmap-setRegion</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setRegion</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置地图显示范围（矩形区域），此接口可带动画效果</description>
 </snippet>

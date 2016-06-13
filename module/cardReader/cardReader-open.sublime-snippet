@@ -1,14 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
-cardReader.open(function(ret,err){
-    if(ret.status){
-        alert(ret.cardNum + ret.expiryMonth + ret.expiryYear + ret.cvv);
-    } else{
-        alert(err.msg);
+    <content><![CDATA[var cardReader = api.require('cardReader');
+cardReader.open(function( ret, err ){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>cardReader-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开信用卡识别器</description>
 </snippet>

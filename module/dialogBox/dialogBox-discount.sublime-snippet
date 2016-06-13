@@ -1,0 +1,35 @@
+
+<snippet>
+    <content><![CDATA[var dialogBox = api.require('dialogBox');
+dialogBox.discount({
+    rect:{
+         w:${1:200},
+         h:${2:300}  
+    },
+    styles:{
+        bg:'#${3:FFF}',
+        image:{
+            path:'${4:widget://image/image.png}',
+            marginB:${5:30}
+        },
+        cancel:{
+            icon:'${6:widget://image/cancel_btn.png}',
+            w:${7:50},
+            h:${8:50}  
+        }
+    }
+}, function(ret){
+    alert(JSON.stringify(ret));
+    if (ret.eventType == 'cancel') {
+        dialogBox.close({
+            dialogName: '${9:discount}'
+        });
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dialogBox-discount</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>弹出 discount 样式的对话框</description>
+</snippet>

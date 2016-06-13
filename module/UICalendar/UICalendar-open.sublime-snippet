@@ -1,0 +1,52 @@
+
+<snippet>
+    <content><![CDATA[var UICalendar = api.require('UICalendar');
+UICalendar.open({
+    rect: {
+        x: ${1:30},
+        y: ${2:api.frameHeight / 2 - 170},
+        w: ${3:api.frameWidth - 60},
+        h: ${4:340}
+    },
+    styles: {
+        bg: '${5:rgba(0,0,0,0)}',
+        week: {
+            weekdayColor: '#${6:3b3b3b}',
+            weekendColor: '#${7:a8d400}',
+            size: ${8:12}
+        },
+        date: {
+            color: '#${9:3b3b3b}',
+            selectedColor: '#${10:fff}',
+            selectedBg: '#${11:a8d500}',
+            size: ${12:12}
+        },
+        today: {
+            color: '${13:rgb(230,46,37)}',
+            bg: ''
+        },
+        specialDate: {
+            color: '#${14:a8d500}',
+            bg: '${15:widget://image/a.png}'
+        }
+    },
+    specialDate: [{
+        date: '${16:2015}-${17:06}-${18:01}'
+    }],
+    switchMode: '${19:vertical}',
+    fixedOn: ${20:api.frameName},
+    fixed: ${21:false}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICalendar-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开日历</description>
+</snippet>

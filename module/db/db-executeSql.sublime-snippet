@@ -1,13 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var db = api.require('db');
 db.executeSql({
-    name: '${1:database_name}',
-    sql: '${2:sql_string}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'执行SQL成功'});
-    }else {
-        api.alert({msg:err.msg});
+    name: '${1:test}',
+    sql: '${2:CREATE} ${3:TABLE} ${4:Persons}(${5:Id}_${6:P} ${7:int, LastName varchar(255), FirstName varchar(255), Address varchar(255), City varchar(255))}'    
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>
@@ -15,5 +16,5 @@ db.executeSql({
     <tabTrigger>db-executeSql</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>执行sql</description>
+    <description>执行 sql</description>
 </snippet>

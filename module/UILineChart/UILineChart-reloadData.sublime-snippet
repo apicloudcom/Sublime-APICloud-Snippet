@@ -1,0 +1,24 @@
+
+<snippet>
+    <content><![CDATA[var UILineChart = api.require('UILineChart');
+UILineChart.reloadData({
+    id: ${1:1},
+    lineIndexs: [${2:0}, ${3:1}],
+    datas:[
+        [200,-100,100,0,50],
+        [-200,100,-100,0,-50]
+    ]
+},function(ret){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UILineChart-reloadData</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>重新加载数据</description>
+</snippet>

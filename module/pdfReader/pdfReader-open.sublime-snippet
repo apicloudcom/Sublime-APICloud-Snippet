@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var pdfReader = api.require('pdfReader');
 pdfReader.open({
-    path: '${1:}'//文件路径
+    path: '${1:widget://res/test.pdf}'
 });
 ]]></content>
-    <tabTrigger>pdfreader-open</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>pdfReader-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>打开一个pdf格式的文档</description>
+    <description>打开一个 pdf 格式的文档</description>
 </snippet>

@@ -1,0 +1,28 @@
+
+<snippet>
+    <content><![CDATA[var listView = api.require('messageList');
+listView.setRightButtons({
+     index:${1:0},
+     rightBtn: [{
+            bg:  '#${2:556B2F}',              //${3:按钮背景色}，${4:支持} ${5:rgb，rgba，#，默认#ee8262.}
+            title: '${6:取消}',                 //${7:按钮名字}，${8:字符串类型}，${9:默认}‘${10:按钮}’
+            titleSize: ${11:13},              //${12:按钮标题大小}，${13:默认12}
+            titleColor: '#${14:000000}',      // ${15:按钮标题颜色}，${16:支持} ${17:rgb，rgba，#，默认#ffffff}
+            selectedColor: '#${18:FFFFFF}',   //${19:按钮选中时候的颜色值},${20:支持} ${21:rgb，rgba，#}
+            icon:'${22:widget://image/messageList/delete.png}'
+        }, {
+            bg:  '#${23:4EEE94}',              //${24:按钮背景色}，${25:支持} ${26:rgb，rgba，#，默认#ee8262.}
+            title: '${27:取消置顶}',             //${28:按钮名字}，${29:字符串类型}，${30:默认}‘${31:按钮}’
+            titleSize: ${32:13},              //${33:按钮标题大小}，${34:默认12}
+            titleColor: '#${35:000000}',         // ${36:按钮标题颜色}，${37:支持} ${38:rgb，rgba，#，默认#ffffff}
+            selectedColor: '${39:ffffff}',      //${40:按钮选中时候的颜色值},${41:支持} ${42:rgb，rgba，#}
+            icon:'${43:widget://image/messageList/delete.png}'
+        }]
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listView-setRightButtons</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置侧滑item显示出来按钮</description>
+</snippet>

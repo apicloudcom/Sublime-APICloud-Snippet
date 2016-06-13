@@ -1,10 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
-api.wgtRootDir
+    <content><![CDATA[var wgtRootDir = api.wgtRootDir;  
+/* 
+比如：  
+/private/var/mobile/Containers/Bundle/Application/56218B5B-1B59-48CD-8080-DAC54DB46446/UZApp.app/widget
+*/
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-wgtRootDir</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>widget://协议对应的真实目录，即widget网页包的根目录</description>
+    <description>widget: //协议对应的真实目录，即 widget 网页包的根目录，字符串类型</description>
 </snippet>

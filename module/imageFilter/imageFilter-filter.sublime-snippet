@@ -1,12 +1,20 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var imageFilter = api.require('imageFilter');
 imageFilter.filter({
-    id:${1:id},
-    type:"${2:type}"
-}, function(ret, err){
+    id: ${1:1},
+    type: '${2:autumn}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>imageFilter-filter</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置图片滤镜效果</description>
 </snippet>

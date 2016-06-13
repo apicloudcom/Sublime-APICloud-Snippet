@@ -1,22 +1,23 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.searchInBounds({
-    keyword: '${1:图书馆}',
-    lbLon: ${2:112.47723797622677},
-    lbLat: ${3:34.556480000000015},
-    rtLon: ${4:109.77539000000002},
-    rtLat: ${5:33.43144},
-    pageIndex: ${5:0},
-    pageCapacity: ${6:10}//1~50
+    <content><![CDATA[var map = api.require('bMap');
+map.searchInBounds({
+    keyword: '${1:图书馆}', 
+    lbLon: ${2:112}${3:.47723797622677, }
+    lbLat: ${4:34}${5:.556480000000015, }
+    rtLon: ${6:109}${7:.77539000000002, }
+    rtLat: ${8:33}${9:.43144 }
 },function(ret,err){
     if(ret.status){
         alert(JSON.stringify(ret));
     }else{
         alert(JSON.stringify(err));
     }
-}); 
+});
 ]]></content>
-    <tabTrigger>bmap-searchInBounds</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-searchInBounds</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>根据单个关键字在方形区域内搜索兴趣点，无需调用open接口即可搜索</description>
+    <description>根据单个关键字在方形区域内搜索兴趣点，无需调用 open 接口即可搜索</description>
 </snippet>

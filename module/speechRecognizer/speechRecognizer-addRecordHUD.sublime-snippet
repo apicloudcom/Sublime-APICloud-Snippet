@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[{
+    var speechRecognizer = api.require('speechRecognizer');
+    speechRecognizer.addRecordHUD({
+        centerX: ${1:160},
+        centerY: ${2:120},
+        radius: ${3:80},
+        transparentR：40,
+        bg: '#${4:AAAAAA}',
+        fixedOn: ${5:api.frameName},
+        fixed: ${6:false}
+    },function(ret,err){
+        var volume = ret.volume;
+    });
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>speechRecognizer-addRecordHUD</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>添加录音音量显示器</description>
+</snippet>

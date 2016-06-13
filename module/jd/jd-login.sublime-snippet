@@ -1,0 +1,22 @@
+
+<snippet>
+    <content><![CDATA[var jd = api.require('jd');
+jd.login({
+    appKey:'${1:F7E188290D59BD58FDA262E03A355542}',
+    appSecret:'${2:a13d7611c4f4498ea79d95e861a5a554}',
+    redirectUri:'${3:http://yunsmart.com}',
+    naviColor:'#${4:f00}'
+},function(ret,err){
+    if(ret){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>jd-login</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>登陆授权</description>
+</snippet>

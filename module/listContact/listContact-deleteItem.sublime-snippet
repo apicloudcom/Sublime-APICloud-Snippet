@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var listContact = api.require('listContact');
+ listContact.deleteItem({
+    index: ${1:2},
+    key: ${2:A}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>listContact-deleteItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>删除指定索引的数据</description>
+</snippet>

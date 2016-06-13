@@ -1,0 +1,54 @@
+
+<snippet>
+    <content><![CDATA[var UIMediaScanner = api.require('UIMediaScanner');
+UIMediaScanner.open({
+    type: '${1:picture}',
+    column: ${2:4},
+    classify: ${3:true},
+    max: ${4:4},
+    sort: {
+        key: '${5:time}',
+        order: '${6:desc}'
+    },
+    texts: {
+        stateText: '${7:已选择*项}',
+        cancelText: '${9:取消}',
+        finishText: '${10:完成}'
+    },
+    styles: {
+        bg: '#${11:fff}',
+        mark: {
+            icon: '',
+            position: '${12:bottom_left}',
+            size: ${13:20}
+        },
+        nav: {
+            bg: '#${14:eee}',
+            stateColor: '#${15:000}',
+            stateSize: ${16:18},
+            cancelBg: '${17:rgba(0,0,0,0)}',
+            cancelColor: '#${18:000}',
+            cancelSize: ${19:18},
+            finishBg: '${20:rgba(0,0,0,0)}',
+            finishColor: '#${21:000}',
+            finishSize: ${22:18}
+        }
+    },
+    scrollToBottom:{
+       intervalTime: ${23:3},
+       anim: ${24:true}
+    },
+    exchange: ${25:true},
+    rotation: ${26:true}
+}, function( ret ){
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIMediaScanner-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开多媒体资源选择器，打开后会全屏显示</description>
+</snippet>

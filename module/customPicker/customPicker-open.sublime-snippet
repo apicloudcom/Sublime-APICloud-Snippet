@@ -1,0 +1,26 @@
+
+<snippet>
+    <content><![CDATA[var first = [{title: '${1:简体中文}'},{${2:title: }'${3:英语}'},{${4:title: }'${5:法语}'}];
+var dataSource = [];
+dataSource[0] = first;
+var customPicker = api.require('customPicker');
+customPicker.open({
+    dataSource: ${6:dataSource},
+    header:{
+        title:'${7:选择语言}'
+    }
+},function(ret, err){
+    if(ret){
+        var indexs = ret.indexs;
+        var index = indexs[0];
+        var msg = '您选择了'+first[index].title;
+        api.alert({msg:${8:msg}});
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>customPicker-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开选择器</description>
+</snippet>

@@ -1,11 +1,19 @@
+
 <snippet>
-    <content><![CDATA[
-imageFilter.open ({
-    imgPath: '${1:path}'
-}, function(ret, err){
+    <content><![CDATA[var imageFilter = api.require('imageFilter');
+imageFilter.open({
+    imgPath: '${1:widget://res/img/apicloud.png}'
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>imageFilter-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开图片过滤器</description>
 </snippet>

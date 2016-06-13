@@ -1,0 +1,19 @@
+
+<snippet>
+    <content><![CDATA[var weibo = api.require('weibo');
+weibo.isInstalled(
+    function(ret){
+        if (ret.status) {
+            alert('已安装新浪微博客户端');
+        }else{
+            alert('未安装新浪微博客户端');
+        }
+    }
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>weibo-isInstalled</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>判断是否已安装新浪微博客户端</description>
+</snippet>

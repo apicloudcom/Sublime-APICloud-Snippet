@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var tuberBar = api.require('tuberBar');
+tuberBar.show();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tuberBar-show</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示隐藏的tuberBar</description>
+</snippet>

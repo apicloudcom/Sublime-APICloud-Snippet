@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[var MNRotationMenu = api.require('MNRotationMenu');
+MNRotationMenu.setIndex({
+    index: ${1:2}
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNRotationMenu-setIndex</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>滚动到指定条目</description>
+</snippet>

@@ -1,0 +1,42 @@
+
+<snippet>
+    <content><![CDATA[var UICustomPicker = api.require('UICustomPicker');
+UICustomPicker.open({
+    rect: {
+        x: ${1:30},
+        y: ${2:api.frameHeight / 2 - 170},
+        w: ${3:api.frameWidth - 60},
+        h: ${4:340}
+    },
+    styles: {
+        bg: '${5:rgba(0,0,0,0)}',
+        normalColor: '#${6:959595}',
+        selectedColor: '#${7:3685dd}',
+        selectedSize: ${8:36},
+        tagColor: '#${9:3685dd}',
+        tagSize: ${10:10}
+    },
+    data: [{
+        tag: '${11:时}',
+        scope: '${12:0}-${13:23}'
+    }, {
+        tag: '${14:分}',
+        scope: ['${15:a}','${16:b}','${17:c}','${18:d}']
+    }],
+    rows: ${19:3},
+    fixedOn: ${20:api.frameName},
+    fixed: ${21:true}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UICustomPicker-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开自定义选择器</description>
+</snippet>

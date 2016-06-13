@@ -1,14 +1,15 @@
+
 <snippet>
-    <content><![CDATA[
-fs.open({
-    path: '${1:file_path}',
-    flags: '${2:flags_type}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({msg:'open操作成功'});
-	    var fd = ret.fd;
-    }else {
-        api.alert({msg:err.msg});
+    <content><![CDATA[var fs = api.require('fs');
+fs.read({
+    fd: '${1:open} ${2:方法得到的文件句柄}',
+    offset: ${3:0},
+    length: ${4:0}
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

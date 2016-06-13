@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[var MNRotationMenu = api.require('MNRotationMenu');
+MNRotationMenu.close();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>MNRotationMenu-close</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>关闭模块（从内存清除）</description>
+</snippet>

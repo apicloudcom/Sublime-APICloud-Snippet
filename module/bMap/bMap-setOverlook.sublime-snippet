@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.setOverlook({
-    degree: ${1:-30}//-45~0
+    <content><![CDATA[var map = api.require('bMap');
+map.setOverlook({
+    degree: -${1:30}
 });
 ]]></content>
-    <tabTrigger>bmap-setOverlook</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setOverlook</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置百度地图俯视角度，此接口自带动画效果</description>
 </snippet>

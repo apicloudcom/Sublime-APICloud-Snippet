@@ -1,0 +1,27 @@
+
+<snippet>
+    <content><![CDATA[var activity = api.require('UILoading');
+activity.keyFrame({
+    rect: {
+        w: ${1:80},                              
+        h: ${2:100}      
+    },
+    styles: {
+        bg: '${3:rgba(0,0,0,0.5)}', 
+        corner: ${4:5}, 
+        interval: ${5:50},
+        frame:{ 
+            w: ${6:80}, 
+            h: ${7:80}
+        }
+    }
+}, function(ret){   
+    alert(JSON.stringify(ret));
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UILoading-keyFrame</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开关键帧样式的加载提示框。该样式的加载提示框以播放一组关键帧图片的形式来呈现加载过程，该图片数组可通过 content 参数配置。</description>
+</snippet>

@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var citySelector = api.require('citySelector');
+citySelector.open({
+    y: ${1:api.frameHeight / 1.6},
+    fixedOn: ${2:api.frameName}
+}, function(ret, err){        
+    if( ret ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>citySelector-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开城市选择器</description>
+</snippet>

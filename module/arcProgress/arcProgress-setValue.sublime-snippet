@@ -1,8 +1,9 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var arcProgress = api.require('arcProgress');
 arcProgress.setValue({
-    id:${1:1},
-    value:${2:0}
+    id: ${1:1},
+    value: ${2:50}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

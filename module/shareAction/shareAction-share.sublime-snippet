@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[var sharedModule = api.require('shareAction');
+sharedModule.share({
+    text: '${1:纯文本信息}',
+    type: '${2:text}'
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>shareAction-share</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>打开分享对话框</description>
+</snippet>

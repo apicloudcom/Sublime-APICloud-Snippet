@@ -1,6 +1,7 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.getCoordsFromName({
+    <content><![CDATA[var map = api.require('bMap');
+map.getCoordsFromName({
     city: '${1:北京}',
     address: '${2:天安门}'
 },function(ret,err){
@@ -9,7 +10,9 @@ bmap.getCoordsFromName({
     }
 });
 ]]></content>
-    <tabTrigger>bmap-getCoordsFromName</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-getCoordsFromName</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>根据地址查找经纬度，无需调用open接口即可使用</description>
+    <description>根据地址查找经纬度，无需调用 open 接口即可使用</description>
 </snippet>

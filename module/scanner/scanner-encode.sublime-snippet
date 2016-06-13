@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[var scanner = api.require('scanner');
+scanner.encode({
+    string: '${1:123456789}',
+    save: {
+        imgPath: '${2:fs://}',
+        imgName: '${3:album.png}'
+    }
+}, function(ret, err){        
+    if( ret.status ){
+        alert( JSON.stringify( ret ) );
+    }else{
+        alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scanner-encode</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>将字符串生成条码/二维码</description>
+</snippet>

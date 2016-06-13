@@ -1,16 +1,23 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var timeSelector = api.require('timeSelector');
 timeSelector.open({
-    x: ${1:0},
-    y: ${2:64},
-    width: ${3:320},
-    height: ${4:250}
-}, function(ret, err) {
-    var hour = ret.hour;
-    var minit = ret.minit;
+    x: ${1:30},
+    y: ${2:api.frameHeight / 2 - 130},
+    width: ${3:api.frameWidth - 60},
+    height: ${4:260},
+    fixedOn: ${5:api.frameName}
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>timeSelector-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开时间选择器</description>
 </snippet>

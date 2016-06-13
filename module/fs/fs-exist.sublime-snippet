@@ -1,16 +1,17 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var fs = api.require('fs');
 fs.exist({
-    path: '${1:file_path}'
+    path: '${1:fs://file.txt}'
 },function(ret,err){
-    if (ret.exist) {
-        if(ret.directory){
-            api.alert({msg:'该路径指向一个文件夹'});
-        }else{
-            api.alert({msg:'该路径指向一个文件'});
+    if( ret.exist ){
+        if( ret.directory ){
+            alert( '文件夹' );
+        }else {
+            alert( '文件' );
         }
     }else {
-        api.alert({msg:'该路径不存在任何文件'});
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

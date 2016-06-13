@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[var push = api.require('push');
+push.unbind({
+    userName: '${1:testName}',
+    userId: '${2:testId}'
+}, function(ret, err){
+     if( ret ){
+        alert( JSON.stringify( ret) );
+     }else{
+        alert( JSON.stringify( err) );
+     }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>push-unbind</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>解除已绑定用户的绑定状态，解除绑定后，无法再指定该用户推送消息。</description>
+</snippet>

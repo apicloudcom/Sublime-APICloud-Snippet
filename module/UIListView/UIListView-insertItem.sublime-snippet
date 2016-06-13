@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[var UIListView = api.require('UIListView');
+UIListView.insertItem({
+    index: ${1:2},
+    data: {
+        imgPath: '${2:http://d.hiphotos.baidu.com/image/pic/item/4d086e061d950a7b29a788c209d162d9f2d3c922.jpg}',
+        title: '${3:12}:${4:00}',
+        subTitle: '${5:APICloud粉丝互动会}',
+        remark: '${6:完成}'
+    }
+}, function(ret, err){
+    if( ret ){
+         alert( JSON.stringify( ret ) );
+    }else{
+         alert( JSON.stringify( err ) );
+    }
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UIListView-insertItem</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>根据索引向某一条列表插入数据</description>
+</snippet>

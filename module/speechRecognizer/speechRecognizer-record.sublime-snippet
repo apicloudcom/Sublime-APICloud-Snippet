@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[{
+var speechRecognizer = api.require('speechRecognizer');
+speechRecognizer.record({
+  vadbos:${1:5000},
+  vadeos:${2:5000},
+  rate:${3:16000},
+  asrptt:${4:1},
+  audioPath:'${5:fs://speechRecogniser/speech.mp3}'
+},function(ret,err){
+    if(ret.status){
+        api.alert({msg:${6:ret.wordStr});}
+    } else {
+        api.alert({msg:${7:err.msg});}
+    }
+});
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>speechRecognizer-record</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>识别语音返回文字</description>
+</snippet>

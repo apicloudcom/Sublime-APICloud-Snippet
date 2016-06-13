@@ -1,17 +1,12 @@
-<snippet>
-    <content><![CDATA[
-var appBundle = '';
-if (api.systemType == 'ios'){
-    appBundle = '${1:ios_scheme}';
-} else {
-    appBundle = '${2:android_scheme}';
-}
-api.appInstalled({
-    appBundle: appBundle
-},function(ret,err){
-    if (ret.installed) {
-    } else {
 
+<snippet>
+    <content><![CDATA[api.appInstalled({
+    appBundle: ${1:appBundle}
+},function(ret, err){
+    if(ret.installed){
+        //应用已安装
+    }else{
+        //应用未安装
     }
 });
 ]]></content>

@@ -1,10 +1,14 @@
+
 <snippet>
-    <content><![CDATA[
-api.fsDir
+    <content><![CDATA[var fsDir = api.fsDir; 
+/* 
+比如： 
+/var/mobile/Containers/Data/Application/4E376FDE-D595-4E08-B0A4-A06561B31000/Documents/uzfs/A123456789
+*/
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-fsDir</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
-    <description>fs://协议对应地真实目录</description>
+    <description>fs: //协议对应地真实目录，字符串类型</description>
 </snippet>

@@ -1,10 +1,13 @@
+
 <snippet>
-    <content><![CDATA[
-bmap.setRotation({
-    degree: ${1:30}//-180~180
+    <content><![CDATA[var map = api.require('bMap');
+map.setRotation({
+    degree: ${1:30}
 });
 ]]></content>
-    <tabTrigger>bmap-setRotation</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bMap-setRotation</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>设置百度地图旋转角度，此接口自带动画效果</description>
 </snippet>

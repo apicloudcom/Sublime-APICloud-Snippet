@@ -1,25 +1,111 @@
+
 <snippet>
-    <content><![CDATA[
+    <content><![CDATA[var personalCenter = api.require('personalCenter');
+
+var btnArray = [
+    {
+        'bgImg': '${1:widget://res/personalCenter/personal_btn_nor.png}',
+        'selectedImg': '${2:widget://res/personalCenter/personal_btn_sele.png}',
+        'lightImg': '${3:widget://res/personalCenter/personal_btn_light.png}',
+        'title': '${4:好友}',
+        'count': '${5:5}'
+    },
+    {
+        'bgImg': '${6:widget://res/personalCenter/personal_btn_nor.png}',
+        'selectedImg': '${7:widget://res/personalCenter/personal_btn_sele.png}',
+        'lightImg': '${8:widget://res/personalCenter/personal_btn_light.png}',
+        'title': '${9:回贴}',
+        'count': '${10:240}'
+    },
+    {
+        'bgImg': '${11:widget://res/personalCenter/personal_btn_nor.png}',
+        'selectedImg': '${12:widget://res/personalCenter/personal_btn_sele.png}',
+        'lightImg': '${13:widget://res/personalCenter/personal_btn_light.png}',
+        'title': '${14:主题}',
+        'count': '${15:27}'
+    }
+];
+
+var count = 382;
+
+var y = 44;
+
+
 personalCenter.open({
-    imgPath: '${1:imgPath}',
-    placeholderImg: '${2:placeholderImg}',
-    btnArray: [{
-        bgImg: '${3:bgImg}',
-        selectedImg: '${4:selectedImg}'
-    }, {
-        bgImg: '${5:bgImg}',
-        selectedImg: '${6:selectedImg}'
-    }, {
-        bgImg: '${7:bgImg}',
-        selectedImg: '${8:selectedImg}'
-    }]
-}, function(ret, err) {
-    api.alert({
-        msg: ret.click
+    'y': ${16:y},
+    'imgPath': '${17:widget://res/personalCenter/d7d1d308fe165b984c09728e7118e9f1.jpg}',
+    'placeholderImg': '${18:widget://res/common/placeHolder.png}',
+    'userName': '${19:APICloud}',
+    'count': ${20:count},
+    'modButton': {
+        'bgImg': '${21:widget://res/personalCenter/mod_normal.png}',
+        'lightImg': '${22:widget://res/personalCenter/mod_click.png}'
+    },
+    fixedOn: ${23:api.frameName},
+    'btnArray': ${24:btnArray}
+},function(ret,err){
+    /* 头像修改按钮. */
+    if(btnArray.length === ret.click){
+        api.confirm({
+            title: '${25:聊天盒子}',
+            msg: '${26:您想要从哪里选取图片} ?',
+            buttons:['${27:优雅自拍}', '${28:相册收藏}', '${29:取消}']
+        },function(ret,err){
+            var sourceType = 'album';
+
+            if(3 == ret.buttonIndex){ // 取消
+                return;
+            }
+
+            if(1 == ret.buttonIndex){ // 打开相机
+                sourceType = 'camera';
+            }
+
+            api.getPicture({
+                sourceType: ${30:sourceType},
+                encodingType: '${31:png}',
+                mediaValue: '${32:pic}'
+            }, function(ret, err){
+                if (ret) {
+                    personalCenter.updateValue({
+                        imgPath: ${33:ret.data},
+                        count:${34:count}
+                    });
+
+                }
+            });
+
+        });
+
+        return;
+    }
+
+    var msg;
+
+    /* 修改按钮. */
+    if(btnArray.length + 1 == ret.click){
+        msg = '您没有修改权限!';
+    }
+
+    if(btnArray.length + 2 == ret.click){
+        msg = '您没有设置权限!'
+    }
+
+    if(btnArray.length == ret.click){
+        btn = btnArray[ret.click];
+        msg = btn.title + ' 数量为 ' + btn.count
+    }
+
+    api.toast({
+        msg: ${35:msg},
+        duration: ${36:1000},
+        location: '${37:top}'
     });
 });
 ]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>personalCenter-open</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
     <description>打开个人中心</description>
 </snippet>

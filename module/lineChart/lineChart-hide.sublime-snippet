@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var lineChart = api.require('lineChart');
+    <content><![CDATA[
 lineChart.hide({
     id: ${1:1}
 });

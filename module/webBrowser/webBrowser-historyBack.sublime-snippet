@@ -1,13 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var browser = api.require('webBrowser');
-browser.historyBack(
-    function(ret,err){
-        if(!ret.status){
-            api.closeWin();
-        }
+    <content><![CDATA[
+browser.historyBack(function(ret,err){
+    if(!ret.status){
+        api.closeWin();
     }
-);
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>webBrowser-historyBack</tabTrigger>

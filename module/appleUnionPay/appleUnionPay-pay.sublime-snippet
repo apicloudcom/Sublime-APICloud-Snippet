@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var appleUnionPay = api.require('appleUnionPay');
+    <content><![CDATA[
 appleUnionPay.pay({
     tn: "${1:201602231715123483638}",
     mode: "${2:01}",

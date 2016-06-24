@@ -1,9 +1,9 @@
 
 <snippet>
-    <content><![CDATA[var db = api.require('db');
+    <content><![CDATA[
 db.selectSql({
     name: '${1:test}',
-    sql: '${2:SELECT} * ${3:FROM} ${4:Persons}'
+    sql: '${2:SELECT * FROM Persons}'
 }, function(ret, err){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

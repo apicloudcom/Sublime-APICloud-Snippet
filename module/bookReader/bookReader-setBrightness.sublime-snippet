@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bookReader= api.require('bookReader');
+    <content><![CDATA[
 bookReader.setBrightness({
     brightness: ${1:80}
 }, function(ret, err){        

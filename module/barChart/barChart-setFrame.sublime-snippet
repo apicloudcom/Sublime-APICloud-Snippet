@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var barChart = api.require('barChart');
+    <content><![CDATA[
 barChart.setFrame({x:${1:10},${2:w:300});}
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

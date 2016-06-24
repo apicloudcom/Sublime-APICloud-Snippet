@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIListView = api.require('UIListView');
+    <content><![CDATA[
 UIListView.setAttr({
     y: ${1:40},
     h: ${2:200}

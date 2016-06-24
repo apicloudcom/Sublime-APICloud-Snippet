@@ -1,14 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var sinaWeiBo = api.require('sinaWeiBo');
+    <content><![CDATA[
 sinaWeiBo.auth(function(ret,err){
-    if (ret.status) {
-        api.alert({
-            title: '${1:微博授权}',
-            msg: '${2:授权成功}'
-        });
+    if(ret.status){
+        alert(JSON.stringify(ret));
     }else{
-        api.alert({msg:'${3:授权失败}'+${4:err.msg});}
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

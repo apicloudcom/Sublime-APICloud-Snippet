@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var searchBar = api.require('searchBar');
+    <content><![CDATA[
 searchBar.setText({
      text: '${1:可以用来设置语音识别后的文本}'
  });

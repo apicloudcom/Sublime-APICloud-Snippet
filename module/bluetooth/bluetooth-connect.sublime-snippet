@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bluetooth = api.require('bluetooth');
+    <content><![CDATA[
 bluetooth.connect(function( ret, err ){
     if( ret ){
         alert( JSON.stringify( ret ) );

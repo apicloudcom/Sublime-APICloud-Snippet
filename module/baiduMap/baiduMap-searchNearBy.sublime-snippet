@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.searchNearBy({
     key:'${1:KTV}',
     lon:${2:116}${3:.384767},

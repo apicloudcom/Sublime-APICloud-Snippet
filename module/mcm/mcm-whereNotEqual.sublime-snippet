@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var query = api.require('query');
+    <content><![CDATA[
 query.whereNotEqual({
     qid: ${1:queryId},
     column: '${2:id}',

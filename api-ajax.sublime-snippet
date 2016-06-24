@@ -13,9 +13,9 @@
     }
 },function(ret, err){
     if (ret) {
-         api.alert({msg:${5:JSON}${6:.stringify(ret)});}
+        alert( JSON.stringify( ret ) );
     } else {
-         api.alert({msg:${7:JSON}${8:.stringify(err)});}
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

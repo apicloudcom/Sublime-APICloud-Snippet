@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var socketManager = api.require('socketManager');
+    <content><![CDATA[
 socketManager.closeSocket({
     sid: '${1:1}'
 }, function(ret, err){        

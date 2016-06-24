@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.popupBubble({
+    <content><![CDATA[
+bMap.popupBubble({
     id: ${1:2}
 });
 ]]></content>

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var screenHeight = api.screenHeight;  // 比如： 960
+    <content><![CDATA[api.screenHeight
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-screenHeight</tabTrigger>

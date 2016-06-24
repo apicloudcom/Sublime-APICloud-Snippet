@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIScrollPromptView = api.require('UIScrollPromptView');
+    <content><![CDATA[
 UIScrollPromptView.reloadData({
     data: {
         paths: ['${1:widget://res/img/ic/slide1.jpg}', '${2:widget://res/img/ic/slide2.jpg}', '${3:widget://res/img/ic/slide5.jpg}'],

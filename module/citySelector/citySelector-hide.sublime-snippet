@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[    var citySelector = api.require('citySelector');
+    <content><![CDATA[
     citySelector.hide();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

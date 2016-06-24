@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fileBrowser = api.require('fileBrowser');
+    <content><![CDATA[
 fileBrowser.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var browser = api.require('webBrowser');
+    <content><![CDATA[
 browser.loadScript({
-    script: '${1:location}${2:.reload();}'
+    script: '${1:location.reload();}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

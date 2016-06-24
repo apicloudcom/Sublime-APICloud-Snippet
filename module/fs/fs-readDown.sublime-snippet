@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.readDown(function( ret, err ){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

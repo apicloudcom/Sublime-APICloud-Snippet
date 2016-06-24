@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[    var coverFlow = api.require('coverFlow');
+    <content><![CDATA[
     coverFlow.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

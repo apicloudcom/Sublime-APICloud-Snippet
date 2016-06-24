@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var timeSelector = api.require('timeSelector');
+    <content><![CDATA[
 timeSelector.set({
     hour: ${1:20},
     minute: ${2:25}

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UILinkedPicker = api.require('UILinkedPicker');
+    <content><![CDATA[
 UILinkedPicker.open({
     rect:{
         x: ${1:30},

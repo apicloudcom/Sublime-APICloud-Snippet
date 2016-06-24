@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIListView = api.require('UIListView');
+    <content><![CDATA[
 UIListView.getIndex({
     key: '${1:uid}',
     value: '${2:1001}'

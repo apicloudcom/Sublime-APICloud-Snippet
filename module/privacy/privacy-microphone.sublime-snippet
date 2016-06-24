@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var privacy = api.require('privacy');
+    <content><![CDATA[
 privacy.microphone(function( ret, err ){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

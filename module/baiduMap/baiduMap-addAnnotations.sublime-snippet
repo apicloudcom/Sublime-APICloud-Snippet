@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.addAnnotations({
     annoArray:[{${1:id:1,lon:116.297,lat:40.109,title:}'${2:第一个}',${3:subTitle:}'${4:子标题}'},
             {id:${5:2},${6:lon}:${7:116}${8:.29,lat:40.109,title:}'${9:第二个}',${10:subTitle:}'${11:子标题}'},

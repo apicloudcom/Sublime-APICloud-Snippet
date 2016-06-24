@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var query = api.require('query');
+    <content><![CDATA[
 query.createQuery(function( ret, err ){
     if( ret ){
          alert( JSON.stringify( ret ) );   

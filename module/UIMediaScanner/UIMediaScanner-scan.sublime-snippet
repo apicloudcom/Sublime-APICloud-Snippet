@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIMediaScanner = api.require('UIMediaScanner');
+    <content><![CDATA[
 UIMediaScanner.scan({
     type: '${1:all}',
     count: ${2:10},

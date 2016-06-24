@@ -1,13 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var browser = api.require('webBrowser');
-browser.historyForward(
-    function(ret,err){
-        if(!ret.status){
+    <content><![CDATA[
+browser.historyForward(function(ret,err){
+    if(!ret.status){
 
-        }
     }
-);
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>webBrowser-historyForward</tabTrigger>

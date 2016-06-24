@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var timeSelector = api.require('timeSelector');
+    <content><![CDATA[
 timeSelector.show();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

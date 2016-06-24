@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageClip = api.require('imageClip');
+    <content><![CDATA[
 imageClip.reset();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

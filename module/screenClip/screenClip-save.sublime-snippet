@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var screenClip = api.require('screenClip');
+    <content><![CDATA[
 screenClip.save(function( ret, err ){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

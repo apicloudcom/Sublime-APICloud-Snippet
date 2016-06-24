@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var winName = api.winName;  //比如： root
+    <content><![CDATA[api.winName
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-winName</tabTrigger>

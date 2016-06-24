@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var button = api.require('UIButton');
+    <content><![CDATA[
 button.setState({
     id: ${1:1},
     state: '${2:active}'

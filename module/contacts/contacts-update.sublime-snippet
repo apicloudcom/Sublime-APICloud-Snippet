@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var contacts = api.require('contacts');
+    <content><![CDATA[
 contacts.update({
     id: ${1:1},
     lastName: '${2:李}',
@@ -13,7 +13,7 @@ contacts.update({
     },{
         '工作': '${8:87654321}'
     }],
-    email: '${9:zhengcuan}@${10:api.com}',
+    email: '${9:zhengcuan@api.com}',
     company: '${11:柚子科技}',
     title: '${12:工程师}',
     address: {

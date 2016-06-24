@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var contacts = api.require('contacts');
+    <content><![CDATA[
 contacts.queryByPage({
     count: ${1:20},
     pageIndex: ${2:0}

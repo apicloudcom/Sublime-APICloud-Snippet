@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICalendar = api.require('UICalendar');
+    <content><![CDATA[
 UICalendar.open({
     rect: {
         x: ${1:30},

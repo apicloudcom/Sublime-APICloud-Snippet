@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIMediaScanner = api.require('UIMediaScanner');
+    <content><![CDATA[
 UIMediaScanner.transPath({
    path: ''
 }, function(ret, err){

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICustomPicker = api.require('UICustomPicker');
+    <content><![CDATA[
 UICustomPicker.open({
     rect: {
         x: ${1:30},

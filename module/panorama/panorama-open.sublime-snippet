@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var panorama = api.require('panorama');
+    <content><![CDATA[
 panorama.open({
     x: ${1:0},
     y: ${2:64},

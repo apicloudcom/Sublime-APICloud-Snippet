@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var trans = api.require('trans');
+    <content><![CDATA[
 trans.decodeImgToBase64({
     imgPath: '${1:widget://res/img/apicloud.png}'
 }, function(ret, err){        

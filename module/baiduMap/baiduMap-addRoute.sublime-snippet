@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.addRoute({
     id:${1:300},
     type:'${2:drive}',

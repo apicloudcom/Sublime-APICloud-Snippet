@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setCompass({
+    <content><![CDATA[
+bMap.setCompass({
     position: {
       x:${1:100},
       y:${2:100}

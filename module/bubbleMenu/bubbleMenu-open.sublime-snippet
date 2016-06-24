@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bubbleMenu = api.require('bubbleMenu');
+    <content><![CDATA[
 bubbleMenu.open({
     centerX: ${1:api.frameWidth / 2},
     centerY: ${2:api.frameHeight / 2},

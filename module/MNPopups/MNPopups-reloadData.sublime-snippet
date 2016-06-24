@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var mnPopups = api.require('MNPopups');
+    <content><![CDATA[
 mnPopups.reloadData({
     datas: [{                           
         title: '${1:添加群}',  

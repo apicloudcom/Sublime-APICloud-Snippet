@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var netAudio = api.require('netAudio');
+    <content><![CDATA[
 netAudio.stop();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

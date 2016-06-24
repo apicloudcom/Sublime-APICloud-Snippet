@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var calendar = api.require('calendar');
+    <content><![CDATA[
 calendar.show();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

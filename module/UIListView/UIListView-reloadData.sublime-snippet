@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIListView = api.require('UIListView');
+    <content><![CDATA[
 UIListView.reloadData({
      data:[{
         imgPath: '${1:http://img1.3lian.com/gif/more/11/201206/a5194ba8c27b17def4a7c5495aba5e32.jpg}',

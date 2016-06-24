@@ -1,10 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var cacheDir = api.cacheDir; 
-/* 
-比如： 
-/var/mobile/Containers/Data/Application/4E376FDE-D595-4E08-B0A4-A06561B31000/Library/Caches/APICloud/Cache/XXXXXX
-*/
+    <content><![CDATA[api.cacheDir
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-cacheDir</tabTrigger>

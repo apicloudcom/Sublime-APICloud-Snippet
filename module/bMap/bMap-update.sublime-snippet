@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.update({
+    <content><![CDATA[
+bMap.update({
     cityID: ${1:1}
 }, function(ret){
     if(ret.status){

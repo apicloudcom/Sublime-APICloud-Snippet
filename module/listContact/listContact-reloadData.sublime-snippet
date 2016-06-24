@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var listContact = api.require('listContact');
+    <content><![CDATA[
 listContact.reloadData({
     data: {
         common: [{

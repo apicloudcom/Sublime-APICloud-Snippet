@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var wx = api.require('wx');
+    <content><![CDATA[
 wx.shareText({
     apiKey: '',
     scene: '${1:timeline}',

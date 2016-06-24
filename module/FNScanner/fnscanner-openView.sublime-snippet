@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var FNScanner = api.require('FNScanner');
+    <content><![CDATA[
 FNScanner.openView({
     autorotation: ${1:true}
 }, function(ret, err){        

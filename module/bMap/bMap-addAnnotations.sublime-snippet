@@ -1,18 +1,16 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.addAnnotations({
+    <content><![CDATA[
+bMap.addAnnotations({
     annotations: [{
-        id: ${1:1}, ${2:lon}: ${3:116}${4:.297, lat: 40.109}
-    },
-    {
-        id: ${5:2}, ${6:lon}: ${7:116}${8:.29, lat: 40.109}
-    },
-    {
-        id: ${9:3}, ${10:lon}: ${11:116}${12:.298, lat: 40.11}
+        id: ${1:1}, lon: ${2:116.297, lat: ${3:40.109}
+    },{
+        id: ${1:4}, lon: ${5:116.297, lat: ${6:40.109}
+    },{
+        id: ${7:1}, lon: ${8:116.297, lat: ${9:40.109}
     }],
-    icon: '${13:widget://}',
-    draggable: ${14:true}
+    icon: '${10:widget://}',
+    draggable: ${11:true}
 }, function(ret){
     if(ret){
         alert(ret.id);

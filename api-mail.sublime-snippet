@@ -7,7 +7,7 @@
     attachments: ['${4:widget://a.txt}']
 }, function(ret, err){
     if(ret.status){
-         //已发送
+    
     }else{
 
     }

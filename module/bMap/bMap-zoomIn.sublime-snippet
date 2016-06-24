@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.zoomIn();
+    <content><![CDATA[
+bMap.zoomIn();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>bMap-zoomIn</tabTrigger>

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var qq = api.require('qq');
+    <content><![CDATA[
 qq.shareImage({
     title:'${1:test}',
     description:'${2:testd}',

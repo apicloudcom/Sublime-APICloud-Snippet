@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.open({
+    <content><![CDATA[
+bMap.open({
     rect: {
         x: ${1:0},
         y: ${2:0},
@@ -9,8 +9,8 @@ map.open({
         h: ${4:300}
     },
     center: {
-        lon: ${5:116}${6:.4021310000},
-        lat: ${7:39}${8:.9994480000}
+        lon: ${5:116.4021310000},
+        lat: ${7:39.9994480000}
     },
     zoomLevel: ${9:10},
     showUserLocation: ${10:true},

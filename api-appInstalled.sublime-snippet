@@ -4,9 +4,9 @@
     appBundle: ${1:appBundle}
 },function(ret, err){
     if(ret.installed){
-        //应用已安装
+
     }else{
-        //应用未安装
+    
     }
 });
 ]]></content>

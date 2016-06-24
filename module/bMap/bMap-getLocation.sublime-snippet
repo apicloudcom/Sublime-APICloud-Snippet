@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bMap = api.require('bMap');
+    <content><![CDATA[
 bMap.getLocation({
     accuracy: '${1:100m}',
     autoStop: ${2:true},

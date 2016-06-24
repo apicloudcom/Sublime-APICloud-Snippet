@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIScrollPromptView = api.require('UIScrollPromptView');
+    <content><![CDATA[
 UIScrollPromptView.addEventListener({
     name: '${1:scroll}'
 }, function( ret ){

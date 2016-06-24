@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var scanner = api.require('scanner');
+    <content><![CDATA[
 scanner.decode({
     sound: '${1:widget://test.wav}'
 }, function(ret, err){        

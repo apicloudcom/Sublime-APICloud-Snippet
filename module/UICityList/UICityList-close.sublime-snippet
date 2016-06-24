@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICityList = api.require('UICityList');
+    <content><![CDATA[
 UICityList.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

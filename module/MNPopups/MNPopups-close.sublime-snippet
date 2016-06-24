@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var obj = api.require('MNPopups');
-obj.close();
+    <content><![CDATA[
+MNPopups.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>MNPopups-close</tabTrigger>

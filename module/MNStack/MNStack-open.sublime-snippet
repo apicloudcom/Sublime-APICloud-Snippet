@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var MNStack = api.require('MNStack');
+    <content><![CDATA[
 MNStack.open({
     startCoords: {
         x: ${1:80}

@@ -1,13 +1,13 @@
 
 <snippet>
-    <content><![CDATA[var contact = api.require('contact');
+    <content><![CDATA[
 contact.deleteContact({
     ids:[${1:1},${2:2}]
 },function(ret,err) {
     if(ret.status) {
-        api.alert({msg:'${3:删除成功}'});
+        alert(JSON.stringify(ret));
     }else{
-        api.alert({msg:'${4:删除失败}'});
+        alert(JSON.stringify(err));
     } 
 });
 ]]></content>

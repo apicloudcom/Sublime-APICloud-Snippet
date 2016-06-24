@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var mam = api.require('mam');
+    <content><![CDATA[
 mam.checkUpdate(function( ret, err ){
     if (ret) {
         alert( JSON.stringify( ret ) );

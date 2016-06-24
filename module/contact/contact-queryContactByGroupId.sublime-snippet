@@ -1,18 +1,13 @@
 
 <snippet>
-    <content><![CDATA[var contact = api.require('contact');
+    <content><![CDATA[
 contact.findContact({
     id:${1:1}
 },function(ret,err) {
     if(ret.status) {
-        var array = ret.names;
-        var first = array[0];
-        var arrayPho = first.phones;
-        var firstnum = arrayPho[0];
-        var secondnum = arrayPho[1];
-        var thirdnum = arrayPho[2];
+        alert(JSON.stringify(ret));
     } else{
-        api.alert({msg:${2:err.msg});}
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

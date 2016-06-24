@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var wgtParam = api.wgtParam;  //比如： {"name": "API Demo"}
+    <content><![CDATA[api.wgtParam
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-wgtParam</tabTrigger>

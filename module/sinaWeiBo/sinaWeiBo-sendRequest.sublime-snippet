@@ -1,7 +1,6 @@
 
 <snippet>
-    <content><![CDATA[//当contentType为music,video或webpage时，内容地址不能为流媒体地址;
-var sinaWeiBo = api.require('sinaWeiBo');
+    <content><![CDATA[
 sinaWeiBo.sendRequest({
     contentType: '${1:video}',
     text: '${2:这里是测试的内容}',
@@ -14,38 +13,9 @@ sinaWeiBo.sendRequest({
     }
 },function(ret,err){
     if (ret.status) {
-        api.alert({
-            title: '${8:发表微博}',
-            msg: '${9:发表成功}',
-            buttons: ['${10:确定}']
-        });
+        alert(JSON.stringify(ret));
     }else{
-        api.alert({
-            title: '${11:发表失败}',
-            msg: ${12:err.msg},
-            buttons: ['${13:确定}']
-        });
-    }
-});
-//当contentType为text或image时，多媒体内容可以为空;
-var sinaWeiBo = api.require('sinaWeiBo');
-sinaWeiBo.sendRequest({
-    contentType: '${14:text}',
-    text: '${15:这是测试用的文本}',
-    imageUrl: '${16:fs://a.png}'
-},function(ret,err){
-    if (ret.status) {
-        api.alert({
-            title: '${17:发表微博}',
-            msg: '${18:发表成功}',
-            buttons: ['${19:确定}']
-        });
-    }else{
-        api.alert({
-            title: '${20:发表微博}',
-            msg: '${21:发表失败}',
-            buttons: ['${22:确定}']
-        });
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

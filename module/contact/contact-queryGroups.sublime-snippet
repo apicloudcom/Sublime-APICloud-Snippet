@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var contact = api.require('contact');
+    <content><![CDATA[
 contact.queryGroups(function(ret,err) {
     if(ret.status){
         var array =ret.groups;

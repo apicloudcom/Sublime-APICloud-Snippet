@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageClip = api.require('imageClip');
+    <content><![CDATA[
 imageClip.save(function(  ret, err ){        
     if( ret ){
         alert( JSON.stringify( ret ) );

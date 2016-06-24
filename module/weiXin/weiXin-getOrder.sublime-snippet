@@ -1,15 +1,15 @@
 
 <snippet>
-    <content><![CDATA[var weiXin = api.require('weiXin');
+    <content><![CDATA[
 weiXin.getOrder({
     token: '',
     orderInfo:''
 },function(ret,err) {
-    if (ret.status) {
-        var orderId = ret.orderId;
-    }else{
-        api.alert({msg:${1:err.msg});}
-    }
+     if (ret.status) {
+        alert(JSON.stringify(ret));
+     }else{
+        alert(JSON.stringify(err));
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

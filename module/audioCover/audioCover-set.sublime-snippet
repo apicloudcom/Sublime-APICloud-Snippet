@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var audioCover = api.require('audioCover');
+    <content><![CDATA[
 audioCover.set({
     audio: '${1:歌曲名}',
     author: '${2:作者}'

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var contacts = api.require('contacts');
+    <content><![CDATA[
 contacts.select(function( ret, err ){
     if( ret ){
         alert( JSON.stringify( ret ) );

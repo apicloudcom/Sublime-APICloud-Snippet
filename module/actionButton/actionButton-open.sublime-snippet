@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var actionButton = api.require('actionButton');
+    <content><![CDATA[
 actionButton.open({
     items: [{
         bgColor: '#${1:00CED1}',

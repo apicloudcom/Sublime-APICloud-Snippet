@@ -4,7 +4,6 @@
     name:'${1:online}'
 }, function(ret, err){        
     if( ret ){
-        var connectionType = ret.connectionType;
         alert( JSON.stringify( ret ) );
     }else{
         alert( JSON.stringify( err ) );

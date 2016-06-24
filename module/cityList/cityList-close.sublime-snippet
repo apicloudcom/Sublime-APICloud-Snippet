@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var cityList = api.require('cityList');
+    <content><![CDATA[
 cityList.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

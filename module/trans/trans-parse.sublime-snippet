@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var trans = api.require('trans');
+    <content><![CDATA[
 trans.parse({
     path: '${1:widget://res/file/test.xml}'
 }, function(ret, err){        

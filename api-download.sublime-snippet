@@ -8,7 +8,7 @@
     allowResume: ${5:true}
 },function(ret, err){
     if(ret.state == 1){
-        //下载成功
+    
     }else{
 
     }

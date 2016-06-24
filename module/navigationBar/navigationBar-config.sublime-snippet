@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var navigationBar = api.require('navigationBar');
+    <content><![CDATA[
 navigationBar.config({
     key: '${1:y}'
 }, function(ret, err){        

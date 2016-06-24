@@ -1,13 +1,13 @@
 
 <snippet>
-    <content><![CDATA[var contact = api.require('contact');
+    <content><![CDATA[
 contact.addGroup({
     name:'${1:同学}'
 },function(ret,err){
     if(ret.status){
-        api.alert({msg:'${2:分组创建完成}'+'*'+${3:ret.id});}
+        alert(JSON.stringify(ret));
     }else{
-        api.alert({msg:${4:err.msg});}
+        alert(JSON.stringify(err));
     } 
 });
 ]]></content>

@@ -1,12 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
-//设置输入框的值
-UIChatBox.value({
-    msg: '${1:设置输入框的值}'
-});
-
-//获取输入框的值
+    <content><![CDATA[
 UIChatBox.value(function(ret, err){
     if( ret ){
          alert( JSON.stringify( ret ) );

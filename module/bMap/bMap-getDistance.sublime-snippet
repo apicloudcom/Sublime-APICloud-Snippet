@@ -1,18 +1,18 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.getDistance({
+    <content><![CDATA[
+bMap.getDistance({
     start: {
-        lon: ${1:106}${2:.486654},
-        lat: ${3:29}${4:.490295}
+        lon: ${1:106.486654},
+        lat: ${3:29.490295}
     },
     end: {
-        lon: ${5:106}${6:.581515},
-        lat: ${7:29}${8:.615467}
+        lon: ${5:106.581515},
+        lat: ${7:29.615467}
     }
 },function(ret){
     if(ret.status){
-        alert(ret.distance);
+        alert(JSON.stringify(ret));
     }
 });
 ]]></content>

@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var UICalendar = api.require('UICalendar');
+    <content><![CDATA[
 UICalendar.cancelSpecialDates({
-    specialDates:['${1:2015}-${2:12}-${3:08}','${4:2015}-${5:12}-${6:07}']
+    specialDates:['${1:2015-12-08','${4:2015-12-07}']
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

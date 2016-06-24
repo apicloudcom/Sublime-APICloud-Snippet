@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setZoomLevel({
+    <content><![CDATA[
+bMap.setZoomLevel({
     level: ${1:10}
 });
 ]]></content>

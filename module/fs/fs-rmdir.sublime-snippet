@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.rmdir({
     path: '${1:fs://floder}'
 }, function(ret, err){        

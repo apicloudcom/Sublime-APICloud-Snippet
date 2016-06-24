@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[   var chatBox = api.require('chatBox');
+    <content><![CDATA[
    chatBox.setMsg({
       msg:"${1:设置的文字}"
    },function(ret,err){
       if(ret.status){
-        api.alert({msg:"${2:设置成功}"});
+          alert( JSON.stringify( ret ) );
       }
    });
 ]]></content>

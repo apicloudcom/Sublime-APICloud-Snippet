@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var button = api.require('UIButton');
-button.setRect({
+    <content><![CDATA[
+UIButton.setRect({
     id:${1:1},
     rect: {
         x: ${2:80},

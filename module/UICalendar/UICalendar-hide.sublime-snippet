@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICalendar = api.require('UICalendar');
+    <content><![CDATA[
 UICalendar.hide();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

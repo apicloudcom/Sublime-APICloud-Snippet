@@ -3,7 +3,6 @@
     <content><![CDATA[api.addEventListener({
     name:'${1:appintent}'
 },function(ret,err){
-    var appParam = ret.appParam;
     if(api.systemType == 'ios'){
         var iosUrl = ret.iosUrl;
     } else {

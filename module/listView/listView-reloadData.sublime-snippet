@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var listView = api.require('listView');
+    <content><![CDATA[
 listView.reloadData({
     data:[{${1:title:}'${2:标题}',${3:subTitle:}'${4:子标题}，${5:说明文字}'},
         {title:'${6:标题}',${7:subTitle:}'${8:子标题}'},

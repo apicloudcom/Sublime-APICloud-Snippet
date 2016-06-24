@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var MNRotationMenu = api.require('MNRotationMenu');
+    <content><![CDATA[
 MNRotationMenu.setIndex({
     index: ${1:2}
 });

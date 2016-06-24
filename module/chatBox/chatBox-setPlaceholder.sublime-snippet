@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var chatBox = api.require('chatBox');
+    <content><![CDATA[
 chatBox.setPlaceholder({
    placeholder:'${1:我是占位提示文字}'
 });

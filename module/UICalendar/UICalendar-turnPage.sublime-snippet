@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICalendar = api.require('UICalendar');
+    <content><![CDATA[
 UICalendar.turnPage({
     date: '${1:2015-08}'
 });

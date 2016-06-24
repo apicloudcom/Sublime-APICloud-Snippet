@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var ga= api.require('googleAnalytics');
-ga.onEvent({
+    <content><![CDATA[
+googleAnalytics.onEvent({
    category: '${1:按钮}',
    action: '${2:点击}',
    label: '${3:查看}',

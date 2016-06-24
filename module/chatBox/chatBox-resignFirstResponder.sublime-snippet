@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var chatBox = api.require('chatBox');
+    <content><![CDATA[
 chatBox.resignFirstResponder();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

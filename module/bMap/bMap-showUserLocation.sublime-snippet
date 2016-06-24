@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.showUserLocation({
+    <content><![CDATA[
+bMap.showUserLocation({
     isShow: ${1:true},
     trackingMode: '${2:none}'
 });

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var scanner = api.require('scanner');
+    <content><![CDATA[
 scanner.openView({
     x: ${1:40},
     y: ${2:160},

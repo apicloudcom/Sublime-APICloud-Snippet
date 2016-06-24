@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setRotation({
+    <content><![CDATA[
+bMap.setRotation({
     degree: ${1:30}
 });
 ]]></content>

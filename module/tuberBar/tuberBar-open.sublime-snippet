@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var tuberBar = api.require('tuberBar');
+    <content><![CDATA[
 tuberBar.open({
     bg: '${1:widget://res/img/bg.png}',
     selectedIndex: ${2:1},

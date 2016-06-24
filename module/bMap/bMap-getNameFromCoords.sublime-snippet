@@ -1,9 +1,9 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.getNameFromCoords({
-    lon: ${1:116}${2:.384767},
-    lat: ${3:39}${4:.989539}
+    <content><![CDATA[
+bMap.getNameFromCoords({
+    lon: ${1:116.384767},
+    lat: ${3:39.989539}
 },function(ret,err){
     if(ret.status){
         alert(JSON.stringify(ret));

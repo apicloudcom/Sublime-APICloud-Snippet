@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var barChart = api.require('barChart');
+    <content><![CDATA[
 barChart.open({
     x:${1:0},
     y:${2:64},
@@ -12,7 +12,7 @@ barChart.open({
     datas:[${16:10},${17:30},${18:40},${19:5},${20:3},${21:49},${22:55},${23:23}],
     id:${24:1}
 },function(ret,err){
-    api.alert({msg:${25:ret.index+ret.id});}
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

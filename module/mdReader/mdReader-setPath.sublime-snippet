@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var mdReader = api.require('mdReader');
+    <content><![CDATA[
 mdReader.setPath({
     path: '${1:widget://md.md}'
 });

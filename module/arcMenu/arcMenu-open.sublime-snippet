@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var arcMenu = api.require('arcMenu');
+    <content><![CDATA[
 arcMenu.open({
     type: '${1:arc}',
     mainMenu: {

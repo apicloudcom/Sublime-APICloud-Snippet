@@ -1,23 +1,9 @@
 
 <snippet>
-    <content><![CDATA[//监听 recordBtn 按钮
-var UIChatBox = api.require('UIChatBox');
+    <content><![CDATA[
 UIChatBox.addEventListener({
     target: '${1:recordBtn}',
     name: '${2:press}'
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
-    }
-});
-
-//监听 inputBar 
-var UIChatBox = api.require('UIChatBox');
-UIChatBox.addEventListener({
-    target: '${3:inputBar}',
-    name: '${4:move}'
 }, function(ret, err){
     if( ret ){
          alert( JSON.stringify( ret ) );

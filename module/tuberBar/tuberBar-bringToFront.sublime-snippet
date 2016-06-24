@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var tuberBar = api.require('tuberBar');
+    <content><![CDATA[
 tuberBar.bringToFront();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

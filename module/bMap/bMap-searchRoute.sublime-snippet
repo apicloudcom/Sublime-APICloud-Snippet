@@ -1,21 +1,21 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.searchRoute({
+    <content><![CDATA[
+bMap.searchRoute({
     id: ${1:1},
     type: '${2:drive}',
     policy: '${3:ecar_fee_first}',
     start: {
-        lon: ${4:116}${5:.403838},
-        lat: ${6:39}${7:.914437}
+        lon: ${4:116.403838},
+        lat: ${6:39.914437}
     },
     end: {
-        lon: ${8:116}${9:.384852},
-        lat: ${10:39}${11:.989576}
+        lon: ${8:116.384852},
+        lat: ${10:39.989576}
     }
 }, function(ret, err){
     if(ret.status){
-        api.alert({msg:${12:JSON}${13:.stringify(ret)});}
+        alert(JSON.stringify(ret));
     }
 });
 ]]></content>

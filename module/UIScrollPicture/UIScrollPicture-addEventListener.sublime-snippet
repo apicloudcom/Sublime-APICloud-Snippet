@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIScrollPicture = api.require('UIScrollPicture');
+    <content><![CDATA[
 UIScrollPicture.addEventListener({
     name: '${1:scroll}'
 }, function(ret, err){

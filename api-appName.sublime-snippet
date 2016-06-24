@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var appName = api.appName; //比如： AppLoader
+    <content><![CDATA[api.appName
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-appName</tabTrigger>

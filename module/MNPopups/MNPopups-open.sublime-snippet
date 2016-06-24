@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var mnPopups = api.require('MNPopups');
-mnPopups.open({
+    <content><![CDATA[
+MNPopups.open({
     rect: {
         w: ${1:100},
         h: ${2:180}

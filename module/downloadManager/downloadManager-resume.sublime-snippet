@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var downloadManager = api.require('downloadManager');
+    <content><![CDATA[
 downloadManager.resume({
     id: '${1:123}'
 }, function(ret, err){        

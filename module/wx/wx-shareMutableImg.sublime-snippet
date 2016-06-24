@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var wx = api.require('wx');
+    <content><![CDATA[
 wx.shareMutableImg({
     description: '${1:weixin share image test description}',
     imgs:['${2:widget://res/1.png}','${3:widget://res/12.jpg}','${4:widget://res/123.jpg}']

@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.getRegion(function(ret){
+    <content><![CDATA[
+bMap.getRegion(function(ret){
     if(ret.status){
         alert(JSON.stringify(ret));
     }

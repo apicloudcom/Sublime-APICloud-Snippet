@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var appVersion = api.appVersion; // 比如： 1.0.0
+    <content><![CDATA[api.appVersion
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-appVersion</tabTrigger>

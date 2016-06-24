@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var appParam = api.appParam; // 比如： appLoader
+    <content><![CDATA[api.appParam
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-appParam</tabTrigger>

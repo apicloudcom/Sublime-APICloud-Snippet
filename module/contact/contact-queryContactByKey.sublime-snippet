@@ -1,18 +1,13 @@
 
 <snippet>
-    <content><![CDATA[var contact = api.require('contact');
+    <content><![CDATA[
 contact.queryContactByKey({
     key:'${1:孙}'
 },function(ret,err) {
     if(ret.status) {   
-        var array = ret.contacts;
-        var first = array[0];
-        var arrayPho = first.phones;
-        var firstnum = arrayPho[0];
-        var secondnum = arrayPho[1];
-        var thirdnum = arrayPho[2];
+        alert(JSON.stringify(ret));
     }else{
-        api.alert({msg:'${2:获取失败}'});
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

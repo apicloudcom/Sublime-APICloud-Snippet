@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var pieChart = api.require('pieChart');
+    <content><![CDATA[
 pieChart.show({
     id: ${1:1}
 });

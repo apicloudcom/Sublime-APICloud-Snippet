@@ -1,16 +1,15 @@
 
 <snippet>
-    <content><![CDATA[var weiXin = api.require('weiXin');
+    <content><![CDATA[
 weiXin.getToken({
     key: '${1:wx652070b3a10fcd45}',
     secret:'${2:00f373c57777e46ba86d461cbcc2fbe8}'
 },function(ret,err) {
-    if (ret.status) {
-        var token = ret.token;
-        var expires = ret.expires;
-    }else{
-        api.alert({msg:${3:err.msg});}
-    }
+     if (ret.status) {
+        alert(JSON.stringify(ret));
+     }else{
+        alert(JSON.stringify(err));
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

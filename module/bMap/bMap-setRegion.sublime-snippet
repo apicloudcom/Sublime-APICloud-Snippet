@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setRegion({
-    lbLon: ${1:116}${2:.027143, }
-    lbLat: ${3:39}${4:.772348, }
-    rtLon: ${5:116}${6:.832025, }
-    rtLat: ${7:40}${8:.126349},
+    <content><![CDATA[
+bMap.setRegion({
+    lbLon: ${1:116.027143, }
+    lbLat: ${3:39.772348, }
+    rtLon: ${5:116.832025, }
+    rtLat: ${7:40.126349},
     animation: ${9:true}
 });
 ]]></content>

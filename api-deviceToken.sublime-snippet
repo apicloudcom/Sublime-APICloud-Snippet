@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var deviceToken = api.deviceToken;  //比如： a22241adab6c68b3687a9f0f086c540341f4b3f010546d4af4834ada32281615
+    <content><![CDATA[api.deviceToken
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-deviceToken</tabTrigger>

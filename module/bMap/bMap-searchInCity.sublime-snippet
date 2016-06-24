@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.searchInCity({
+    <content><![CDATA[
+bMap.searchInCity({
     city: '${1:北京}',
     keyword: '${2:学校}',
     pageIndex: ${3:0},

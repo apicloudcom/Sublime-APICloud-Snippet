@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bMap = api.require('bMap');
+    <content><![CDATA[
 bMap.stopLocation();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

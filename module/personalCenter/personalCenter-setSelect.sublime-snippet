@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var personalCenter = api.require('personalCenter');
+    <content><![CDATA[
 personalCenter.setSelect({
     index:${1:1}
 });

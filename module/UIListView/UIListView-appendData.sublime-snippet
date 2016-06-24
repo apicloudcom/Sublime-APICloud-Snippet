@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIListView = api.require('UIListView');
+    <content><![CDATA[
 UIListView.appendData({
     data: [{
         imgPath: '${1:http://d.hiphotos.baidu.com/image/pic/item/4d086e061d950a7b29a788c209d162d9f2d3c922.jpg}',

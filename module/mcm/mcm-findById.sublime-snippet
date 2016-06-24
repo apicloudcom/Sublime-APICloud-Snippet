@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var model = api.require('model');
+    <content><![CDATA[
 model.findById({
     class: '${1:user}',
     id: '${2:A00001}'

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.setOverlook({
    overlook: -${1:10}
 });

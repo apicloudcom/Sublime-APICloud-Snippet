@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var tabBar = api.require('tabBar');
+    <content><![CDATA[
 tabBar.hide();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

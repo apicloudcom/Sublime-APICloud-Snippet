@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.getLocationFromName({
     city:'${1:北京}',
     address:'${2:泰翔商务楼}'

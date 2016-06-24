@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var contacts = api.require('contacts');
+    <content><![CDATA[
 contacts.queryByKeyword({
     keyword: '${1:孙}'
 }, function(ret, err){

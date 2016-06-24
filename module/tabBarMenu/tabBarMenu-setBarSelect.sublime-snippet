@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var tabBarMenu = api.require('tabBarMenu');
+    <content><![CDATA[
 tabBarMenu.setBarSelect({
     index: ${1:3}
 });

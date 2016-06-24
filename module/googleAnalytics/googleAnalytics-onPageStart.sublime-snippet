@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var ga= api.require('googleAnalytics');
-ga.onPageStart({pageName:'${1:首页}'});
+    <content><![CDATA[
+googleAnalytics.onPageStart({pageName:'${1:首页}'});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>googleAnalytics-onPageStart</tabTrigger>

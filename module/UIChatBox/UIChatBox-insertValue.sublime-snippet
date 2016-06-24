@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+    <content><![CDATA[
 UIChatBox.insertValue({
     index: ${1:10},
     msg: '${2:这里是插入的字符串}'

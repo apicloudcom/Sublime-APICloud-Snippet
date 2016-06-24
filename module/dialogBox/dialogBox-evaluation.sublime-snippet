@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var dialogBox = api.require('dialogBox');
+    <content><![CDATA[
 dialogBox.evaluation ({
     styles: {
         bg: '#${1:fff}',
@@ -37,7 +37,7 @@ dialogBox.evaluation ({
     },
     texts:    {
         title: '${24:评价}',          
-        content:'${25:亲}，${26:给个好评吧}',         
+        content:'${25:亲，给个好评吧}',         
         buttons: [
         {            
             text: '${27:下次再说}'

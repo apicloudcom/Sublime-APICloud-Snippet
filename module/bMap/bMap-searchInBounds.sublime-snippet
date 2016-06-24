@@ -1,12 +1,12 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.searchInBounds({
+    <content><![CDATA[
+bMap.searchInBounds({
     keyword: '${1:图书馆}', 
-    lbLon: ${2:112}${3:.47723797622677, }
-    lbLat: ${4:34}${5:.556480000000015, }
-    rtLon: ${6:109}${7:.77539000000002, }
-    rtLat: ${8:33}${9:.43144 }
+    lbLon: ${2:112.47723797622677 },
+    lbLat: ${4:34.556480000000015 },
+    rtLon: ${6:10.77539000000002 },
+    rtLat: ${8:33.43144 }
 },function(ret,err){
     if(ret.status){
         alert(JSON.stringify(ret));

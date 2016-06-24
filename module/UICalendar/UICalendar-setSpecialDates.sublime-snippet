@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICalendar = api.require('UICalendar');
+    <content><![CDATA[
 UICalendar.setSpecialDates({
     specialDates:[{
        date: '${1:2015-12-07}',

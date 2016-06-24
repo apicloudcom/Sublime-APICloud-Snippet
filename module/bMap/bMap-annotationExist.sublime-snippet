@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map. annotationExist({
+    <content><![CDATA[
+bMap.annotationExist({
     id: ${1:2}
 }, function(ret){
     if(ret.status){

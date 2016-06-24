@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var videoPlayer= api.require('videoPlayer');
+    <content><![CDATA[
 videoPlayer.forward({
     seconds: ${1:5}
 });

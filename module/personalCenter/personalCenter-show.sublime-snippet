@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var personalCenter = api.require('personalCenter');
+    <content><![CDATA[
 personalCenter.show();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

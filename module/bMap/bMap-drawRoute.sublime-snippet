@@ -1,37 +1,20 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.searchRoute({
-    type: '${1:drive}',
-    policy: '${2:ecar_fee_first}',
-    start: {
-        lon: ${3:116}${4:.403838},
-        lat: ${5:39}${6:.914437}
-    },
-    end: {
-        lon: ${7:116}${8:.384852},
-        lat: ${9:39}${10:.989576}
+    <content><![CDATA[
+bMap.drawRoute({
+    id: ${11:1},
+   autoresizing:${12:false},
+    index: ${13:0},
+    styles: {
+        start: {
+            icon: '${14:widget://image/bmap_start.png}'
+        },
+        end: {
+            icon: '${15:widget://image/bmap_end.png}'
+        }
     }
-}, function(ret, err){
-    if(ret.status){
-        map.drawRoute({
-            id: ${11:1},
-           autoresizing:${12:false},
-            index: ${13:0},
-            styles: {
-                start: {
-                    icon: '${14:widget://image/bmap_start.png}'
-                },
-                end: {
-                    icon: '${15:widget://image/bmap_end.png}'
-                }
-            }
-        }, function(ret){
-           api.alert({msg:${16:JSON}${17:.stringify(ret)});}
-        });
-    } else {
-       api.alert({msg:${18:JSON}${19:.stringify(err)});}
-    }
+}, function(ret){
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

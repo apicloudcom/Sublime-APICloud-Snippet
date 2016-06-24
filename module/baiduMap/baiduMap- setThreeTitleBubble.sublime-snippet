@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.setThreeTitleBubble({
     id:${1:1},
     image:{
@@ -11,7 +11,7 @@ baiduMap.setThreeTitleBubble({
     },
     text:{
        title:'${6:龙城假日皇冠大酒店}',
-       pre:'/${7:天}',
+       pre:'${7:天}',
        subTitle:'$${8:100}',
        description:'${9:不支持团购}'
     },

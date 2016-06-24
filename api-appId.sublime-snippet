@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var appId = api.appId; //比如： A6980386445546
+    <content><![CDATA[api.appId
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-appId</tabTrigger>

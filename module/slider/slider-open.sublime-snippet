@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var slider = api.require('slider');
+    <content><![CDATA[
 slider.open({
      x: ${1:30},
      y: ${2:api.frameHeight - 60},

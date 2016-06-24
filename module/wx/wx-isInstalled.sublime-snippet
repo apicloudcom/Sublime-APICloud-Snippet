@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var wx = api.require('wx');
+    <content><![CDATA[
 wx.isInstalled(function(ret, err){
     if(ret.installed){
         alert("当前设备已安装微信客户端");

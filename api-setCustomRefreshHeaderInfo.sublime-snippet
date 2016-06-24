@@ -22,7 +22,6 @@
         ]
     }
 }, function(ret, err){
-    //在这里从服务器加载数据，加载完成后调用api.refreshHeaderLoadDone()方法恢复组件到默认状态
 
 });
 ]]></content>

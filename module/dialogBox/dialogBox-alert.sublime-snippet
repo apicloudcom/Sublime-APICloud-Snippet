@@ -1,10 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var dialogBox = api.require('dialogBox');
+    <content><![CDATA[
 dialogBox.alert ({
     texts: {
         title: '${1:确认}',          
-        content:'${2:送你一个超级礼包}，${3:内有超值福利}，${4:先到先得}，${5:点击领取} &amp;${6:gt;&gt;}',           
+        content:'${2:送你一个超级礼包，内有超值福利，先到先得，点击领取 &amp;gt;&gt;}',           
         leftBtnTitle: '${7:取消}',   
         rightBtnTitle: '${8:确认}'
     },
@@ -43,7 +43,6 @@ dialogBox.alert ({
     }
 },function(ret){
     if (ret.eventType == 'left') {
-        var dialogBox = api.require('dialogBox');
         dialogBox.close ({
             dialogName: '${32:alert}'
         });

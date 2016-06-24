@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var wx = api.require('wx');
+    <content><![CDATA[
 wx.auth({
     apiKey: ''
 }, function(ret, err){ 

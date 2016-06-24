@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setBuilding({
+    <content><![CDATA[
+bMap.setBuilding({
     building: ${1:true}
 });
 ]]></content>

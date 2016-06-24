@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.addEventListener({
+    <content><![CDATA[
+bMap.addEventListener({
     name: '${1:longPress}'
 },function(ret){
     if(ret.status){

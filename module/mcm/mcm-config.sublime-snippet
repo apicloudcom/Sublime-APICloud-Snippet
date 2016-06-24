@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var model = api.require('model');
+    <content><![CDATA[
 model.config({
-    appKey: '${1:A991A337}-${2:0212}-${3:A29D}-${4:0C9C}-${5:A518E39FXXXX}',
+    appKey: '${1:A991A337-0212-A29D-0C9C-A518E39FXXXX}',
     host: '${6:https://d.apicloud.com}'
 });
 ]]></content>

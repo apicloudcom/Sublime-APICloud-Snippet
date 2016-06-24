@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var navigationMenu = api.require('navigationMenu');
+    <content><![CDATA[
 navigationMenu.open({
     btnInfo: [{
         normal: '${1:widget://res/img/ic/small-bell.png}',

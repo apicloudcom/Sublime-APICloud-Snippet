@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var camera360 = api.require('camera360');
+    <content><![CDATA[
 camera360.open({
     path:'${1:fs://test.jpg}',
     savePath:'${2:fs://processed_test.jpg}'
 }, function(ret){
-    api.alert({msg:${3:JSON}${4:.stringify(ret)});}
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

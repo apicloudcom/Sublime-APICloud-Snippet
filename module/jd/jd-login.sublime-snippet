@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var jd = api.require('jd');
+    <content><![CDATA[
 jd.login({
     appKey:'${1:F7E188290D59BD58FDA262E03A355542}',
     appSecret:'${2:a13d7611c4f4498ea79d95e861a5a554}',

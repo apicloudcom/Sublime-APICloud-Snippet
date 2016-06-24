@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var screenWidth = api.screenWidth;  // 比如： 640
+    <content><![CDATA[api.screenWidth
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-screenWidth</tabTrigger>

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var model = api.require('model');
+    <content><![CDATA[
 model.downloadFile({
     report: ${1:true},
     id: '${2:asfdasfasfasfasf}',

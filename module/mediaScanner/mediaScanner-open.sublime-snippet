@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var mediaScanner = api.require('mediaScanner');
+    <content><![CDATA[
 mediaScanner.open(function( ret, err ){
     if( ret ){
          alert( JSON.stringify( ret ) );

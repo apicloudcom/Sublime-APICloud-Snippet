@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bluetooth = api.require('bluetooth');
+    <content><![CDATA[
 bluetooth.send({
     type: ${1:0},
     data: '${2:bluetooth send string test}'

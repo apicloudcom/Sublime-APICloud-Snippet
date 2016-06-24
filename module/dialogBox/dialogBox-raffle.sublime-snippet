@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var dialogBox = api.require('dialogBox');
+    <content><![CDATA[
 dialogBox.raffle ({
     texts: {
         title: '${1:恭喜你}',          
         mainText: '${2:5枚钱币}',    
-        subText: '${3:这就中了}，${4:还有什么你做不到}',    
+        subText: '${3:这就中了，还有什么你做不到}',    
         leftTitle: '${5:收入囊中}',   
         rightTitle: '${6:告诉好友}'   
     },

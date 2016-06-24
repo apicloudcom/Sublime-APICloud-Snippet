@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var docReader = api.require('docReader');
+    <content><![CDATA[
 docReader.open({
     path: '${1:widget://res/test.docx}'
 }, function(ret, err){        

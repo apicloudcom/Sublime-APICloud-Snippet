@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIGraph = api.require('UIGraph');
+    <content><![CDATA[
 UIGraph.hide({
     id: ${1:1}
 });

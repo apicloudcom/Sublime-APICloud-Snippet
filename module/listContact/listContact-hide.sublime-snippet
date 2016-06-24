@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var listContact = api.require('listContact');
+    <content><![CDATA[
 listContact.hide();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

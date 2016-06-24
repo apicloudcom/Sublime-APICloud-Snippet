@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var zip = api.require('zip');
+    <content><![CDATA[
 zip.unarchive({
     file: '${1:fs://fitest.zip}',
     password: '${2:123}'

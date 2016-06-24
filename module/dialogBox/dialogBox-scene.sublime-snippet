@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var dialogBox = api.require('dialogBox');
+    <content><![CDATA[
 dialogBox.scene ({
     rect: {                            
         w: ${1:280},                            
@@ -8,7 +8,7 @@ dialogBox.scene ({
     },
     texts: {
         title: '${3:情景1}',          
-        content:'${4:火车售票处前的队伍蜿蜒纵横}，${5:旁边一小伙一边张望}，${6:一边将手伸向前面买票人的口袋}，${7:啊}，${8:是小偷}!',         
+        content:'${4:火车售票处前的队伍蜿蜒纵横，旁边一小伙一边张望，一边将手伸向前面买票人的口袋，啊，是小偷!}',         
         okBtnTitle: '${9:确定}'
     },
     styles: {
@@ -50,14 +50,14 @@ dialogBox.scene ({
     optionDatas: [
         {           
             icon: '${30:widget://image/scene1.png}',                
-            text: '${31:1}、${32:拿出手机偷拍}'            
+            text: '${31:1、拿出手机偷拍}'            
         },
         {       
             icon: '${33:widget://image/scene2.png}',
-            text: '${34:2}、${35:见义勇为抓小偷}'            
+            text: '${34:2、见义勇为抓小偷}'            
         },
         {       
-            text: '${36:3}、${37:大声提醒买票的人}'            
+            text: '${36:3、大声提醒买票的人}'            
         }
     ]
 }, function(ret, err){

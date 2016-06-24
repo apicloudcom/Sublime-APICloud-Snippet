@@ -1,22 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var touchID = api.require('touchID');
-touchID.verify(
-function(ret,err){
+    <content><![CDATA[
+touchID.verify(function(ret,err){
     if(ret.status){
-        api.alert({msg:"${1:验证通过}"});
+        alert(JSON.stringify(ret));
     }else{
-        if(ret.index==0){
-            api.alert({msg:"${2:用户选择手动输入}"});
-        }else if(ret.index==1){
-            api.alert({msg:"${3:用户取消验证}"});
-        }else if(ret.index==2){
-            api.alert({msg:"${4:验证三次失败}"});
-        }else if(ret.index==3){
-            api.alert({msg:"${5:多长验证失败请锁定手机}"});
-        } else {
-            api.alert({msg:"${6:验证失败}，${7:未知错误}"});
-        }
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var mediaScanner = api.require('mediaScanner');
+    <content><![CDATA[
 mediaScanner.scan( function(ret, err){
-    api.alert({msg:${1:ret.list});}
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

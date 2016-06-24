@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIListView = api.require('UIListView');
+    <content><![CDATA[
 UIListView.updateItem({
     index: ${1:2},
     data: {

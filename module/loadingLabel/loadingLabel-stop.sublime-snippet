@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var loadingLabel = api.require('loadingLabel');
+    <content><![CDATA[
 loadingLabel.stop({
     id: ${1:1}
 });

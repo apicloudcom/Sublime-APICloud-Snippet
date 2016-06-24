@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var circularMenu = api.require('circularMenu');
+    <content><![CDATA[
 circularMenu.open({
     items: [{
             normal: '${1:widget://res/circularMenu/1.png}',

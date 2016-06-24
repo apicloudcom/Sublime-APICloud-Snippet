@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[//如监听网络连接事件
+    <content><![CDATA[
 api.addEventListener({
     name: '${1:online}'
 }, function(ret, err){

@@ -1,7 +1,6 @@
 
 <snippet>
     <content><![CDATA[{
-    var speechRecognizer = api.require('speechRecognizer');
     speechRecognizer.pauseRead();
 }
 ]]></content>

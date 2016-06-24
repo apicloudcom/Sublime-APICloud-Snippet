@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var tuberBar = api.require('tuberBar');
+    <content><![CDATA[
 tuberBar.setSelected({
     index: ${1:1}
 });

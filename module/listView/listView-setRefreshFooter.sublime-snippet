@@ -1,19 +1,13 @@
 
 <snippet>
-    <content><![CDATA[var loadingImgae = 'widget://${1:res/listView_arrow.png}';       //${2:刷新的小箭头}，${3:不可为空}
-var bgColor = '#F5F5F5';                                    //下拉刷新的背景颜色 ，有默认值，可为空
-var textColor= '#8E8E8E';                                   //提示语颜色，有默认值，可为空
-var textDown= '下拉可加载更多...';                             //尚未触发刷新时间的提示语，有默认值，可为空
-var textUp= '松开开始加载...';                                 //触发刷新事件的提示语，有默认值，可为空
-var showTime= true;                                         //是否显示时间，有默认值，可为空        
-var listView = api.require('listView');
+    <content><![CDATA[
 listView.setRefreshFooter({
-    loadingImg:${4:loadingImgae},
-    bgColor:${5:bgColor},
-    textColor:${6:textColor},
-    textDown:${7:textDown},
-    textUp:${8:textUp},
-    showTime:${9:showTime}
+    loadingImg:'${1:widget://res/listView_arrow.png}',
+    bgColor:'${5:#F5F5F5}',
+    textColor:'${6:#8E8E8E}',
+    textDown: '${7:下拉可加载更多...}',
+    textUp: '${8:松开开始加载...}',
+    showTime:${9:true}
 }, function(ret, err){        
     if( ret ){
         alert( JSON.stringify( ret ) );

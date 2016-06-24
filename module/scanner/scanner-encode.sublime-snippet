@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var scanner = api.require('scanner');
+    <content><![CDATA[
 scanner.encode({
     string: '${1:123456789}',
     save: {

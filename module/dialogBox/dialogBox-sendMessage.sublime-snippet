@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var dialogBox = api.require('dialogBox');
+    <content><![CDATA[
 dialogBox.sendMessage ({
     texts:{
         title: '${1:你的昵称}',
         hintText: '（${2:点击此处修改昵称}）',          
-        content:'${3:亲}，${4:送你一个80元大礼包}，${5:请查收}！${6:退订请回复TD}',           
+        content:'${3:亲，送你一个80元大礼包，请查收！退订请回复TD}',           
         leftBtnTitle: '${7:取消}',   
         rightBtnTitle: '${8:发送}'
     },
@@ -49,9 +49,8 @@ dialogBox.sendMessage ({
         }
     }
 },function(ret){
-    api.alert({msg:${34:JSON}${35:.stringify(ret)});}
+    alert(JSON.stringify(ret));
     if (ret.eventType == 'left') {
-        var dialogBox = api.require('dialogBox');
         dialogBox.close ({
             dialogName: '${36:sendMessage}'
         });

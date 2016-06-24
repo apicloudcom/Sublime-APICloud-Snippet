@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var trans = api.require('trans');
+    <content><![CDATA[
 trans.saveImage({
     base64Str: '${1:test}'
 }, function(ret, err){        

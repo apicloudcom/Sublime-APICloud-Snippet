@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var FNImageClip = api.require('FNImageClip');
+    <content><![CDATA[
 FNImageClip.save({
     destPath: '${1:fs://imageClip/result.png}',
     copyToAlbum: ${2:false},

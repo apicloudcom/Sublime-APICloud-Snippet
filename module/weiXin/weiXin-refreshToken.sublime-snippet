@@ -1,12 +1,12 @@
 
 <snippet>
-    <content><![CDATA[var weiXin = api.require('weiXin');
+    <content><![CDATA[
 weiXin.refreshToken(function(ret,err){ 
-if(ret.status){
-    api.alert({msg: '${1:刷新成功}'});
- }else{
-    api.alert({msg: ${2:err.msg});}
- }
+	if(ret.status){
+		alert(JSON.stringify(ret));
+	}else{
+		alert(JSON.stringify(err));
+	}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

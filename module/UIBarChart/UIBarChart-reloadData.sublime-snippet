@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIBarChart = api.require('UIBarChart');
+    <content><![CDATA[
 UIBarChart.reloadData({
     id: ${1:1},
     type: '${2:prepend}',

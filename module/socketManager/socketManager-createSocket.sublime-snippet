@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var socketManager = api.require('socketManager');
+    <content><![CDATA[
 socketManager.createSocket({
     host: '${1:192}${2:.168.1.100}',
     port: ${3:8282}

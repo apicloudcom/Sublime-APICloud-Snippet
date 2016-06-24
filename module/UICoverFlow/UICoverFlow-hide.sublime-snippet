@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICoverFlow = api.require('UICoverFlow');
+    <content><![CDATA[
 UICoverFlow.hide();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

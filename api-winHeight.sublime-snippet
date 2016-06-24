@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var winHeight = api.winHeight;  // 比如： 568
+    <content><![CDATA[api.winHeight
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-winHeight</tabTrigger>

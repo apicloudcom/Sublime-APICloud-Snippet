@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var downloadManager = api.require('downloadManager');
+    <content><![CDATA[
 downloadManager.openManagerView({
     title: '${1:下载管理}'
 }, function(ret, err){        

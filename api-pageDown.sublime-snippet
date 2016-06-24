@@ -1,9 +1,7 @@
 
 <snippet>
     <content><![CDATA[api.pageDown(function( ret, err ){
-    if(!ret.scrolled){
-        //已经滚动到底部
-    }
+    	
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

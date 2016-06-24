@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bookReader = api.require('bookReader');
+    <content><![CDATA[
 bookReader.setValue({
     bg: '#${1:f00}'
 }, function(ret, err){        

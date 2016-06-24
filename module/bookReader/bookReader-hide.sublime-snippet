@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bookReader= api.require('bookReader');
+    <content><![CDATA[
 bookReader.hide(function( ret, err ){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

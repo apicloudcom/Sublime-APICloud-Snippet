@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var browser = api.require('webBrowser');
+    <content><![CDATA[
 browser.closeView();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

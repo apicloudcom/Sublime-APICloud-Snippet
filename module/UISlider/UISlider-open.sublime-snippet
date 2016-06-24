@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var uislider = api.require('UISlider');
-uislider.open({
+    <content><![CDATA[
+UISlider.open({
     animation: ${1:true},
     orientation: '${2:horizontal}',
     rect: {

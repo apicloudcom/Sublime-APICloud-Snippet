@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+    <content><![CDATA[
 UIChatBox.popupBoard({
     target: '${1:extras}'
 });

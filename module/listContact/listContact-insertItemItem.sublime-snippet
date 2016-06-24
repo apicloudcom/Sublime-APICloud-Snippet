@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var listContact = api.require('listContact');
+    <content><![CDATA[
 listContact.insertItem({
     index:${1:2},
     data:{
         img: '${2:widget://res/img/ic/listContact.jpg}',
-        title: '${3:12}:${4:00}',
+        title: '${3:12:00}',
         subTitle: '${5:APICloud粉丝互动会}',
         remark: '${6:完成}'
     }

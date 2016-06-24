@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var cityList = api.require('cityList');
+    <content><![CDATA[
 cityList.open({
     currentCity:'${1:北京}',
     resource:'${2:widget://res/cityList.json}'

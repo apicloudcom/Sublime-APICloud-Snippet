@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var chatBox = api.require('chatBox');
+    <content><![CDATA[
 chatBox.setInputFieldListener(function(ret,err){
-   api.alert({msg:${1:ret.eventType+}'*'+${2:ret.h});}
+     alert( JSON.stringify( ret ) );
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

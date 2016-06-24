@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setMapAttr({
+    <content><![CDATA[
+bMap.setMapAttr({
     type: '${1:standard}'
 });
 ]]></content>

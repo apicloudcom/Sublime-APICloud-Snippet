@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var mnPopups = api.require('MNPopups');
+    <content><![CDATA[
 mnPopups.deleteItem({
     index:${1:1}
 });

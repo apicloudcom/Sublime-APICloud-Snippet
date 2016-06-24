@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var MNNavigationMenu = api.require('MNNavigationMenu');
+    <content><![CDATA[
 MNNavigationMenu.open({
     rect: {
         x: ${1:0},

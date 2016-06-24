@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.startSearchGPS(
+    <content><![CDATA[
+bMap.startSearchGPS(
     function(ret){
         if(ret.status){
             alert(ret.satelliteCount);

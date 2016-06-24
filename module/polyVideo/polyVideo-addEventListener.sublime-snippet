@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var polyVideo = api.require('polyVideo');
+    <content><![CDATA[
 polyVideo.addEventListener({
     name:'${1:leftUp}'
 },function(ret){
-    alert('leftUp');
-}
+    alert(JSON.stringify(ret));
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>polyVideo-addEventListener</tabTrigger>

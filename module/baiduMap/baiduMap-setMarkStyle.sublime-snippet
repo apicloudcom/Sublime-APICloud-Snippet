@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.setMarkStyle ({
     bgImg:'${1:widget://res/mark_bg_test.png}',
     headImg:'${2:widget://res/mark_test.png}',

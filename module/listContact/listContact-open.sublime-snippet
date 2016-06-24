@@ -1,6 +1,5 @@
-
 <snippet>
-    <content><![CDATA[var listContact = api.require('listContact');
+    <content><![CDATA[
 listContact.open({
     h: ${1:api.frameHeight},
     rightBtn: [{

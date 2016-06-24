@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+    <content><![CDATA[
 hintChatBox.insertMsg({
    msg:'${1:这里是插入的字符串}'
 });

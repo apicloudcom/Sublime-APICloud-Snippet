@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var downloadManager = api.require('downloadManager');
+    <content><![CDATA[
 downloadManager.enqueue({
     url: '${1:http://xxx.zip}',
     savePath: '${2:fs://xxx.zip}',

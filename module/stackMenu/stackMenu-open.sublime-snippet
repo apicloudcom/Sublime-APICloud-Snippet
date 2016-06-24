@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var stackMenu = api.require('stackMenu');
+    <content><![CDATA[
 stackMenu.open({
     items:[{
         title: '${1:标题一}',

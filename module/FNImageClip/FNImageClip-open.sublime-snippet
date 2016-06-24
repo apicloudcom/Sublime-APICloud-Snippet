@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var FNImageClip = api.require('FNImageClip');
+    <content><![CDATA[
 FNImageClip.open({
     rect: {
         x: ${1:0},

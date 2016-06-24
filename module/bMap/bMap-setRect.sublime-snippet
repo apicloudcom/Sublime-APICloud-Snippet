@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setRect({
+    <content><![CDATA[
+bMap.setRect({
     rect: {
         x: ${1:0},
         y: ${2:0},

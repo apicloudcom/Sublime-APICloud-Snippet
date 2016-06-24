@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var user = api.require('user');
+    <content><![CDATA[
 user.login({
     username: '${1:name}',
     password: '${2:12345678}'

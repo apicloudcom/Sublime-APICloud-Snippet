@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.readDir({
     path:'${1:fs://}'
 }, function(ret, err){        

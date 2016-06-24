@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var model = api.require('model');
+    <content><![CDATA[
 model.uploadFile({
     report: ${1:false},
     data: {

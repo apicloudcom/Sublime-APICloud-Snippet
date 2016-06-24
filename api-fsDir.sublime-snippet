@@ -1,10 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fsDir = api.fsDir; 
-/* 
-比如： 
-/var/mobile/Containers/Data/Application/4E376FDE-D595-4E08-B0A4-A06561B31000/Documents/uzfs/A123456789
-*/
+    <content><![CDATA[api.fsDir
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-fsDir</tabTrigger>

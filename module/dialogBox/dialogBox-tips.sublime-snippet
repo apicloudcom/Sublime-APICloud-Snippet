@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var dialogBox = api.require('dialogBox');
+    <content><![CDATA[
 dialogBox.tips({
     rect:{   
          w:${1:200}

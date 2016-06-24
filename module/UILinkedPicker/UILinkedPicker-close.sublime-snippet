@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UILinkedPicker = api.require('UILinkedPicker');
+    <content><![CDATA[
 UILinkedPicker.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

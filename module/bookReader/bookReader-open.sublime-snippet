@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bookReader = api.require('bookReader');
+    <content><![CDATA[
 bookReader.open({
    filePath: '${1:widget://res/test.txt}'
 }, function(ret, err){        

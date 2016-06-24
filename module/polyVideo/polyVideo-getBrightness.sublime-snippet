@@ -1,10 +1,9 @@
 
 <snippet>
-    <content><![CDATA[var polyVideo = api.require('polyVideo');
+    <content><![CDATA[
 polyVideo.getBrightness(function(ret,err){
-        alert(ret.brightness);
-    }
-);
+    alert(JSON.stringify(ret));
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>polyVideo-getBrightness</tabTrigger>

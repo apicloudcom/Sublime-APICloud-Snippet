@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var chatBox = api.require('chatBox');
+    <content><![CDATA[
 chatBox.configMsg(function(ret,err){
     if(ret.status){
       api.alert({msg:${1:ret.msg });}

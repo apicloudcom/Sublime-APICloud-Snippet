@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var browser = api.require('webBrowser');
+    <content><![CDATA[
 browser.openView({
     url:'${1:http://m.apicloud.com}',
     rect:{
@@ -10,20 +10,7 @@ browser.openView({
         h:'${5:auto}'
     }
 }, function(ret, err){
-    switch (ret.state) {
-        case 0:
-            break;
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        default:
-            break;
-    }
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

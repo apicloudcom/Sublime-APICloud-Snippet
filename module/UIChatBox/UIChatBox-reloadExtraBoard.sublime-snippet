@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIChatBox = api.require('UIChatBox');
+    <content><![CDATA[
 UIChatBox.reloadExtraBoard({
     extras: {
         titleSize: ${1:10},

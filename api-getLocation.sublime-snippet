@@ -2,7 +2,7 @@
 <snippet>
     <content><![CDATA[api.getLocation(function(ret, err){
     if(ret.status){
-         //获取位置信息成功
+         alert( JSON.stringify( ret ) );
     }else{
          alert( JSON.stringify( err ) );
     }

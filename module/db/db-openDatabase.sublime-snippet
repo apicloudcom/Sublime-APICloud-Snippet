@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var db = api.require('db');
+    <content><![CDATA[
 db.openDatabase({
     name: '${1:test}'
 }, function(ret, err){        

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIScrollPromptView = api.require('UIScrollPromptView');
+    <content><![CDATA[
 UIScrollPromptView.open({
     rect: {
         x: ${1:0},

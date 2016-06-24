@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UISearchBar = api.require('UISearchBar');
+    <content><![CDATA[
 UISearchBar.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -3,11 +3,10 @@
     <content><![CDATA[api.addEventListener({
     name:'${1:noticeclicked}'
 },function(ret,err){
-    var value = ret.value;
     if(ret.type == 0){
-        //APICloud推送内容
+
     } else if(ret.type == 1){
-        //开发者自定义消息
+
     }
 });
 ]]></content>

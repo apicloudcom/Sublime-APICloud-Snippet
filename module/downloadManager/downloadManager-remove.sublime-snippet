@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var downloadManager = api.require('downloadManager');
+    <content><![CDATA[
 downloadManager.remove({
     ids: [ 
         '123456', 

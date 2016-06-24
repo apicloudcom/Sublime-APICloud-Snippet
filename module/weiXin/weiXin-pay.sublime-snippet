@@ -1,15 +1,15 @@
 
 <snippet>
-    <content><![CDATA[var weiXin = api.require('weiXin');
+    <content><![CDATA[
 weiXin.pay({
      body: '${1:如意金箍棒}',
      totalFee:'${2:10}',
      tradeNo:'${3:1234567890abcdefghiglmnopqrstuvw}'
 },function(ret,err) {
      if (ret.status) {
-         ret.result;
+        alert(JSON.stringify(ret));
      }else{
-         api.alert({msg:${4:err.msg});}
+        alert(JSON.stringify(err));
      }
 });
 ]]></content>

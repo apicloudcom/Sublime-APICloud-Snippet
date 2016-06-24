@@ -1,14 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var aliPay = api.require('aliPay');
+    <content><![CDATA[
 aliPay.payOrder({
   orderInfo:'${1:partner="2088101568358171"&amp;seller_id="xxx@alipay.com"&amp;out_trade_no="0819145412-6177"&amp;subject="测试"&amp;body="测试测试"&amp;total_fee="0.01"&amp;notify_url="http://notify.msp.hk/notify.htm"&amp;service="mobile.securitypay.pay"&amp;payment_type="1"&amp;_input_charset="utf-8"&amp;it_b_pay="30m"&amp;sign="lBBK%2F0w5LOajrMrji7DUgEqNjIhQbidR13GovA5r3TgIbNqv231yC1NksLdw%2Ba3JnfHXoXuet6XNNHtn7VE%2BeCoRO1O%2BR1KugLrQEZMtG5jmJIe2pbjm%2F3kb%2FuGkpG%2BwYQYI51%2BhA3YBbvZHVQBYveBqK%2Bh8mUyb7GM1HxWs9k4%3D"&amp;sign_type="RSA"}'
 },function(ret,err) {
-  api.alert({
-      title: '${2:支付结果}',
-      msg: ${3:ret.code},
-      buttons: ['${4:确定}']
-  });
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

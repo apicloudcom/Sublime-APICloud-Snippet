@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var appleUnionPay = api.require('appleUnionPay');
+    <content><![CDATA[
 appleUnionPay.canMakePayments(function( ret, err ){        
     if( ret ){
         alert( JSON.stringify( ret ) );

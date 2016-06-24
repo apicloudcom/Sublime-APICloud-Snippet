@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var scanner = api.require('scanner');
+    <content><![CDATA[
 scanner.lightSwitch({
     turnOn: ${1:false}
 });

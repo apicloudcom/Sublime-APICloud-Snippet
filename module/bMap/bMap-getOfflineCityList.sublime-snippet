@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.getOfflineCityList(function(ret){
+    <content><![CDATA[
+bMap.getOfflineCityList(function(ret){
     if(ret.status){
         alert(JSON.stringify(ret)); 
     }

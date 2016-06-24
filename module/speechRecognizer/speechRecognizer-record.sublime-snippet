@@ -1,7 +1,6 @@
 
 <snippet>
     <content><![CDATA[{
-var speechRecognizer = api.require('speechRecognizer');
 speechRecognizer.record({
   vadbos:${1:5000},
   vadeos:${2:5000},
@@ -10,9 +9,9 @@ speechRecognizer.record({
   audioPath:'${5:fs://speechRecogniser/speech.mp3}'
 },function(ret,err){
     if(ret.status){
-        api.alert({msg:${6:ret.wordStr});}
-    } else {
-        api.alert({msg:${7:err.msg});}
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
     }
 });
 }

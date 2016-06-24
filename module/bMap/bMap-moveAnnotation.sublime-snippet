@@ -1,18 +1,16 @@
 
 <snippet>
-    <content><![CDATA[    var map = api.require('bMap');
-    for (var i=0; i&lt;6; i++) {
-      map.moveAnnotation({
-          id: ${1:10}+${2:i},
-          duration: ${3:6},
-          end:{
-              lon:${4:116}${5:.3843839609304},
-              lat:${6:39}${7:.98964439091298}
-          }
-      }, function(ret, err){
-          alert(ret.id + '移动结束')
-      });
+    <content><![CDATA[
+bMap.moveAnnotation({
+    id: ${1:1},
+    duration: ${3:6},
+    end:{
+        lon:${4:116.3843839609304},
+        lat:${6:39.98964439091298}
     }
+}, function(ret, err){
+    alert(JSON.stringify(ret));
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>bMap-moveAnnotation</tabTrigger>

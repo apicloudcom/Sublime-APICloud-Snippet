@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var model = api.require('model');
+    <content><![CDATA[
 model.exist({
     class: "${1:user}"
 }, function( ret, err ) {

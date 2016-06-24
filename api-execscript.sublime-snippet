@@ -1,29 +1,10 @@
 
 <snippet>
-    <content><![CDATA[//在名为winName的window中执行jsfun脚本
-var jsfun = 'funcGoto();';
-api.execScript({
-    name: '${1:winName}',
-    script: ${2:jsfun}
-});
-
-
-//在名为winName的window中找到
-//名为frmName的frame，并在该frame中执行jsfun脚本
-var jsfun = 'funcGoto();';
+    <content><![CDATA[
 api.execScript({
     name: '${3:winName}',
     frameName: '${4:frmName}',
-    script: ${5:jsfun}
-});
-
-
-//在当前window中找到
-//名为frmName的frame，并在该frame中执行jsfun脚本
-var jsfun = 'funcGoto();';
-api.execScript({
-    frameName: '${6:frmName}',
-    script: ${7:jsfun}
+    script: '${5:funcGoto();}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

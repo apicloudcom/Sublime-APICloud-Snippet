@@ -1,14 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var contact = api.require('contact');
+    <content><![CDATA[
 contact.openContact(function(ret,err) {
     if(ret.status) {
-        var array = ret.phones;
-        var firstnum = array[0];
-        var secondnum = array[1];
-        var thirdnum = array[2];
+        alert(JSON.stringify(ret));
     } else{
-        api.alert({msg:'${1:用户取消}'});
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

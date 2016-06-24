@@ -1,13 +1,15 @@
 
 <snippet>
-    <content><![CDATA[var weibo = api.require('weibo');
+    <content><![CDATA[
 weibo.getUserInfo({
   token: '',
   userId: ''
 },function(ret,err){
-    if (ret.status) {
-        alert(JSON.stringify(ret.userInfo));
-    }
+     if (ret.status) {
+        alert(JSON.stringify(ret));
+     }else{
+        alert(JSON.stringify(err));
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.removeBusRoute();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

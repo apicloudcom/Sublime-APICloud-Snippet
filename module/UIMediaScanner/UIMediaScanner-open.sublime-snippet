@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIMediaScanner = api.require('UIMediaScanner');
+    <content><![CDATA[
 UIMediaScanner.open({
     type: '${1:picture}',
     column: ${2:4},

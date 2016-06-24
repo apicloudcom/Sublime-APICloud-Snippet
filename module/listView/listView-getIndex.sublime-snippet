@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var listView = api.require('listView');
+    <content><![CDATA[
 listView.getIndex({
     key: '${1:uid}',
     value: '${2:00000001}'

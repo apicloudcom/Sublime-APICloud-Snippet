@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var listView = api.require('listView');
+    <content><![CDATA[
 listView.insertItem({
     index: ${1:2},
     data: {
         img: '${2:http://d.hiphotos.baidu.com/image/pic/item/4d086e061d950a7b29a788c209d162d9f2d3c922.jpg }',
-        title: '${3:12}:${4:00}',
+        title: '${3:12:00}',
         subTitle: '${5:APICloud粉丝互动会}',
         remark: '${6:完成}'
     }

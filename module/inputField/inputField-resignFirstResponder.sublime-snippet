@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var inputField = api.require('inputField');
+    <content><![CDATA[
 inputField.resignFirstResponder();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

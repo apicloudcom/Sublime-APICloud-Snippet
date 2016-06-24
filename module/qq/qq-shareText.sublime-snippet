@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var qq = api.require('qq');
+    <content><![CDATA[
 qq.shareText({
     text:'${1:testtext}'
 });

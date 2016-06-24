@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var contacts = api.require('contacts');
+    <content><![CDATA[
 contacts.queryByGroupId({
     groupId: ${1:1}
 },function(ret,err){

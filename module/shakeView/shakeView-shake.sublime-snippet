@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var shakeView = api.require('shakeView');
+    <content><![CDATA[
 shakeView.shake(function( ret, err ){
     if( ret ){
          alert( JSON.stringify( ret ) );

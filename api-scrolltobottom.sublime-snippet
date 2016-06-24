@@ -3,7 +3,7 @@
     <content><![CDATA[api.addEventListener({
     name:'${1:scrolltobottom}',
     extra:{
-        threshold:${2:0}            //${3:设置距离底部多少距离时触发}，${4:默认值为0}，${5:数字类型}
+        threshold:${2:0}
     }
 }, function(ret, err){        
     if( ret ){

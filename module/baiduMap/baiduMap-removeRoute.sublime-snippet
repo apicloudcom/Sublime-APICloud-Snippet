@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.removeRoute({
     idArray: [${1:300},${2:301},${3:302}]
 });

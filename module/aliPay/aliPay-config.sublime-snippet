@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var aliPay = api.require('aliPay');
+    <content><![CDATA[
 aliPay.config({
   partner:'${1:12345678901234}',
   seller:'${2:123456789024354}',
@@ -8,11 +8,7 @@ aliPay.config({
   rsaPubKey:'${4:testKEY}',
   notifyURL:'${5:http://www.apicloud.com}'
 },function(ret,err) {
-  api.alert({
-      title: '${6:支付结果}',
-      msg: ${7:ret.msg},
-      buttons: ['${8:确定}']
-  });
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

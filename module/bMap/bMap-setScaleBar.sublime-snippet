@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setScaleBar({
+    <content><![CDATA[
+bMap.setScaleBar({
     show: ${1:true},
     position: {
       x:${2:100},

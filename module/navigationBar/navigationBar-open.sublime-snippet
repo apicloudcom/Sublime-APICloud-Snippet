@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var navigationBar = api.require('navigationBar');
+    <content><![CDATA[
 navigationBar.open({
     y: ${1:0},
     w: ${2:api.frameWidth},

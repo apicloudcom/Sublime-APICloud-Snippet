@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var cardReader = api.require('cardReader');
+    <content><![CDATA[
 cardReader.open(function( ret, err ){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

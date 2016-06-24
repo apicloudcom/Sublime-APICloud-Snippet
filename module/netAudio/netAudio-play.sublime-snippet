@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var netAudio = api.require('netAudio');
+    <content><![CDATA[
 netAudio.play({
     path: '${1:http://7xisq1.com1.z0.glb.clouddn.com/apicloud/0d0b81b8bd5ab81bda9ca54267eb9b98.mp3}'
 }, function(ret, err){        

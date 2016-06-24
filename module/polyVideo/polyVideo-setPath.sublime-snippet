@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var polyVideo= api.require('polyVideo');
+    <content><![CDATA[
 polyVideo.setPath({
     path:'${1:fs://res/video.mp4}',
 });

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var contacts = api.require('contacts');
+    <content><![CDATA[
 contacts.createGroup({
     groupName: '${1:同学}'
 }, function(ret, err){

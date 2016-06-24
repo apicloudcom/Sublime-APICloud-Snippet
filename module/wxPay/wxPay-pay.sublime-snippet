@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var wxPay = api.require('wxPay');
+    <content><![CDATA[
 wxPay.pay({
      description: '${1:iPad mini 16G 白色}',
      totalFee: '${2:888}',

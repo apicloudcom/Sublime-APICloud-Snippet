@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var frameWidth = api.frameWidth;  // 比如： 320
+    <content><![CDATA[api.frameWidth
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-frameWidth</tabTrigger>

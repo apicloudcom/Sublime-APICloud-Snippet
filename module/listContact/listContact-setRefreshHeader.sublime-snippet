@@ -1,12 +1,12 @@
 
 <snippet>
-    <content><![CDATA[var listContact = api.require('listContact');
+    <content><![CDATA[
 listContact.setRefreshHeader({
     loadingImg : '${1:widget://res/img/ic/listContact_arrow.png}',
     bgColor: '#${2:F5F5F5}',
     textColor: '#${3:8E8E8E}',
-    textDown: '${4:下拉可以刷新}${5:...}',
-    textUp: '${6:松开开始刷新}${7:...}',
+    textDown: '${4:下拉可以刷新...}',
+    textUp: '${6:松开开始刷新...}',
     showTime : ${8:true}
 }, function(ret, err){   
     if( ret ){

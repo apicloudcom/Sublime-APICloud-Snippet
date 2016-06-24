@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var operator = api.operator;  // 比如：中国移动
+    <content><![CDATA[api.operator
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-operator</tabTrigger>

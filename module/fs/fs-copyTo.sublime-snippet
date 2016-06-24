@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.copyTo({
     oldPath: '${1:fs://file.txt}',
     newPath: '${2:fs://floder}'

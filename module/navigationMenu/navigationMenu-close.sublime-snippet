@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var navigationMenu = api.require('navigationMenu');
+    <content><![CDATA[
 navigationMenu.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

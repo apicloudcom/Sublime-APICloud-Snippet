@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIInput = api.require('UIInput');
+    <content><![CDATA[
 UIInput.popupKeyboard();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,10 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setAnnotationCoords({
+    <content><![CDATA[
+bMap.setAnnotationCoords({
     id: ${1:2},
-    lon: ${2:116}${3:.39},
-    lat: ${4:40}${5:.209}
+    lon: ${2:116.39},
+    lat: ${4:40.209}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

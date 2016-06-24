@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.addCircle({
+    <content><![CDATA[
+bMap.addCircle({
     id: ${1:4},
     center: {
         lon: ${2:116}${3:.39432327},

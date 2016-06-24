@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIListView = api.require('UIListView');
+    <content><![CDATA[
 UIListView.getCount(function( ret){
    alert( JSON.stringify( ret ) );
 });

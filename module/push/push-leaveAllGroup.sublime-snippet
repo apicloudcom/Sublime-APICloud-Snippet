@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var push = api.require('push');
+    <content><![CDATA[
 push.leaveAllGroup(function( ret, err ){
      if( ret ){
         alert( JSON.stringify( ret) );

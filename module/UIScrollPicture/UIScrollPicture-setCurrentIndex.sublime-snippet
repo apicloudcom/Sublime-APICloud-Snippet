@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIScrollPicture = api.require('UIScrollPicture');
+    <content><![CDATA[
 UIScrollPicture.setCurrentIndex({
     index: ${1:2}
 });

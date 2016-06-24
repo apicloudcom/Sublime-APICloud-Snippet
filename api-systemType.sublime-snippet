@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var systemType = api.systemType;  // 比如： iOS
+    <content><![CDATA[api.systemType
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-systemType</tabTrigger>

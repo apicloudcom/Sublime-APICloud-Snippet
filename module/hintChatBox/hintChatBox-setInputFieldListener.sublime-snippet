@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+    <content><![CDATA[
 hintChatBox.setInputFieldListener(function( ret, err ){        
     if( ret ){
         alert( JSON.stringify( ret ) );

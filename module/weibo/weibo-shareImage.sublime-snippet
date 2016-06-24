@@ -1,13 +1,15 @@
 
 <snippet>
-    <content><![CDATA[var weibo = api.require('weibo');
+    <content><![CDATA[
 weibo.shareImage({
     text: '${1:这里是测试的内容}',
     imageUrl: '${2:widget://image/xxx.png}'
 },function(ret,err){
-    if (ret.status) {
-          alert('分享图片内容成功');
-    }
+     if (ret.status) {
+        alert(JSON.stringify(ret));
+     }else{
+        alert(JSON.stringify(err));
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

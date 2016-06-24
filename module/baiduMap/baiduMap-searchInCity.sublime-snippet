@@ -1,12 +1,9 @@
 
 <snippet>
-    <content><![CDATA[var city="北京';
-var key="学校';
-var index= 0;
-var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.searchInCity({
-    city:${1:city},
-    key:${2:key}
+    city:'${1:北京}',
+    key:'${2:学校}'
 }, function(ret, err){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

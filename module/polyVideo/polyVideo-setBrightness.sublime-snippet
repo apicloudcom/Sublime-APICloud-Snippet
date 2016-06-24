@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var polyVideo = api.require('polyVideo');
+    <content><![CDATA[
 polyVideo.setBrightness({
     brightness:${1:50}
 });

@@ -1,9 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var wxPay = api.require('wxPay');
+    <content><![CDATA[
 wxPay.getOrderId({
   info: ''
 }, function(ret,err){
+
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

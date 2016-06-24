@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIListView = api.require('UIListView');
+    <content><![CDATA[
 UIListView.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fullScreen = api.fullScreen;  // 比如： true
+    <content><![CDATA[api.fullScreen
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-fullScreen</tabTrigger>

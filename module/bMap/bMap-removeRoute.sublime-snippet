@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.removeRoute({
+    <content><![CDATA[
+bMap.removeRoute({
     ids: [${1:1}, ${2:2}, ${3:3}]
 });
 ]]></content>

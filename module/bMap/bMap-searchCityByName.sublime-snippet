@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.searchCityByName({
+    <content><![CDATA[
+bMap.searchCityByName({
     name: "${1:北京}"
 }, function(ret){
     if(ret.status){

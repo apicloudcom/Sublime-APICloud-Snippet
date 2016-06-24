@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var pullMenu = api.require('pullMenu');
+    <content><![CDATA[
 pullMenu.open({
     btnArray:[{
         normal: '${1:widget://res/img/ic/small-bell.png}',

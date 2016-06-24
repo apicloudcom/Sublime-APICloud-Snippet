@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var speechRecognizer = api.require('speechRecognizer');
+    <content><![CDATA[
 speechRecognizer.read({
     readStr: '${1:APICloud平台}',
     speed: ${2:60},
@@ -9,10 +9,10 @@ speechRecognizer.read({
     rate: ${5:16000},
     audioPath:'${6:fs://speechRecogniser/read.mp3}'
 },function(ret,err) {
-    if(ret.status) {
-        ret.speakProgress
-    } else {
-        api.alert({msg:${7:err.msg});}
+    if(ret.status){
+        alert(JSON.stringify(ret));
+    }else{
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

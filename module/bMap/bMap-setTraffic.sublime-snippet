@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setTraffic({
+    <content><![CDATA[
+bMap.setTraffic({
     traffic: ${1:true}
 });
 ]]></content>

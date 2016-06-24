@@ -1,15 +1,15 @@
 
 <snippet>
-    <content><![CDATA[var wx = api.require('wx');
+    <content><![CDATA[
 wx.refreshToken({
     apiKey: '',
     dynamicToken: ''
 },function(ret,err){ 
-    if(ret.status){
+     if (ret.status) {
         alert(JSON.stringify(ret));
-    }else{
-        alert(err.code);
-    }
+     }else{
+        alert(JSON.stringify(err));
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

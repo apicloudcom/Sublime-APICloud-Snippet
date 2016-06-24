@@ -1,9 +1,6 @@
 
 <snippet>
-    <content><![CDATA[//关闭当前window，使用默认动画
-api.closeWin();
-
-//关闭指定window，若待关闭的window不在最上面，则无动画
+    <content><![CDATA[
 api.closeWin({
     name: '${1:page1}'
 });

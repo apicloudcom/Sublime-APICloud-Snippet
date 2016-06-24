@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var push = api.require('push');
+    <content><![CDATA[
 push.leaveGroup({
     groupName: '${1:department}'
 }, function(ret, err){

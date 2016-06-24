@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var qq = api.require('qq');
+    <content><![CDATA[
 qq.installed(function(ret,err){
     if(ret.status){
-       api.alert({msg: "${1:安装}"});
+        alert(JSON.stringify(ret));
     }else{
-        api.alert({msg: "${2:没有安装}"});
+        alert(JSON.stringify(err));
     } 
 });
 ]]></content>

@@ -1,10 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.searchNearby({
+    <content><![CDATA[
+bMap.searchNearby({
     keyword: '${1:KTV}',
-    lon: ${2:116}${3:.384767},
-    lat: ${4:39}${5:.989539},
+    lon: ${2:116.384767},
+    lat: ${4:39.989539},
     radius: ${6:2000}
 },function(ret,err){
     if(ret.status){

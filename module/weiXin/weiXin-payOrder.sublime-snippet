@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var weiXin = api.require('weiXin');
+    <content><![CDATA[
 weiXin.payOrder({
      orderId: '',
      partnerId:'',
@@ -10,9 +10,9 @@ weiXin.payOrder({
      sign:''
 },function(ret,err) {
      if (ret.status) {
-
+        alert(JSON.stringify(ret));
      }else{
-        api.alert({msg:${1:err.msg});}
+        alert(JSON.stringify(err));
      }
 });
 ]]></content>

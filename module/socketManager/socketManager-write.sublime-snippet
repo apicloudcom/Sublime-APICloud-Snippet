@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var socketManager = api.require('socketManager');
+    <content><![CDATA[
 socketManager.write({
     sid: '${1:1}',
     data: '${2:你好}'

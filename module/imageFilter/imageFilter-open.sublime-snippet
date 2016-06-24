@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageFilter = api.require('imageFilter');
+    <content><![CDATA[
 imageFilter.open({
     imgPath: '${1:widget://res/img/apicloud.png}'
 }, function(ret, err){        

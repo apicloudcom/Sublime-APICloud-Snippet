@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICalendar = api.require('UICalendar');
+    <content><![CDATA[
 UICalendar.nextYear(function(ret, err){      
     if( ret ){
         alert( JSON.stringify( ret ) );

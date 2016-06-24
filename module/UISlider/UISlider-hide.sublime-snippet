@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var uislider = api.require('UISlider');
-uislider.hide({
+    <content><![CDATA[
+UISlider.hide({
   id: ${1:id}
 });
 ]]></content>

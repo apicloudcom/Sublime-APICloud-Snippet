@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.close({
-    fd: '${1:open} ${2:方法得到的文件句柄}'
+    fd: '${1:open 方法得到的文件句柄}'
 }, function(ret, err){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

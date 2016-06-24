@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.getBusRouteFromLineNum({
     city:'${1:北京}',
     line:'${2:345}'

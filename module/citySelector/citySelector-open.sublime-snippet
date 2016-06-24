@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var citySelector = api.require('citySelector');
+    <content><![CDATA[
 citySelector.open({
     y: ${1:api.frameHeight / 1.6},
     fixedOn: ${2:api.frameName}

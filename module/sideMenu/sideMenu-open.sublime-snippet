@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var sideMenu = api.require('sideMenu');
+    <content><![CDATA[
 sideMenu.open({
     trajectoryColor: '#${1:3F9FEA}',
     btnArray:[{

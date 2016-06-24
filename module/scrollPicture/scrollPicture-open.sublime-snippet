@@ -1,24 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var scrollPicture = api.require('scrollPicture');
- var arrayPath = new Array();
- arrayPath[0] = 'widget://${1:res/scrollPicture_01.jpg}';
- arrayPath[1] = 'widget://${2:res/scrollPicture_02.jpg}';
- arrayPath[2] =  'http://${3:f.hiphotos.baidu.com/image/pic/item/4e4a20a4462309f7bdca9423710e0cf3d7cad65d.jpg}';
- arrayPath[3] = 'widget://${4:res/scrollPicture_04.jpg}';
- arrayPath[4] = 'widget://${5:res/scrollPicture_05.jpg}';
- var arrayTitle = new Array();
- arrayTitle[0] = 'widget://${6:res/scrollPicture_01.jpg}';
- arrayTitle[1] = 'widget://${7:res/scrollPicture_02.jpg}';
- arrayTitle[2] = 'http://${8:f.hiphotos.baidu.com/image/pic/item/4e4a20a4462309f7bdca9423710e0cf3d7cad65d.jpg}';
- arrayTitle[3] = 'widget://${9:res/scrollPicture_04.jpg}';
- arrayTitle[4] = 'widget://${10:res/scrollPicture_05.jpg}';
-
+    <content><![CDATA[
  scrollPicture.open({
      placeholderImg:'${11:widget://res/scrollPicture_placeholder.png}',
-     paths: ${12:arrayPath},
+     paths: ['${1:widget://res/scrollPicture_01.jpg}', '${2:widget://res/scrollPicture_02.jpg}'],
      subtitle:{
-         titles:${13:arrayTitle}
+         titles: ['${6:widget://res/scrollPicture_01.jpg}', '${7:widget://res/scrollPicture_02.jpg}']
      },
      control:{
          position:${14:0}

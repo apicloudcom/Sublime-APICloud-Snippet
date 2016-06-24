@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageBrowser = api.require('imageBrowser');
+    <content><![CDATA[
 imageBrowser.openImages({
     imageUrls: [ 
         'fs://${1:img/apicloud.png}', 

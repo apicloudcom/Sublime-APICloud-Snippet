@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.getCenter(function(ret){
+    <content><![CDATA[
+bMap.getCenter(function(ret){
    alert(ret.lon+'*'+ret.lat);
 });
 ]]></content>

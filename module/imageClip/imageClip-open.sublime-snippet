@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageClip = api.require('imageClip');
+    <content><![CDATA[
 imageClip.open({
     path: '${1:widget://res/img/apicloud.png}'
 },function(  ret, err ){        

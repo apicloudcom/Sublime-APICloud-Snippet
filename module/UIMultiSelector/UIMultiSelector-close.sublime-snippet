@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var multiSelector = api.require('UIMultiSelector');
+    <content><![CDATA[
 UIMultiSelector.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

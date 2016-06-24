@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var qq = api.require('qq');
+    <content><![CDATA[
 qq.shareNews({
     url:'${1:http://www.uzmap.com}',
     title:'${2:新闻分享}',

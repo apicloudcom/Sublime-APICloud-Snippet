@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bookReader= api.require('bookReader');
+    <content><![CDATA[
 bookReader.show({
     textStyle:{
         size: ${1:15}

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var arcProgress = api.require('arcProgress');
+    <content><![CDATA[
 arcProgress.open({
     type: ${1:1},
     centerX: ${2:api.frameWidth / 6 * (2 * 1  + 1)},
@@ -10,18 +10,8 @@ arcProgress.open({
     pgColor: '#${6:325570}',
     fixedOn: ${7:api.frameName}
 },function(ret,err){
-    setValue( { id: ${8:ret.id, value: 0 } )}
+    alert(JSON.stringify(ret));
 });
-function setValue( obj ){
-    if( obj.value == 100 ){ obj.value = 0; } 
-    setTimeout(function(){
-        arcProgress.setValue({
-            id: ${9:obj}${10:.id},
-            value: ++${11:obj}${12:.value}
-        });
-        setValue( obj )
-    },100);
-}
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>arcProgress-open</tabTrigger>

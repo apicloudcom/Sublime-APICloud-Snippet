@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIScrollPicture = api.require('UIScrollPicture');
+    <content><![CDATA[
 UIScrollPicture.open({
     rect: {
         x: ${1:0},
@@ -10,10 +10,10 @@ UIScrollPicture.open({
     },
     data: {
         paths: [
-        'widget://${5:res/img/apicloud.png}', 
-        'widget://${6:res/img/apicloud-gray.png}',
-        'widget://${7:res/img/apicloud.png}', 
-        'widget://${8:res/img/apicloud-gray.png}'
+        '${5:widget://res/img/apicloud.png}', 
+        '${6:widget://res/img/apicloud-gray.png}',
+        '${7:widget://res/img/apicloud.png}', 
+        '${8:widget://res/img/apicloud-gray.png}'
         ],
         captions: ['${9:apicloud}', '${10:apicloud}', '${11:apicloud}', '${12:apicloud}']
     },

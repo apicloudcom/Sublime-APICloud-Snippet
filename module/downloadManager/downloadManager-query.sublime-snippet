@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var downloadManager = api.require('downloadManager');
+    <content><![CDATA[
 downloadManager.query({
     ids: [ 
         '123456', 

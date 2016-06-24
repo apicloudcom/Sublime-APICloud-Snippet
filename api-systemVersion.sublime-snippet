@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var systemVersion = api.systemVersion;  // 比如： 8.0
+    <content><![CDATA[api.systemVersion
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-systemVersion</tabTrigger>

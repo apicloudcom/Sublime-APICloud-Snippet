@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UICityList = api.require('UICityList');
+    <content><![CDATA[
 UICityList.open({
     rect: {
         x: ${1:0},

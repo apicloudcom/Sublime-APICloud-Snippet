@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UISelector = api.require('UISelector');
+    <content><![CDATA[
 UISelector.open({
     rect: {
         x: ${1:30},

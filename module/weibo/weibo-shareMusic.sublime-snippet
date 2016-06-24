@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var weibo = api.require('weibo');
+    <content><![CDATA[
 weibo.shareMusic({
     text: '${1:这里是测试的内容}',
     title: '${2:测试标题}',
@@ -8,9 +8,11 @@ weibo.shareMusic({
     thumb: '${4:widget://a.jpg}',
     contentUrl: '${5:http://docs.apicloud.com/test/m.mp3}'
 },function(ret,err){
-    if (ret.status) {
-          alert('分享成功');
-    }
+     if (ret.status) {
+        alert(JSON.stringify(ret));
+     }else{
+        alert(JSON.stringify(err));
+     }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

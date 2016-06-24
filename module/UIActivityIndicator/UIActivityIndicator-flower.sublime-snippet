@@ -1,13 +1,13 @@
 
 <snippet>
-    <content><![CDATA[var activity = api.require('UILoading');
-activity. flower({
-    rect: {
-        w: ${1:60},                              
-        h: ${2:60},                              
-        x: ${3:130},            
-        y: ${4:210}         
-    }
+    <content><![CDATA[
+UILoading.flower({
+    center: {                            
+        x: ${1:160},            
+        y: ${2:240}         
+    },
+    size: ${3:30},
+    fixed: ${4:true}
 }
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

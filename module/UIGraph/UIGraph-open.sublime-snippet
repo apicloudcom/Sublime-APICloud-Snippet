@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIGraph = api.require('UIGraph');
+    <content><![CDATA[
 UIGraph.open({
     rect: {
         x: ${1:30},

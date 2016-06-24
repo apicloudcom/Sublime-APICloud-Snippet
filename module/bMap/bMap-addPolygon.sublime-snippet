@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.addPolygon({
+    <content><![CDATA[
+bMap.addPolygon({
     id: ${1:2},
     styles: {
         borderColor: '#${2:FF0000}',
@@ -9,14 +9,14 @@ map.addPolygon({
         fillColor:'#${4:0000ff}'
     },
      points: [{
-         lon:${5:116}${6:.39432327},
-         lat:${7:39}${8:.98963192}
+         lon:${5:116.39432327},
+         lat:${7:39.98963192}
      },{
-         lon: ${9:116}${10:.49432328},
-         lat: ${11:39}${12:.98963192}
+         lon: ${9:116.49432328},
+         lat: ${11:39.98963192}
      },{
-         lon: ${13:116}${14:.39432327},
-         lat: ${15:39}${16:.88933191}
+         lon: ${13:116.39432327},
+         lat: ${15:39.88933191}
      }]
 });
 ]]></content>

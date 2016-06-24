@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var qq = api.require('qq');
+    <content><![CDATA[
 qq.getUserInfo(function(ret,err) {
    if (ret.status) {
-      api.alert({msg:'${1:获取成功}'});
+        alert(JSON.stringify(ret));
    }else{
-      api.alert({msg:${2:err.msg});}
+        alert(JSON.stringify(err));
    }
 });
 ]]></content>

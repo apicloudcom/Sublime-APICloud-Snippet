@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var netAudio = api.require('netAudio');
+    <content><![CDATA[
 netAudio.setVolume({
-    volume: ${1:0}${2:.6}
+    volume: ${1:0.6}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIActionSelector = api.require('UIActionSelector');
+    <content><![CDATA[
 UIActionSelector.open({
     datas: '${1:widget://res/city.json}',
     layout: {

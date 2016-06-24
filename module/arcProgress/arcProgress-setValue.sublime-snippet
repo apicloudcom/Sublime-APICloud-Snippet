@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var arcProgress = api.require('arcProgress');
+    <content><![CDATA[
 arcProgress.setValue({
     id: ${1:1},
     value: ${2:50}

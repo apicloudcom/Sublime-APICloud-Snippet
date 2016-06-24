@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var pdfReader = api.require('pdfReader');
+    <content><![CDATA[
 pdfReader.open({
     path: '${1:widget://res/test.pdf}'
 });

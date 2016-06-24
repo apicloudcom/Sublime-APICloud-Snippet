@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var uislider = api.require('UISlider');
+    <content><![CDATA[
 uislider.lock({
     id: ${1:id},
     lock: ${2:true}

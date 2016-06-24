@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var relation = api.require('relation');
+    <content><![CDATA[
 relation.count({
     class: '${1:user}',
     id: '${2:A00001}',

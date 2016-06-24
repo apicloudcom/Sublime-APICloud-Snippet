@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var photoBrowser = api.require('photoBrowser');
+    <content><![CDATA[
 photoBrowser.appendImage({
   images: [ 
     'fs://${1:img/image1.png}', 

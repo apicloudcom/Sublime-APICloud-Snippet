@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var user = api.require('user');
+    <content><![CDATA[
 user.logout(function(ret, err){
     if( ret ){
         alert( JSON.stringify( ret) );

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var FNScanner = api.require('FNScanner');
+    <content><![CDATA[
 FNScanner.setFrame({
    x: ${1:10},
    y: ${2:64},

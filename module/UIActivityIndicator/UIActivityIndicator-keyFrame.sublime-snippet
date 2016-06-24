@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var activity = api.require('UILoading');
-activity.GIF({
+    <content><![CDATA[
+UILoading.GIF({
     rect: {
         w: ${1:60},                              
         h: ${2:60},                              
@@ -21,11 +21,11 @@ activity.GIF({
         }
     },
     gifImages: [ 
-        'widget://${11:image/UILoading/loading0.png}', 
-        'widget://${12:image/UILoading/loading1.png}',
-        'widget://${13:image/UILoading/loading2.png}', 
-        'widget://${14:image/UILoading/loading3.png}',
-        'widget://${15:image/UILoading/loading4.png}'
+        '${11:widget://image/UILoading/loading0.png}', 
+        '${12:widget://image/UILoading/loading1.png}',
+        '${13:widget://image/UILoading/loading2.png}', 
+        '${14:widget://image/UILoading/loading3.png}',
+        '${15:widget://image/UILoading/loading4.png}'
     ]
 }
 ]]></content>

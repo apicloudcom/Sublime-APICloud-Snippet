@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var qq = api.require('qq');
+    <content><![CDATA[
 qq.shareMusic({
     url:'${1:http://7xq864.com1.z0.glb.clouddn.com/apicloud/591bde468d4e44b21cc225b7b6e1129a.mp3}',
     title:'${2:桔子香水}',

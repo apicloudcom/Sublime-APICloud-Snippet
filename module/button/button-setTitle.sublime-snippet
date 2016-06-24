@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var button = api.require('button');
+    <content><![CDATA[
 button.setTitle({
    id: ${1:1},
    title:{

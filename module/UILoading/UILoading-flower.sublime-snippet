@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UILoading = api.require('UILoading');
+    <content><![CDATA[
 UILoading.flower({
     center: {                            
         x: ${1:160},            

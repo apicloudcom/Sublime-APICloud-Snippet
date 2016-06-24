@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+    <content><![CDATA[
 hintChatBox.setHintView();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

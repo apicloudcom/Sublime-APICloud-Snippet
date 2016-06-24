@@ -1,10 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var wgtRootDir = api.wgtRootDir;  
-/* 
-比如：  
-/private/var/mobile/Containers/Bundle/Application/56218B5B-1B59-48CD-8080-DAC54DB46446/UZApp.app/widget
-*/
+    <content><![CDATA[api.wgtRootDir
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-wgtRootDir</tabTrigger>

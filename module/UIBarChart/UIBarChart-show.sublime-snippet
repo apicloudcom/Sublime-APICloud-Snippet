@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var UIBarChart = api.require('UIBarChart');
+    <content><![CDATA[
 UIBarChart.show({
     id:${1:1}
 });

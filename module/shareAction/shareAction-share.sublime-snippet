@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var sharedModule = api.require('shareAction');
+    <content><![CDATA[
 sharedModule.share({
     text: '${1:纯文本信息}',
     type: '${2:text}'

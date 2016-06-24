@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var scrollRotation = api.require('scrollRotation');
+    <content><![CDATA[
 scrollRotation.show();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

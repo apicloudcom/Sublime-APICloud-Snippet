@@ -1,11 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var qq = api.require('qq');
+    <content><![CDATA[
 qq.login(function(ret,err){
-    api.alert({
-        title: '${1:id和token}',
-        msg: ${2:ret.openId + ret.accessToken}
-    });
+    alert(JSON.stringify(ret));
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

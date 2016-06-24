@@ -1,14 +1,14 @@
 
 <snippet>
-    <content><![CDATA[var contact = api.require('contact');
+    <content><![CDATA[
 contact.updateGroupName({
     id:${1:1},
     name:'${2:同学}'
 },function(ret,err){
     if(ret.status){
-        api.alert({msg:'${3:分组修改完成}'});
+        alert( JSON.stringify( ret ) );
     }else{
-        api.alert({msg:${4:err.msg});}
+        alert( JSON.stringify( err ) );
     }
 });
 ]]></content>

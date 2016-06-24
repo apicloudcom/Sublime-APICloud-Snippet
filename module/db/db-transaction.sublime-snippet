@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var db = api.require('db');
+    <content><![CDATA[
 db.transaction({
     name: '${1:test}',
     operation: '${2:begin}'

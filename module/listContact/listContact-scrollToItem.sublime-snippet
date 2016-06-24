@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var listContact = api.require('listContact');
+    <content><![CDATA[
 listContact.scrollToItem({
     index: ${1:2},    
     key: '${2:B}'

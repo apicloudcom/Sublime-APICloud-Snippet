@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var activity = api.require('UILoading');
-activity.keyFrame({
+    <content><![CDATA[
+UILoading.keyFrame({
     rect: {
         w: ${1:80},                              
         h: ${2:100}      

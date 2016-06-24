@@ -1,7 +1,7 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.remove({
+    <content><![CDATA[
+bMap.remove({
     cityID: ${1:1}
 }, function(ret){
     if(ret.status){

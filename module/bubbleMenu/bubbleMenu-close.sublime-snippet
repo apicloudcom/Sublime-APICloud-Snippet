@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var bubbleMenu = api.require('bubbleMenu');
+    <content><![CDATA[
 bubbleMenu.close();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

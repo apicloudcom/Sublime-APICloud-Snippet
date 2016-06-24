@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var hintChatBox = api.require('hintChatBox');
+    <content><![CDATA[
 hintChatBox.setHintButton ({
     index: ${1:2}
 });

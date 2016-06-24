@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var dialogBox = api.require('dialogBox');
+    <content><![CDATA[
 dialogBox.taskPlan ({
     rect: {
         w: ${1:300}    
@@ -9,9 +9,9 @@ dialogBox.taskPlan ({
         mainTitle: '${2:昨天玩的不够努力哦}',
         subTitle: '${3:今天没有获得任务次数奖励呢}',       
         content: [{             
-           text: '${4:今日赚任务总次数}：${5:3次}'     
+           text: '${4:今日赚任务总次数：3次}'     
         },{
-           text: '${6:3次}（${7:基础}）+ ${8:0次}（${9:奖励}）'     
+           text: '${6:3次（基础）+ 0次（奖励）}'     
         }],
         btnTitle: '${10:开始做任务}'           
     },
@@ -59,7 +59,6 @@ dialogBox.taskPlan ({
 },function(ret) {
     alert(JSON.stringify(ret));
     if (ret.eventType == 'ok') {
-        var dialogBox = api.require('dialogBox');
         dialogBox.close ({
             dialogName: '${40:taskPlan}'
         });

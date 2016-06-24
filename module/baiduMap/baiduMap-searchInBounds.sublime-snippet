@@ -1,13 +1,12 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
-
+    <content><![CDATA[
 baiduMap.searchInBounds({
-    key: '${1:图书馆}', // ${2:要搜索的关键字}${3:.}
-    lbLon: ${4:112}${5:.47723797622677, // 左下角经度.}
-    lbLat: ${6:34}${7:.556480000000015, // 左下角纬度.}
-    rtLon: ${8:109}${9:.77539000000002, // 右上角经度.}
-    rtLat: ${10:33}${11:.43144 // 右上角纬度.}
+    key: '${1:图书馆}',
+    lbLon: ${4:112.47723797622677},
+    lbLat: ${6:34.556480000000015},
+    rtLon: ${8:109.77539000000002},
+    rtLat: ${10:33.43144}
 }, function(ret, err){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

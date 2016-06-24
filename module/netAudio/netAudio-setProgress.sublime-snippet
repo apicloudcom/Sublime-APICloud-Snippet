@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var netAudio = api.require('netAudio');
+    <content><![CDATA[
 netAudio.setProgress({
     progress: ${1:50}
 });

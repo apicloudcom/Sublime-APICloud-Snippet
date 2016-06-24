@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var scrollRotation = api.require('scrollRotation');
+    <content><![CDATA[
 scrollRotation.open({
     x: ${1:30},
     y: ${2:api.frameHeight / 2 - 170},

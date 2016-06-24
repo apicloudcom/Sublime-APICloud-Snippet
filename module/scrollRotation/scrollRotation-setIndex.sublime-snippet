@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var scrollRotation = api.require('scrollRotation');
+    <content><![CDATA[
 scrollRotation.setIndex({
     index: ${1:1},
     animation: ${2:false}

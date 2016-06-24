@@ -1,10 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var push = api.require('push');
+    <content><![CDATA[
 push.setPreference({
     notify: ${1:true},
     updateCurrent: ${2:false},
-    silenceTime: {//${3:晚上10点30到第二天上午9点之间静默}
+    silenceTime: ${3:{//晚上10点30到第二天上午9点之间静默}
         startHour: ${4:22},
         endHour: ${5:9},
         startMinute: ${6:30},

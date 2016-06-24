@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var audio = api.require('netAudio');
+    <content><![CDATA[
 audio.addEventListener(function( ret, err ){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var inputField = api.require('inputField');
+    <content><![CDATA[
 inputField.setMsg({
     msg:'${1:设置的文字}'
 }, function(ret, err){   

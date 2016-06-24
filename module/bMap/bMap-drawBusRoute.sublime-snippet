@@ -1,32 +1,19 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.searchBusRoute({
-    city: '${1:北京}',
-    line: '${2:110}'
-},function(ret, err){
+    <content><![CDATA[
+bMap.drawBusRoute({
+    id: ${3:1},
+    autoresizing:${4:false},
+    city: ${5:city},
+    uid: ${6:uid},
+    nodeShow: ${7:false}
+},function(ret){
     if(ret.status){
-       var results = ret.results;
-       for(var i=0, len=results.length; i&lt;len; i++){
-            var res = results[i];
-            map.drawBusRoute({
-                id: ${3:i+1},
-                autoresizing:${4:false},
-                city: ${5:res.city},
-                uid: ${6:res.uid},
-                nodeShow: ${7:false}
-            },function(ret){
-                if(ret.status){
-                    alert(JSON.stringify(ret));
-                }else{
-                    alert(JSON.stringify(err));
-                }
-            });     
-       }
+        alert(JSON.stringify(ret));
     }else{
         alert(JSON.stringify(err));
     }
-});
+});     
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>bMap-drawBusRoute</tabTrigger>

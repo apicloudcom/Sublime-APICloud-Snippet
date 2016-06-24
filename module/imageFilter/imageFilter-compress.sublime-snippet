@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageFilter = api.require('imageFilter');
+    <content><![CDATA[
 imageFilter.compress({
     img: '${1:widget://res/img/apicloud.png}',
     quality: ${2:0}${3:.1}

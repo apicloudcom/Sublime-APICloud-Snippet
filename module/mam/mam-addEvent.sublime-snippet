@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var mam = api.require('mam');
+    <content><![CDATA[
 mam.addEvent({
     name: '${1:shopping}'
 });

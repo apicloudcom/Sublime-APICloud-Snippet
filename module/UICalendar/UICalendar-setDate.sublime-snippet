@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var UICalendar = api.require('UICalendar');
+    <content><![CDATA[
 UICalendar.setDate({
-    date: '${1:2015}-${2:08}-${3:08}',
+    date: '${1:2015-08-08}',
     ignoreSelected: ${4:false}
 }, function(ret, err){      
     if( ret.status ){

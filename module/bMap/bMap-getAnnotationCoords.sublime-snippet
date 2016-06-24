@@ -1,11 +1,11 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.getAnnotationCoords({
+    <content><![CDATA[
+bMap.getAnnotationCoords({
     id: ${1:2}
 }, function(ret){
     if(ret){
-        api.alert({msg:${2:JSON}${3:.stringify(ret)});}
+        alert(JSON.stringify(ret));
     }
 });
 ]]></content>

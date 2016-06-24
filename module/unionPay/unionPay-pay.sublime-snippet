@@ -1,24 +1,12 @@
 
 <snippet>
-    <content><![CDATA[    var unPay = api.require('unionPay');
-    api.ajax({
-        url: '${1:http://202.101.25.178:8080/sim/gettn}',//${2:从银联测试服务器上获取tn号}
-        method: '${3:post}',
-        dataType: '${4:text}',
-        returnAll:${5:false},
-        data:{
-            values: {${6:OrderID}: '${7:20150811000001}'}//${8:提交商户后台生成的订单ID} 
-        }
-    },function(ret,err){
-        if (ret) {
-            unPay.pay({
-                tn: ${9:ret},
-                devMode: ${10:true}
-            }, function(ret, err){
-               api.alert({msg:${11:JSON}${12:.stringify(ret)});}
-            });
-        }
-    });
+    <content><![CDATA[
+unionPay.pay({
+    tn: ${9:tn},
+    devMode: ${10:true}
+}, function(ret, err){
+    alert( JSON.stringify( ret ) );
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>unionPay-pay</tabTrigger>

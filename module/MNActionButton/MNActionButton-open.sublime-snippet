@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var MNActionButton = api.require('MNActionButton');
+    <content><![CDATA[
 MNActionButton.open({
     layout: {
         row: ${1:2},  

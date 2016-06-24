@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.writeByLength({
     path: '${1:fs://file.txt}',
     content: '${2:test}',

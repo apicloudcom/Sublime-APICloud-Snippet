@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageFilter = api.require('imageFilter');
+    <content><![CDATA[
 imageFilter.save(function( ret, err ){        
     if( ret.status ){
         alert( JSON.stringify( ret ) );

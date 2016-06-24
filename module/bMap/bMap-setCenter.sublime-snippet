@@ -1,10 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var map = api.require('bMap');
-map.setCenter({
+    <content><![CDATA[
+bMap.setCenter({
     coords: {
-        lon: ${1:116}${2:.404},
-        lat: ${3:39}${4:.915}
+        lon: ${1:116.404},
+        lat: ${3:39.915}
     },
     animation:${5:false}
 });

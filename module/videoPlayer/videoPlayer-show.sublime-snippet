@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var videoPlayer= api.require('videoPlayer');
+    <content><![CDATA[
 videoPlayer.show();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

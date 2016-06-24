@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var imageFilter = api.require('imageFilter');
+    <content><![CDATA[
 imageFilter.filter({
     id: ${1:1},
     type: '${2:autumn}'

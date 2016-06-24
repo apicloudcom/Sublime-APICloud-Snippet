@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var audioCover = api.require('audioCover');
+    <content><![CDATA[
 audioCover.update({
     progress : ${1:60}
 });

@@ -5,7 +5,7 @@
     data: '${2:writeFile测试内容}'
 }, function(ret, err){
     if(ret.status){
-         //成功
+    
     }else{
 
     }

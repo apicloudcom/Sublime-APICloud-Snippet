@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.getMD5({
     path: '${1:fs://file.txt}'
 },function(ret){

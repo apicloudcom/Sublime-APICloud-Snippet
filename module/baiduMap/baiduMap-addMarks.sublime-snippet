@@ -1,10 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var baiduMap = api.require('baiduMap');
+    <content><![CDATA[
 baiduMap.addMarks ({
-    marks:[{${1:id:1,lon:116.297,lat:40.109,title:}'${2:第一个}',${3:subTitle:}'${4:子标题}'},
-        {id:${5:2},${6:lon}:${7:116}${8:.298,lat:40.109,title:}'${9:第二个}',${10:subTitle:}'${11:子标题}'},
-        {id:${12:3},${13:lon}:${14:116}${15:.298,lat:40.111,title:}'${16:第三个}',${17:subTitle:}'${18:子标题}'}]
+    marks:[{id:${1:1},lon:${1:116.297},lat:${1:40.109},title:'${2:第一个}',${3:subTitle:}'${4:子标题}'}
+    ,{id:${1:2},lon:${1:116.297},lat:${1:40.109},title:'${2:第二个}',${3:subTitle:}'${4:子标题}'}
+    ,{id:${1:3},lon:${1:116.297},lat:${1:40.109},title:'${2:第三个}',${3:subTitle:}'${4:子标题}'}]
 }, function(ret, err){        
     if( ret ){
         alert( JSON.stringify( ret ) );

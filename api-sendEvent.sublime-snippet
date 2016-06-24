@@ -7,22 +7,6 @@
         key2: '${3:value2}'
     }
 });
-
-//html页面a：
-api.addEventListener({
-    name: '${4:myEvent}'
-}, function(ret, err){
-    alert(JSON.stringify(ret.value));
-});
-
-//html页面b：
-api.addEventListener({
-    name: '${5:myEvent}'
-}, function(ret, err){
-    alert(JSON.stringify(ret.value));
-});
-
-//a、b页面都将收到 myEvent 事件
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-sendEvent</tabTrigger>

@@ -1,6 +1,6 @@
 
 <snippet>
-    <content><![CDATA[var baiduLocation = api.require('baiduLocation');
+    <content><![CDATA[
 baiduLocation.stopLocation();
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

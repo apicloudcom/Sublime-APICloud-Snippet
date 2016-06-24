@@ -1,10 +1,10 @@
 
 <snippet>
-    <content><![CDATA[var user = api.require('user');
+    <content><![CDATA[
 user.register({
     username: '${1:uname}',
     password: '${2:111111}',
-    email: '${3:xixi}@${4:apicloud.com}'
+    email: '${3:xixi@apicloud.com}'
 }, function( ret, err ) {
     if( ret ){
         alert( JSON.stringify( ret) );

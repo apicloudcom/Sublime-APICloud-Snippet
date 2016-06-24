@@ -1,8 +1,8 @@
 
 <snippet>
-    <content><![CDATA[var fs = api.require('fs');
+    <content><![CDATA[
 fs.read({
-    fd: '${1:open} ${2:方法得到的文件句柄}',
+    fd: '${1:open 方法得到的文件句柄}',
     offset: ${3:0},
     length: ${4:0}
 }, function(ret, err){        

@@ -1,15 +1,13 @@
 
 <snippet>
-    <content><![CDATA[var weiXin = api.require('weiXin');
-weiXin.registerApp(
-    function(ret,err){
-        if (ret.status) {
-            api.alert({msg:''+${1:ret.status});}
-        } else{
-            api.alert({msg:${2:err.msg});}
-        }
+    <content><![CDATA[
+weiXin.registerApp(function(ret,err){
+    if (ret.status) {
+        api.alert({msg:''+${1:ret.status});}
+    } else{
+        api.alert({msg:${2:err.msg});}
     }
-);
+});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>weiXin-registerApp</tabTrigger>

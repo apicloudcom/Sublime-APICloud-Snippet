@@ -1,12 +1,13 @@
 
 <snippet>
-    <content><![CDATA[api.getLocation(function(ret, err){
-    if(ret.status){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+    <content><![CDATA[api.getLocation(function(ret, err) {
+    if (ret.status) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
+
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-getLocation</tabTrigger>

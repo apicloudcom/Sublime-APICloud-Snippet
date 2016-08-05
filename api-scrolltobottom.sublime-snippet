@@ -1,15 +1,15 @@
 
 <snippet>
     <content><![CDATA[api.addEventListener({
-    name:'${1:scrolltobottom}',
+    name: '${1:scrolltobottom}',
     extra:{
-        threshold:${2:0}
+        threshold: ${2:0}
     }
-}, function(ret, err){        
-    if( ret ){
-        alert( JSON.stringify( ret ) );
-    }else{
-        alert( JSON.stringify( err ) );
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

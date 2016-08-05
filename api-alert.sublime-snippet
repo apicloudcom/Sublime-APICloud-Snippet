@@ -1,13 +1,13 @@
 
 <snippet>
     <content><![CDATA[api.alert({
-    title: '${1:testtitle}',
-    msg: '${2:testmsg}',
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+    title: '${1:title}',
+    msg: '${2:message}',
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

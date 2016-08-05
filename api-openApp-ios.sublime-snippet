@@ -1,15 +1,10 @@
 <snippet>
     <content><![CDATA[
 api.openApp({
-    iosUrl: '${1:http://www.baidu.com}',
-    appParam: {appParam: '${2:param}'}
-},function(ret,err){
-    var msg = JSON.stringify(ret);
-    api.alert({
-        title: 'openApp',
-        msg: msg,
-        buttons: ['确定']
-    })
+    iosUrl: '${1:iosUrl}',
+    appParam: {
+        name: '${2:value}'
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -2,11 +2,8 @@
 <snippet>
     <content><![CDATA[api.setWinAttr({
     bounces: ${1:true,}
-    bgColor: '#${2:fff}',
-    vScrollBarEnabled: ${3:true,}
-    hScrollBarEnabled: ${4:true,}
-    scaleEnabled: ${5:true,}
-    slidBackEnabled: ${6:true}
+    bgColor: '${2:#fff}',
+    scaleEnabled: ${5:true}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

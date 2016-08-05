@@ -1,7 +1,7 @@
 
 <snippet>
     <content><![CDATA[api.removePrefs({
-    key: '${1:k}'
+    key: '${1:name}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

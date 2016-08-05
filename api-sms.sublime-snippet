@@ -2,12 +2,12 @@
 <snippet>
     <content><![CDATA[api.sms({
     numbers: ['${1:10086}'],
-    text: '${2:测试短信}'
-},function(ret, err){
-    if(ret.status){
-         //已发送
-    }else{
-        //发送失败
+    text: '${2:文本内容}'
+}, function(ret, err) {
+    if (ret.status) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

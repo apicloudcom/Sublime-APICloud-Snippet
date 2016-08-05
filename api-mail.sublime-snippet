@@ -1,15 +1,15 @@
 
 <snippet>
     <content><![CDATA[api.mail({
-    recipients: ['${1:test@163.com}'],
-    subject: '${2:邮件测试}',
-    body: '${3:这是一封测试用的邮件}',
-    attachments: ['${4:widget://a.txt}']
-}, function(ret, err){
-    if(ret.status){
-    
-    }else{
-
+    recipients: ['${1:mailAddress}'],
+    subject: '${2:邮件主题}',
+    body: '${3:邮件内容}',
+    attachments: ['${4:attachmentPath}']
+}, function(ret, err) {
+    if (ret.status) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

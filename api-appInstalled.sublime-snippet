@@ -2,11 +2,11 @@
 <snippet>
     <content><![CDATA[api.appInstalled({
     appBundle: ${1:appBundle}
-},function(ret, err){
-    if(ret.installed){
-
-    }else{
-    
+}, function(ret, err) {
+    if (ret.installed) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

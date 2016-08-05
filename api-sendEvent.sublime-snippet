@@ -3,8 +3,8 @@
     <content><![CDATA[api.sendEvent({
     name: '${1:myEvent}',
     extra: {
-        key1: '${2:value1}', 
-        key2: '${3:value2}'
+        valueName1: '${2:value1}', 
+        valueName2: '${3:value2}'
     }
 });
 ]]></content>

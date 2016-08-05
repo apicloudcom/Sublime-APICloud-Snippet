@@ -3,8 +3,8 @@
     <content><![CDATA[api.openPopoverWin({
     width: ${1:480},
     height: ${2:400},
-    name: '${3:page1}',
-    url: '${4:./page1.html}'
+    name: '${3:winName}',
+    url: '${4:htmlPath}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

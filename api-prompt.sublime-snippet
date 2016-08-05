@@ -1,12 +1,15 @@
 
 <snippet>
     <content><![CDATA[api.prompt({
-    buttons: ['${1:确定}', '${2:取消}']
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+    title: '${1:title}',
+    msg: '${2:message}',
+    text: '${3:placeholder}'
+    buttons: ['${4:确定}', '${5:取消}']
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

@@ -1,12 +1,12 @@
 
 <snippet>
     <content><![CDATA[api.startPlay({
-    path: '${1:widget://res/1.mp3}'
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+    path: '${1:mp3Path}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

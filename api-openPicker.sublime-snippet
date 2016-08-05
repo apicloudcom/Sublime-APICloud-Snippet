@@ -4,11 +4,11 @@
     type: '${1:date_time}',
     date: '${2:2014-05-01 12:30}',
     title: '${7:选择时间}'
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

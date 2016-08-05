@@ -1,27 +1,27 @@
 
 <snippet>
-    <content><![CDATA[api.openSlidLayout ({
+    <content><![CDATA[api.openSlidLayout({
     type: '${1:all}',
     leftEdge: ${2:80},
     rightEdge: ${3:60},
     fixedPane: {
-        name: '${4:win1}', 
-        url: '${5:win1.html}', 
-        bgColor: '#${6:fff}', 
-        bounces: ${7:true},
-        vScrollBarEnabled: ${8:true},
-        hScrollBarEnabled: ${9:false}
+        name: '${4:winName1}', 
+        url: '${5:htmlPath1}', 
+        bgColor: '${6:#fff}', 
+        bounces: ${7:true}
     },
     slidPane: {
-        name: '${10:win2}', 
-        url: '${11:win2.html}', 
+        name: '${10:winName2}', 
+        url: '${11:htmlPath2}', 
         bgColor: '#${12:fff}', 
-        bounces: ${13:true,}
-        vScrollBarEnabled: ${14:true},
-        hScrollBarEnabled: ${15:false}
+        bounces: ${13:true}
     }
-}, function(ret, err){
-
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

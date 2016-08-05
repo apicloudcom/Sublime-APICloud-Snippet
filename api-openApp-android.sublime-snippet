@@ -1,16 +1,15 @@
 <snippet>
     <content><![CDATA[
 api.openApp({
-    androidPkg: '${1:android.intent.action.VIEW}',
+    androidPkg: '${1:androidPkg}',
     mimeType: '${2:text/html}',
-    uri: '${3:http://www.baidu.com}'
-},function(ret,err){
-    var msg = JSON.stringify(ret);
-    api.alert({
-        title: 'openApp',
-        msg: msg,
-        buttons: ['确定']
-    });
+    uri: '${3:uri}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

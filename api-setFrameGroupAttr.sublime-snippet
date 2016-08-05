@@ -1,8 +1,9 @@
 
 <snippet>
     <content><![CDATA[api.setFrameGroupAttr({
-    name: '${1:group1}',
-    hidden: ${2:true}
+    name: '${1:groupName}',
+    scrollEnabled: ${2:true},
+    hidden: ${3:true}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

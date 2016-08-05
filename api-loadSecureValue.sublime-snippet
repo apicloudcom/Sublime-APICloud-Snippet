@@ -1,12 +1,12 @@
 
 <snippet>
     <content><![CDATA[api.loadSecureValue({
-    key:'${1:appKey}'
-}, function(ret, err){        
-    if( ret ){
-        alert( JSON.stringify( ret ) );
-    }else{
-        alert( JSON.stringify( err ) );
+    key: '${1:keyName}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

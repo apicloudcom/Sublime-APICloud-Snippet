@@ -1,15 +1,17 @@
 
 <snippet>
     <content><![CDATA[api.setRefreshHeaderInfo({
-    visible: ${1:true,}
-    loadingImg: '${2:widget://image/refresh.png}',
-    bgColor: '#${3:ccc}',
-    textColor: '#${4:fff}',
+    loadingImg: '${2:imagePath}',
+    bgColor: '${3:#ccc}',
+    textColor: '${4:#fff}',
     textDown: '${5:下拉刷新...}',
-    textUp: '${6:松开刷新...}',
-    showTime: ${7:true}
-}, function(ret, err){
-
+    textUp: '${6:松开刷新...}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

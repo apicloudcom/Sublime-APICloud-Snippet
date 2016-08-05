@@ -1,12 +1,12 @@
 
 <snippet>
     <content><![CDATA[api.readFile({
-    path: '${1:fs://a.txt}'
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-
+    path: '${1:filePath}'
+}, function(ret, err) {
+    if (ret.status) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

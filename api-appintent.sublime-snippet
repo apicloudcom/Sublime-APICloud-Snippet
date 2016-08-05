@@ -1,12 +1,12 @@
 
 <snippet>
     <content><![CDATA[api.addEventListener({
-    name:'${1:appintent}'
-},function(ret,err){
-    if(api.systemType == 'ios'){
-        var iosUrl = ret.iosUrl;
+    name: '${1:appintent}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
     } else {
-        var sourceAppId = ret.sourceAppId;
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

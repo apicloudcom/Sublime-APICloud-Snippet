@@ -1,12 +1,12 @@
 
 <snippet>
     <content><![CDATA[api.saveMediaToAlbum({
-    path: '${1:fs://1.png}'
-}, function(ret, err){ 
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+    path: '${1:imagePath}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

@@ -1,21 +1,21 @@
 
 <snippet>
     <content><![CDATA[api.ajax({
-    url: '${1:http://192.168.1.101:3101/upLoad}',
+    url: '${1:requestPath}',
     method: '${2:post}',
     data: {
         values: { 
-            name: '${3:haha}'
+            valueName: '${3:value}'
         },
         files: { 
-            file: '${4:fs://a.gif}'
+            fileName: '${4:filePath}'
         }
     }
-},function(ret, err){
+}, function(ret, err) {
     if (ret) {
-        alert( JSON.stringify( ret ) );
+        alert(JSON.stringify(ret));
     } else {
-        alert( JSON.stringify( err ) );
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

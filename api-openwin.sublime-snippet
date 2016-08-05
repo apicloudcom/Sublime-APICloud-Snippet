@@ -1,10 +1,10 @@
 
 <snippet>
     <content><![CDATA[api.openWin({
-    name: '${1:page1}',
-    url: '${2:./page1.html}',
+    name: '${1:winName}',
+    url: '${2:winPath}',
     pageParam: {
-        name: '${3:test}'
+        name: '${3:value}'
     }
 });
 ]]></content>

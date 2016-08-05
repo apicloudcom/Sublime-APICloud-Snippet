@@ -1,7 +1,14 @@
 
 <snippet>
-    <content><![CDATA[api.getFreeDiskSpace(function( ret, err ){
-    var size = ret.size;
+    <content><![CDATA[
+api.getFreeDiskSpace({
+    sync: ${1:false}
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

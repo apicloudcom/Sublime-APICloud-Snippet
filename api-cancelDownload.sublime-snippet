@@ -1,7 +1,7 @@
 
 <snippet>
     <content><![CDATA[api.cancelDownload({
-    url: ${1:url}
+    url: '${1:requestPath}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

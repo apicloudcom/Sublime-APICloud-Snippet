@@ -1,8 +1,15 @@
 
 <snippet>
-    <content><![CDATA[api.pageDown(function( ret, err ){
-    	
-});
+    <content><![CDATA[
+api.pageDown(
+    bottom: ${1:true}
+}, function(ret, err) {
+    if (ret.scrolled) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
+}); 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-pageDown</tabTrigger>

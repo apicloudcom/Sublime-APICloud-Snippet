@@ -1,14 +1,16 @@
 
 <snippet>
-    <content><![CDATA[api.clearCache(function(){
-    api.toast({
-        msg:'${1:清除完成}'
-    });
+    <content><![CDATA[api.clearCache(function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>api-clearCache</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <scope>source.js</scope>
+    <scope>source.js</sScope>
     <description>清除缓存，包括下载的文件、拍照临时文件、网页缓存文件等，清除时可能需要消耗一定时间。</description>
 </snippet>

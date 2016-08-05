@@ -1,13 +1,13 @@
 
 <snippet>
     <content><![CDATA[api.writeFile({
-    path: '${1:fs://a.txt}',
-    data: '${2:writeFile测试内容}'
-}, function(ret, err){
-    if(ret.status){
-    
-    }else{
-
+    path: '${1:filePath}',
+    data: '${2:writeFile}'
+}, function(ret, err) {
+    if (ret.status) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

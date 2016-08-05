@@ -1,21 +1,12 @@
 
 <snippet>
     <content><![CDATA[api.setFrameClient({
-    frameName:'${1:webpage}'
-}, function(ret, err){
-    switch (ret.state) {
-        case 0:
-            break;
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        default:
-            break;
+    framename: '${1:frameName}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

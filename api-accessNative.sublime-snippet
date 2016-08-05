@@ -5,11 +5,11 @@
     extra: {
         key: '${2:value}'
     }
-}, function(ret, err){        
-    if( ret ){
-        alert( JSON.stringify( ret ) );
-    }else{
-        alert( JSON.stringify( err ) );
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

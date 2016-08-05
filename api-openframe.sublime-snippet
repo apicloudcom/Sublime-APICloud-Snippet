@@ -1,21 +1,18 @@
 
 <snippet>
     <content><![CDATA[api.openFrame({
-    name: '${1:page2}',
-    url: '${2:./page2.html}',
+    name: '${1:frameName}',
+    url: '${2:htmlPath}',
     rect: {
         x: ${3:0},
         y: ${4:0},
-        w: ${5:320},
-        h: ${6:480}
+        w: '${5:auto}',
+        h: '${6:auto}'
     },
     pageParam: {
-        name: '${7:test}'
+        name: '${7:value}'
     },
-    bounces: ${8:true},
-    bgColor: '${9:rgba(0,0,0,0)}',
-    vScrollBarEnabled: ${10:true},
-    hScrollBarEnabled: ${11:true}
+    bounces: ${8:true}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

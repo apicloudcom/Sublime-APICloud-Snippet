@@ -1,12 +1,12 @@
 
 <snippet>
     <content><![CDATA[api.getPrefs({
-    key: '${1:k}'
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+    key: '${1:name}'
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

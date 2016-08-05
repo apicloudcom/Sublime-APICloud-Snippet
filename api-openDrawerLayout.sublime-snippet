@@ -2,13 +2,17 @@
 <snippet>
     <content><![CDATA[api.openDrawerLayout({
     name: '${1:main}',
-    url: '${2:./main.html}',
+    url: '${2:htmlPath}',
     animation:{
-        type:'${3:none}'
+        type: '${3:none}'
     },
     leftPane:{
-        name: '${4:leftPane}',
-        url: '${5:leftPane.html}'
+        name: '${4:leftName}',
+        url: '${5:htmlPath}'
+    },
+    rightPane:{
+        name: '${4:rightName}',
+        url: '${5:htmlPath}'
     }
 });
 ]]></content>

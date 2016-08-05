@@ -3,8 +3,8 @@
     <content><![CDATA[api.showProgress({
     style: '${1:default}',
     animationType: '${2:fade}',
-    title: '${3:努力加载中...}',
-    text: '${4:先喝杯茶...}',
+    title: '${3:title}',
+    text: '${4:message}',
     modal: ${5:false}
 });
 ]]></content>

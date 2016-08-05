@@ -1,17 +1,15 @@
 
 <snippet>
     <content><![CDATA[api.setFrameAttr({
-    name: '${1:page2}',
+    name: '${1:frameName}',
     rect: {
         x: ${2:0},
         y: ${3:0},
         w: ${4:320},
         h: ${5:480}
     },
-    bounces: ${6:true,}
-    bgColor: '#${7:fff}',
-    vScrollBarEnabled: ${8:true,}
-    hScrollBarEnabled: ${9:true}
+    bgColor: '${7:#fff}',
+    hidden: ${8:true}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

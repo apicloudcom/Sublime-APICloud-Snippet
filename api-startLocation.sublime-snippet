@@ -4,11 +4,11 @@
     accuracy: '${1:100m}',
     filter: ${2:1},
     autoStop: ${3:true}
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-       //定位失败
+}, function(ret, err) {
+    if (ret.status) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

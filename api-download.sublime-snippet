@@ -1,17 +1,17 @@
 
 <snippet>
     <content><![CDATA[api.download({
-    url: ${1:url},
-    savePath: '${2:fs://test.rar}',
+    url: '${1:requestPath}',
+    savePath: '${2:savePath}',
     report: ${3:true,}
     cache: ${4:true,}
     allowResume: ${5:true}
-},function(ret, err){
+}, function(ret, err) {
     if(ret.state == 1){
-    
-    }else{
-
-    }
+       alert(JSON.stringify(ret));
+   } else {
+       alert(JSON.stringify(err));
+   }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

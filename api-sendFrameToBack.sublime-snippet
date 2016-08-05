@@ -1,8 +1,8 @@
 
 <snippet>
     <content><![CDATA[api.sendFrameToBack ({
-    from: '${1:page1}',
-    to: '${2:page2}'
+    from: '${1:targetFrameName}',
+    to: '${2:toFrameName}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

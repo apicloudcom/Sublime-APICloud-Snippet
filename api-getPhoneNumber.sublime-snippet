@@ -1,10 +1,13 @@
 
 <snippet>
-    <content><![CDATA[api.getPhoneNumber(function( ret, err ){        
-    if( ret ){
-        alert( JSON.stringify( ret ) );
-    }else{
-        alert( JSON.stringify( err ) );
+    <content><![CDATA[
+api.getPhoneNumber({
+    sync: ${1:false}
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

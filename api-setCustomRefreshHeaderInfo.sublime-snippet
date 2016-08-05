@@ -1,28 +1,32 @@
 
 <snippet>
     <content><![CDATA[api.setCustomRefreshHeaderInfo({
-    bgColor: '#${1:C0C0C0}',
+    bgColor: '${1:#C0C0C0}',
     images: {
-        pull: '${2:widget://image/refresh/pulling.png}', 
+        pull: '${2:pullImagePath}', 
         transform: [
-            '${3:widget://image/refresh/transform0.png}', 
-            '${4:widget://image/refresh/transform1.png}',
-            '${5:widget://image/refresh/transform2.png}',
-            '${6:widget://image/refresh/transform3.png}',
-            '${7:widget://image/refresh/transform4.png}',
-            '${8:widget://image/refresh/transform5.png}',
-            '${9:widget://image/refresh/transform6.png}'
+            '${3:transformImagePath0}', 
+            '${4:transformImagePath1}', 
+            '${5:transformImagePath2}',
+            '${6:transformImagePath3}',
+            '${7:transformImagePath4}',
+            '${8:transformImagePath5}'
         ],
         load: [ 
-            '${10:widget://image/refresh/loading0.png}', 
-            '${11:widget://image/refresh/loading1.png}',
-            '${12:widget://image/refresh/loading2.png}', 
-            '${13:widget://image/refresh/loading3.png}',
-            '${14:widget://image/refresh/loading4.png}',
+            '${9:loadImagePath0}', 
+            '${10:loadImagePath1}', 
+            '${11:loadImagePath2}', 
+            '${12:loadImagePath3}', 
+            '${13:loadImagePath4}', 
+            '${14:loadImagePath5}', 
         ]
     }
-}, function(ret, err){
-
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

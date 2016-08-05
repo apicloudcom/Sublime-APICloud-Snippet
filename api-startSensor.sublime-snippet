@@ -2,11 +2,11 @@
 <snippet>
     <content><![CDATA[api.startSensor({
     type: '${1:accelerometer}'
-}, function(ret, err){
-    if(ret.status){
-
-    }else{
-
+}, function(ret, err) {
+    if (ret.status) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

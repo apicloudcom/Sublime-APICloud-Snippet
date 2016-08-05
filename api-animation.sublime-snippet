@@ -1,34 +1,24 @@
 
 <snippet>
-    <content><![CDATA[api.animation ({
-    name: '${1:page1}',
+<content><![CDATA[
+api.animation({
+    name: '${1:frameName}',
     delay: ${2:1000},
     duration: ${3:3000},
     curve: '${4:ease_in}',
     repeatCount: ${5:2},
     autoreverse: ${6:true},
-    alpha: ${7:0.6,}
+    alpha: ${7:0.6},
     translation: {
-        x: ${9:0},
-        y: ${10:100},
-        z: ${11:0}
-    }, 
-    scale: {
-        x: ${12:1.2,}
-        y: ${14:1},
-        z: ${15:1}
-    },
-    rotation: {
-        degree: ${16:45},
-        x: ${17:0},
-        y: ${18:0},
-        z: ${19:1}
+        x: ${8:0},
+        y: ${9:100},
+        z: ${10:0}
     }
-}, function(ret, err){        
-    if( ret ){
-        alert( JSON.stringify( ret ) );
-    }else{
-        alert( JSON.stringify( err ) );
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

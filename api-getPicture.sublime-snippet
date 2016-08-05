@@ -2,19 +2,16 @@
 <snippet>
     <content><![CDATA[api.getPicture({
     sourceType: '${1:camera}',
-    encodingType: '${2:jpg}',
-    mediaValue: '${3:pic}',
-    destinationType: '${4:url}',
-    allowEdit: ${5:true,}
-    quality: ${6:50},
-    targetWidth: ${7:100},
-    targetHeight: ${8:100},
-    saveToPhotoAlbum: ${9:false}
-}, function(ret, err){ 
-    if(ret){
-         alert(JSON.stringify(ret));
-    }else{
-         alert(JSON.stringify(err));
+    mediaValue: '${2:pic}',
+    destinationType: '${3:url}',
+    quality: ${4:50},
+    targetWidth: ${5:100},
+    targetHeight: ${6:100}
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

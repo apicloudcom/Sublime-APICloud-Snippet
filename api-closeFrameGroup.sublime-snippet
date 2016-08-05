@@ -1,7 +1,7 @@
 
 <snippet>
     <content><![CDATA[api.closeFrameGroup({
-    name: '${1:group1}'
+    name: '${1:groupName}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

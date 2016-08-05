@@ -1,7 +1,12 @@
 
 <snippet>
-    <content><![CDATA[api.getCacheSize(function(ret){
-    var size = ret.size;
+    <content><![CDATA[
+api.getCacheSize(function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,7 +1,7 @@
 
 <snippet>
     <content><![CDATA[api.setFrameGroupIndex({
-    name: '${1:group1}',
+    name: '${1:groupName}',
     index: ${2:2},
     scroll: ${3:true}
 });

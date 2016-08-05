@@ -9,11 +9,11 @@
         minutes: ${3:30},
         daysOfWeek: [${4:2},${5:3},${6:4},${7:5},${8:6}]
     }
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

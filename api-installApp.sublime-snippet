@@ -2,7 +2,7 @@
 <snippet>
     <content><![CDATA[
 api.installApp({
-    appUri: '${2:https://list.kuaiapp.cn/list/KuaiAppZv7.1.plist}'
+    appUri: '${2:appUri}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

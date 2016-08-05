@@ -1,9 +1,9 @@
 
 <snippet>
     <content><![CDATA[api.closeWidget({
-    id: '${1:A00000001}',
+    id: '${1:widgetId}',
     retData: {
-        name: '${2:closeWidget}'
+        name: '${2:resultParam}'
     },
     animation: {
         type: '${3:flip}',

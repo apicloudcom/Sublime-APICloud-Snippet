@@ -1,17 +1,17 @@
 
 <snippet>
     <content><![CDATA[api.openWidget({
-    id: '${1:A00000001}',
+    id: '${1:widgetId}',
     animation: {
         type: '${2:flip}',
         subType: '${3:from_bottom}',
         duration: ${4:500}
     }
-}, function(ret, err){
-    if( ret ){
-         alert( JSON.stringify( ret ) );
-    }else{
-         alert( JSON.stringify( err ) );
+}, function(ret, err) {
+    if (ret) {
+        alert(JSON.stringify(ret));
+    } else {
+        alert(JSON.stringify(err));
     }
 });
 ]]></content>

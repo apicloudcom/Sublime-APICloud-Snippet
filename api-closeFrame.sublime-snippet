@@ -1,7 +1,7 @@
 
 <snippet>
     <content><![CDATA[api.closeFrame({
-    name: '${1:page2}'
+    name: '${1:frameName}'
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

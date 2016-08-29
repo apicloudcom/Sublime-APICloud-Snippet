@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+push.joinGroup({
+	groupName:'${1:groupName}'
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>push-joinGroup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>加入（绑定）某个群组</description>
+</snippet>

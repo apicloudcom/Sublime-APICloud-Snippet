@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+push.removeListener();
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>push-removeListener</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>移除对推送消息的监听</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+query.whereExist({
+	qid:${1:qid},
+	column:'${2:column}'
+};
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>query-whereExist</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置查询条件为某列内容不为空</description>
+</snippet>

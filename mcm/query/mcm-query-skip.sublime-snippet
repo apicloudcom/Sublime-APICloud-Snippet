@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+query.skip({
+	qid:${1:qid},
+	value:'${2:value}'
+};
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>query-skip</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置查询返回结果中忽略前n条</description>
+</snippet>

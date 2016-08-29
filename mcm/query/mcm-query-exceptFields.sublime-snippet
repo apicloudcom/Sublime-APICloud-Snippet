@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+query.exceptFields({
+	qid:${1:qid},
+	value:${2:valueArray}
+};
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>query-exceptFields</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>设置查询返回除某些字段以外的字段</description>
+</snippet>

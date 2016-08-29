@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+relation.deleteAll({
+	class:'${1:class}',
+	id:'${2:id}',
+	column:'${3:column}'
+},function(ret,err){
+    
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>relation-deleteAll</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>删除对象某关系列下对应的所有数据</description>
+</snippet>

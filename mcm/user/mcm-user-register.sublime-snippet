@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+user.register({
+	username:'${1:username}',
+	password:'${2:password}',
+	email:'${3:email}'
+},function(ret,err){
+	
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>user-register</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>注册</description>
+</snippet>
